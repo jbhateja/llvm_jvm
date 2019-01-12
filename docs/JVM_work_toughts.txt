@@ -1,0 +1,97 @@
+
+1/ MCInstrDesc is formed based on the IntructionInfo def of instruction.
+      --> MachineInstruction format is explored (Opeands Info query) by consulting the MCInstrDesc corresponding to its opcode. 
+      DAG-PreSel --> Res:SDValue = I32:ValueType ISD::ADD:Opcode  Oprd1:SDValue(Use) , Oprd2:SDValue(Use)
+      DAG-PostSel --> Res:SDValue = I32:ValueType JVM::IADD  Oprd1:SDValue(Use) , Oprd2:SDValue(Use)
+      MI-Emit   -->  JVM::IADD:Opcode Res:MachineOperand(def) Oprd1:MachineOperand(use) Oprd2:MachineOperand(use)
+      MI-SSA-Pass-StackifyReg -->JVM::ILOAD JVMFunctionInfo::getLocalIndex(Oprd1)  
+                                 JVM::ILOAD JVMFunctionInfo::getLocalIndex(Oprd2)
+                                 JVM::IADD:Opcode 
+                                 JVM::ISTORE JVMFunctionInfo::getLocalIndex(Res) 
+
+      A type specific load for each use and a store for each def MachineOperand.
+
+      Q1/ MCInstrDesc of IADD gets invalid 
+      A / Yes, this is incorrect.
+
+      Q2/ Can this be done during MCInstLowring ?
+      A / Yes, but MC does not offer any control and data flow for further redundant load/store elimination.
+
+      Q3/ Should ISD::ADD be Lowered to Legal sub-instructions during DAG phase to avoid a seperate MI pass ?
+          This will then automatically be inferred to correct instructions during selection.
+          Even seperate patterns to match an implied addressing mode variant of the instrutions
+          will be exercised during selection.
+      A / This calls for offset allocation over DAG nodes and ComplexPatterns which shall check the
+          immediate values of Operands to generate compact instructions. 
+          In order to maintain the dependency relation b/w binary operation and its operands
+          extra chain operand needs to be inserted, this is necessary to prevent incorrect 
+          scheduling of operands after operation instruction since now binary operation wont have
+          any other operand apart from chain operand.
+
+      Q4/ Is it fine to have discrepancy b/w MCInstrDesc (model specific) and  MachineInstr (inst specific)
+           in terms of number of operands.
+      A / Check the validation passes which run over MIs.
+
+        void MachineVerifier::visitMachineInstrBefore(const MachineInstr *MI) {
+           const MCInstrDesc &MCID = MI->getDesc();
+           if (MI->getNumOperands() < MCID.getNumOperands()) {
+              report("Too few operands", MI);
+              errs() << MCID.getNumOperands() << " operands expected, but "
+              << MI->getNumOperands() << " given.\n";
+           }
+           ...
+           ...
+ 
+           Verifier complains!!!
+           But, verifier is run only during MI SSA passes, not when we enter into the MC world, so 
+           a discrepancy at MC level is livable, MI to MC fragments (splitting into multiple MCs)
+           is to be done during MCLowering. Infact this is MI to Multiple MC instruction lowering
+           so no question of discrepancy at all, but again this will inhabit any further optimizations
+           desired over LIR.
+           
+           
+           Does MCObjectStreamer have any issue with it ?
+
+       
+      Q5 / How about generating MACRO Instructions for operations during selection and having a
+           later MI pass to split this into actual machine instructions ?
+
+      A  / Single MI pass to first allocate offsets to arguments and record the same in MachineFunctionInfo
+           and then split the MACRO instructions into actual machine instructions, new instructions will have
+           Descriptors in accordance with the machine instruction. This gives later opportunity to perform
+           redundant load/store eliminations pass over MI. 
+           This pass shall generate a load for each use operand and a store for each def operand of instruction.
+
+          
+2/ Offset allocation to non-store non-terminator instruction within a basic block.
+  a/ Store within JVMFunctionInfo a Map b/w  Value and Offset.
+     Also allocate Space within the MachineFrameInfo for def virtual registers.
+
+     Argument are allocated stack space into MachineFrameInfo during 
+     LowerFormalArguments , virtual registers needs to be allocated 
+     space and assigned an offset before DoInstructionSelection
+    
+     Offset allocation to virtual registers to be done post DAG creation
+     to take advantage of node sharing..
+
+  b/ TargetFrameLowering and PrintPrologEpilog : Nothing in special needs to
+    be done since no special prolog/epilog is needed at start/end of a method.
+  
+  c/ calls will be of type invokestatic 
+
+3/ New MI passes for following
+   a/ Removal of redundant load and stores.
+   b/ Compaction pass to create implied addressing mode operations like
+      iload 1 -> iload_1
+   
+o Proposed DAG nodes for binary operation: BinOp = [ADD(MVT::i32)]
+  - Aim of this transformation is to generate node which are legal as per their machine instruction descriptors.
+   
+   Res:SDNode(MVT::i32) = ISD::ADD Opr1:SDValue(MVT::i32) Opr2:SDValue(MVT::i32)
+
+   =>
+   Opr1_ld(SDNode(MVT::i32)) = JVMISD::LOAD  Opr1:SDValue(MVT::i8=offset)
+   Opr2_ld(SDNode(MVT::i32)) = JVMISD::LOAD  Opr2:SDValue(MVT::i8=offset)
+   TF_opr(SDNode(MVT::i32))  = ISD::TokenFactor  Opr1_ld(SDValue(MVT::i32)) Opr2_ld(SDValue(MVT::i32))
+   Res:SDNode(MVT::i32)  = JVMISD::ADD TF_opr:(SDValue(MVT::i32)) 
+   

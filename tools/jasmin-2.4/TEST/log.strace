@@ -1,0 +1,316 @@
+execve("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/java", ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UnlockDiagnosticVMOptions", "-XX:+BailoutAfterHIR", "BasicInstructions"], [/* 82 vars */]) = 0
+brk(NULL)                               = 0xe80000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5cfc0c000
+readlink("/proc/self/exe", "/home/jatin/OpenJDK/jdk8u-dev/bu"..., 4096) = 83
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls/x86_64/libjli.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls/x86_64", 0x7ffecc5ffd50) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls/libjli.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls", 0x7ffecc5ffd50) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/x86_64/libjli.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/x86_64", 0x7ffecc5ffd50) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libjli.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`%\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=420616, ...}) = 0
+mmap(NULL, 2192296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe5cf7d1000
+mprotect(0x7fe5cf7e8000, 2093056, PROT_NONE) = 0
+mmap(0x7fe5cf9e7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fe5cf9e7000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls/x86_64", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/x86_64", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls/x86_64", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/x86_64", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls/x86_64", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/x86_64", 0x7ffecc5ffd20) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95266, ...}) = 0
+mmap(NULL, 95266, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe5cfbf4000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5cfbf3000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe5cf407000
+mprotect(0x7fe5cf5c7000, 2097152, PROT_NONE) = 0
+mmap(0x7fe5cf7c7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fe5cf7c7000
+mmap(0x7fe5cf7cd000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe5cf7cd000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls/x86_64", 0x7ffecc5ffbc0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls", 0x7ffecc5ffbc0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../x86_64", 0x7ffecc5ffbc0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/..", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe5cf203000
+mprotect(0x7fe5cf206000, 2093056, PROT_NONE) = 0
+mmap(0x7fe5cf405000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe5cf405000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5cfbf2000
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe5cefe6000
+mprotect(0x7fe5ceffe000, 2093056, PROT_NONE) = 0
+mmap(0x7fe5cf1fd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fe5cf1fd000
+mmap(0x7fe5cf1ff000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe5cf1ff000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5cfbf1000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5cfbf0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe5cfbef000
+arch_prctl(ARCH_SET_FS, 0x7fe5cfbf0700) = 0
+mprotect(0x7fe5cf7c7000, 16384, PROT_READ) = 0
+mprotect(0x7fe5cf1fd000, 4096, PROT_READ) = 0
+mprotect(0x7fe5cf405000, 4096, PROT_READ) = 0
+mprotect(0x7fe5cf9e7000, 4096, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7fe5cfc0e000, 4096, PROT_READ) = 0
+munmap(0x7fe5cfbf4000, 95266)           = 0
+set_tid_address(0x7fe5cfbf09d0)         = 8753
+set_robust_list(0x7fe5cfbf09e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7fe5cefebb50, [], SA_RESTORER|SA_SIGINFO, 0x7fe5ceff7390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7fe5cefebbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fe5ceff7390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0xe80000
+brk(0xea1000)                           = 0xea1000
+readlink("/proc/self/exe", "/home/jatin/OpenJDK/jdk8u-dev/bu"..., 4096) = 83
+access("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/libjava.so", F_OK) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/jvm.cfg", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=1624, ...}) = 0
+read(3, "# Copyright (c) 2003, 2013, Orac"..., 4096) = 1624
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libjvm.so", {st_mode=S_IFREG|0775, st_size=16367336, ...}) = 0
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server//libjvm.so", {st_mode=S_IFREG|0755, st_size=16367336, ...}) = 0
+execve("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/java", ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UnlockDiagnosticVMOptions", "-XX:+BailoutAfterHIR", "BasicInstructions"], [/* 82 vars */]) = 0
+brk(NULL)                               = 0x176d000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef427df000
+readlink("/proc/self/exe", "/home/jatin/OpenJDK/jdk8u-dev/bu"..., 4096) = 83
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls/x86_64/libjli.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls/x86_64", 0x7ffd59f66ad0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls/libjli.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/tls", 0x7ffd59f66ad0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/x86_64/libjli.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/x86_64", 0x7ffd59f66ad0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libjli.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`%\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=420616, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef427de000
+mmap(NULL, 2192296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef423a4000
+mprotect(0x7fef423bb000, 2093056, PROT_NONE) = 0
+mmap(0x7fef425ba000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fef425ba000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/tls", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/tls/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/tls", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/tls/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/tls", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/tls/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/tls", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/tls", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/tls", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/x86_64", 0x7ffd59f66aa0) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95266, ...}) = 0
+mmap(NULL, 95266, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fef427c6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef41fda000
+mprotect(0x7fef4219a000, 2097152, PROT_NONE) = 0
+mmap(0x7fef4239a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fef4239a000
+mmap(0x7fef423a0000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef423a0000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls/x86_64", 0x7ffd59f66940) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../tls", 0x7ffd59f66940) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../x86_64", 0x7ffd59f66940) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/..", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef427c5000
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef41dd6000
+mprotect(0x7fef41dd9000, 2093056, PROT_NONE) = 0
+mmap(0x7fef41fd8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fef41fd8000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/../libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef41bb9000
+mprotect(0x7fef41bd1000, 2093056, PROT_NONE) = 0
+mmap(0x7fef41dd0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fef41dd0000
+mmap(0x7fef41dd2000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef41dd2000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef427c4000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef427c3000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fef427c2000
+arch_prctl(ARCH_SET_FS, 0x7fef427c3700) = 0
+mprotect(0x7fef4239a000, 16384, PROT_READ) = 0
+mprotect(0x7fef41dd0000, 4096, PROT_READ) = 0
+mprotect(0x7fef41fd8000, 4096, PROT_READ) = 0
+mprotect(0x7fef425ba000, 4096, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7fef427e1000, 4096, PROT_READ) = 0
+munmap(0x7fef427c6000, 95266)           = 0
+set_tid_address(0x7fef427c39d0)         = 8753
+set_robust_list(0x7fef427c39e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7fef41bbeb50, [], SA_RESTORER|SA_SIGINFO, 0x7fef41bca390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7fef41bbebe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fef41bca390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x176d000
+brk(0x178e000)                          = 0x178e000
+readlink("/proc/self/exe", "/home/jatin/OpenJDK/jdk8u-dev/bu"..., 4096) = 83
+access("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/libjava.so", F_OK) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/jvm.cfg", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=1624, ...}) = 0
+read(3, "# Copyright (c) 2003, 2013, Orac"..., 4096) = 1624
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+stat("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libjvm.so", {st_mode=S_IFREG|0775, st_size=16367336, ...}) = 0
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+futex(0x7fef41fd90a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libjvm.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\v\37\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=16367336, ...}) = 0
+mmap(NULL, 16082520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef40c62000
+mprotect(0x7fef418cc000, 2093056, PROT_NONE) = 0
+mmap(0x7fef41acb000, 778240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc69000) = 0x7fef41acb000
+mmap(0x7fef41b89000, 194136, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fef41b89000
+close(3)                                = 0
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/jli/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/bin/../lib/amd64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95266, ...}) = 0
+mmap(NULL, 95266, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fef427c6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fef40959000
+mprotect(0x7fef40a61000, 2093056, PROT_NONE) = 0
+mmap(0x7fef40c60000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7fef40c60000
+close(3)                                = 0
+mprotect(0x7fef40c60000, 4096, PROT_READ) = 0
+mprotect(0x7fef41acb000, 610304, PROT_READ) = 0
+munmap(0x7fef427c6000, 95266)           = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fef426c1000
+mprotect(0x7fef426c1000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7fef427c0ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fef427c19d0, tls=0x7fef427c1700, child_tidptr=0x7fef427c19d0) = 8754
+futex(0x7fef427c19d0, FUTEX_WAIT, 8754, NULL <unfinished ...>
++++ exited with 1 +++

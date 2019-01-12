@@ -1,0 +1,1891 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='8799' time_ms='1515466081990'>
+<vm_version>
+<name>
+OpenJDK 64-Bit Server VM
+</name>
+<release>
+25.71-b00
+</release>
+<info>
+OpenJDK 64-Bit Server VM (25.71-b00) for linux-amd64 JRE (1.8.0-internal-jatin_2018_01_08_15_12-b00), built on Jan  8 2018 15:15:49 by &quot;jatin&quot; with gcc 5.4.0 20160609
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -XX:+LogCompilation 
+</args>
+<command>
+AddInstructions
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.version=25.71-b00
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vm.info=mixed mode, sharing
+java.ext.dirs=/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/ext:/usr/java/packages/lib/ext
+java.endorsed.dirs=/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/endorsed
+sun.boot.library.path=/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64
+java.library.path=/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64/server:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/amd64:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/../lib/amd64:/usr/local/jvm/openjdk-1.8.0-internal/jre/lib/amd64/server/:/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+java.home=/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk
+java.class.path=.
+sun.boot.class.path=/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/resources.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/rt.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/sunrsasign.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/jsse.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/jce.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/charsets.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/lib/jfr.jar:/home/jatin/OpenJDK/jdk8u-dev/build/linux-x86_64-normal-server-release/jdk/classes
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.8
+java.vm.vendor=Oracle Corporation
+sun.java.command=AddInstructions
+sun.java.launcher=SUN_STANDARD
+</properties>
+</vm_arguments>
+<tty>
+<writer thread='139825986459392'/>
+<thread_logfile thread='139825986459392' filename='/tmp/hs_c139825986459392_pid8799.log'/>
+<writer thread='139825985406720'/>
+<thread_logfile thread='139825985406720' filename='/tmp/hs_c139825985406720_pid8799.log'/>
+<writer thread='139825984354048'/>
+<thread_logfile thread='139825984354048' filename='/tmp/hs_c139825984354048_pid8799.log'/>
+<blob name='MethodHandlesAdapterBlob' size='32000'>
+<sect index='1' size='32000' free='31632'/>
+</blob>
+<writer thread='139826613090048'/>
+<task_queued compile_id='1' method='java/lang/String equals (Ljava/lang/Object;)Z' bytes='81' count='245' backedge_count='1024' iicount='245' level='3' stamp='0.126' comment='tiered' hot_count='245'/>
+<writer thread='139825984354048'/>
+Loaded disassembler from hsdis-amd64.so
+Decoding compiled method 0x00007f2bd5100490:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd5100620 Code size: 0x00000550
+[Disassembling for mach=&apos;amd64&apos;]
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;
+  # this:     rsi:rsi   = &apos;java/lang/String&apos;
+  # parm0:    rdx:rdx   = &apos;java/lang/Object&apos;
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd5100620: mov     0x8(%rsi),%r10d
+  0x00007f2bd5100624: shl     $0x3,%r10
+  0x00007f2bd5100628: cmp     %rax,%r10
+  0x00007f2bd510062b: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd5100631: nopw    0x0(%rax,%rax)
+  0x00007f2bd510063c: nop
+[Verified Entry Point]
+  0x00007f2bd5100640: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd5100647: push    %rbp
+  0x00007f2bd5100648: sub     $0x30,%rsp
+  0x00007f2bd510064c: movabs  $0x7f2bd41edb10,%rax  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5100656: mov     0xdc(%rax),%edi
+  0x00007f2bd510065c: add     $0x8,%edi
+  0x00007f2bd510065f: mov     %edi,0xdc(%rax)
+  0x00007f2bd5100665: movabs  $0x7f2bd401a618,%rax  ;   {metadata({method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510066f: and     $0x1ff8,%edi
+  0x00007f2bd5100675: cmp     $0x0,%edi
+  0x00007f2bd5100678: je      0x7f2bd5100a3e    ;*aload_0
+                                                ; - java.lang.String::equals@0 (line 977)
+
+  0x00007f2bd510067e: cmp     %rdx,%rsi
+  0x00007f2bd5100681: movabs  $0x7f2bd41edb10,%rax  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510068b: movabs  $0x108,%rdi
+  0x00007f2bd5100695: jne     0x7f2bd51006a5
+  0x00007f2bd510069b: movabs  $0x118,%rdi
+  0x00007f2bd51006a5: mov     (%rax,%rdi),%rbx
+  0x00007f2bd51006a9: lea     0x1(%rbx),%rbx
+  0x00007f2bd51006ad: mov     %rbx,(%rax,%rdi)
+  0x00007f2bd51006b1: je      0x7f2bd5100a2d    ;*if_acmpne
+                                                ; - java.lang.String::equals@2 (line 977)
+
+  0x00007f2bd51006b7: cmp     $0x0,%rdx
+  0x00007f2bd51006bb: jne     0x7f2bd51006d6
+  0x00007f2bd51006bd: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51006c7: orl     $0x100,0x120(%rbx)
+  0x00007f2bd51006d1: jmpq    0x7f2bd5100796
+  0x00007f2bd51006d6: movabs  $0x100001610,%rcx  ;   {metadata(&apos;java/lang/String&apos;)}
+  0x00007f2bd51006e0: mov     0x8(%rdx),%edi
+  0x00007f2bd51006e3: shl     $0x3,%rdi
+  0x00007f2bd51006e7: cmp     %rdi,%rcx
+  0x00007f2bd51006ea: jne     0x7f2bd510077a
+  0x00007f2bd51006f0: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51006fa: mov     0x8(%rdx),%ecx
+  0x00007f2bd51006fd: shl     $0x3,%rcx
+  0x00007f2bd5100701: cmp     0x130(%rbx),%rcx
+  0x00007f2bd5100708: jne     0x7f2bd5100717
+  0x00007f2bd510070a: addq    $0x1,0x138(%rbx)
+  0x00007f2bd5100712: jmpq    0x7f2bd510079b
+  0x00007f2bd5100717: cmp     0x140(%rbx),%rcx
+  0x00007f2bd510071e: jne     0x7f2bd510072d
+  0x00007f2bd5100720: addq    $0x1,0x148(%rbx)
+  0x00007f2bd5100728: jmpq    0x7f2bd510079b
+  0x00007f2bd510072d: cmpq    $0x0,0x130(%rbx)
+  0x00007f2bd5100738: jne     0x7f2bd5100751
+  0x00007f2bd510073a: mov     %rcx,0x130(%rbx)
+  0x00007f2bd5100741: movq    $0x1,0x138(%rbx)
+  0x00007f2bd510074c: jmpq    0x7f2bd510079b
+  0x00007f2bd5100751: cmpq    $0x0,0x140(%rbx)
+  0x00007f2bd510075c: jne     0x7f2bd5100775
+  0x00007f2bd510075e: mov     %rcx,0x140(%rbx)
+  0x00007f2bd5100765: movq    $0x1,0x148(%rbx)
+  0x00007f2bd5100770: jmpq    0x7f2bd510079b
+  0x00007f2bd5100775: jmpq    0x7f2bd510079b
+  0x00007f2bd510077a: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5100784: subq    $0x1,0x128(%rbx)
+  0x00007f2bd510078c: jmpq    0x7f2bd5100796
+  0x00007f2bd5100791: jmpq    0x7f2bd510079b
+  0x00007f2bd5100796: xor     %rax,%rax
+  0x00007f2bd5100799: jmp     0x7f2bd51007a5
+  0x00007f2bd510079b: movabs  $0x1,%rax         ;*instanceof
+                                                ; - java.lang.String::equals@8 (line 980)
+
+  0x00007f2bd51007a5: cmp     $0x0,%eax
+  0x00007f2bd51007a8: movabs  $0x7f2bd41edb10,%rax  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51007b2: movabs  $0x158,%rdi
+  0x00007f2bd51007bc: je      0x7f2bd51007cc
+  0x00007f2bd51007c2: movabs  $0x168,%rdi
+  0x00007f2bd51007cc: mov     (%rax,%rdi),%rbx
+  0x00007f2bd51007d0: lea     0x1(%rbx),%rbx
+  0x00007f2bd51007d4: mov     %rbx,(%rax,%rdi)
+  0x00007f2bd51007d8: je      0x7f2bd5100a1c    ;*ifeq
+                                                ; - java.lang.String::equals@11 (line 980)
+
+  0x00007f2bd51007de: cmp     $0x0,%rdx
+  0x00007f2bd51007e2: jne     0x7f2bd51007fd
+  0x00007f2bd51007e4: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51007ee: orl     $0x100,0x170(%rbx)
+  0x00007f2bd51007f8: jmpq    0x7f2bd51008bd
+  0x00007f2bd51007fd: movabs  $0x100001610,%rax  ;   {metadata(&apos;java/lang/String&apos;)}
+  0x00007f2bd5100807: mov     0x8(%rdx),%edi
+  0x00007f2bd510080a: shl     $0x3,%rdi
+  0x00007f2bd510080e: cmp     %rdi,%rax
+  0x00007f2bd5100811: jne     0x7f2bd51008a1
+  0x00007f2bd5100817: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5100821: mov     0x8(%rdx),%eax
+  0x00007f2bd5100824: shl     $0x3,%rax
+  0x00007f2bd5100828: cmp     0x180(%rbx),%rax
+  0x00007f2bd510082f: jne     0x7f2bd510083e
+  0x00007f2bd5100831: addq    $0x1,0x188(%rbx)
+  0x00007f2bd5100839: jmpq    0x7f2bd51008bd
+  0x00007f2bd510083e: cmp     0x190(%rbx),%rax
+  0x00007f2bd5100845: jne     0x7f2bd5100854
+  0x00007f2bd5100847: addq    $0x1,0x198(%rbx)
+  0x00007f2bd510084f: jmpq    0x7f2bd51008bd
+  0x00007f2bd5100854: cmpq    $0x0,0x180(%rbx)
+  0x00007f2bd510085f: jne     0x7f2bd5100878
+  0x00007f2bd5100861: mov     %rax,0x180(%rbx)
+  0x00007f2bd5100868: movq    $0x1,0x188(%rbx)
+  0x00007f2bd5100873: jmpq    0x7f2bd51008bd
+  0x00007f2bd5100878: cmpq    $0x0,0x190(%rbx)
+  0x00007f2bd5100883: jne     0x7f2bd510089c
+  0x00007f2bd5100885: mov     %rax,0x190(%rbx)
+  0x00007f2bd510088c: movq    $0x1,0x198(%rbx)
+  0x00007f2bd5100897: jmpq    0x7f2bd51008bd
+  0x00007f2bd510089c: jmpq    0x7f2bd51008bd
+  0x00007f2bd51008a1: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51008ab: subq    $0x1,0x178(%rbx)
+  0x00007f2bd51008b3: jmpq    0x7f2bd5100a55
+  0x00007f2bd51008b8: jmpq    0x7f2bd51008bd
+  0x00007f2bd51008bd: mov     %rdx,%rax         ;*checkcast
+                                                ; - java.lang.String::equals@15 (line 981)
+
+  0x00007f2bd51008c0: mov     0xc(%rsi),%esi    ;*getfield value
+                                                ; - java.lang.String::equals@20 (line 982)
+
+  0x00007f2bd51008c3: mov     0xc(%rsi),%edi    ;*arraylength
+                                                ; - java.lang.String::equals@23 (line 982)
+                                                ; implicit exception: dispatches to 0x00007f2bd5100a5e
+  0x00007f2bd51008c6: mov     0xc(%rax),%eax    ;*getfield value
+                                                ; - java.lang.String::equals@27 (line 983)
+                                                ; implicit exception: dispatches to 0x00007f2bd5100a63
+  0x00007f2bd51008c9: mov     0xc(%rax),%ebx    ;*arraylength
+                                                ; - java.lang.String::equals@30 (line 983)
+                                                ; implicit exception: dispatches to 0x00007f2bd5100a68
+  0x00007f2bd51008cc: cmp     %ebx,%edi
+  0x00007f2bd51008ce: movabs  $0x7f2bd41edb10,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51008d8: movabs  $0x1a8,%rdx
+  0x00007f2bd51008e2: jne     0x7f2bd51008f2
+  0x00007f2bd51008e8: movabs  $0x1b8,%rdx
+  0x00007f2bd51008f2: mov     (%rbx,%rdx),%rcx
+  0x00007f2bd51008f6: lea     0x1(%rcx),%rcx
+  0x00007f2bd51008fa: mov     %rcx,(%rbx,%rdx)
+  0x00007f2bd51008fe: jne     0x7f2bd5100a1c    ;*if_icmpne
+                                                ; - java.lang.String::equals@31 (line 983)
+
+  0x00007f2bd5100904: mov     $0x0,%ebx
+  0x00007f2bd5100909: jmpq    0x7f2bd51009b7    ;*iload_3
+                                                ; - java.lang.String::equals@49 (line 987)
+
+  0x00007f2bd510090e: nop
+  0x00007f2bd5100910: movsxd  %ebx,%rdi
+  0x00007f2bd5100913: cmp     0xc(%rsi),%ebx
+  0x00007f2bd5100916: jnb     0x7f2bd5100a6d
+  0x00007f2bd510091c: movzwl  0x10(%rsi,%rdi,2),%edi  ;*caload
+                                                ; - java.lang.String::equals@60 (line 988)
+
+  0x00007f2bd5100921: movsxd  %ebx,%rcx
+  0x00007f2bd5100924: cmp     0xc(%rax),%ebx
+  0x00007f2bd5100927: jnb     0x7f2bd5100a76
+  0x00007f2bd510092d: movzwl  0x10(%rax,%rcx,2),%ecx  ;*caload
+                                                ; - java.lang.String::equals@65 (line 988)
+
+  0x00007f2bd5100932: cmp     %ecx,%edi
+  0x00007f2bd5100934: movabs  $0x7f2bd41edb10,%rdi  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510093e: movabs  $0x1e8,%rcx
+  0x00007f2bd5100948: je      0x7f2bd5100958
+  0x00007f2bd510094e: movabs  $0x1f8,%rcx
+  0x00007f2bd5100958: mov     (%rdi,%rcx),%r8
+  0x00007f2bd510095c: lea     0x1(%r8),%r8
+  0x00007f2bd5100960: mov     %r8,(%rdi,%rcx)
+  0x00007f2bd5100964: jne     0x7f2bd51009fa    ;*if_icmpeq
+                                                ; - java.lang.String::equals@66 (line 988)
+
+  0x00007f2bd510096a: incl    %ebx
+  0x00007f2bd510096c: movabs  $0x7f2bd41edb10,%rdi  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5100976: mov     0xe0(%rdi),%ecx
+  0x00007f2bd510097c: add     $0x8,%ecx
+  0x00007f2bd510097f: mov     %ecx,0xe0(%rdi)
+  0x00007f2bd5100985: movabs  $0x7f2bd401a618,%rdi  ;   {metadata({method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510098f: and     $0xfff8,%ecx
+  0x00007f2bd5100995: cmp     $0x0,%ecx
+  0x00007f2bd5100998: je      0x7f2bd5100a7f    ; OopMap{rax=Oop rsi=Oop off=894}
+                                                ;*goto
+                                                ; - java.lang.String::equals@74 (line 990)
+
+  0x00007f2bd510099e: test    %eax,0x168c275c(%rip)  ;   {poll}
+  0x00007f2bd51009a4: movabs  $0x7f2bd41edb10,%rdi  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51009ae: incl    0x208(%rdi)
+  0x00007f2bd51009b4: mov     %rdx,%rdi         ;*goto
+                                                ; - java.lang.String::equals@74 (line 990)
+
+  0x00007f2bd51009b7: mov     %rdi,%rdx
+  0x00007f2bd51009ba: decl    %edx
+  0x00007f2bd51009bc: cmp     $0x0,%edi
+  0x00007f2bd51009bf: movabs  $0x7f2bd41edb10,%rdi  ;   {metadata(method data for {method} {0x00007f2bd401a618} &apos;equals&apos; &apos;(Ljava/lang/Object;)Z&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51009c9: movabs  $0x1c8,%rcx
+  0x00007f2bd51009d3: je      0x7f2bd51009e3
+  0x00007f2bd51009d9: movabs  $0x1d8,%rcx
+  0x00007f2bd51009e3: mov     (%rdi,%rcx),%r8
+  0x00007f2bd51009e7: lea     0x1(%r8),%r8
+  0x00007f2bd51009eb: mov     %r8,(%rdi,%rcx)
+  0x00007f2bd51009ef: je      0x7f2bd5100a0b
+  0x00007f2bd51009f5: jmpq    0x7f2bd5100910    ;*ifeq
+                                                ; - java.lang.String::equals@53 (line 987)
+
+  0x00007f2bd51009fa: mov     $0x0,%eax
+  0x00007f2bd51009ff: add     $0x30,%rsp
+  0x00007f2bd5100a03: pop     %rbp
+  0x00007f2bd5100a04: test    %eax,0x168c26f6(%rip)  ;   {poll_return}
+  0x00007f2bd5100a0a: retq                      ;*ireturn
+                                                ; - java.lang.String::equals@70 (line 989)
+
+  0x00007f2bd5100a0b: mov     $0x1,%eax
+  0x00007f2bd5100a10: add     $0x30,%rsp
+  0x00007f2bd5100a14: pop     %rbp
+  0x00007f2bd5100a15: test    %eax,0x168c26e5(%rip)  ;   {poll_return}
+  0x00007f2bd5100a1b: retq                      ;*ireturn
+                                                ; - java.lang.String::equals@78 (line 992)
+
+  0x00007f2bd5100a1c: mov     $0x0,%eax
+  0x00007f2bd5100a21: add     $0x30,%rsp
+  0x00007f2bd5100a25: pop     %rbp
+  0x00007f2bd5100a26: test    %eax,0x168c26d4(%rip)  ;   {poll_return}
+  0x00007f2bd5100a2c: retq                      ;*ireturn
+                                                ; - java.lang.String::equals@80 (line 995)
+
+  0x00007f2bd5100a2d: mov     $0x1,%eax
+  0x00007f2bd5100a32: add     $0x30,%rsp
+  0x00007f2bd5100a36: pop     %rbp
+  0x00007f2bd5100a37: test    %eax,0x168c26c3(%rip)  ;   {poll_return}
+  0x00007f2bd5100a3d: retq
+  0x00007f2bd5100a3e: mov     %rax,0x8(%rsp)
+  0x00007f2bd5100a43: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd5100a4b: callq   0x7f2bd50fe3a0    ; OopMap{rsi=Oop rdx=Oop off=1072}
+                                                ;*synchronization entry
+                                                ; - java.lang.String::equals@-1 (line 977)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a50: jmpq    0x7f2bd510067e
+  0x00007f2bd5100a55: mov     %rdx,(%rsp)
+  0x00007f2bd5100a59: callq   0x7f2bd506db00    ; OopMap{rsi=Oop off=1086}
+                                                ;*checkcast
+                                                ; - java.lang.String::equals@15 (line 981)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a5e: callq   0x7f2bd506d680    ; OopMap{rax=Oop rsi=Oop off=1091}
+                                                ;*arraylength
+                                                ; - java.lang.String::equals@23 (line 982)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a63: callq   0x7f2bd506d680    ; OopMap{rsi=Oop off=1096}
+                                                ;*getfield value
+                                                ; - java.lang.String::equals@27 (line 983)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a68: callq   0x7f2bd506d680    ; OopMap{rsi=Oop rax=Oop off=1101}
+                                                ;*arraylength
+                                                ; - java.lang.String::equals@30 (line 983)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a6d: mov     %rbx,(%rsp)
+  0x00007f2bd5100a71: callq   0x7f2bd506f240    ; OopMap{rax=Oop rsi=Oop off=1110}
+                                                ;*caload
+                                                ; - java.lang.String::equals@60 (line 988)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a76: mov     %rbx,(%rsp)
+  0x00007f2bd5100a7a: callq   0x7f2bd506f240    ; OopMap{rax=Oop rsi=Oop off=1119}
+                                                ;*caload
+                                                ; - java.lang.String::equals@65 (line 988)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a7f: mov     %rdi,0x8(%rsp)
+  0x00007f2bd5100a84: movq    $0x4a,(%rsp)
+  0x00007f2bd5100a8c: callq   0x7f2bd50fe3a0    ; OopMap{rax=Oop rsi=Oop off=1137}
+                                                ;*goto
+                                                ; - java.lang.String::equals@74 (line 990)
+                                                ;   {runtime_call}
+  0x00007f2bd5100a91: jmpq    0x7f2bd510099e
+  0x00007f2bd5100a96: nop
+  0x00007f2bd5100a97: nop
+  0x00007f2bd5100a98: mov     0x290(%r15),%rax
+  0x00007f2bd5100a9f: movabs  $0x0,%r10
+  0x00007f2bd5100aa9: mov     %r10,0x290(%r15)
+  0x00007f2bd5100ab0: movabs  $0x0,%r10
+  0x00007f2bd5100aba: mov     %r10,0x298(%r15)
+  0x00007f2bd5100ac1: add     $0x30,%rsp
+  0x00007f2bd5100ac5: pop     %rbp
+  0x00007f2bd5100ac6: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd5100acb: hlt
+  0x00007f2bd5100acc: hlt
+  0x00007f2bd5100acd: hlt
+  0x00007f2bd5100ace: hlt
+  0x00007f2bd5100acf: hlt
+  0x00007f2bd5100ad0: hlt
+  0x00007f2bd5100ad1: hlt
+  0x00007f2bd5100ad2: hlt
+  0x00007f2bd5100ad3: hlt
+  0x00007f2bd5100ad4: hlt
+  0x00007f2bd5100ad5: hlt
+  0x00007f2bd5100ad6: hlt
+  0x00007f2bd5100ad7: hlt
+  0x00007f2bd5100ad8: hlt
+  0x00007f2bd5100ad9: hlt
+  0x00007f2bd5100ada: hlt
+  0x00007f2bd5100adb: hlt
+  0x00007f2bd5100adc: hlt
+  0x00007f2bd5100add: hlt
+  0x00007f2bd5100ade: hlt
+  0x00007f2bd5100adf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f2bd5100ae0: callq   0x7f2bd506bd60    ;   {no_reloc}
+  0x00007f2bd5100ae5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd5100aea: sub     $0x80,%rsp
+  0x00007f2bd5100af1: mov     %rax,0x78(%rsp)
+  0x00007f2bd5100af6: mov     %rcx,0x70(%rsp)
+  0x00007f2bd5100afb: mov     %rdx,0x68(%rsp)
+  0x00007f2bd5100b00: mov     %rbx,0x60(%rsp)
+  0x00007f2bd5100b05: mov     %rbp,0x50(%rsp)
+  0x00007f2bd5100b0a: mov     %rsi,0x48(%rsp)
+  0x00007f2bd5100b0f: mov     %rdi,0x40(%rsp)
+  0x00007f2bd5100b14: mov     %r8,0x38(%rsp)
+  0x00007f2bd5100b19: mov     %r9,0x30(%rsp)
+  0x00007f2bd5100b1e: mov     %r10,0x28(%rsp)
+  0x00007f2bd5100b23: mov     %r11,0x20(%rsp)
+  0x00007f2bd5100b28: mov     %r12,0x18(%rsp)
+  0x00007f2bd5100b2d: mov     %r13,0x10(%rsp)
+  0x00007f2bd5100b32: mov     %r14,0x8(%rsp)
+  0x00007f2bd5100b37: mov     %r15,(%rsp)
+  0x00007f2bd5100b3b: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd5100b45: movabs  $0x7f2bd5100ae5,%rsi  ;   {internal_word}
+  0x00007f2bd5100b4f: mov     %rsp,%rdx
+  0x00007f2bd5100b52: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd5100b56: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd5100b5b: hlt
+[Deopt Handler Code]
+  0x00007f2bd5100b5c: movabs  $0x7f2bd5100b5c,%r10  ;   {section_word}
+  0x00007f2bd5100b66: push    %r10
+  0x00007f2bd5100b68: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd5100b6d: hlt
+  0x00007f2bd5100b6e: hlt
+  0x00007f2bd5100b6f: hlt
+<nmethod compile_id='1' compiler='C1' level='3' entry='0x00007f2bd5100620' size='2504' address='0x00007f2bd5100490' relocation_offset='296' insts_offset='400' stub_offset='1616' scopes_data_offset='1768' scopes_pcs_offset='1984' dependencies_offset='2464' nul_chk_table_offset='2472' method='java/lang/String equals (Ljava/lang/Object;)Z' bytes='81' count='249' backedge_count='1064' iicount='249' stamp='0.156'/>
+<writer thread='139826613090048'/>
+Decoding compiled method 0x00007f2bd5104210:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd5104380 Code size: 0x00000208
+[Entry Point]
+  # {method} {0x00007f2bd402f930} &apos;arraycopy&apos; &apos;(Ljava/lang/Object;ILjava/lang/Object;II)V&apos; in &apos;java/lang/System&apos;
+  # parm0:    rsi:rsi   = &apos;java/lang/Object&apos;
+  # parm1:    rdx       = int
+  # parm2:    rcx:rcx   = &apos;java/lang/Object&apos;
+  # parm3:    r8        = int
+  # parm4:    r9        = int
+  #           [sp+0x60]  (sp of caller)
+  0x00007f2bd5104380: mov     0x8(%rsi),%r10d
+  0x00007f2bd5104384: shl     $0x3,%r10
+  0x00007f2bd5104388: cmp     %r10,%rax
+  0x00007f2bd510438b: je      0x7f2bd5104398
+  0x00007f2bd5104391: jmpq    0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd5104396: nop
+[Verified Entry Point]
+  0x00007f2bd5104398: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd510439f: push    %rbp
+  0x00007f2bd51043a0: mov     %rsp,%rbp
+  0x00007f2bd51043a3: sub     $0x50,%rsp
+  0x00007f2bd51043a7: mov     %r9,(%rsp)
+  0x00007f2bd51043ab: mov     %r8,%r9
+  0x00007f2bd51043ae: mov     %rcx,0x18(%rsp)
+  0x00007f2bd51043b3: cmp     $0x0,%rcx
+  0x00007f2bd51043b7: lea     0x18(%rsp),%r8
+  0x00007f2bd51043bc: cmove   0x18(%rsp),%r8
+  0x00007f2bd51043c2: mov     %rdx,%rcx
+  0x00007f2bd51043c5: mov     %rsi,0x8(%rsp)
+  0x00007f2bd51043ca: cmp     $0x0,%rsi
+  0x00007f2bd51043ce: lea     0x8(%rsp),%rdx
+  0x00007f2bd51043d3: cmove   0x8(%rsp),%rdx
+  0x00007f2bd51043d9: movabs  $0xd6700c78,%r14  ;   {oop(a &apos;java/lang/Class&apos; = &apos;java/lang/System&apos;)}
+  0x00007f2bd51043e3: mov     %r14,0x38(%rsp)
+  0x00007f2bd51043e8: lea     0x38(%rsp),%r14
+  0x00007f2bd51043ed: mov     %r14,%rsi         ; OopMap{[24]=Oop [8]=Oop [56]=Oop off=112}
+  0x00007f2bd51043f0: movabs  $0x7f2bd51043f0,%r10  ;   {section_word}
+  0x00007f2bd51043fa: mov     %r10,0x1c8(%r15)
+  0x00007f2bd5104401: mov     %rsp,0x1c0(%r15)
+  0x00007f2bd5104408: cmpb    $0x0,0x15c741d5(%rip)  ;   {external_word}
+  0x00007f2bd510440f: je      0x7f2bd5104453
+  0x00007f2bd5104415: push    %rsi
+  0x00007f2bd5104416: push    %rdx
+  0x00007f2bd5104417: push    %rcx
+  0x00007f2bd5104418: push    %r8
+  0x00007f2bd510441a: push    %r9
+  0x00007f2bd510441c: movabs  $0x7f2bd402f930,%rsi  ;   {metadata({method} {0x00007f2bd402f930} &apos;arraycopy&apos; &apos;(Ljava/lang/Object;ILjava/lang/Object;II)V&apos; in &apos;java/lang/System&apos;)}
+  0x00007f2bd5104426: mov     %r15,%rdi
+  0x00007f2bd5104429: test    $0xf,%esp
+  0x00007f2bd510442f: je      0x7f2bd5104447
+  0x00007f2bd5104435: sub     $0x8,%rsp
+  0x00007f2bd5104439: callq   0x7f2bea7ab020    ;   {runtime_call}
+  0x00007f2bd510443e: add     $0x8,%rsp
+  0x00007f2bd5104442: jmpq    0x7f2bd510444c
+  0x00007f2bd5104447: callq   0x7f2bea7ab020    ;   {runtime_call}
+  0x00007f2bd510444c: pop     %r9
+  0x00007f2bd510444e: pop     %r8
+  0x00007f2bd5104450: pop     %rcx
+  0x00007f2bd5104451: pop     %rdx
+  0x00007f2bd5104452: pop     %rsi
+  0x00007f2bd5104453: lea     0x1e0(%r15),%rdi
+  0x00007f2bd510445a: movl    $0x4,0x258(%r15)
+  0x00007f2bd5104465: callq   0x7f2bea4ecf70    ;   {runtime_call}
+  0x00007f2bd510446a: vzeroupper
+  0x00007f2bd510446d: movl    $0x5,0x258(%r15)
+  0x00007f2bd5104478: mov     %r15d,%ecx
+  0x00007f2bd510447b: shr     $0x4,%ecx
+  0x00007f2bd510447e: and     $0xffc,%ecx
+  0x00007f2bd5104484: movabs  $0x7f2beb9c2000,%r10  ;   {external_word}
+  0x00007f2bd510448e: mov     %ecx,(%r10,%rcx)
+  0x00007f2bd5104492: cmpl    $0x0,0x15c7e888(%rip)  ;   {external_word}
+  0x00007f2bd510449c: jne     0x7f2bd51044b0
+  0x00007f2bd51044a2: cmpl    $0x0,0x30(%r15)
+  0x00007f2bd51044aa: je      0x7f2bd51044c9
+  0x00007f2bd51044b0: mov     %r15,%rdi
+  0x00007f2bd51044b3: mov     %rsp,%r12
+  0x00007f2bd51044b6: sub     $0x0,%rsp
+  0x00007f2bd51044ba: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd51044be: callq   0x7f2bea8544e0    ;   {runtime_call}
+  0x00007f2bd51044c3: mov     %r12,%rsp
+  0x00007f2bd51044c6: xor     %r12,%r12
+  0x00007f2bd51044c9: movl    $0x8,0x258(%r15)
+  0x00007f2bd51044d4: cmpl    $0x1,0x284(%r15)
+  0x00007f2bd51044df: je      0x7f2bd5104567
+  0x00007f2bd51044e5: cmpb    $0x0,0x15c740f8(%rip)  ;   {external_word}
+  0x00007f2bd51044ec: je      0x7f2bd5104522
+  0x00007f2bd51044f2: movabs  $0x7f2bd402f930,%rsi  ;   {metadata({method} {0x00007f2bd402f930} &apos;arraycopy&apos; &apos;(Ljava/lang/Object;ILjava/lang/Object;II)V&apos; in &apos;java/lang/System&apos;)}
+  0x00007f2bd51044fc: mov     %r15,%rdi
+  0x00007f2bd51044ff: test    $0xf,%esp
+  0x00007f2bd5104505: je      0x7f2bd510451d
+  0x00007f2bd510450b: sub     $0x8,%rsp
+  0x00007f2bd510450f: callq   0x7f2bea7ab030    ;   {runtime_call}
+  0x00007f2bd5104514: add     $0x8,%rsp
+  0x00007f2bd5104518: jmpq    0x7f2bd5104522
+  0x00007f2bd510451d: callq   0x7f2bea7ab030    ;   {runtime_call}
+  0x00007f2bd5104522: movabs  $0x0,%r10
+  0x00007f2bd510452c: mov     %r10,0x1c0(%r15)
+  0x00007f2bd5104533: movabs  $0x0,%r10
+  0x00007f2bd510453d: mov     %r10,0x1c8(%r15)
+  0x00007f2bd5104544: mov     0x38(%r15),%rcx
+  0x00007f2bd5104548: movl    $0x0,0x100(%rcx)
+  0x00007f2bd5104552: leave
+  0x00007f2bd5104553: cmpq    $0x0,0x8(%r15)
+  0x00007f2bd510455b: jne     0x7f2bd5104562
+  0x00007f2bd5104561: retq
+  0x00007f2bd5104562: jmpq    0x7f2bd5000420    ;   {runtime_call}
+  0x00007f2bd5104567: mov     %rsp,%r12
+  0x00007f2bd510456a: sub     $0x0,%rsp
+  0x00007f2bd510456e: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd5104572: callq   0x7f2bea7b3a80    ;   {runtime_call}
+  0x00007f2bd5104577: mov     %r12,%rsp
+  0x00007f2bd510457a: xor     %r12,%r12
+  0x00007f2bd510457d: jmpq    0x7f2bd51044e5
+  0x00007f2bd5104582: hlt
+  0x00007f2bd5104583: hlt
+  0x00007f2bd5104584: hlt
+  0x00007f2bd5104585: hlt
+  0x00007f2bd5104586: hlt
+  0x00007f2bd5104587: hlt
+<nmethod compile_id='2' compile_kind='c2n' level='0' entry='0x00007f2bd5104380' size='888' address='0x00007f2bd5104210' relocation_offset='296' consts_offset='888' insts_offset='368' method='java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V' bytes='0' count='256' iicount='256' stamp='0.179'/>
+<task_queued compile_id='3' method='java/lang/String charAt (I)C' bytes='29' count='1024' iicount='1024' level='3' stamp='0.180' comment='tiered' hot_count='1024'/>
+<task_queued compile_id='4' method='java/lang/String hashCode ()I' bytes='55' count='353' backedge_count='4096' iicount='353' level='3' stamp='0.180' comment='tiered' hot_count='353'/>
+<writer thread='139825984354048'/>
+Decoding compiled method 0x00007f2bd5103c50:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd5103dc0 Code size: 0x00000290
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd5103dc0: mov     0x8(%rsi),%r10d
+  0x00007f2bd5103dc4: shl     $0x3,%r10
+  0x00007f2bd5103dc8: cmp     %rax,%r10
+  0x00007f2bd5103dcb: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd5103dd1: nopw    0x0(%rax,%rax)
+  0x00007f2bd5103ddc: nop
+[Verified Entry Point]
+  0x00007f2bd5103de0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd5103de7: push    %rbp
+  0x00007f2bd5103de8: sub     $0x30,%rsp
+  0x00007f2bd5103dec: movabs  $0x7f2bd41feed0,%rax  ;   {metadata(method data for {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103df6: mov     0xdc(%rax),%edi
+  0x00007f2bd5103dfc: add     $0x8,%edi
+  0x00007f2bd5103dff: mov     %edi,0xdc(%rax)
+  0x00007f2bd5103e05: movabs  $0x7f2bd401b000,%rax  ;   {metadata({method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103e0f: and     $0x1ff8,%edi
+  0x00007f2bd5103e15: cmp     $0x0,%edi
+  0x00007f2bd5103e18: je      0x7f2bd5103f51    ;*aload_0
+                                                ; - java.lang.String::hashCode@0 (line 1466)
+
+  0x00007f2bd5103e1e: mov     0x10(%rsi),%eax   ;*getfield hash
+                                                ; - java.lang.String::hashCode@1 (line 1466)
+
+  0x00007f2bd5103e21: cmp     $0x0,%eax
+  0x00007f2bd5103e24: movabs  $0x7f2bd41feed0,%rdi  ;   {metadata(method data for {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103e2e: movabs  $0x108,%rbx
+  0x00007f2bd5103e38: jne     0x7f2bd5103e48
+  0x00007f2bd5103e3e: movabs  $0x118,%rbx
+  0x00007f2bd5103e48: mov     (%rdi,%rbx),%rdx
+  0x00007f2bd5103e4c: lea     0x1(%rdx),%rdx
+  0x00007f2bd5103e50: mov     %rdx,(%rdi,%rbx)
+  0x00007f2bd5103e54: jne     0x7f2bd5103f45    ;*ifne
+                                                ; - java.lang.String::hashCode@6 (line 1467)
+
+  0x00007f2bd5103e5a: mov     0xc(%rsi),%edi    ;*getfield value
+                                                ; - java.lang.String::hashCode@10 (line 1467)
+
+  0x00007f2bd5103e5d: mov     0xc(%rdi),%ebx    ;*arraylength
+                                                ; - java.lang.String::hashCode@13 (line 1467)
+                                                ; implicit exception: dispatches to 0x00007f2bd5103f68
+  0x00007f2bd5103e60: cmp     $0x0,%ebx
+  0x00007f2bd5103e63: movabs  $0x7f2bd41feed0,%rdx  ;   {metadata(method data for {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103e6d: movabs  $0x128,%rcx
+  0x00007f2bd5103e77: jle     0x7f2bd5103e87
+  0x00007f2bd5103e7d: movabs  $0x138,%rcx
+  0x00007f2bd5103e87: mov     (%rdx,%rcx),%r8
+  0x00007f2bd5103e8b: lea     0x1(%r8),%r8
+  0x00007f2bd5103e8f: mov     %r8,(%rdx,%rcx)
+  0x00007f2bd5103e93: jle     0x7f2bd5103f45    ;*ifle
+                                                ; - java.lang.String::hashCode@14 (line 1467)
+
+  0x00007f2bd5103e99: mov     $0x0,%edx
+  0x00007f2bd5103e9e: jmpq    0x7f2bd5103f0a    ;*iload_3
+                                                ; - java.lang.String::hashCode@24 (line 1470)
+
+  0x00007f2bd5103ea3: nopl    0x0(%rax,%rax)
+  0x00007f2bd5103ea8: movsxd  %edx,%rcx
+  0x00007f2bd5103eab: movzwl  0x10(%rdi,%rcx,2),%ecx  ;*caload
+                                                ; - java.lang.String::hashCode@39 (line 1471)
+
+  0x00007f2bd5103eb0: mov     %rax,%r8
+  0x00007f2bd5103eb3: shl     $0x5,%eax
+  0x00007f2bd5103eb6: sub     %r8d,%eax
+  0x00007f2bd5103eb9: add     %ecx,%eax
+  0x00007f2bd5103ebb: incl    %edx
+  0x00007f2bd5103ebd: movabs  $0x7f2bd41feed0,%rcx  ;   {metadata(method data for {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103ec7: mov     0xe0(%rcx),%r8d
+  0x00007f2bd5103ece: add     $0x8,%r8d
+  0x00007f2bd5103ed2: mov     %r8d,0xe0(%rcx)
+  0x00007f2bd5103ed9: movabs  $0x7f2bd401b000,%rcx  ;   {metadata({method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103ee3: and     $0xfff8,%r8d
+  0x00007f2bd5103eea: cmp     $0x0,%r8d
+  0x00007f2bd5103eee: je      0x7f2bd5103f6d    ; OopMap{rdi=Oop rsi=Oop off=308}
+                                                ;*goto
+                                                ; - java.lang.String::hashCode@45 (line 1470)
+
+  0x00007f2bd5103ef4: test    %eax,0x168bf206(%rip)  ;   {poll}
+  0x00007f2bd5103efa: movabs  $0x7f2bd41feed0,%rcx  ;   {metadata(method data for {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103f04: incl    0x168(%rcx)       ;*goto
+                                                ; - java.lang.String::hashCode@45 (line 1470)
+
+  0x00007f2bd5103f0a: cmp     %ebx,%edx
+  0x00007f2bd5103f0c: movabs  $0x7f2bd41feed0,%rcx  ;   {metadata(method data for {method} {0x00007f2bd401b000} &apos;hashCode&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103f16: movabs  $0x148,%r8
+  0x00007f2bd5103f20: jnl     0x7f2bd5103f30
+  0x00007f2bd5103f26: movabs  $0x158,%r8
+  0x00007f2bd5103f30: mov     (%rcx,%r8),%r9
+  0x00007f2bd5103f34: lea     0x1(%r9),%r9
+  0x00007f2bd5103f38: mov     %r9,(%rcx,%r8)
+  0x00007f2bd5103f3c: jl      0x7f2bd5103ea8    ;*if_icmpge
+                                                ; - java.lang.String::hashCode@30 (line 1470)
+
+  0x00007f2bd5103f42: mov     %eax,0x10(%rsi)   ;*putfield hash
+                                                ; - java.lang.String::hashCode@50 (line 1473)
+
+  0x00007f2bd5103f45: add     $0x30,%rsp
+  0x00007f2bd5103f49: pop     %rbp
+  0x00007f2bd5103f4a: test    %eax,0x168bf1b0(%rip)  ;   {poll_return}
+  0x00007f2bd5103f50: retq
+  0x00007f2bd5103f51: mov     %rax,0x8(%rsp)
+  0x00007f2bd5103f56: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd5103f5e: callq   0x7f2bd50fe3a0    ; OopMap{rsi=Oop off=419}
+                                                ;*synchronization entry
+                                                ; - java.lang.String::hashCode@-1 (line 1466)
+                                                ;   {runtime_call}
+  0x00007f2bd5103f63: jmpq    0x7f2bd5103e1e
+  0x00007f2bd5103f68: callq   0x7f2bd506d680    ; OopMap{rsi=Oop rdi=Oop off=429}
+                                                ;*arraylength
+                                                ; - java.lang.String::hashCode@13 (line 1467)
+                                                ;   {runtime_call}
+  0x00007f2bd5103f6d: mov     %rcx,0x8(%rsp)
+  0x00007f2bd5103f72: movq    $0x2d,(%rsp)
+  0x00007f2bd5103f7a: callq   0x7f2bd50fe3a0    ; OopMap{rdi=Oop rsi=Oop off=447}
+                                                ;*goto
+                                                ; - java.lang.String::hashCode@45 (line 1470)
+                                                ;   {runtime_call}
+  0x00007f2bd5103f7f: jmpq    0x7f2bd5103ef4
+  0x00007f2bd5103f84: nop
+  0x00007f2bd5103f85: nop
+  0x00007f2bd5103f86: mov     0x290(%r15),%rax
+  0x00007f2bd5103f8d: movabs  $0x0,%r10
+  0x00007f2bd5103f97: mov     %r10,0x290(%r15)
+  0x00007f2bd5103f9e: movabs  $0x0,%r10
+  0x00007f2bd5103fa8: mov     %r10,0x298(%r15)
+  0x00007f2bd5103faf: add     $0x30,%rsp
+  0x00007f2bd5103fb3: pop     %rbp
+  0x00007f2bd5103fb4: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd5103fb9: hlt
+  0x00007f2bd5103fba: hlt
+  0x00007f2bd5103fbb: hlt
+  0x00007f2bd5103fbc: hlt
+  0x00007f2bd5103fbd: hlt
+  0x00007f2bd5103fbe: hlt
+  0x00007f2bd5103fbf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f2bd5103fc0: callq   0x7f2bd506bd60    ;   {no_reloc}
+  0x00007f2bd5103fc5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd5103fca: sub     $0x80,%rsp
+  0x00007f2bd5103fd1: mov     %rax,0x78(%rsp)
+  0x00007f2bd5103fd6: mov     %rcx,0x70(%rsp)
+  0x00007f2bd5103fdb: mov     %rdx,0x68(%rsp)
+  0x00007f2bd5103fe0: mov     %rbx,0x60(%rsp)
+  0x00007f2bd5103fe5: mov     %rbp,0x50(%rsp)
+  0x00007f2bd5103fea: mov     %rsi,0x48(%rsp)
+  0x00007f2bd5103fef: mov     %rdi,0x40(%rsp)
+  0x00007f2bd5103ff4: mov     %r8,0x38(%rsp)
+  0x00007f2bd5103ff9: mov     %r9,0x30(%rsp)
+  0x00007f2bd5103ffe: mov     %r10,0x28(%rsp)
+  0x00007f2bd5104003: mov     %r11,0x20(%rsp)
+  0x00007f2bd5104008: mov     %r12,0x18(%rsp)
+  0x00007f2bd510400d: mov     %r13,0x10(%rsp)
+  0x00007f2bd5104012: mov     %r14,0x8(%rsp)
+  0x00007f2bd5104017: mov     %r15,(%rsp)
+  0x00007f2bd510401b: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd5104025: movabs  $0x7f2bd5103fc5,%rsi  ;   {internal_word}
+  0x00007f2bd510402f: mov     %rsp,%rdx
+  0x00007f2bd5104032: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd5104036: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd510403b: hlt
+[Deopt Handler Code]
+  0x00007f2bd510403c: movabs  $0x7f2bd510403c,%r10  ;   {section_word}
+  0x00007f2bd5104046: push    %r10
+  0x00007f2bd5104048: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd510404d: hlt
+  0x00007f2bd510404e: hlt
+  0x00007f2bd510404f: hlt
+<nmethod compile_id='4' compiler='C1' level='3' entry='0x00007f2bd5103dc0' size='1448' address='0x00007f2bd5103c50' relocation_offset='296' insts_offset='368' stub_offset='880' scopes_data_offset='1032' scopes_pcs_offset='1152' dependencies_offset='1424' nul_chk_table_offset='1432' method='java/lang/String hashCode ()I' bytes='55' count='353' backedge_count='4126' iicount='353' stamp='0.199'/>
+Decoding compiled method 0x00007f2bd51036d0:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd5103840 Code size: 0x00000268
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd4019db0} &apos;charAt&apos; &apos;(I)C&apos; in &apos;java/lang/String&apos;
+  # this:     rsi:rsi   = &apos;java/lang/String&apos;
+  # parm0:    rdx       = int
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd5103840: mov     0x8(%rsi),%r10d
+  0x00007f2bd5103844: shl     $0x3,%r10
+  0x00007f2bd5103848: cmp     %rax,%r10
+  0x00007f2bd510384b: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd5103851: nopw    0x0(%rax,%rax)
+  0x00007f2bd510385c: nop
+[Verified Entry Point]
+  0x00007f2bd5103860: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd5103867: push    %rbp
+  0x00007f2bd5103868: sub     $0x30,%rsp
+  0x00007f2bd510386c: mov     %rdx,%rdi
+  0x00007f2bd510386f: movabs  $0x7f2bd419ada8,%rax  ;   {metadata(method data for {method} {0x00007f2bd4019db0} &apos;charAt&apos; &apos;(I)C&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103879: mov     0xdc(%rax),%edx
+  0x00007f2bd510387f: add     $0x8,%edx
+  0x00007f2bd5103882: mov     %edx,0xdc(%rax)
+  0x00007f2bd5103888: movabs  $0x7f2bd4019db0,%rax  ;   {metadata({method} {0x00007f2bd4019db0} &apos;charAt&apos; &apos;(I)C&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5103892: and     $0x1ff8,%edx
+  0x00007f2bd5103898: cmp     $0x0,%edx
+  0x00007f2bd510389b: je      0x7f2bd5103976    ;*iload_1
+                                                ; - java.lang.String::charAt@0 (line 657)
+
+  0x00007f2bd51038a1: cmp     $0x0,%edi
+  0x00007f2bd51038a4: movabs  $0x7f2bd419ada8,%rax  ;   {metadata(method data for {method} {0x00007f2bd4019db0} &apos;charAt&apos; &apos;(I)C&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51038ae: movabs  $0x108,%rdx
+  0x00007f2bd51038b8: jl      0x7f2bd51038c8
+  0x00007f2bd51038be: movabs  $0x118,%rdx
+  0x00007f2bd51038c8: mov     (%rax,%rdx),%rbx
+  0x00007f2bd51038cc: lea     0x1(%rbx),%rbx
+  0x00007f2bd51038d0: mov     %rbx,(%rax,%rdx)
+  0x00007f2bd51038d4: jl      0x7f2bd5103932    ;*iflt
+                                                ; - java.lang.String::charAt@1 (line 657)
+
+  0x00007f2bd51038da: mov     0xc(%rsi),%eax    ;*getfield value
+                                                ; - java.lang.String::charAt@6 (line 657)
+
+  0x00007f2bd51038dd: mov     0xc(%rax),%edx    ;*arraylength
+                                                ; - java.lang.String::charAt@9 (line 657)
+                                                ; implicit exception: dispatches to 0x00007f2bd510398d
+  0x00007f2bd51038e0: cmp     %edx,%edi
+  0x00007f2bd51038e2: movabs  $0x7f2bd419ada8,%rdx  ;   {metadata(method data for {method} {0x00007f2bd4019db0} &apos;charAt&apos; &apos;(I)C&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51038ec: movabs  $0x128,%rsi
+  0x00007f2bd51038f6: jl      0x7f2bd5103906
+  0x00007f2bd51038fc: movabs  $0x138,%rsi
+  0x00007f2bd5103906: mov     (%rdx,%rsi),%rbx
+  0x00007f2bd510390a: lea     0x1(%rbx),%rbx
+  0x00007f2bd510390e: mov     %rbx,(%rdx,%rsi)
+  0x00007f2bd5103912: jnl     0x7f2bd5103932    ;*if_icmplt
+                                                ; - java.lang.String::charAt@10 (line 657)
+
+  0x00007f2bd5103918: movsxd  %edi,%rdi
+  0x00007f2bd510391b: movzwl  0x10(%rax,%rdi,2),%eax  ;*caload
+                                                ; - java.lang.String::charAt@27 (line 660)
+
+  0x00007f2bd5103920: and     $0xffff,%eax
+  0x00007f2bd5103926: add     $0x30,%rsp
+  0x00007f2bd510392a: pop     %rbp
+  0x00007f2bd510392b: test    %eax,0x168bf7cf(%rip)  ;   {poll_return}
+  0x00007f2bd5103931: retq                      ;*ireturn
+                                                ; - java.lang.String::charAt@28 (line 660)
+
+  0x00007f2bd5103932: nopw    0x0(%rax,%rax)
+  0x00007f2bd5103938: jmpq    0x7f2bd51039a1    ;   {no_reloc}
+  0x00007f2bd510393d: add     %al,(%rax)
+  0x00007f2bd510393f: add     %al,(%rax)
+  0x00007f2bd5103941: add     %ch,%cl
+  0x00007f2bd5103943: add     %al,%fs:(%rax)
+  0x00007f2bd5103946: add     %cl,0xffffffffffffff8b(%rax)
+                                                ;*new  ; - java.lang.String::charAt@13 (line 658)
+
+  0x00007f2bd5103949: rorb    $0x1,0xffffffffffffffbe(%rax)
+                                                ;   {metadata(method data for {method} {0x00007f2bd4019db0} &apos;charAt&apos; &apos;(I)C&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510394c: test    $0xad,%al
+  0x00007f2bd510394e: sbb     %edx,%esp
+  0x00007f2bd5103950: sub     0x0(%rdi),%edi
+  0x00007f2bd5103953: add     %cl,0xffffffffffffff83(%rax)
+  0x00007f2bd5103956: xchg    %cl,0x1(%rax)
+  0x00007f2bd5103959: add     %al,(%rax)
+  0x00007f2bd510395b: add     %ecx,0xffffffffffffff8b(%rax)
+  0x00007f2bd510395e: xlat    (%rbx)
+  0x00007f2bd510395f: mov     %rax,%rsi         ;*invokespecial &lt;init&gt;
+                                                ; - java.lang.String::charAt@18 (line 658)
+
+  0x00007f2bd5103962: mov     %rax,0x20(%rsp)
+  0x00007f2bd5103967: callq   0x7f2bd5045de0    ; OopMap{[32]=Oop off=300}
+                                                ;*invokespecial &lt;init&gt;
+                                                ; - java.lang.String::charAt@18 (line 658)
+                                                ;   {optimized virtual_call}
+  0x00007f2bd510396c: mov     0x20(%rsp),%rax
+  0x00007f2bd5103971: jmpq    0x7f2bd51039e0
+  0x00007f2bd5103976: mov     %rax,0x8(%rsp)
+  0x00007f2bd510397b: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd5103983: callq   0x7f2bd50fe3a0    ; OopMap{rsi=Oop off=328}
+                                                ;*synchronization entry
+                                                ; - java.lang.String::charAt@-1 (line 657)
+                                                ;   {runtime_call}
+  0x00007f2bd5103988: jmpq    0x7f2bd51038a1
+  0x00007f2bd510398d: callq   0x7f2bd506d680    ; OopMap{rax=Oop off=338}
+                                                ;*arraylength
+                                                ; - java.lang.String::charAt@9 (line 657)
+                                                ;   {runtime_call}
+  0x00007f2bd5103992: movabs  $0x0,%rdx         ;   {metadata(NULL)}
+  0x00007f2bd510399c: mov     $0xa050f00,%eax
+  0x00007f2bd51039a1: callq   0x7f2bd50fc320    ; OopMap{off=358}
+                                                ;*new  ; - java.lang.String::charAt@13 (line 658)
+                                                ;   {runtime_call}
+  0x00007f2bd51039a6: jmp     0x7f2bd5103938
+  0x00007f2bd51039a8: nop
+  0x00007f2bd51039a9: nop
+  0x00007f2bd51039aa: nop
+  0x00007f2bd51039ab: mov     %rdx,%rdx
+  0x00007f2bd51039ae: callq   0x7f2bd506d160    ; OopMap{off=371}
+                                                ;*new  ; - java.lang.String::charAt@13 (line 658)
+                                                ;   {runtime_call}
+  0x00007f2bd51039b3: jmp     0x7f2bd5103947
+  0x00007f2bd51039b5: nop
+  0x00007f2bd51039b6: nop
+  0x00007f2bd51039b7: mov     0x290(%r15),%rax
+  0x00007f2bd51039be: movabs  $0x0,%r10
+  0x00007f2bd51039c8: mov     %r10,0x290(%r15)
+  0x00007f2bd51039cf: movabs  $0x0,%r10
+  0x00007f2bd51039d9: mov     %r10,0x298(%r15)
+  0x00007f2bd51039e0: add     $0x30,%rsp
+  0x00007f2bd51039e4: pop     %rbp
+  0x00007f2bd51039e5: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd51039ea: hlt
+  0x00007f2bd51039eb: hlt
+  0x00007f2bd51039ec: hlt
+  0x00007f2bd51039ed: hlt
+  0x00007f2bd51039ee: hlt
+  0x00007f2bd51039ef: hlt
+  0x00007f2bd51039f0: hlt
+  0x00007f2bd51039f1: hlt
+  0x00007f2bd51039f2: hlt
+  0x00007f2bd51039f3: hlt
+  0x00007f2bd51039f4: hlt
+  0x00007f2bd51039f5: hlt
+  0x00007f2bd51039f6: hlt
+  0x00007f2bd51039f7: hlt
+  0x00007f2bd51039f8: hlt
+  0x00007f2bd51039f9: hlt
+  0x00007f2bd51039fa: hlt
+  0x00007f2bd51039fb: hlt
+  0x00007f2bd51039fc: hlt
+  0x00007f2bd51039fd: hlt
+  0x00007f2bd51039fe: hlt
+  0x00007f2bd51039ff: hlt
+[Stub Code]
+  0x00007f2bd5103a00: nop                       ;   {no_reloc}
+  0x00007f2bd5103a01: nop
+  0x00007f2bd5103a02: nop
+  0x00007f2bd5103a03: nop
+  0x00007f2bd5103a04: nop
+  0x00007f2bd5103a05: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007f2bd5103a0f: jmpq    0x7f2bd5103a0f    ;   {runtime_call}
+[Exception Handler]
+  0x00007f2bd5103a14: callq   0x7f2bd506bd60    ;   {runtime_call}
+  0x00007f2bd5103a19: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd5103a1e: sub     $0x80,%rsp
+  0x00007f2bd5103a25: mov     %rax,0x78(%rsp)
+  0x00007f2bd5103a2a: mov     %rcx,0x70(%rsp)
+  0x00007f2bd5103a2f: mov     %rdx,0x68(%rsp)
+  0x00007f2bd5103a34: mov     %rbx,0x60(%rsp)
+  0x00007f2bd5103a39: mov     %rbp,0x50(%rsp)
+  0x00007f2bd5103a3e: mov     %rsi,0x48(%rsp)
+  0x00007f2bd5103a43: mov     %rdi,0x40(%rsp)
+  0x00007f2bd5103a48: mov     %r8,0x38(%rsp)
+  0x00007f2bd5103a4d: mov     %r9,0x30(%rsp)
+  0x00007f2bd5103a52: mov     %r10,0x28(%rsp)
+  0x00007f2bd5103a57: mov     %r11,0x20(%rsp)
+  0x00007f2bd5103a5c: mov     %r12,0x18(%rsp)
+  0x00007f2bd5103a61: mov     %r13,0x10(%rsp)
+  0x00007f2bd5103a66: mov     %r14,0x8(%rsp)
+  0x00007f2bd5103a6b: mov     %r15,(%rsp)
+  0x00007f2bd5103a6f: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd5103a79: movabs  $0x7f2bd5103a19,%rsi  ;   {internal_word}
+  0x00007f2bd5103a83: mov     %rsp,%rdx
+  0x00007f2bd5103a86: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd5103a8a: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd5103a8f: hlt
+[Deopt Handler Code]
+  0x00007f2bd5103a90: movabs  $0x7f2bd5103a90,%r10  ;   {section_word}
+  0x00007f2bd5103a9a: push    %r10
+  0x00007f2bd5103a9c: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd5103aa1: hlt
+  0x00007f2bd5103aa2: hlt
+  0x00007f2bd5103aa3: hlt
+  0x00007f2bd5103aa4: hlt
+  0x00007f2bd5103aa5: hlt
+  0x00007f2bd5103aa6: hlt
+  0x00007f2bd5103aa7: hlt
+<nmethod compile_id='3' compiler='C1' level='3' entry='0x00007f2bd5103840' size='1376' address='0x00007f2bd51036d0' relocation_offset='296' insts_offset='368' stub_offset='816' scopes_data_offset='992' scopes_pcs_offset='1096' dependencies_offset='1352' nul_chk_table_offset='1360' method='java/lang/String charAt (I)C' bytes='29' count='1333' iicount='1333' stamp='0.218'/>
+<writer thread='139826613090048'/>
+<task_queued compile_id='5' method='java/lang/String length ()I' bytes='6' count='256' iicount='256' level='3' stamp='0.219' comment='tiered' hot_count='256'/>
+<writer thread='139825984354048'/>
+Decoding compiled method 0x00007f2bd5103310:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd5103480 Code size: 0x00000150
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd4019c60} &apos;length&apos; &apos;()I&apos; in &apos;java/lang/String&apos;
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd5103480: mov     0x8(%rsi),%r10d
+  0x00007f2bd5103484: shl     $0x3,%r10
+  0x00007f2bd5103488: cmp     %rax,%r10
+  0x00007f2bd510348b: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd5103491: nopw    0x0(%rax,%rax)
+  0x00007f2bd510349c: nop
+[Verified Entry Point]
+  0x00007f2bd51034a0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd51034a7: push    %rbp
+  0x00007f2bd51034a8: sub     $0x30,%rsp
+  0x00007f2bd51034ac: movabs  $0x7f2bd4206578,%rax  ;   {metadata(method data for {method} {0x00007f2bd4019c60} &apos;length&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51034b6: mov     0xdc(%rax),%edi
+  0x00007f2bd51034bc: add     $0x8,%edi
+  0x00007f2bd51034bf: mov     %edi,0xdc(%rax)
+  0x00007f2bd51034c5: movabs  $0x7f2bd4019c60,%rax  ;   {metadata({method} {0x00007f2bd4019c60} &apos;length&apos; &apos;()I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51034cf: and     $0x1ff8,%edi
+  0x00007f2bd51034d5: cmp     $0x0,%edi
+  0x00007f2bd51034d8: je      0x7f2bd51034f0    ;*aload_0
+                                                ; - java.lang.String::length@0 (line 623)
+
+  0x00007f2bd51034de: mov     0xc(%rsi),%eax    ;*getfield value
+                                                ; - java.lang.String::length@1 (line 623)
+
+  0x00007f2bd51034e1: mov     0xc(%rax),%eax    ;*arraylength
+                                                ; - java.lang.String::length@4 (line 623)
+                                                ; implicit exception: dispatches to 0x00007f2bd5103504
+  0x00007f2bd51034e4: add     $0x30,%rsp
+  0x00007f2bd51034e8: pop     %rbp
+  0x00007f2bd51034e9: test    %eax,0x168bfc11(%rip)  ;   {poll_return}
+  0x00007f2bd51034ef: retq
+  0x00007f2bd51034f0: mov     %rax,0x8(%rsp)
+  0x00007f2bd51034f5: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd51034fd: callq   0x7f2bd50fe3a0    ; OopMap{rsi=Oop off=130}
+                                                ;*synchronization entry
+                                                ; - java.lang.String::length@-1 (line 623)
+                                                ;   {runtime_call}
+  0x00007f2bd5103502: jmp     0x7f2bd51034de
+  0x00007f2bd5103504: callq   0x7f2bd506d680    ; OopMap{off=137}
+                                                ;*arraylength
+                                                ; - java.lang.String::length@4 (line 623)
+                                                ;   {runtime_call}
+  0x00007f2bd5103509: nop
+  0x00007f2bd510350a: nop
+  0x00007f2bd510350b: mov     0x290(%r15),%rax
+  0x00007f2bd5103512: movabs  $0x0,%r10
+  0x00007f2bd510351c: mov     %r10,0x290(%r15)
+  0x00007f2bd5103523: movabs  $0x0,%r10
+  0x00007f2bd510352d: mov     %r10,0x298(%r15)
+  0x00007f2bd5103534: add     $0x30,%rsp
+  0x00007f2bd5103538: pop     %rbp
+  0x00007f2bd5103539: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd510353e: hlt
+  0x00007f2bd510353f: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f2bd5103540: callq   0x7f2bd506bd60    ;   {no_reloc}
+  0x00007f2bd5103545: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd510354a: sub     $0x80,%rsp
+  0x00007f2bd5103551: mov     %rax,0x78(%rsp)
+  0x00007f2bd5103556: mov     %rcx,0x70(%rsp)
+  0x00007f2bd510355b: mov     %rdx,0x68(%rsp)
+  0x00007f2bd5103560: mov     %rbx,0x60(%rsp)
+  0x00007f2bd5103565: mov     %rbp,0x50(%rsp)
+  0x00007f2bd510356a: mov     %rsi,0x48(%rsp)
+  0x00007f2bd510356f: mov     %rdi,0x40(%rsp)
+  0x00007f2bd5103574: mov     %r8,0x38(%rsp)
+  0x00007f2bd5103579: mov     %r9,0x30(%rsp)
+  0x00007f2bd510357e: mov     %r10,0x28(%rsp)
+  0x00007f2bd5103583: mov     %r11,0x20(%rsp)
+  0x00007f2bd5103588: mov     %r12,0x18(%rsp)
+  0x00007f2bd510358d: mov     %r13,0x10(%rsp)
+  0x00007f2bd5103592: mov     %r14,0x8(%rsp)
+  0x00007f2bd5103597: mov     %r15,(%rsp)
+  0x00007f2bd510359b: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd51035a5: movabs  $0x7f2bd5103545,%rsi  ;   {internal_word}
+  0x00007f2bd51035af: mov     %rsp,%rdx
+  0x00007f2bd51035b2: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd51035b6: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd51035bb: hlt
+[Deopt Handler Code]
+  0x00007f2bd51035bc: movabs  $0x7f2bd51035bc,%r10  ;   {section_word}
+  0x00007f2bd51035c6: push    %r10
+  0x00007f2bd51035c8: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd51035cd: hlt
+  0x00007f2bd51035ce: hlt
+  0x00007f2bd51035cf: hlt
+<nmethod compile_id='5' compiler='C1' level='3' entry='0x00007f2bd5103480' size='888' address='0x00007f2bd5103310' relocation_offset='296' insts_offset='368' stub_offset='560' scopes_data_offset='712' scopes_pcs_offset='752' dependencies_offset='864' nul_chk_table_offset='872' method='java/lang/String length ()I' bytes='6' count='275' iicount='275' stamp='0.236'/>
+<writer thread='139826613090048'/>
+<task_queued compile_id='6' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1280' iicount='1280' level='3' stamp='0.236' comment='tiered' hot_count='1280'/>
+<writer thread='139825984354048'/>
+Decoding compiled method 0x00007f2bd5102f90:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd5103100 Code size: 0x00000150
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd4016480} &apos;&lt;init&gt;&apos; &apos;()V&apos; in &apos;java/lang/Object&apos;
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd5103100: mov     0x8(%rsi),%r10d
+  0x00007f2bd5103104: shl     $0x3,%r10
+  0x00007f2bd5103108: cmp     %rax,%r10
+  0x00007f2bd510310b: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd5103111: nopw    0x0(%rax,%rax)
+  0x00007f2bd510311c: nop
+[Verified Entry Point]
+  0x00007f2bd5103120: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd5103127: push    %rbp
+  0x00007f2bd5103128: sub     $0x30,%rsp
+  0x00007f2bd510312c: movabs  $0x7f2bd418c970,%rdi  ;   {metadata(method data for {method} {0x00007f2bd4016480} &apos;&lt;init&gt;&apos; &apos;()V&apos; in &apos;java/lang/Object&apos;)}
+  0x00007f2bd5103136: mov     0xdc(%rdi),%ebx
+  0x00007f2bd510313c: add     $0x8,%ebx
+  0x00007f2bd510313f: mov     %ebx,0xdc(%rdi)
+  0x00007f2bd5103145: movabs  $0x7f2bd4016480,%rdi  ;   {metadata({method} {0x00007f2bd4016480} &apos;&lt;init&gt;&apos; &apos;()V&apos; in &apos;java/lang/Object&apos;)}
+  0x00007f2bd510314f: and     $0x1ff8,%ebx
+  0x00007f2bd5103155: cmp     $0x0,%ebx
+  0x00007f2bd5103158: je      0x7f2bd5103177
+  0x00007f2bd510315e: mov     %rsi,%rdi         ;*return
+                                                ; - java.lang.Object::&lt;init&gt;@0 (line 37)
+
+  0x00007f2bd5103161: mov     %rsi,0x20(%rsp)
+  0x00007f2bd5103166: callq   0x7f2bd506d3e0    ; OopMap{[32]=Oop off=107}
+                                                ;*return
+                                                ; - java.lang.Object::&lt;init&gt;@0 (line 37)
+                                                ;   {runtime_call}
+  0x00007f2bd510316b: add     $0x30,%rsp
+  0x00007f2bd510316f: pop     %rbp
+  0x00007f2bd5103170: test    %eax,0x168bff8a(%rip)  ;   {poll_return}
+  0x00007f2bd5103176: retq
+  0x00007f2bd5103177: mov     %rdi,0x8(%rsp)
+  0x00007f2bd510317c: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd5103184: callq   0x7f2bd50fe3a0    ; OopMap{rsi=Oop off=137}
+                                                ;*synchronization entry
+                                                ; - java.lang.Object::&lt;init&gt;@-1 (line 37)
+                                                ;   {runtime_call}
+  0x00007f2bd5103189: jmp     0x7f2bd510315e
+  0x00007f2bd510318b: nop
+  0x00007f2bd510318c: nop
+  0x00007f2bd510318d: mov     0x290(%r15),%rax
+  0x00007f2bd5103194: movabs  $0x0,%r10
+  0x00007f2bd510319e: mov     %r10,0x290(%r15)
+  0x00007f2bd51031a5: movabs  $0x0,%r10
+  0x00007f2bd51031af: mov     %r10,0x298(%r15)
+  0x00007f2bd51031b6: add     $0x30,%rsp
+  0x00007f2bd51031ba: pop     %rbp
+  0x00007f2bd51031bb: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+[Exception Handler]
+[Stub Code]
+  0x00007f2bd51031c0: callq   0x7f2bd506bd60    ;   {no_reloc}
+  0x00007f2bd51031c5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd51031ca: sub     $0x80,%rsp
+  0x00007f2bd51031d1: mov     %rax,0x78(%rsp)
+  0x00007f2bd51031d6: mov     %rcx,0x70(%rsp)
+  0x00007f2bd51031db: mov     %rdx,0x68(%rsp)
+  0x00007f2bd51031e0: mov     %rbx,0x60(%rsp)
+  0x00007f2bd51031e5: mov     %rbp,0x50(%rsp)
+  0x00007f2bd51031ea: mov     %rsi,0x48(%rsp)
+  0x00007f2bd51031ef: mov     %rdi,0x40(%rsp)
+  0x00007f2bd51031f4: mov     %r8,0x38(%rsp)
+  0x00007f2bd51031f9: mov     %r9,0x30(%rsp)
+  0x00007f2bd51031fe: mov     %r10,0x28(%rsp)
+  0x00007f2bd5103203: mov     %r11,0x20(%rsp)
+  0x00007f2bd5103208: mov     %r12,0x18(%rsp)
+  0x00007f2bd510320d: mov     %r13,0x10(%rsp)
+  0x00007f2bd5103212: mov     %r14,0x8(%rsp)
+  0x00007f2bd5103217: mov     %r15,(%rsp)
+  0x00007f2bd510321b: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd5103225: movabs  $0x7f2bd51031c5,%rsi  ;   {internal_word}
+  0x00007f2bd510322f: mov     %rsp,%rdx
+  0x00007f2bd5103232: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd5103236: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd510323b: hlt
+[Deopt Handler Code]
+  0x00007f2bd510323c: movabs  $0x7f2bd510323c,%r10  ;   {section_word}
+  0x00007f2bd5103246: push    %r10
+  0x00007f2bd5103248: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd510324d: hlt
+  0x00007f2bd510324e: hlt
+  0x00007f2bd510324f: hlt
+<nmethod compile_id='6' compiler='C1' level='3' entry='0x00007f2bd5103100' size='832' address='0x00007f2bd5102f90' relocation_offset='296' insts_offset='368' stub_offset='560' scopes_data_offset='712' scopes_pcs_offset='744' dependencies_offset='824' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1284' iicount='1284' stamp='0.251'/>
+<writer thread='139826613090048'/>
+<task_queued compile_id='7' method='java/lang/String indexOf (II)I' bytes='70' count='110' backedge_count='2048' iicount='110' level='3' stamp='0.253' comment='tiered' hot_count='110'/>
+<writer thread='139825984354048'/>
+Decoding compiled method 0x00007f2bd5102010:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd51021a0 Code size: 0x00000388
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;
+  # this:     rsi:rsi   = &apos;java/lang/String&apos;
+  # parm0:    rdx       = int
+  # parm1:    rcx       = int
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd51021a0: mov     0x8(%rsi),%r10d
+  0x00007f2bd51021a4: shl     $0x3,%r10
+  0x00007f2bd51021a8: cmp     %rax,%r10
+  0x00007f2bd51021ab: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd51021b1: nopw    0x0(%rax,%rax)
+  0x00007f2bd51021bc: nop
+[Verified Entry Point]
+  0x00007f2bd51021c0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd51021c7: push    %rbp
+  0x00007f2bd51021c8: sub     $0x30,%rsp
+  0x00007f2bd51021cc: movabs  $0x7f2bd4224820,%rax  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51021d6: mov     0xdc(%rax),%edi
+  0x00007f2bd51021dc: add     $0x8,%edi
+  0x00007f2bd51021df: mov     %edi,0xdc(%rax)
+  0x00007f2bd51021e5: movabs  $0x7f2bd401b180,%rax  ;   {metadata({method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51021ef: and     $0x1ff8,%edi
+  0x00007f2bd51021f5: cmp     $0x0,%edi
+  0x00007f2bd51021f8: je      0x7f2bd51023f9    ;*aload_0
+                                                ; - java.lang.String::indexOf@0 (line 1546)
+
+  0x00007f2bd51021fe: mov     0xc(%rsi),%eax    ;*getfield value
+                                                ; - java.lang.String::indexOf@1 (line 1546)
+
+  0x00007f2bd5102201: mov     0xc(%rax),%edi    ;*arraylength
+                                                ; - java.lang.String::indexOf@4 (line 1546)
+                                                ; implicit exception: dispatches to 0x00007f2bd5102410
+  0x00007f2bd5102204: cmp     $0x0,%ecx
+  0x00007f2bd5102207: movabs  $0x7f2bd4224820,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5102211: movabs  $0x108,%r8
+  0x00007f2bd510221b: jnl     0x7f2bd510222b
+  0x00007f2bd5102221: movabs  $0x118,%r8
+  0x00007f2bd510222b: mov     (%rbx,%r8),%r9
+  0x00007f2bd510222f: lea     0x1(%r9),%r9
+  0x00007f2bd5102233: mov     %r9,(%rbx,%r8)
+  0x00007f2bd5102237: jnl     0x7f2bd5102257    ;*ifge
+                                                ; - java.lang.String::indexOf@7 (line 1547)
+
+  0x00007f2bd510223d: movabs  $0x7f2bd4224820,%rcx  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5102247: incl    0x128(%rcx)
+  0x00007f2bd510224d: mov     $0x0,%ecx
+  0x00007f2bd5102252: jmpq    0x7f2bd510228f    ;*goto
+                                                ; - java.lang.String::indexOf@12 (line 1548)
+
+  0x00007f2bd5102257: cmp     %edi,%ecx
+  0x00007f2bd5102259: movabs  $0x7f2bd4224820,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5102263: movabs  $0x140,%r8
+  0x00007f2bd510226d: jl      0x7f2bd510227d
+  0x00007f2bd5102273: movabs  $0x150,%r8
+  0x00007f2bd510227d: mov     (%rbx,%r8),%r9
+  0x00007f2bd5102281: lea     0x1(%r9),%r9
+  0x00007f2bd5102285: mov     %r9,(%rbx,%r8)
+  0x00007f2bd5102289: jnl     0x7f2bd51023e8    ;*if_icmplt
+                                                ; - java.lang.String::indexOf@17 (line 1549)
+
+  0x00007f2bd510228f: cmp     $0x10000,%edx
+  0x00007f2bd5102295: movabs  $0x7f2bd4224820,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510229f: movabs  $0x160,%r8
+  0x00007f2bd51022a9: jnl     0x7f2bd51022b9
+  0x00007f2bd51022af: movabs  $0x170,%r8
+  0x00007f2bd51022b9: mov     (%rbx,%r8),%r9
+  0x00007f2bd51022bd: lea     0x1(%r9),%r9
+  0x00007f2bd51022c1: mov     %r9,(%rbx,%r8)
+  0x00007f2bd51022c5: jnl     0x7f2bd51023c0
+  0x00007f2bd51022cb: jmpq    0x7f2bd5102363    ;*if_icmpge
+                                                ; - java.lang.String::indexOf@25 (line 1554)
+
+  0x00007f2bd51022d0: movsxd  %ecx,%rsi
+  0x00007f2bd51022d3: cmp     0xc(%rax),%ecx
+  0x00007f2bd51022d6: jnb     0x7f2bd5102415
+  0x00007f2bd51022dc: movzwl  0x10(%rax,%rsi,2),%esi  ;*caload
+                                                ; - java.lang.String::indexOf@47 (line 1559)
+
+  0x00007f2bd51022e1: cmp     %edx,%esi
+  0x00007f2bd51022e3: movabs  $0x7f2bd4224820,%rsi  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51022ed: movabs  $0x1a0,%rbx
+  0x00007f2bd51022f7: jne     0x7f2bd5102307
+  0x00007f2bd51022fd: movabs  $0x1b0,%rbx
+  0x00007f2bd5102307: mov     (%rsi,%rbx),%r8
+  0x00007f2bd510230b: lea     0x1(%r8),%r8
+  0x00007f2bd510230f: mov     %r8,(%rsi,%rbx)
+  0x00007f2bd5102313: je      0x7f2bd51023a0    ;*if_icmpne
+                                                ; - java.lang.String::indexOf@49 (line 1559)
+
+  0x00007f2bd5102319: incl    %ecx
+  0x00007f2bd510231b: movabs  $0x7f2bd4224820,%rsi  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd5102325: mov     0xe0(%rsi),%ebx
+  0x00007f2bd510232b: add     $0x8,%ebx
+  0x00007f2bd510232e: mov     %ebx,0xe0(%rsi)
+  0x00007f2bd5102334: movabs  $0x7f2bd401b180,%rsi  ;   {metadata({method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510233e: and     $0xfff8,%ebx
+  0x00007f2bd5102344: cmp     $0x0,%ebx
+  0x00007f2bd5102347: je      0x7f2bd510241e    ; OopMap{rax=Oop off=429}
+                                                ;*goto
+                                                ; - java.lang.String::indexOf@58 (line 1558)
+
+  0x00007f2bd510234d: test    %eax,0x168c0dad(%rip)  ;   {poll}
+  0x00007f2bd5102353: movabs  $0x7f2bd4224820,%rsi  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510235d: incl    0x1c0(%rsi)       ;*goto
+                                                ; - java.lang.String::indexOf@58 (line 1558)
+
+  0x00007f2bd5102363: cmp     %edi,%ecx
+  0x00007f2bd5102365: movabs  $0x7f2bd4224820,%rsi  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd510236f: movabs  $0x180,%rbx
+  0x00007f2bd5102379: jnl     0x7f2bd5102389
+  0x00007f2bd510237f: movabs  $0x190,%rbx
+  0x00007f2bd5102389: mov     (%rsi,%rbx),%r8
+  0x00007f2bd510238d: lea     0x1(%r8),%r8
+  0x00007f2bd5102391: mov     %r8,(%rsi,%rbx)
+  0x00007f2bd5102395: jnl     0x7f2bd51023af
+  0x00007f2bd510239b: jmpq    0x7f2bd51022d0    ;*if_icmpge
+                                                ; - java.lang.String::indexOf@40 (line 1558)
+
+  0x00007f2bd51023a0: mov     %rcx,%rax
+  0x00007f2bd51023a3: add     $0x30,%rsp
+  0x00007f2bd51023a7: pop     %rbp
+  0x00007f2bd51023a8: test    %eax,0x168c0d52(%rip)  ;   {poll_return}
+  0x00007f2bd51023ae: retq                      ;*ireturn
+                                                ; - java.lang.String::indexOf@54 (line 1560)
+
+  0x00007f2bd51023af: mov     $0xffffffff,%eax
+  0x00007f2bd51023b4: add     $0x30,%rsp
+  0x00007f2bd51023b8: pop     %rbp
+  0x00007f2bd51023b9: test    %eax,0x168c0d41(%rip)  ;   {poll_return}
+  0x00007f2bd51023bf: retq                      ;*ireturn
+                                                ; - java.lang.String::indexOf@62 (line 1563)
+
+  0x00007f2bd51023c0: mov     %rsi,%rdi
+  0x00007f2bd51023c3: movabs  $0x7f2bd4224820,%rbx  ;   {metadata(method data for {method} {0x00007f2bd401b180} &apos;indexOf&apos; &apos;(II)I&apos; in &apos;java/lang/String&apos;)}
+  0x00007f2bd51023cd: addq    $0x1,0x1d8(%rbx)
+  0x00007f2bd51023d5: nop
+  0x00007f2bd51023d6: nop
+  0x00007f2bd51023d7: callq   0x7f2bd5045de0    ; OopMap{off=572}
+                                                ;*invokespecial indexOfSupplementary
+                                                ; - java.lang.String::indexOf@66 (line 1565)
+                                                ;   {optimized virtual_call}
+  0x00007f2bd51023dc: add     $0x30,%rsp
+  0x00007f2bd51023e0: pop     %rbp
+  0x00007f2bd51023e1: test    %eax,0x168c0d19(%rip)  ;   {poll_return}
+  0x00007f2bd51023e7: retq                      ;*ireturn
+                                                ; - java.lang.String::indexOf@69 (line 1565)
+
+  0x00007f2bd51023e8: mov     $0xffffffff,%eax
+  0x00007f2bd51023ed: add     $0x30,%rsp
+  0x00007f2bd51023f1: pop     %rbp
+  0x00007f2bd51023f2: test    %eax,0x168c0d08(%rip)  ;   {poll_return}
+  0x00007f2bd51023f8: retq
+  0x00007f2bd51023f9: mov     %rax,0x8(%rsp)
+  0x00007f2bd51023fe: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd5102406: callq   0x7f2bd50fe3a0    ; OopMap{rsi=Oop off=619}
+                                                ;*synchronization entry
+                                                ; - java.lang.String::indexOf@-1 (line 1546)
+                                                ;   {runtime_call}
+  0x00007f2bd510240b: jmpq    0x7f2bd51021fe
+  0x00007f2bd5102410: callq   0x7f2bd506d680    ; OopMap{rsi=Oop rax=Oop off=629}
+                                                ;*arraylength
+                                                ; - java.lang.String::indexOf@4 (line 1546)
+                                                ;   {runtime_call}
+  0x00007f2bd5102415: mov     %rcx,(%rsp)
+  0x00007f2bd5102419: callq   0x7f2bd506f240    ; OopMap{rax=Oop off=638}
+                                                ;*caload
+                                                ; - java.lang.String::indexOf@47 (line 1559)
+                                                ;   {runtime_call}
+  0x00007f2bd510241e: mov     %rsi,0x8(%rsp)
+  0x00007f2bd5102423: movq    $0x3a,(%rsp)
+  0x00007f2bd510242b: callq   0x7f2bd50fe3a0    ; OopMap{rax=Oop off=656}
+                                                ;*goto
+                                                ; - java.lang.String::indexOf@58 (line 1558)
+                                                ;   {runtime_call}
+  0x00007f2bd5102430: jmpq    0x7f2bd510234d
+  0x00007f2bd5102435: nop
+  0x00007f2bd5102436: nop
+  0x00007f2bd5102437: mov     0x290(%r15),%rax
+  0x00007f2bd510243e: movabs  $0x0,%r10
+  0x00007f2bd5102448: mov     %r10,0x290(%r15)
+  0x00007f2bd510244f: movabs  $0x0,%r10
+  0x00007f2bd5102459: mov     %r10,0x298(%r15)
+  0x00007f2bd5102460: add     $0x30,%rsp
+  0x00007f2bd5102464: pop     %rbp
+  0x00007f2bd5102465: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd510246a: hlt
+  0x00007f2bd510246b: hlt
+  0x00007f2bd510246c: hlt
+  0x00007f2bd510246d: hlt
+  0x00007f2bd510246e: hlt
+  0x00007f2bd510246f: hlt
+  0x00007f2bd5102470: hlt
+  0x00007f2bd5102471: hlt
+  0x00007f2bd5102472: hlt
+  0x00007f2bd5102473: hlt
+  0x00007f2bd5102474: hlt
+  0x00007f2bd5102475: hlt
+  0x00007f2bd5102476: hlt
+  0x00007f2bd5102477: hlt
+  0x00007f2bd5102478: hlt
+  0x00007f2bd5102479: hlt
+  0x00007f2bd510247a: hlt
+  0x00007f2bd510247b: hlt
+  0x00007f2bd510247c: hlt
+  0x00007f2bd510247d: hlt
+  0x00007f2bd510247e: hlt
+  0x00007f2bd510247f: hlt
+[Stub Code]
+  0x00007f2bd5102480: nop                       ;   {no_reloc}
+  0x00007f2bd5102481: nop
+  0x00007f2bd5102482: nop
+  0x00007f2bd5102483: nop
+  0x00007f2bd5102484: nop
+  0x00007f2bd5102485: movabs  $0x0,%rbx         ;   {static_stub}
+  0x00007f2bd510248f: jmpq    0x7f2bd510248f    ;   {runtime_call}
+[Exception Handler]
+  0x00007f2bd5102494: callq   0x7f2bd506bd60    ;   {runtime_call}
+  0x00007f2bd5102499: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd510249e: sub     $0x80,%rsp
+  0x00007f2bd51024a5: mov     %rax,0x78(%rsp)
+  0x00007f2bd51024aa: mov     %rcx,0x70(%rsp)
+  0x00007f2bd51024af: mov     %rdx,0x68(%rsp)
+  0x00007f2bd51024b4: mov     %rbx,0x60(%rsp)
+  0x00007f2bd51024b9: mov     %rbp,0x50(%rsp)
+  0x00007f2bd51024be: mov     %rsi,0x48(%rsp)
+  0x00007f2bd51024c3: mov     %rdi,0x40(%rsp)
+  0x00007f2bd51024c8: mov     %r8,0x38(%rsp)
+  0x00007f2bd51024cd: mov     %r9,0x30(%rsp)
+  0x00007f2bd51024d2: mov     %r10,0x28(%rsp)
+  0x00007f2bd51024d7: mov     %r11,0x20(%rsp)
+  0x00007f2bd51024dc: mov     %r12,0x18(%rsp)
+  0x00007f2bd51024e1: mov     %r13,0x10(%rsp)
+  0x00007f2bd51024e6: mov     %r14,0x8(%rsp)
+  0x00007f2bd51024eb: mov     %r15,(%rsp)
+  0x00007f2bd51024ef: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd51024f9: movabs  $0x7f2bd5102499,%rsi  ;   {internal_word}
+  0x00007f2bd5102503: mov     %rsp,%rdx
+  0x00007f2bd5102506: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd510250a: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd510250f: hlt
+[Deopt Handler Code]
+  0x00007f2bd5102510: movabs  $0x7f2bd5102510,%r10  ;   {section_word}
+  0x00007f2bd510251a: push    %r10
+  0x00007f2bd510251c: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd5102521: hlt
+  0x00007f2bd5102522: hlt
+  0x00007f2bd5102523: hlt
+  0x00007f2bd5102524: hlt
+  0x00007f2bd5102525: hlt
+  0x00007f2bd5102526: hlt
+  0x00007f2bd5102527: hlt
+<nmethod compile_id='7' compiler='C1' level='3' entry='0x00007f2bd51021a0' size='1848' address='0x00007f2bd5102010' relocation_offset='296' insts_offset='400' stub_offset='1136' scopes_data_offset='1312' scopes_pcs_offset='1472' dependencies_offset='1824' nul_chk_table_offset='1832' method='java/lang/String indexOf (II)I' bytes='70' count='110' backedge_count='2106' iicount='110' stamp='0.284'/>
+<writer thread='139826613090048'/>
+<task_queued compile_id='8' method='java/lang/Math min (II)I' bytes='11' count='384' iicount='384' level='3' stamp='0.287' comment='tiered' hot_count='384'/>
+<writer thread='139825984354048'/>
+Decoding compiled method 0x00007f2bd510c350:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd510c4c0 Code size: 0x00000190
+[Entry Point]
+[Verified Entry Point]
+[Constants]
+  # {method} {0x00007f2bd410bcb8} &apos;min&apos; &apos;(II)I&apos; in &apos;java/lang/Math&apos;
+  # parm0:    rsi       = int
+  # parm1:    rdx       = int
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd510c4c0: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd510c4c7: push    %rbp
+  0x00007f2bd510c4c8: sub     $0x30,%rsp
+  0x00007f2bd510c4cc: movabs  $0x7f2bd422b318,%rax  ;   {metadata(method data for {method} {0x00007f2bd410bcb8} &apos;min&apos; &apos;(II)I&apos; in &apos;java/lang/Math&apos;)}
+  0x00007f2bd510c4d6: mov     0xdc(%rax),%edi
+  0x00007f2bd510c4dc: add     $0x8,%edi
+  0x00007f2bd510c4df: mov     %edi,0xdc(%rax)
+  0x00007f2bd510c4e5: movabs  $0x7f2bd410bcb8,%rax  ;   {metadata({method} {0x00007f2bd410bcb8} &apos;min&apos; &apos;(II)I&apos; in &apos;java/lang/Math&apos;)}
+  0x00007f2bd510c4ef: and     $0x1ff8,%edi
+  0x00007f2bd510c4f5: cmp     $0x0,%edi
+  0x00007f2bd510c4f8: je      0x7f2bd510c55d    ;*iload_0
+                                                ; - java.lang.Math::min@0 (line 1336)
+
+  0x00007f2bd510c4fe: cmp     %edx,%esi
+  0x00007f2bd510c500: movabs  $0x7f2bd422b318,%rax  ;   {metadata(method data for {method} {0x00007f2bd410bcb8} &apos;min&apos; &apos;(II)I&apos; in &apos;java/lang/Math&apos;)}
+  0x00007f2bd510c50a: movabs  $0x108,%rdi
+  0x00007f2bd510c514: jnle    0x7f2bd510c524
+  0x00007f2bd510c51a: movabs  $0x118,%rdi
+  0x00007f2bd510c524: mov     (%rax,%rdi),%rbx
+  0x00007f2bd510c528: lea     0x1(%rbx),%rbx
+  0x00007f2bd510c52c: mov     %rbx,(%rax,%rdi)
+  0x00007f2bd510c530: jnle    0x7f2bd510c54b    ;*if_icmpgt
+                                                ; - java.lang.Math::min@2 (line 1336)
+
+  0x00007f2bd510c536: movabs  $0x7f2bd422b318,%rax  ;   {metadata(method data for {method} {0x00007f2bd410bcb8} &apos;min&apos; &apos;(II)I&apos; in &apos;java/lang/Math&apos;)}
+  0x00007f2bd510c540: incl    0x128(%rax)
+  0x00007f2bd510c546: jmpq    0x7f2bd510c54e    ;*goto
+                                                ; - java.lang.Math::min@6 (line 1336)
+
+  0x00007f2bd510c54b: mov     %rdx,%rsi         ;*ireturn
+                                                ; - java.lang.Math::min@10 (line 1336)
+
+  0x00007f2bd510c54e: mov     %rsi,%rax
+  0x00007f2bd510c551: add     $0x30,%rsp
+  0x00007f2bd510c555: pop     %rbp
+  0x00007f2bd510c556: test    %eax,0x168b6ba4(%rip)  ;   {poll_return}
+  0x00007f2bd510c55c: retq
+  0x00007f2bd510c55d: mov     %rax,0x8(%rsp)
+  0x00007f2bd510c562: movq    $0xffffffffffffffff,(%rsp)
+  0x00007f2bd510c56a: callq   0x7f2bd50fe3a0    ; OopMap{off=175}
+                                                ;*synchronization entry
+                                                ; - java.lang.Math::min@-1 (line 1336)
+                                                ;   {runtime_call}
+  0x00007f2bd510c56f: jmp     0x7f2bd510c4fe
+  0x00007f2bd510c571: nop
+  0x00007f2bd510c572: nop
+  0x00007f2bd510c573: mov     0x290(%r15),%rax
+  0x00007f2bd510c57a: movabs  $0x0,%r10
+  0x00007f2bd510c584: mov     %r10,0x290(%r15)
+  0x00007f2bd510c58b: movabs  $0x0,%r10
+  0x00007f2bd510c595: mov     %r10,0x298(%r15)
+  0x00007f2bd510c59c: add     $0x30,%rsp
+  0x00007f2bd510c5a0: pop     %rbp
+  0x00007f2bd510c5a1: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd510c5a6: hlt
+  0x00007f2bd510c5a7: hlt
+  0x00007f2bd510c5a8: hlt
+  0x00007f2bd510c5a9: hlt
+  0x00007f2bd510c5aa: hlt
+  0x00007f2bd510c5ab: hlt
+  0x00007f2bd510c5ac: hlt
+  0x00007f2bd510c5ad: hlt
+  0x00007f2bd510c5ae: hlt
+  0x00007f2bd510c5af: hlt
+  0x00007f2bd510c5b0: hlt
+  0x00007f2bd510c5b1: hlt
+  0x00007f2bd510c5b2: hlt
+  0x00007f2bd510c5b3: hlt
+  0x00007f2bd510c5b4: hlt
+  0x00007f2bd510c5b5: hlt
+  0x00007f2bd510c5b6: hlt
+  0x00007f2bd510c5b7: hlt
+  0x00007f2bd510c5b8: hlt
+  0x00007f2bd510c5b9: hlt
+  0x00007f2bd510c5ba: hlt
+  0x00007f2bd510c5bb: hlt
+  0x00007f2bd510c5bc: hlt
+  0x00007f2bd510c5bd: hlt
+  0x00007f2bd510c5be: hlt
+  0x00007f2bd510c5bf: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f2bd510c5c0: callq   0x7f2bd506bd60    ;   {no_reloc}
+  0x00007f2bd510c5c5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd510c5ca: sub     $0x80,%rsp
+  0x00007f2bd510c5d1: mov     %rax,0x78(%rsp)
+  0x00007f2bd510c5d6: mov     %rcx,0x70(%rsp)
+  0x00007f2bd510c5db: mov     %rdx,0x68(%rsp)
+  0x00007f2bd510c5e0: mov     %rbx,0x60(%rsp)
+  0x00007f2bd510c5e5: mov     %rbp,0x50(%rsp)
+  0x00007f2bd510c5ea: mov     %rsi,0x48(%rsp)
+  0x00007f2bd510c5ef: mov     %rdi,0x40(%rsp)
+  0x00007f2bd510c5f4: mov     %r8,0x38(%rsp)
+  0x00007f2bd510c5f9: mov     %r9,0x30(%rsp)
+  0x00007f2bd510c5fe: mov     %r10,0x28(%rsp)
+  0x00007f2bd510c603: mov     %r11,0x20(%rsp)
+  0x00007f2bd510c608: mov     %r12,0x18(%rsp)
+  0x00007f2bd510c60d: mov     %r13,0x10(%rsp)
+  0x00007f2bd510c612: mov     %r14,0x8(%rsp)
+  0x00007f2bd510c617: mov     %r15,(%rsp)
+  0x00007f2bd510c61b: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd510c625: movabs  $0x7f2bd510c5c5,%rsi  ;   {internal_word}
+  0x00007f2bd510c62f: mov     %rsp,%rdx
+  0x00007f2bd510c632: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd510c636: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd510c63b: hlt
+[Deopt Handler Code]
+  0x00007f2bd510c63c: movabs  $0x7f2bd510c63c,%r10  ;   {section_word}
+  0x00007f2bd510c646: push    %r10
+  0x00007f2bd510c648: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd510c64d: hlt
+  0x00007f2bd510c64e: hlt
+  0x00007f2bd510c64f: hlt
+<nmethod compile_id='8' compiler='C1' level='3' entry='0x00007f2bd510c4c0' size='936' address='0x00007f2bd510c350' relocation_offset='296' insts_offset='368' stub_offset='624' scopes_data_offset='776' scopes_pcs_offset='816' dependencies_offset='928' method='java/lang/Math min (II)I' bytes='11' count='433' iicount='433' stamp='0.306'/>
+<writer thread='139826613090048'/>
+<task_queued compile_id='9' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1536' iicount='1536' level='1' stamp='0.315' comment='tiered' hot_count='1536'/>
+<writer thread='139825984354048'/>
+Decoding compiled method 0x00007f2bd510c710:
+Code:
+Argument 0 is unknown.RIP: 0x7f2bd510c860 Code size: 0x00000110
+[Entry Point]
+[Constants]
+  # {method} {0x00007f2bd4016480} &apos;&lt;init&gt;&apos; &apos;()V&apos; in &apos;java/lang/Object&apos;
+  #           [sp+0x40]  (sp of caller)
+  0x00007f2bd510c860: mov     0x8(%rsi),%r10d
+  0x00007f2bd510c864: shl     $0x3,%r10
+  0x00007f2bd510c868: cmp     %rax,%r10
+  0x00007f2bd510c86b: jne     0x7f2bd5045ba0    ;   {runtime_call}
+  0x00007f2bd510c871: nopw    0x0(%rax,%rax)
+  0x00007f2bd510c87c: nop
+[Verified Entry Point]
+  0x00007f2bd510c880: mov     %eax,0xfffffffffffec000(%rsp)
+  0x00007f2bd510c887: push    %rbp
+  0x00007f2bd510c888: sub     $0x30,%rsp
+  0x00007f2bd510c88c: mov     %rsi,%rdi         ;*return
+                                                ; - java.lang.Object::&lt;init&gt;@0 (line 37)
+
+  0x00007f2bd510c88f: mov     %rsi,0x20(%rsp)
+  0x00007f2bd510c894: callq   0x7f2bd506d3e0    ; OopMap{[32]=Oop off=57}
+                                                ;*return
+                                                ; - java.lang.Object::&lt;init&gt;@0 (line 37)
+                                                ;   {runtime_call}
+  0x00007f2bd510c899: add     $0x30,%rsp
+  0x00007f2bd510c89d: pop     %rbp
+  0x00007f2bd510c89e: test    %eax,0x168b685c(%rip)  ;   {poll_return}
+  0x00007f2bd510c8a4: retq
+  0x00007f2bd510c8a5: nop
+  0x00007f2bd510c8a6: nop
+  0x00007f2bd510c8a7: mov     0x290(%r15),%rax
+  0x00007f2bd510c8ae: movabs  $0x0,%r10
+  0x00007f2bd510c8b8: mov     %r10,0x290(%r15)
+  0x00007f2bd510c8bf: movabs  $0x0,%r10
+  0x00007f2bd510c8c9: mov     %r10,0x298(%r15)
+  0x00007f2bd510c8d0: add     $0x30,%rsp
+  0x00007f2bd510c8d4: pop     %rbp
+  0x00007f2bd510c8d5: jmpq    0x7f2bd506c1e0    ;   {runtime_call}
+  0x00007f2bd510c8da: hlt
+  0x00007f2bd510c8db: hlt
+  0x00007f2bd510c8dc: hlt
+  0x00007f2bd510c8dd: hlt
+  0x00007f2bd510c8de: hlt
+  0x00007f2bd510c8df: hlt
+[Exception Handler]
+[Stub Code]
+  0x00007f2bd510c8e0: callq   0x7f2bd506bd60    ;   {no_reloc}
+  0x00007f2bd510c8e5: mov     %rsp,0xffffffffffffffd8(%rsp)
+  0x00007f2bd510c8ea: sub     $0x80,%rsp
+  0x00007f2bd510c8f1: mov     %rax,0x78(%rsp)
+  0x00007f2bd510c8f6: mov     %rcx,0x70(%rsp)
+  0x00007f2bd510c8fb: mov     %rdx,0x68(%rsp)
+  0x00007f2bd510c900: mov     %rbx,0x60(%rsp)
+  0x00007f2bd510c905: mov     %rbp,0x50(%rsp)
+  0x00007f2bd510c90a: mov     %rsi,0x48(%rsp)
+  0x00007f2bd510c90f: mov     %rdi,0x40(%rsp)
+  0x00007f2bd510c914: mov     %r8,0x38(%rsp)
+  0x00007f2bd510c919: mov     %r9,0x30(%rsp)
+  0x00007f2bd510c91e: mov     %r10,0x28(%rsp)
+  0x00007f2bd510c923: mov     %r11,0x20(%rsp)
+  0x00007f2bd510c928: mov     %r12,0x18(%rsp)
+  0x00007f2bd510c92d: mov     %r13,0x10(%rsp)
+  0x00007f2bd510c932: mov     %r14,0x8(%rsp)
+  0x00007f2bd510c937: mov     %r15,(%rsp)
+  0x00007f2bd510c93b: movabs  $0x7f2bea8f8dbe,%rdi  ;   {external_word}
+  0x00007f2bd510c945: movabs  $0x7f2bd510c8e5,%rsi  ;   {internal_word}
+  0x00007f2bd510c94f: mov     %rsp,%rdx
+  0x00007f2bd510c952: and     $0xfffffffffffffff0,%rsp
+  0x00007f2bd510c956: callq   0x7f2bea618010    ;   {runtime_call}
+  0x00007f2bd510c95b: hlt
+[Deopt Handler Code]
+  0x00007f2bd510c95c: movabs  $0x7f2bd510c95c,%r10  ;   {section_word}
+  0x00007f2bd510c966: push    %r10
+  0x00007f2bd510c968: jmpq    0x7f2bd5047240    ;   {runtime_call}
+  0x00007f2bd510c96d: hlt
+  0x00007f2bd510c96e: hlt
+  0x00007f2bd510c96f: hlt
+<nmethod compile_id='9' compiler='C1' level='1' entry='0x00007f2bd510c860' size='712' address='0x00007f2bd510c710' relocation_offset='296' insts_offset='336' stub_offset='464' scopes_data_offset='616' scopes_pcs_offset='640' dependencies_offset='704' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1548' iicount='1548' stamp='0.340'/>
+<make_not_entrant thread='139825984354048' compile_id='6' compiler='C1' level='3' stamp='0.340'/>
+<writer thread='139826000889600'/>
+<destroy_vm stamp='0.343'/>
+<tty_done stamp='0.344'/>
+</tty>
+<compilation_log thread='139825984354048'>
+<start_compile_thread name='C1 CompilerThread2' thread='139825984354048' process='8799' stamp='0.119'/>
+<task compile_id='1' method='java/lang/String equals (Ljava/lang/Object;)Z' bytes='81' count='245' backedge_count='1024' iicount='245' level='3' stamp='0.126'>
+<phase name='buildIR' stamp='0.126'>
+<type id='716' name='boolean'/>
+<klass id='729' name='java/lang/Object' flags='1'/>
+<klass id='730' name='java/lang/String' flags='17'/>
+<method id='832' holder='730' name='equals' return='716' arguments='729' flags='1' bytes='81' iicount='245'/>
+<parse method='832'  stamp='0.126'>
+<parse_done stamp='0.127'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.127'>
+<phase_done name='optimize_blocks' stamp='0.127'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.127'>
+<phase_done name='rangeCheckElimination' stamp='0.127'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.127'>
+<phase_done name='optimize_null_checks' stamp='0.127'/>
+</phase>
+<phase_done name='buildIR' stamp='0.127'/>
+</phase>
+<phase name='emit_lir' stamp='0.127'>
+<phase name='lirGeneration' stamp='0.127'>
+<phase_done name='lirGeneration' stamp='0.127'/>
+</phase>
+<phase name='linearScan' stamp='0.127'>
+<phase_done name='linearScan' stamp='0.127'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.127'/>
+</phase>
+<phase name='codeemit' stamp='0.127'>
+<phase_done name='codeemit' stamp='0.127'/>
+</phase>
+<phase name='codeinstall' stamp='0.127'>
+<phase_done name='codeinstall' stamp='0.156'/>
+</phase>
+<code_cache total_blobs='220' nmethods='1' adapters='135' free_code_cache='250573824'/>
+<task_done success='1' nmsize='1360' count='249' backedge_count='1064' stamp='0.156'/>
+</task>
+<task compile_id='4' method='java/lang/String hashCode ()I' bytes='55' count='353' backedge_count='4126' iicount='353' level='3' stamp='0.180'>
+<phase name='buildIR' stamp='0.180'>
+<type id='722' name='int'/>
+<klass id='730' name='java/lang/String' flags='17'/>
+<method id='832' holder='730' name='hashCode' return='722' flags='1' bytes='55' iicount='353'/>
+<parse method='832'  stamp='0.180'>
+<parse_done stamp='0.180'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.180'>
+<phase_done name='optimize_blocks' stamp='0.180'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.181'>
+<phase_done name='rangeCheckElimination' stamp='0.181'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.181'>
+<phase_done name='optimize_null_checks' stamp='0.181'/>
+</phase>
+<phase_done name='buildIR' stamp='0.181'/>
+</phase>
+<phase name='emit_lir' stamp='0.181'>
+<phase name='lirGeneration' stamp='0.181'>
+<phase_done name='lirGeneration' stamp='0.181'/>
+</phase>
+<phase name='linearScan' stamp='0.181'>
+<phase_done name='linearScan' stamp='0.181'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.181'/>
+</phase>
+<phase name='codeemit' stamp='0.181'>
+<phase_done name='codeemit' stamp='0.181'/>
+</phase>
+<phase name='codeinstall' stamp='0.181'>
+<phase_done name='codeinstall' stamp='0.199'/>
+</phase>
+<code_cache total_blobs='226' nmethods='3' adapters='139' free_code_cache='250569344'/>
+<task_done success='1' nmsize='656' count='353' backedge_count='4126' stamp='0.199'/>
+</task>
+<task compile_id='3' method='java/lang/String charAt (I)C' bytes='29' count='1230' iicount='1230' level='3' stamp='0.200'>
+<phase name='buildIR' stamp='0.200'>
+<type id='717' name='char'/>
+<type id='722' name='int'/>
+<klass id='730' name='java/lang/String' flags='17'/>
+<method id='832' holder='730' name='charAt' return='717' arguments='722' flags='1' bytes='29' iicount='1230'/>
+<parse method='832'  stamp='0.200'>
+<bc code='183' bci='18'/>
+<type id='724' name='void'/>
+<klass id='834' name='java/lang/StringIndexOutOfBoundsException' unloaded='1'/>
+<method id='835' holder='834' name='&lt;init&gt;' return='724' arguments='722' unloaded='1'/>
+<call method='835' instr='invokespecial'/>
+<inline_fail reason='not inlineable'/>
+<parse_done stamp='0.200'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.200'>
+<phase_done name='optimize_blocks' stamp='0.200'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.200'>
+<phase_done name='rangeCheckElimination' stamp='0.200'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.200'>
+<phase_done name='optimize_null_checks' stamp='0.200'/>
+</phase>
+<phase_done name='buildIR' stamp='0.200'/>
+</phase>
+<phase name='emit_lir' stamp='0.200'>
+<phase name='lirGeneration' stamp='0.200'>
+<phase_done name='lirGeneration' stamp='0.200'/>
+</phase>
+<phase name='linearScan' stamp='0.200'>
+<phase_done name='linearScan' stamp='0.200'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.200'/>
+</phase>
+<phase name='codeemit' stamp='0.200'>
+<phase_done name='codeemit' stamp='0.200'/>
+</phase>
+<phase name='codeinstall' stamp='0.200'>
+<phase_done name='codeinstall' stamp='0.218'/>
+</phase>
+<code_cache total_blobs='227' nmethods='4' adapters='139' free_code_cache='250567936'/>
+<task_done success='1' nmsize='616' count='1333' stamp='0.218'/>
+</task>
+<task compile_id='5' method='java/lang/String length ()I' bytes='6' count='258' iicount='258' level='3' stamp='0.219'>
+<phase name='buildIR' stamp='0.220'>
+<type id='722' name='int'/>
+<klass id='730' name='java/lang/String' flags='17'/>
+<method id='832' holder='730' name='length' return='722' flags='1' bytes='6' iicount='258'/>
+<parse method='832'  stamp='0.220'>
+<parse_done stamp='0.220'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.220'>
+<phase_done name='optimize_blocks' stamp='0.220'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.220'>
+<phase_done name='rangeCheckElimination' stamp='0.220'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.220'>
+<phase_done name='optimize_null_checks' stamp='0.220'/>
+</phase>
+<phase_done name='buildIR' stamp='0.220'/>
+</phase>
+<phase name='emit_lir' stamp='0.220'>
+<phase name='lirGeneration' stamp='0.220'>
+<phase_done name='lirGeneration' stamp='0.220'/>
+</phase>
+<phase name='linearScan' stamp='0.220'>
+<phase_done name='linearScan' stamp='0.220'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.220'/>
+</phase>
+<phase name='codeemit' stamp='0.220'>
+<phase_done name='codeemit' stamp='0.220'/>
+</phase>
+<phase name='codeinstall' stamp='0.220'>
+<phase_done name='codeinstall' stamp='0.236'/>
+</phase>
+<code_cache total_blobs='228' nmethods='5' adapters='139' free_code_cache='250566976'/>
+<task_done success='1' nmsize='336' count='275' stamp='0.236'/>
+</task>
+<task compile_id='6' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1284' iicount='1284' level='3' stamp='0.237'>
+<phase name='buildIR' stamp='0.237'>
+<type id='724' name='void'/>
+<klass id='729' name='java/lang/Object' flags='1'/>
+<method id='832' holder='729' name='&lt;init&gt;' return='724' flags='1' bytes='1' iicount='1284'/>
+<parse method='832'  stamp='0.237'>
+<parse_done stamp='0.237'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.237'>
+<phase_done name='optimize_blocks' stamp='0.237'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.237'>
+<phase_done name='rangeCheckElimination' stamp='0.237'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.237'>
+<phase_done name='optimize_null_checks' stamp='0.237'/>
+</phase>
+<phase_done name='buildIR' stamp='0.237'/>
+</phase>
+<phase name='emit_lir' stamp='0.237'>
+<phase name='lirGeneration' stamp='0.237'>
+<phase_done name='lirGeneration' stamp='0.237'/>
+</phase>
+<phase name='linearScan' stamp='0.237'>
+<phase_done name='linearScan' stamp='0.237'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.237'/>
+</phase>
+<phase name='codeemit' stamp='0.237'>
+<phase_done name='codeemit' stamp='0.237'/>
+</phase>
+<phase name='codeinstall' stamp='0.237'>
+<phase_done name='codeinstall' stamp='0.251'/>
+</phase>
+<code_cache total_blobs='229' nmethods='6' adapters='139' free_code_cache='250566080'/>
+<task_done success='1' nmsize='336' count='1284' stamp='0.251'/>
+</task>
+<task compile_id='7' method='java/lang/String indexOf (II)I' bytes='70' count='110' backedge_count='2106' iicount='110' level='3' stamp='0.259'>
+<phase name='buildIR' stamp='0.259'>
+<type id='722' name='int'/>
+<klass id='730' name='java/lang/String' flags='17'/>
+<method id='832' holder='730' name='indexOf' return='722' arguments='722 722' flags='1' bytes='70' iicount='110'/>
+<parse method='832'  stamp='0.260'>
+<bc code='183' bci='66'/>
+<method id='834' holder='730' name='indexOfSupplementary' return='722' arguments='722 722' flags='2' bytes='71' iicount='1'/>
+<call method='834' instr='invokespecial'/>
+<inline_fail reason='callee is too large'/>
+<parse_done stamp='0.260'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.260'>
+<phase_done name='optimize_blocks' stamp='0.260'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.260'>
+<phase_done name='rangeCheckElimination' stamp='0.260'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.260'>
+<phase_done name='optimize_null_checks' stamp='0.260'/>
+</phase>
+<phase_done name='buildIR' stamp='0.260'/>
+</phase>
+<phase name='emit_lir' stamp='0.260'>
+<phase name='lirGeneration' stamp='0.260'>
+<phase_done name='lirGeneration' stamp='0.260'/>
+</phase>
+<phase name='linearScan' stamp='0.260'>
+<phase_done name='linearScan' stamp='0.260'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.260'/>
+</phase>
+<phase name='codeemit' stamp='0.260'>
+<phase_done name='codeemit' stamp='0.260'/>
+</phase>
+<phase name='codeinstall' stamp='0.260'>
+<phase_done name='codeinstall' stamp='0.284'/>
+</phase>
+<code_cache total_blobs='234' nmethods='7' adapters='143' free_code_cache='250562112'/>
+<task_done success='1' nmsize='904' count='110' backedge_count='2106' stamp='0.284'/>
+</task>
+<task compile_id='8' method='java/lang/Math min (II)I' bytes='11' count='406' iicount='406' level='3' stamp='0.288'>
+<phase name='buildIR' stamp='0.288'>
+<type id='722' name='int'/>
+<klass id='832' name='java/lang/Math' flags='17'/>
+<method id='833' holder='832' name='min' return='722' arguments='722 722' flags='9' bytes='11' iicount='406'/>
+<parse method='833'  stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.288'>
+<phase_done name='optimize_blocks' stamp='0.288'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.288'>
+<phase_done name='rangeCheckElimination' stamp='0.288'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.288'>
+<phase_done name='optimize_null_checks' stamp='0.288'/>
+</phase>
+<phase_done name='buildIR' stamp='0.288'/>
+</phase>
+<phase name='emit_lir' stamp='0.288'>
+<phase name='lirGeneration' stamp='0.288'>
+<phase_done name='lirGeneration' stamp='0.288'/>
+</phase>
+<phase name='linearScan' stamp='0.288'>
+<phase_done name='linearScan' stamp='0.288'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.288'/>
+</phase>
+<phase name='codeemit' stamp='0.288'>
+<phase_done name='codeemit' stamp='0.289'/>
+</phase>
+<phase name='codeinstall' stamp='0.289'>
+<phase_done name='codeinstall' stamp='0.306'/>
+</phase>
+<code_cache total_blobs='237' nmethods='8' adapters='145' free_code_cache='250560128'/>
+<task_done success='1' nmsize='400' count='433' stamp='0.306'/>
+</task>
+<task compile_id='9' method='java/lang/Object &lt;init&gt; ()V' bytes='1' count='1547' iicount='1547' level='1' stamp='0.316'>
+<phase name='buildIR' stamp='0.316'>
+<type id='724' name='void'/>
+<klass id='729' name='java/lang/Object' flags='1'/>
+<method id='832' holder='729' name='&lt;init&gt;' return='724' flags='1' bytes='1' compile_id='6' compiler='C1' level='3' iicount='1547'/>
+<parse method='832'  stamp='0.316'>
+<parse_done stamp='0.316'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.316'>
+<phase_done name='optimize_blocks' stamp='0.316'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.316'>
+<phase_done name='rangeCheckElimination' stamp='0.316'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.316'>
+<phase_done name='optimize_null_checks' stamp='0.317'/>
+</phase>
+<phase_done name='buildIR' stamp='0.317'/>
+</phase>
+<phase name='emit_lir' stamp='0.317'>
+<phase name='lirGeneration' stamp='0.317'>
+<phase_done name='lirGeneration' stamp='0.317'/>
+</phase>
+<phase name='linearScan' stamp='0.317'>
+<phase_done name='linearScan' stamp='0.317'/>
+</phase>
+<phase_done name='emit_lir' stamp='0.317'/>
+</phase>
+<phase name='codeemit' stamp='0.317'>
+<phase_done name='codeemit' stamp='0.317'/>
+</phase>
+<phase name='codeinstall' stamp='0.317'>
+<phase_done name='codeinstall' stamp='0.341'/>
+</phase>
+<code_cache total_blobs='238' nmethods='9' adapters='145' free_code_cache='250559360'/>
+<task_done success='1' nmsize='272' count='1548' stamp='0.341'/>
+</task>
+</compilation_log>
+<compilation_log thread='139825985406720'>
+<fragment>
+<![CDATA[
+<start_compile_thread name='C2 CompilerThread1' thread='139825985406720' process='8799' stamp='0.117'/>
+]]>
+</fragment>
+</compilation_log>
+<compilation_log thread='139825986459392'>
+<fragment>
+<![CDATA[
+<start_compile_thread name='C2 CompilerThread0' thread='139825986459392' process='8799' stamp='0.117'/>
+]]>
+</fragment>
+</compilation_log>
+<hotspot_log_done stamp='0.344'/>
+</hotspot_log>

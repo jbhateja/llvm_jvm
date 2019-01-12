@@ -1,0 +1,1931 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ABSTRACT	src/jasmin/sym.java	/^  static final int ABSTRACT = 43;$/;"	f	class:sym
+ACC_ABSTRACT	src/jas/RuntimeConstants.java	/^    public static final int ACC_ABSTRACT     = 0x0400;$/;"	f	interface:RuntimeConstants
+ACC_ANNOTATION	src/jas/RuntimeConstants.java	/^    public static final int ACC_ANNOTATION   = 0x2000;$/;"	f	interface:RuntimeConstants
+ACC_BRIDGE	src/jas/RuntimeConstants.java	/^    public static final int ACC_BRIDGE       = 0x0040; \/\/ method$/;"	f	interface:RuntimeConstants
+ACC_ENUM	src/jas/RuntimeConstants.java	/^    public static final int ACC_ENUM         = 0x4000;$/;"	f	interface:RuntimeConstants
+ACC_FINAL	src/jas/RuntimeConstants.java	/^    public static final int ACC_FINAL        = 0x0010;$/;"	f	interface:RuntimeConstants
+ACC_INTERFACE	src/jas/RuntimeConstants.java	/^    public static final int ACC_INTERFACE    = 0x0200;$/;"	f	interface:RuntimeConstants
+ACC_NATIVE	src/jas/RuntimeConstants.java	/^    public static final int ACC_NATIVE       = 0x0100;$/;"	f	interface:RuntimeConstants
+ACC_PRIVATE	src/jas/RuntimeConstants.java	/^    public static final int ACC_PRIVATE      = 0x0002;$/;"	f	interface:RuntimeConstants
+ACC_PROTECTED	src/jas/RuntimeConstants.java	/^    public static final int ACC_PROTECTED    = 0x0004;$/;"	f	interface:RuntimeConstants
+ACC_PUBLIC	src/jas/RuntimeConstants.java	/^    public static final int ACC_PUBLIC       = 0x0001;$/;"	f	interface:RuntimeConstants
+ACC_STATIC	src/jas/RuntimeConstants.java	/^    public static final int ACC_STATIC       = 0x0008;$/;"	f	interface:RuntimeConstants
+ACC_STRICT	src/jas/RuntimeConstants.java	/^    public static final int ACC_STRICT       = 0x0800;$/;"	f	interface:RuntimeConstants
+ACC_SUPER	src/jas/RuntimeConstants.java	/^    public static final int ACC_SUPER        = 0x0020; \/\/ class(auto)$/;"	f	interface:RuntimeConstants
+ACC_SYNCHRONIZED	src/jas/RuntimeConstants.java	/^    public static final int ACC_SYNCHRONIZED = 0x0020; \/\/ method$/;"	f	interface:RuntimeConstants
+ACC_SYNTHETIC	src/jas/RuntimeConstants.java	/^    public static final int ACC_SYNTHETIC    = 0x1000;$/;"	f	interface:RuntimeConstants
+ACC_TRANSIENT	src/jas/RuntimeConstants.java	/^    public static final int ACC_TRANSIENT    = 0x0080; \/\/ field$/;"	f	interface:RuntimeConstants
+ACC_VARARGS	src/jas/RuntimeConstants.java	/^    public static final int ACC_VARARGS      = 0x0080; \/\/ method$/;"	f	interface:RuntimeConstants
+ACC_VOLATILE	src/jas/RuntimeConstants.java	/^    public static final int ACC_VOLATILE     = 0x0040; \/\/ field$/;"	f	interface:RuntimeConstants
+ACTION	src/java_cup/sym.java	/^  static final int ACTION = 5;$/;"	f	class:sym
+ANNOTATION	src/jasmin/sym.java	/^  static final int ANNOTATION = 54;$/;"	f	class:sym
+ANT_CMD_LINE_ARGS	build.bat	/^set ANT_CMD_LINE_ARGS=$/;"	v
+ANT_CMD_LINE_ARGS	build.bat	/^set ANT_CMD_LINE_ARGS=%1$/;"	v
+ANT_CMD_LINE_ARGS	build.bat	/^set ANT_CMD_LINE_ARGS=%ANT_CMD_LINE_ARGS% %1$/;"	v
+ANT_HOME	build.bat	/^if "%ANT_HOME%"=="" set ANT_HOME=%DEFAULT_ANT_HOME%$/;"	v
+ANT_HOME	build.bat	/^set ANT_HOME=%ProgramFiles%\\ant$/;"	v
+ANT_HOME	build.bat	/^set ANT_HOME=%SystemDrive%\\ant$/;"	v
+ANT_HOME	build.bat	/^set ANT_HOME=.$/;"	v
+ANT_HOME	build.bat	/^set ANT_HOME=C:\\ant$/;"	v
+APPEND_FRAME_S0_max	src/jas/VerifyFrame.java	/^  private static final int APPEND_FRAME_S0_max  = 254;$/;"	f	class:VerifyFrame	file:
+AddInstructions_java	TEST/JavaCaller/AddInstructions_java.java	/^public class AddInstructions_java {$/;"	c
+AnnotDefAttr	src/jas/AnnotDefAttr.java	/^  public AnnotDefAttr()$/;"	m	class:AnnotDefAttr
+AnnotDefAttr	src/jas/AnnotDefAttr.java	/^public class AnnotDefAttr$/;"	c
+AnnotParamAttr	src/jas/AnnotParamAttr.java	/^  public AnnotParamAttr(boolean visible)$/;"	m	class:AnnotParamAttr
+AnnotParamAttr	src/jas/AnnotParamAttr.java	/^public class AnnotParamAttr$/;"	c
+Annotation	src/jas/Annotation.java	/^  private Annotation(Annotation parent, AsciiCP type)$/;"	m	class:Annotation	file:
+Annotation	src/jas/Annotation.java	/^  public Annotation() \/\/ fictive for AnnotationDefault$/;"	m	class:Annotation
+Annotation	src/jas/Annotation.java	/^  public Annotation(String type)$/;"	m	class:Annotation
+Annotation	src/jas/Annotation.java	/^public class Annotation extends CP$/;"	c
+AnnotationAttr	src/jas/AnnotationAttr.java	/^  public AnnotationAttr(boolean visible)$/;"	m	class:AnnotationAttr
+AnnotationAttr	src/jas/AnnotationAttr.java	/^public class AnnotationAttr$/;"	c
+AnnotationElement	src/jas/AnnotationElement.java	/^  public AnnotationElement(String name, String type, String exttype)$/;"	m	class:AnnotationElement
+AnnotationElement	src/jas/AnnotationElement.java	/^public class AnnotationElement$/;"	c
+AsciiCP	src/jas/AsciiCP.java	/^  public AsciiCP(String s)$/;"	m	class:AsciiCP
+AsciiCP	src/jas/AsciiCP.java	/^public class AsciiCP extends CP implements RuntimeConstants$/;"	c
+BAR	src/java_cup/sym.java	/^  static final int BAR = 19;$/;"	f	class:sym
+BGN_METHOD	src/jasmin/ClassFile.java	/^    static final String BGN_METHOD = "jasmin_reserved_bgnmethod:";$/;"	f	class:ClassFile
+BRIDGE	src/jasmin/sym.java	/^  static final int BRIDGE = 56;$/;"	f	class:sym
+ByteOperand	src/jas/InsnOperand.java	/^  ByteOperand(int n) { val = n; }$/;"	m	class:ByteOperand
+ByteOperand	src/jas/InsnOperand.java	/^class ByteOperand extends InsnOperand$/;"	c
+CHOP_FRAME_S0_min	src/jas/VerifyFrame.java	/^  private static final int CHOP_FRAME_S0_min    = 248;  \/\/ + off$/;"	f	class:VerifyFrame	file:
+CLASS	src/jasmin/sym.java	/^  static final int CLASS = 34;$/;"	f	class:sym
+CODE	src/java_cup/sym.java	/^  static final int CODE = 4;$/;"	f	class:sym
+CODE_STRING	src/java_cup/sym.java	/^  static final int CODE_STRING = 22;$/;"	f	class:sym
+COLON	src/jasmin/sym.java	/^  static final int COLON = 65;$/;"	f	class:sym
+COLON	src/java_cup/sym.java	/^  static final int COLON = 17;$/;"	f	class:sym
+COLON_COLON_EQUALS	src/java_cup/sym.java	/^  static final int COLON_COLON_EQUALS = 18;$/;"	f	class:sym
+COMMA	src/java_cup/sym.java	/^  static final int COMMA = 14;$/;"	f	class:sym
+CONSTANT_CLASS	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_CLASS = 7;$/;"	f	interface:RuntimeConstants
+CONSTANT_DOUBLE	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_DOUBLE = 6;$/;"	f	interface:RuntimeConstants
+CONSTANT_FIELD	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_FIELD = 9;$/;"	f	interface:RuntimeConstants
+CONSTANT_FLOAT	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_FLOAT = 4;$/;"	f	interface:RuntimeConstants
+CONSTANT_INTEGER	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_INTEGER = 3;$/;"	f	interface:RuntimeConstants
+CONSTANT_INTERFACEMETHOD	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_INTERFACEMETHOD = 11;$/;"	f	interface:RuntimeConstants
+CONSTANT_LONG	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_LONG = 5;$/;"	f	interface:RuntimeConstants
+CONSTANT_METHOD	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_METHOD = 10;$/;"	f	interface:RuntimeConstants
+CONSTANT_NAMEANDTYPE	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_NAMEANDTYPE = 12;$/;"	f	interface:RuntimeConstants
+CONSTANT_STRING	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_STRING = 8;$/;"	f	interface:RuntimeConstants
+CONSTANT_UNICODE	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_UNICODE = 2;$/;"	f	interface:RuntimeConstants
+CONSTANT_UTF8	src/jas/RuntimeConstants.java	/^    public static final int CONSTANT_UTF8 = 1;$/;"	f	interface:RuntimeConstants
+CP	src/jas/CP.java	/^public abstract class CP$/;"	c
+CPOperand	src/jas/InsnOperand.java	/^  CPOperand(CP cpe) { this.cpe = cpe; wide = true; }$/;"	m	class:CPOperand
+CPOperand	src/jas/InsnOperand.java	/^  CPOperand(CP cpe, boolean wide)$/;"	m	class:CPOperand
+CPOperand	src/jas/InsnOperand.java	/^class CPOperand extends InsnOperand$/;"	c
+CUP	makefile	/^CUP = src\/java_cup\/Main.java \\$/;"	m
+CUP$actions	lib/java_cup/simple_calc/parser.java	/^  CUP$actions() { }$/;"	m	class:CUP$actions
+CUP$actions	lib/java_cup/simple_calc/parser.java	/^class CUP$actions {$/;"	c
+CUP$actions	src/jasmin/parser.java	/^  CUP$actions() { }$/;"	m	class:CUP$actions
+CUP$actions	src/jasmin/parser.java	/^class CUP$actions {$/;"	c
+CUP$actions	src/java_cup/parser.java	/^  CUP$actions() { }$/;"	m	class:CUP$actions
+CUP$actions	src/java_cup/parser.java	/^class CUP$actions {$/;"	c
+CUP$do_action	lib/java_cup/simple_calc/parser.java	/^  public final java_cup.runtime.symbol CUP$do_action($/;"	m	class:CUP$actions
+CUP$do_action	src/jasmin/parser.java	/^  public final java_cup.runtime.symbol CUP$do_action($/;"	m	class:CUP$actions
+CUP$do_action	src/java_cup/parser.java	/^  public final java_cup.runtime.symbol CUP$do_action($/;"	m	class:CUP$actions
+Caller	TEST/JavaCaller/Caller.java	/^public class Caller {$/;"	c
+CatchEntry	src/jas/CatchEntry.java	/^  CatchEntry(Label start, Label end, Label handler, CP cat)$/;"	m	class:CatchEntry
+CatchEntry	src/jas/CatchEntry.java	/^  CatchEntry(int start, int end, int handler, CP cat)$/;"	m	class:CatchEntry
+CatchEntry	src/jas/CatchEntry.java	/^public class CatchEntry$/;"	c
+Catchtable	src/jas/Catchtable.java	/^  public Catchtable() { entries = new Vector(); }$/;"	m	class:Catchtable
+Catchtable	src/jas/Catchtable.java	/^public class Catchtable$/;"	c
+ClassCP	src/jas/ClassCP.java	/^  public ClassCP(String name)$/;"	m	class:ClassCP
+ClassCP	src/jas/ClassCP.java	/^public class ClassCP extends CP implements RuntimeConstants$/;"	c
+ClassEnv	src/jas/ClassEnv.java	/^  public ClassEnv()$/;"	m	class:ClassEnv
+ClassEnv	src/jas/ClassEnv.java	/^public class ClassEnv implements RuntimeConstants$/;"	c
+ClassFile	src/jasmin/ClassFile.java	/^    public ClassFile() {}$/;"	m	class:ClassFile
+ClassFile	src/jasmin/ClassFile.java	/^public class ClassFile {$/;"	c
+CodeAttr	src/jas/CodeAttr.java	/^  public CodeAttr()$/;"	m	class:CodeAttr
+CodeAttr	src/jas/CodeAttr.java	/^public class CodeAttr$/;"	c
+ConstAttr	src/jas/ConstAttr.java	/^  public ConstAttr(CP val)$/;"	m	class:ConstAttr
+ConstAttr	src/jas/ConstAttr.java	/^public class ConstAttr$/;"	c
+DANNOTATION	src/jasmin/sym.java	/^  static final int DANNOTATION = 24;$/;"	f	class:sym
+DATTRIBUTE	src/jasmin/sym.java	/^  static final int DATTRIBUTE = 21;$/;"	f	class:sym
+DBYTECODE	src/jasmin/sym.java	/^  static final int DBYTECODE = 16;$/;"	f	class:sym
+DCATCH	src/jasmin/sym.java	/^  static final int DCATCH = 2;$/;"	f	class:sym
+DCLASS	src/jasmin/sym.java	/^  static final int DCLASS = 3;$/;"	f	class:sym
+DDEBUG	src/jasmin/sym.java	/^  static final int DDEBUG = 17;$/;"	f	class:sym
+DDEPRECATED	src/jasmin/sym.java	/^  static final int DDEPRECATED = 22;$/;"	f	class:sym
+DEBUG	src/jasmin/Main.java	/^    public static final boolean DEBUG = false;$/;"	f	class:Main
+DEBUG	src/java_cup/sym.java	/^  static final int DEBUG = 20;$/;"	f	class:sym
+DEFAULT	src/jasmin/sym.java	/^  static final int DEFAULT = 62;$/;"	f	class:sym
+DEFAULT_ANT_HOME	build.bat	/^rem set DEFAULT_ANT_HOME=%~dp0..$/;"	v
+DEFAULT_ANT_HOME	build.bat	/^set DEFAULT_ANT_HOME=$/;"	v
+DENCLOSING	src/jasmin/sym.java	/^  static final int DENCLOSING = 18;$/;"	f	class:sym
+DEND	src/jasmin/sym.java	/^  static final int DEND = 4;$/;"	f	class:sym
+DFIELD	src/jasmin/sym.java	/^  static final int DFIELD = 5;$/;"	f	class:sym
+DIMPLEMENTS	src/jasmin/sym.java	/^  static final int DIMPLEMENTS = 14;$/;"	f	class:sym
+DINNER	src/jasmin/sym.java	/^  static final int DINNER = 23;$/;"	f	class:sym
+DINTERFACE	src/jasmin/sym.java	/^  static final int DINTERFACE = 15;$/;"	f	class:sym
+DIVIDE	lib/java_cup/simple_calc/sym.java	/^  static final int DIVIDE = 6;$/;"	f	class:sym
+DLIMIT	src/jasmin/sym.java	/^  static final int DLIMIT = 6;$/;"	f	class:sym
+DLINE	src/jasmin/sym.java	/^  static final int DLINE = 7;$/;"	f	class:sym
+DMETHOD	src/jasmin/sym.java	/^  static final int DMETHOD = 8;$/;"	f	class:sym
+DOT	src/java_cup/sym.java	/^  static final int DOT = 16;$/;"	f	class:sym
+DSET	src/jasmin/sym.java	/^  static final int DSET = 9;$/;"	f	class:sym
+DSIGNATURE	src/jasmin/sym.java	/^  static final int DSIGNATURE = 19;$/;"	f	class:sym
+DSOURCE	src/jasmin/sym.java	/^  static final int DSOURCE = 11;$/;"	f	class:sym
+DSTACK	src/jasmin/sym.java	/^  static final int DSTACK = 20;$/;"	f	class:sym
+DSUPER	src/jasmin/sym.java	/^  static final int DSUPER = 10;$/;"	f	class:sym
+DTHROWS	src/jasmin/sym.java	/^  static final int DTHROWS = 12;$/;"	f	class:sym
+DVAR	src/jasmin/sym.java	/^  static final int DVAR = 13;$/;"	f	class:sym
+DeprecatedAttr	src/jas/DeprecatedAttr.java	/^  public DeprecatedAttr() { }$/;"	m	class:DeprecatedAttr
+DeprecatedAttr	src/jas/DeprecatedAttr.java	/^public class DeprecatedAttr$/;"	c
+DoubleCP	src/jas/DoubleCP.java	/^  public DoubleCP(double n)$/;"	m	class:DoubleCP
+DoubleCP	src/jas/DoubleCP.java	/^public class DoubleCP extends CP implements RuntimeConstants$/;"	c
+EMPTY	src/java_cup/terminal_set.java	/^  public static final terminal_set EMPTY = new terminal_set();$/;"	f	class:terminal_set
+END_METHOD	src/jasmin/ClassFile.java	/^    static final String END_METHOD = "jasmin_reserved_endmethod:";$/;"	f	class:ClassFile
+ENUM	src/jasmin/sym.java	/^  static final int ENUM = 55;$/;"	f	class:sym
+EOF	lib/java_cup/simple_calc/sym.java	/^  static final int EOF = 0;$/;"	f	class:sym
+EOF	src/jasmin/sym.java	/^  static final int EOF = 0;$/;"	f	class:sym
+EOF	src/java_cup/sym.java	/^  static final int EOF = 0;$/;"	f	class:sym
+EOF	src/java_cup/terminal.java	/^  public static final terminal EOF = new terminal("EOF");$/;"	f	class:terminal
+EOF_CHAR	src/java_cup/lexer.java	/^  protected static final int EOF_CHAR = -1;$/;"	f	class:lexer
+EOF_sym	lib/java_cup/simple_calc/parser.java	/^  public int EOF_sym() {return 0;}$/;"	m	class:parser
+EOF_sym	src/jasmin/parser.java	/^  public int EOF_sym() {return 0;}$/;"	m	class:parser
+EOF_sym	src/java_cup/parser.java	/^  public int EOF_sym() {return 0;}$/;"	m	class:parser
+EOF_sym	src/java_cup/runtime/lr_parser.java	/^  public abstract int EOF_sym();$/;"	m	class:lr_parser
+EQ	src/jasmin/sym.java	/^  static final int EQ = 63;$/;"	f	class:sym
+ERROR	src/java_cup/parse_action.java	/^  public static final int ERROR = 0;$/;"	f	class:parse_action
+EnclosingMethodAttr	src/jas/EnclosingMethodAttr.java	/^  public EnclosingMethodAttr(String cls, String mtd, String dsc)$/;"	m	class:EnclosingMethodAttr
+EnclosingMethodAttr	src/jas/EnclosingMethodAttr.java	/^public class EnclosingMethodAttr$/;"	c
+ExceptAttr	src/jas/ExceptAttr.java	/^  public ExceptAttr() { cps = new Vector(); }$/;"	m	class:ExceptAttr
+ExceptAttr	src/jas/ExceptAttr.java	/^public class ExceptAttr$/;"	c
+FIELD	src/jasmin/sym.java	/^  static final int FIELD = 33;$/;"	f	class:sym
+FINAL	src/jasmin/sym.java	/^  static final int FINAL = 44;$/;"	f	class:sym
+FROM	src/jasmin/sym.java	/^  static final int FROM = 27;$/;"	f	class:sym
+FULL_FRAME	src/jas/VerifyFrame.java	/^  private static final int FULL_FRAME           = 255;$/;"	f	class:VerifyFrame	file:
+FieldCP	src/jas/FieldCP.java	/^  public FieldCP(String clazz, String name, String sig)$/;"	m	class:FieldCP
+FieldCP	src/jas/FieldCP.java	/^public class FieldCP extends CP implements RuntimeConstants$/;"	c
+FloatCP	src/jas/FloatCP.java	/^  public FloatCP(float n)$/;"	m	class:FloatCP
+FloatCP	src/jas/FloatCP.java	/^public class FloatCP extends CP implements RuntimeConstants$/;"	c
+GenericAttr	src/jas/GenericAttr.java	/^  public GenericAttr(CP name, byte data[])$/;"	m	class:GenericAttr
+GenericAttr	src/jas/GenericAttr.java	/^  public GenericAttr(String name, String file) throws IOException, jasError$/;"	m	class:GenericAttr
+GenericAttr	src/jas/GenericAttr.java	/^  public GenericAttr(String name, byte data[])$/;"	m	class:GenericAttr
+GenericAttr	src/jas/GenericAttr.java	/^public class GenericAttr$/;"	c
+ID	src/java_cup/sym.java	/^  static final int ID = 21;$/;"	f	class:sym
+IMPORT	src/java_cup/sym.java	/^  static final int IMPORT = 3;$/;"	f	class:sym
+INIT	src/java_cup/sym.java	/^  static final int INIT = 9;$/;"	f	class:sym
+INNER	src/jasmin/sym.java	/^  static final int INNER = 36;$/;"	f	class:sym
+INTERFACE	src/jasmin/sym.java	/^  static final int INTERFACE = 45;$/;"	f	class:sym
+INVISIBLE	src/jasmin/sym.java	/^  static final int INVISIBLE = 39;$/;"	f	class:sym
+INVISIBLEPARAM	src/jasmin/sym.java	/^  static final int INVISIBLEPARAM = 41;$/;"	f	class:sym
+IS	src/jasmin/sym.java	/^  static final int IS = 26;$/;"	f	class:sym
+IincInsn	src/jas/IincInsn.java	/^  public IincInsn(int vindex, int increment, boolean Wide)$/;"	m	class:IincInsn
+IincInsn	src/jas/IincInsn.java	/^public class IincInsn extends Insn implements RuntimeConstants$/;"	c
+IincOperand	src/jas/InsnOperand.java	/^  IincOperand(int vindex, int constt, boolean Wide)$/;"	m	class:IincOperand
+IincOperand	src/jas/InsnOperand.java	/^class IincOperand extends InsnOperand$/;"	c
+InnerClass	src/jas/InnerClass.java	/^  public InnerClass(short access, String name, String inner, String outer)$/;"	m	class:InnerClass
+InnerClass	src/jas/InnerClass.java	/^public class InnerClass$/;"	c
+InnerClassesAttr	src/jas/InnerClassesAttr.java	/^  public InnerClassesAttr()$/;"	m	class:InnerClassesAttr
+InnerClassesAttr	src/jas/InnerClassesAttr.java	/^public class InnerClassesAttr$/;"	c
+Insn	src/jas/Insn.java	/^  Insn() { return; }$/;"	m	class:Insn
+Insn	src/jas/Insn.java	/^  public Insn(int opc)$/;"	m	class:Insn
+Insn	src/jas/Insn.java	/^  public Insn(int opc, CP arg)$/;"	m	class:Insn
+Insn	src/jas/Insn.java	/^  public Insn(int opc, Label target, int line)$/;"	m	class:Insn
+Insn	src/jas/Insn.java	/^  public Insn(int opc, int val, boolean Wide)$/;"	m	class:Insn
+Insn	src/jas/Insn.java	/^  public Insn(int opc, int val, char relative)$/;"	m	class:Insn
+Insn	src/jas/Insn.java	/^public class Insn implements RuntimeConstants$/;"	c
+Insn	src/jasmin/sym.java	/^  static final int Insn = 68;$/;"	f	class:sym
+InsnInfo	src/jasmin/InsnInfo.java	/^class InsnInfo {$/;"	c
+InsnOperand	src/jas/InsnOperand.java	/^abstract class InsnOperand$/;"	c
+Int	src/jasmin/sym.java	/^  static final int Int = 69;$/;"	f	class:sym
+IntegerCP	src/jas/IntegerCP.java	/^  public IntegerCP(int n)$/;"	m	class:IntegerCP
+IntegerCP	src/jas/IntegerCP.java	/^public class IntegerCP extends CP implements RuntimeConstants$/;"	c
+IntegerOperand	src/jas/InsnOperand.java	/^  IntegerOperand(int n) { val = n; }$/;"	m	class:IntegerOperand
+IntegerOperand	src/jas/InsnOperand.java	/^class IntegerOperand extends InsnOperand$/;"	c
+InterfaceCP	src/jas/InterfaceCP.java	/^  public InterfaceCP(String cname, String varname, String sig)$/;"	m	class:InterfaceCP
+InterfaceCP	src/jas/InterfaceCP.java	/^public class InterfaceCP extends CP implements RuntimeConstants$/;"	c
+InvokeinterfaceInsn	src/jas/InvokeinterfaceInsn.java	/^  public InvokeinterfaceInsn(CP cpe, int nargs)$/;"	m	class:InvokeinterfaceInsn
+InvokeinterfaceInsn	src/jas/InvokeinterfaceInsn.java	/^public class InvokeinterfaceInsn extends Insn implements RuntimeConstants$/;"	c
+InvokeinterfaceOperand	src/jas/InsnOperand.java	/^  InvokeinterfaceOperand(CP cpe, int nargs)$/;"	m	class:InvokeinterfaceOperand
+InvokeinterfaceOperand	src/jas/InsnOperand.java	/^class InvokeinterfaceOperand extends InsnOperand$/;"	c
+JAVA_MAGIC	src/jas/RuntimeConstants.java	/^    public static final int JAVA_MAGIC = -889275714;$/;"	f	interface:RuntimeConstants
+JAVA_MINOR_VERSION	src/jas/RuntimeConstants.java	/^    public static final int JAVA_MINOR_VERSION = 3;$/;"	f	interface:RuntimeConstants
+JAVA_VERSION	src/jas/RuntimeConstants.java	/^    public static final int JAVA_VERSION = 45;$/;"	f	interface:RuntimeConstants
+JDK	makefile	/^JDK = E:\/JDK\/BIN\/$/;"	m
+JDK_SMF_MIN	src/jas/StackMap.java	/^  static private final int JDK_SMF_MIN = 50;$/;"	f	class:StackMap	file:
+Jasmin	src/Jasmin.java	/^public class Jasmin {$/;"	c
+LOCALS	src/jasmin/sym.java	/^  static final int LOCALS = 32;$/;"	f	class:sym
+LOOKUPSWITCH	src/jasmin/sym.java	/^  static final int LOOKUPSWITCH = 60;$/;"	f	class:sym
+LPAREN	lib/java_cup/simple_calc/sym.java	/^  static final int LPAREN = 8;$/;"	f	class:sym
+Label	src/jas/Label.java	/^  public Label(String tag)$/;"	m	class:Label
+Label	src/jas/Label.java	/^public class Label extends Insn implements RuntimeConstants$/;"	c
+LabelOperand	src/jas/InsnOperand.java	/^  LabelOperand(Label l, Insn source, boolean wide, int line)$/;"	m	class:LabelOperand
+LabelOperand	src/jas/InsnOperand.java	/^  LabelOperand(Label l, Insn source, int line)$/;"	m	class:LabelOperand
+LabelOperand	src/jas/InsnOperand.java	/^class LabelOperand extends InsnOperand$/;"	c
+LabelOrOffset	src/jas/LabelOrOffset.java	/^    public LabelOrOffset(Label l) {$/;"	m	class:LabelOrOffset
+LabelOrOffset	src/jas/LabelOrOffset.java	/^    public LabelOrOffset(int o) {$/;"	m	class:LabelOrOffset
+LabelOrOffset	src/jas/LabelOrOffset.java	/^public class LabelOrOffset {$/;"	c
+LdcOperand	src/jas/InsnOperand.java	/^  LdcOperand(Insn s, CP cpe) { source = s; this.cpe = cpe; wide = true; }$/;"	m	class:LdcOperand
+LdcOperand	src/jas/InsnOperand.java	/^  LdcOperand(Insn s, CP cpe, boolean wide)$/;"	m	class:LdcOperand
+LdcOperand	src/jas/InsnOperand.java	/^class LdcOperand extends InsnOperand implements RuntimeConstants$/;"	c
+LineTableAttr	src/jas/LineTableAttr.java	/^  public LineTableAttr()$/;"	m	class:LineTableAttr
+LineTableAttr	src/jas/LineTableAttr.java	/^public class LineTableAttr$/;"	c
+LocalVarEntry	src/jas/LocalVarEntry.java	/^  public LocalVarEntry$/;"	m	class:LocalVarEntry
+LocalVarEntry	src/jas/LocalVarEntry.java	/^public class LocalVarEntry$/;"	c
+LocalVarTableAttr	src/jas/LocalVarTableAttr.java	/^  public LocalVarTableAttr()$/;"	m	class:LocalVarTableAttr
+LocalVarTableAttr	src/jas/LocalVarTableAttr.java	/^public class LocalVarTableAttr$/;"	c
+LocalVarTypeTableAttr	src/jas/LocalVarTypeTableAttr.java	/^  public LocalVarTypeTableAttr()$/;"	m	class:LocalVarTypeTableAttr
+LocalVarTypeTableAttr	src/jas/LocalVarTypeTableAttr.java	/^public class LocalVarTypeTableAttr$/;"	c
+LongCP	src/jas/LongCP.java	/^  public LongCP(long n)$/;"	m	class:LongCP
+LongCP	src/jas/LongCP.java	/^public class LongCP extends CP implements RuntimeConstants$/;"	c
+LookupswitchInsn	src/jas/LookupswitchInsn.java	/^  public LookupswitchInsn(LabelOrOffset def, int match[],$/;"	m	class:LookupswitchInsn
+LookupswitchInsn	src/jas/LookupswitchInsn.java	/^public class LookupswitchInsn extends Insn implements RuntimeConstants$/;"	c
+LookupswitchOperand	src/jas/InsnOperand.java	/^  LookupswitchOperand(Insn s, LabelOrOffset def, int m[], LabelOrOffset j[])$/;"	m	class:LookupswitchOperand
+LookupswitchOperand	src/jas/InsnOperand.java	/^class LookupswitchOperand extends InsnOperand$/;"	c
+MAX_RHS	src/java_cup/parser.java	/^  protected final int MAX_RHS = 200;$/;"	f	class:CUP$actions
+METHOD	src/jasmin/sym.java	/^  static final int METHOD = 28;$/;"	f	class:sym
+MINUS	lib/java_cup/simple_calc/sym.java	/^  static final int MINUS = 4;$/;"	f	class:sym
+MOD	lib/java_cup/simple_calc/sym.java	/^  static final int MOD = 7;$/;"	f	class:sym
+Main	lib/java_cup/simple_calc/Main.java	/^public class Main {$/;"	c
+Main	src/jasmin/Main.java	/^public class Main {$/;"	c
+Main	src/java_cup/Main.java	/^  private Main() { }$/;"	m	class:Main	file:
+Main	src/java_cup/Main.java	/^public class Main {$/;"	c
+Method	src/jas/Method.java	/^  public Method (short macc, AsciiCP name, AsciiCP desc)$/;"	m	class:Method
+Method	src/jas/Method.java	/^public class Method$/;"	c
+MethodCP	src/jas/MethodCP.java	/^  public MethodCP(String cname, String varname, String sig)$/;"	m	class:MethodCP
+MethodCP	src/jas/MethodCP.java	/^public class MethodCP extends CP implements RuntimeConstants$/;"	c
+MultiarrayInsn	src/jas/MultiarrayInsn.java	/^  public MultiarrayInsn(CP cpe, int sz)$/;"	m	class:MultiarrayInsn
+MultiarrayInsn	src/jas/MultiarrayInsn.java	/^public class MultiarrayInsn extends Insn implements RuntimeConstants$/;"	c
+MultiarrayOperand	src/jas/InsnOperand.java	/^  MultiarrayOperand(CP cpe, int sz)$/;"	m	class:MultiarrayOperand
+MultiarrayOperand	src/jas/InsnOperand.java	/^class MultiarrayOperand extends InsnOperand$/;"	c
+NATIVE	src/jasmin/sym.java	/^  static final int NATIVE = 46;$/;"	f	class:sym
+NON	src/java_cup/sym.java	/^  static final int NON = 8;$/;"	f	class:sym
+NUMBER	lib/java_cup/simple_calc/sym.java	/^  static final int NUMBER = 10;$/;"	f	class:sym
+NameTypeCP	src/jas/NameTypeCP.java	/^  public NameTypeCP(String name, String sig)$/;"	m	class:NameTypeCP
+NameTypeCP	src/jas/NameTypeCP.java	/^public class NameTypeCP extends CP implements RuntimeConstants$/;"	c
+Num	src/jasmin/sym.java	/^  static final int Num = 70;$/;"	f	class:sym
+OFFSET	src/jasmin/sym.java	/^  static final int OFFSET = 31;$/;"	f	class:sym
+OUTER	src/jasmin/sym.java	/^  static final int OUTER = 37;$/;"	f	class:sym
+OffsetOperand	src/jas/InsnOperand.java	/^  OffsetOperand(Insn parent, int val) {$/;"	m	class:OffsetOperand
+OffsetOperand	src/jas/InsnOperand.java	/^  OffsetOperand(Insn parent, int val, boolean wide) {$/;"	m	class:OffsetOperand
+OffsetOperand	src/jas/InsnOperand.java	/^class OffsetOperand extends InsnOperand {$/;"	c
+PACKAGE	src/java_cup/sym.java	/^  static final int PACKAGE = 2;$/;"	f	class:sym
+PARSER	src/java_cup/sym.java	/^  static final int PARSER = 6;$/;"	f	class:sym
+PARSER_DEBUG	src/jasmin/ClassFile.java	/^    private static final boolean PARSER_DEBUG = false;$/;"	f	class:ClassFile	file:
+PLUS	lib/java_cup/simple_calc/sym.java	/^  static final int PLUS = 3;$/;"	f	class:sym
+PRIVATE	src/jasmin/sym.java	/^  static final int PRIVATE = 47;$/;"	f	class:sym
+PROTECTED	src/jasmin/sym.java	/^  static final int PROTECTED = 48;$/;"	f	class:sym
+PUBLIC	src/jasmin/sym.java	/^  static final int PUBLIC = 49;$/;"	f	class:sym
+ParserError	src/jas/Annotation.java	/^  public static final void ParserError() throws jasError$/;"	m	class:Annotation
+REDUCE	src/java_cup/parse_action.java	/^  public static final int REDUCE = 2;$/;"	f	class:parse_action
+RPAREN	lib/java_cup/simple_calc/sym.java	/^  static final int RPAREN = 9;$/;"	f	class:sym
+Relative	src/jasmin/sym.java	/^  static final int Relative = 71;$/;"	f	class:sym
+RelativeOffsetOperand	src/jas/InsnOperand.java	/^  RelativeOffsetOperand(Insn parent, int val) {$/;"	m	class:RelativeOffsetOperand
+RelativeOffsetOperand	src/jas/InsnOperand.java	/^  RelativeOffsetOperand(Insn parent, int val, boolean wide) {$/;"	m	class:RelativeOffsetOperand
+RelativeOffsetOperand	src/jas/InsnOperand.java	/^class RelativeOffsetOperand extends InsnOperand {$/;"	c
+ReservedWords	src/jasmin/ReservedWords.java	/^abstract class ReservedWords {$/;"	c
+RuntimeConstants	src/jas/RuntimeConstants.java	/^public interface RuntimeConstants {$/;"	i
+SAME_FRAME_S0	src/jas/VerifyFrame.java	/^  private static final int SAME_FRAME_S0        = 251;  \/\/ +off$/;"	f	class:VerifyFrame	file:
+SAME_FRAME_S0_max	src/jas/VerifyFrame.java	/^  private static final int SAME_FRAME_S0_max    = 63;$/;"	f	class:VerifyFrame	file:
+SAME_FRAME_S0_min	src/jas/VerifyFrame.java	/^  private static final int SAME_FRAME_S0_min    = 0;$/;"	f	class:VerifyFrame	file:
+SAME_FRAME_S1	src/jas/VerifyFrame.java	/^  private static final int SAME_FRAME_S1        = 247;  \/\/ + off, vi$/;"	f	class:VerifyFrame	file:
+SAME_FRAME_S1_max	src/jas/VerifyFrame.java	/^  private static final int SAME_FRAME_S1_max    = 127;$/;"	f	class:VerifyFrame	file:
+SAME_FRAME_S1_min	src/jas/VerifyFrame.java	/^  private static final int SAME_FRAME_S1_min    = 64;   \/\/ + vi$/;"	f	class:VerifyFrame	file:
+SCAN	src/java_cup/sym.java	/^  static final int SCAN = 10;$/;"	f	class:sym
+SEMI	lib/java_cup/simple_calc/sym.java	/^  static final int SEMI = 2;$/;"	f	class:sym
+SEMI	src/java_cup/sym.java	/^  static final int SEMI = 13;$/;"	f	class:sym
+SEP	src/jasmin/sym.java	/^  static final int SEP = 64;$/;"	f	class:sym
+SEPARATORS	src/jasmin/Scanner.java	/^    static final String SEPARATORS = WHITESPACE + ":=";$/;"	f	class:Scanner
+SHIFT	src/java_cup/parse_action.java	/^  public static final int SHIFT = 1;$/;"	f	class:parse_action
+SIGNATURE	src/jasmin/sym.java	/^  static final int SIGNATURE = 29;$/;"	f	class:sym
+SRC	makefile	/^SRC = src\/Jasmin.java \\$/;"	m
+STACK	src/jasmin/sym.java	/^  static final int STACK = 30;$/;"	f	class:sym
+STAR	src/java_cup/sym.java	/^  static final int STAR = 15;$/;"	f	class:sym
+START	src/java_cup/sym.java	/^  static final int START = 12;$/;"	f	class:sym
+START_nt	src/java_cup/non_terminal.java	/^  public static final non_terminal START_nt = new non_terminal("$START");$/;"	f	class:non_terminal
+STATIC	src/jasmin/sym.java	/^  static final int STATIC = 50;$/;"	f	class:sym
+STRICT	src/jasmin/sym.java	/^  static final int STRICT = 58;$/;"	f	class:sym
+SYNCHRONIZED	src/jasmin/sym.java	/^  static final int SYNCHRONIZED = 51;$/;"	f	class:sym
+SYNTHETIC	src/jasmin/sym.java	/^  static final int SYNTHETIC = 59;$/;"	f	class:sym
+Scanner	src/jasmin/Scanner.java	/^    public Scanner(Reader i) throws java.io.IOException, jasError$/;"	m	class:Scanner
+Scanner	src/jasmin/Scanner.java	/^class Scanner {$/;"	c
+ScannerUtils	src/jasmin/ScannerUtils.java	/^abstract class ScannerUtils {$/;"	c
+ShortOperand	src/jas/InsnOperand.java	/^  ShortOperand(int n) { offset = n; }$/;"	m	class:ShortOperand
+ShortOperand	src/jas/InsnOperand.java	/^class ShortOperand extends InsnOperand$/;"	c
+SignatureAttr	src/jas/SignatureAttr.java	/^  public SignatureAttr(CP signature)$/;"	m	class:SignatureAttr
+SignatureAttr	src/jas/SignatureAttr.java	/^  public SignatureAttr(String signature)$/;"	m	class:SignatureAttr
+SignatureAttr	src/jas/SignatureAttr.java	/^public class SignatureAttr$/;"	c
+SourceAttr	src/jas/SourceAttr.java	/^  public SourceAttr(CP name)$/;"	m	class:SourceAttr
+SourceAttr	src/jas/SourceAttr.java	/^  public SourceAttr(String name)$/;"	m	class:SourceAttr
+SourceAttr	src/jas/SourceAttr.java	/^public class SourceAttr$/;"	c
+SourceDebugExtensionAttr	src/jas/SourceDebugExtensionAttr.java	/^  public SourceDebugExtensionAttr(String debug)$/;"	m	class:SourceDebugExtensionAttr
+SourceDebugExtensionAttr	src/jas/SourceDebugExtensionAttr.java	/^public class SourceDebugExtensionAttr$/;"	c
+StackMap	src/jas/StackMap.java	/^  protected StackMap(CP attr)$/;"	m	class:StackMap
+StackMap	src/jas/StackMap.java	/^  public StackMap(ClassEnv e)$/;"	m	class:StackMap
+StackMap	src/jas/StackMap.java	/^public class StackMap$/;"	c
+Str	src/jasmin/sym.java	/^  static final int Str = 66;$/;"	f	class:sym
+StringCP	src/jas/StringCP.java	/^  public StringCP(String s)$/;"	m	class:StringCP
+StringCP	src/jas/StringCP.java	/^public class StringCP extends CP implements RuntimeConstants$/;"	c
+TABLESWITCH	src/jasmin/sym.java	/^  static final int TABLESWITCH = 61;$/;"	f	class:sym
+TERMINAL	src/java_cup/sym.java	/^  static final int TERMINAL = 7;$/;"	f	class:sym
+TIMES	lib/java_cup/simple_calc/sym.java	/^  static final int TIMES = 5;$/;"	f	class:sym
+TO	src/jasmin/sym.java	/^  static final int TO = 35;$/;"	f	class:sym
+TRANSIENT	src/jasmin/sym.java	/^  static final int TRANSIENT = 52;$/;"	f	class:sym
+T_BOOLEAN	src/jas/RuntimeConstants.java	/^    public static final int T_BOOLEAN = 4;$/;"	f	interface:RuntimeConstants
+T_BYTE	src/jas/RuntimeConstants.java	/^    public static final int T_BYTE = 8;$/;"	f	interface:RuntimeConstants
+T_CHAR	src/jas/RuntimeConstants.java	/^    public static final int T_CHAR = 5;$/;"	f	interface:RuntimeConstants
+T_CLASS	src/jas/RuntimeConstants.java	/^    public static final int T_CLASS = 2;$/;"	f	interface:RuntimeConstants
+T_DOUBLE	src/jas/RuntimeConstants.java	/^    public static final int T_DOUBLE = 7;$/;"	f	interface:RuntimeConstants
+T_FLOAT	src/jas/RuntimeConstants.java	/^    public static final int T_FLOAT = 6;$/;"	f	interface:RuntimeConstants
+T_INT	src/jas/RuntimeConstants.java	/^    public static final int T_INT = 10;$/;"	f	interface:RuntimeConstants
+T_LONG	src/jas/RuntimeConstants.java	/^    public static final int T_LONG = 11;$/;"	f	interface:RuntimeConstants
+T_SHORT	src/jas/RuntimeConstants.java	/^    public static final int T_SHORT = 9;$/;"	f	interface:RuntimeConstants
+TableswitchInsn	src/jas/TableswitchInsn.java	/^  public TableswitchInsn(int min, int max, LabelOrOffset def, LabelOrOffset j[])$/;"	m	class:TableswitchInsn
+TableswitchInsn	src/jas/TableswitchInsn.java	/^public class TableswitchInsn extends Insn implements RuntimeConstants$/;"	c
+TableswitchOperand	src/jas/InsnOperand.java	/^  TableswitchOperand(Insn s,int min, int max, LabelOrOffset def,$/;"	m	class:TableswitchOperand
+TableswitchOperand	src/jas/InsnOperand.java	/^class TableswitchOperand extends InsnOperand$/;"	c
+USE	src/jasmin/sym.java	/^  static final int USE = 42;$/;"	f	class:sym
+USING	src/jasmin/sym.java	/^  static final int USING = 25;$/;"	f	class:sym
+UnsignedByteOperand	src/jas/InsnOperand.java	/^  UnsignedByteOperand(int n) { val = n; }$/;"	m	class:UnsignedByteOperand
+UnsignedByteOperand	src/jas/InsnOperand.java	/^class UnsignedByteOperand extends InsnOperand$/;"	c
+UnsignedByteWideOperand	src/jas/InsnOperand.java	/^  UnsignedByteWideOperand(int n, boolean Wide)$/;"	m	class:UnsignedByteWideOperand
+UnsignedByteWideOperand	src/jas/InsnOperand.java	/^class UnsignedByteWideOperand extends InsnOperand$/;"	c
+VARARGS	src/jasmin/sym.java	/^  static final int VARARGS = 57;$/;"	f	class:sym
+VISIBLE	src/jasmin/sym.java	/^  static final int VISIBLE = 38;$/;"	f	class:sym
+VISIBLEPARAM	src/jasmin/sym.java	/^  static final int VISIBLEPARAM = 40;$/;"	f	class:sym
+VOLATILE	src/jasmin/sym.java	/^  static final int VOLATILE = 53;$/;"	f	class:sym
+Var	src/jas/Var.java	/^  public Var(short vacc, CP name, CP desc, ConstAttr cattr)$/;"	m	class:Var
+Var	src/jas/Var.java	/^public class Var$/;"	c
+VerificationTypeInfo	src/jas/VerificationTypeInfo.java	/^  public VerificationTypeInfo(String item) throws jasError$/;"	m	class:VerificationTypeInfo
+VerificationTypeInfo	src/jas/VerificationTypeInfo.java	/^  public VerificationTypeInfo(String item, String val)$/;"	m	class:VerificationTypeInfo
+VerificationTypeInfo	src/jas/VerificationTypeInfo.java	/^public class VerificationTypeInfo$/;"	c
+VerifyFrame	src/jas/VerifyFrame.java	/^  public VerifyFrame(Vector InitialFrame)$/;"	m	class:VerifyFrame
+VerifyFrame	src/jas/VerifyFrame.java	/^public class VerifyFrame$/;"	c
+WHITESPACE	src/jasmin/Scanner.java	/^    static final String WHITESPACE = " \\n\\t\\r";$/;"	f	class:Scanner
+WITH	src/java_cup/sym.java	/^  static final int WITH = 11;$/;"	f	class:sym
+Wide	src/jas/InsnOperand.java	/^  boolean Wide;$/;"	f	class:IincOperand
+Wide	src/jas/InsnOperand.java	/^  boolean Wide;$/;"	f	class:UnsignedByteWideOperand
+Word	src/jasmin/sym.java	/^  static final int Word = 67;$/;"	f	class:sym
+_JAVACMD	build.bat	/^if "%_JAVACMD%" == "" set _JAVACMD=%JAVA_HOME%\\bin\\java.exe$/;"	v
+_JAVACMD	build.bat	/^if "%_JAVACMD%" == "" set _JAVACMD=java.exe$/;"	v
+_JAVACMD	build.bat	/^set _JAVACMD=$/;"	v
+_JAVACMD	build.bat	/^set _JAVACMD=%JAVACMD%$/;"	v
+_action	src/java_cup/production.java	/^  protected action_part _action;$/;"	f	class:production
+_action_table	lib/java_cup/simple_calc/parser.java	/^  protected static final short[][] _action_table = {$/;"	f	class:parser
+_action_table	src/jasmin/parser.java	/^  protected static final short[][] _action_table = {$/;"	f	class:parser
+_action_table	src/java_cup/parser.java	/^  protected static final short[][] _action_table = {$/;"	f	class:parser
+_all	src/java_cup/lalr_item_set.java	/^  protected Hashtable _all = new Hashtable(11);$/;"	f	class:lalr_item_set
+_all	src/java_cup/lalr_state.java	/^  protected static Hashtable _all = new Hashtable();$/;"	f	class:lalr_state
+_all	src/java_cup/non_terminal.java	/^  protected static Hashtable _all = new Hashtable();$/;"	f	class:non_terminal
+_all	src/java_cup/production.java	/^  protected static Hashtable _all = new Hashtable();$/;"	f	class:production
+_all	src/java_cup/symbol_set.java	/^  protected Hashtable _all = new Hashtable(11);$/;"	f	class:symbol_set
+_all	src/java_cup/terminal.java	/^  protected static Hashtable _all = new Hashtable();$/;"	f	class:terminal
+_all_by_index	src/java_cup/terminal.java	/^  protected static Hashtable _all_by_index = new Hashtable();$/;"	f	class:terminal
+_all_kernels	src/java_cup/lalr_state.java	/^  protected static Hashtable _all_kernels = new Hashtable();$/;"	f	class:lalr_state
+_base_production	src/java_cup/action_production.java	/^  protected production _base_production;$/;"	f	class:action_production
+_code_string	src/java_cup/action_part.java	/^  protected String _code_string;$/;"	f	class:action_part
+_core_hash_cache	src/java_cup/lr_item_core.java	/^  protected int _core_hash_cache;$/;"	f	class:lr_item_core
+_done_parsing	src/java_cup/runtime/lr_parser.java	/^  protected boolean _done_parsing = false;$/;"	f	class:lr_parser
+_dot_pos	src/java_cup/lr_item_core.java	/^  protected int _dot_pos;$/;"	f	class:lr_item_core
+_elements	src/java_cup/terminal_set.java	/^  protected BitSet _elements;$/;"	f	class:terminal_set
+_error_sync_size	src/java_cup/runtime/lr_parser.java	/^  protected final static int _error_sync_size = 3;$/;"	f	class:lr_parser
+_first_set	src/java_cup/non_terminal.java	/^  protected terminal_set _first_set = new terminal_set();$/;"	f	class:non_terminal
+_first_set	src/java_cup/production.java	/^  protected terminal_set _first_set = new terminal_set();$/;"	f	class:production
+_getCode	src/jasmin/ClassFile.java	/^    CodeAttr _getCode() throws jasError {$/;"	m	class:ClassFile
+_index	src/java_cup/lalr_state.java	/^  protected int _index;$/;"	f	class:lalr_state
+_index	src/java_cup/production.java	/^  protected int _index;$/;"	f	class:production
+_index	src/java_cup/symbol.java	/^   protected int _index;$/;"	f	class:symbol
+_items	src/java_cup/lalr_state.java	/^  protected lalr_item_set _items;$/;"	f	class:lalr_state
+_label	src/java_cup/production_part.java	/^  protected String _label;$/;"	f	class:production_part
+_lhs	src/java_cup/production.java	/^  protected symbol_part _lhs;$/;"	f	class:production
+_lookahead	src/java_cup/lalr_item.java	/^  protected terminal_set _lookahead;$/;"	f	class:lalr_item
+_name	src/java_cup/symbol.java	/^   protected String _name; $/;"	f	class:symbol
+_next	src/java_cup/lalr_transition.java	/^  protected lalr_transition _next;$/;"	f	class:lalr_transition
+_nullable	src/java_cup/non_terminal.java	/^  protected boolean _nullable;$/;"	f	class:non_terminal
+_nullable	src/java_cup/production.java	/^  protected boolean _nullable = false;$/;"	f	class:production
+_nullable_known	src/java_cup/production.java	/^  protected boolean _nullable_known = false;$/;"	f	class:production
+_num_reductions	src/java_cup/production.java	/^  protected int _num_reductions = 0;$/;"	f	class:production
+_num_states	src/java_cup/parse_action_table.java	/^  protected int _num_states;$/;"	f	class:parse_action_table
+_num_states	src/java_cup/parse_reduce_table.java	/^  protected int _num_states;$/;"	f	class:parse_reduce_table
+_on_symbol	src/java_cup/lalr_transition.java	/^  protected symbol _on_symbol;$/;"	f	class:lalr_transition
+_production_table	lib/java_cup/simple_calc/parser.java	/^  protected static final short _production_table[][] = {$/;"	f	class:parser
+_production_table	src/jasmin/parser.java	/^  protected static final short _production_table[][] = {$/;"	f	class:parser
+_production_table	src/java_cup/parser.java	/^  protected static final short _production_table[][] = {$/;"	f	class:parser
+_productions	src/java_cup/non_terminal.java	/^  protected Hashtable _productions = new Hashtable(11);$/;"	f	class:non_terminal
+_propagate_items	src/java_cup/lalr_item.java	/^  protected Stack _propagate_items; $/;"	f	class:lalr_item
+_reduce_table	lib/java_cup/simple_calc/parser.java	/^  protected static final short[][] _reduce_table = {$/;"	f	class:parser
+_reduce_table	src/jasmin/parser.java	/^  protected static final short[][] _reduce_table = {$/;"	f	class:parser
+_reduce_table	src/java_cup/parser.java	/^  protected static final short[][] _reduce_table = {$/;"	f	class:parser
+_reduce_with	src/java_cup/reduce_action.java	/^  protected production _reduce_with;$/;"	f	class:reduce_action
+_rhs	src/java_cup/production.java	/^  protected production_part _rhs[];$/;"	f	class:production
+_rhs_length	src/java_cup/production.java	/^  protected int _rhs_length;$/;"	f	class:production
+_shift_to	src/java_cup/shift_action.java	/^  protected lalr_state _shift_to;$/;"	f	class:shift_action
+_size	src/java_cup/parse_action_row.java	/^  protected static int _size = 0;$/;"	f	class:parse_action_row
+_size	src/java_cup/parse_reduce_row.java	/^  protected static int _size = 0;$/;"	f	class:parse_reduce_row
+_stack_type	src/java_cup/symbol.java	/^   protected String _stack_type;$/;"	f	class:symbol
+_symbol_after_dot	src/java_cup/lr_item_core.java	/^  protected symbol _symbol_after_dot = null;$/;"	f	class:lr_item_core
+_the_production	src/java_cup/lr_item_core.java	/^  protected production _the_production;$/;"	f	class:lr_item_core
+_the_symbol	src/java_cup/symbol_part.java	/^  protected symbol _the_symbol;$/;"	f	class:symbol_part
+_to_state	src/java_cup/lalr_transition.java	/^  protected lalr_state _to_state;$/;"	f	class:lalr_transition
+_transitions	src/java_cup/lalr_state.java	/^  protected lalr_transition _transitions = null;$/;"	f	class:lalr_state
+_use_count	src/java_cup/symbol.java	/^   protected int _use_count = 0;$/;"	f	class:symbol
+acc	src/jas/Method.java	/^  short acc;$/;"	f	class:Method
+access	src/jas/InnerClass.java	/^  short access;$/;"	f	class:InnerClass
+access_val	src/jasmin/parser.java	/^    short access_val;$/;"	f	class:CUP$actions
+action	src/java_cup/production.java	/^  public action_part action() {return _action;}$/;"	m	class:production
+action_code	src/java_cup/emit.java	/^  public static String action_code = null;$/;"	f	class:emit
+action_code_time	src/java_cup/emit.java	/^  public static long action_code_time      = 0;$/;"	f	class:emit
+action_obj	lib/java_cup/simple_calc/parser.java	/^  protected CUP$actions action_obj;$/;"	f	class:parser
+action_obj	src/jasmin/parser.java	/^  protected CUP$actions action_obj;$/;"	f	class:parser
+action_obj	src/java_cup/parser.java	/^  protected CUP$actions action_obj;$/;"	f	class:parser
+action_part	src/java_cup/action_part.java	/^  public action_part(String code_str)$/;"	m	class:action_part
+action_part	src/java_cup/action_part.java	/^public class action_part extends production_part {$/;"	c
+action_production	src/java_cup/action_production.java	/^  public action_production($/;"	m	class:action_production
+action_production	src/java_cup/action_production.java	/^public class action_production extends production {$/;"	c
+action_tab	src/java_cup/runtime/lr_parser.java	/^  protected short[][] action_tab;$/;"	f	class:lr_parser
+action_table	lib/java_cup/simple_calc/parser.java	/^  public short[][] action_table() {return _action_table;}$/;"	m	class:parser
+action_table	src/jasmin/parser.java	/^  public short[][] action_table() {return _action_table;}$/;"	m	class:parser
+action_table	src/java_cup/Main.java	/^  protected static parse_action_table action_table;$/;"	f	class:Main
+action_table	src/java_cup/parser.java	/^  public short[][] action_table() {return _action_table;}$/;"	m	class:parser
+action_table	src/java_cup/runtime/lr_parser.java	/^  public abstract short[][] action_table();$/;"	m	class:lr_parser
+action_table_time	src/java_cup/emit.java	/^  public static long action_table_time     = 0;$/;"	f	class:emit
+action_translate	src/java_cup/production.java	/^  protected String action_translate($/;"	m	class:production
+add	TEST/JavaCaller/AddInstructions_java.java	/^  public static int add(int a , int b) {$/;"	m	class:AddInstructions_java
+add	src/jas/AnnotParamAttr.java	/^  public void add(Annotation annotation, int paramnum)$/;"	m	class:AnnotParamAttr
+add	src/jas/AnnotationAttr.java	/^  public void add(Annotation annotation)$/;"	m	class:AnnotationAttr
+add	src/java_cup/lalr_item_set.java	/^  public lalr_item add(lalr_item itm) throws internal_error$/;"	m	class:lalr_item_set
+add	src/java_cup/lalr_item_set.java	/^  public void add(lalr_item_set other) throws internal_error$/;"	m	class:lalr_item_set
+add	src/java_cup/symbol_set.java	/^  public boolean add(symbol sym) throws internal_error$/;"	m	class:symbol_set
+add	src/java_cup/symbol_set.java	/^  public boolean add(symbol_set other) throws internal_error$/;"	m	class:symbol_set
+add	src/java_cup/terminal_set.java	/^  public boolean add(terminal sym) $/;"	m	class:terminal_set
+add	src/java_cup/terminal_set.java	/^  public boolean add(terminal_set other)$/;"	m	class:terminal_set
+addAnnotation	src/jas/ClassEnv.java	/^  public Annotation addAnnotation(boolean visible, String clsname)$/;"	m	class:ClassEnv
+addAnnotation	src/jas/Method.java	/^  public Annotation addAnnotation() throws jasError$/;"	m	class:Method
+addAnnotation	src/jas/Method.java	/^  public Annotation addAnnotation(boolean visible, String clsname)$/;"	m	class:Method
+addAnnotation	src/jas/Method.java	/^  public Annotation addAnnotation(boolean visible, String clsname, int paramnum)$/;"	m	class:Method
+addAnnotation	src/jas/Var.java	/^  public Annotation addAnnotation(boolean visible, String clsname)$/;"	m	class:Var
+addAnnotation	src/jasmin/ClassFile.java	/^    void addAnnotation() throws jasError$/;"	m	class:ClassFile
+addAnnotation	src/jasmin/ClassFile.java	/^    void addAnnotation(boolean visible, String clname) throws jasError$/;"	m	class:ClassFile
+addAnnotation	src/jasmin/ClassFile.java	/^    void addAnnotation(boolean visible, String clname, int paramnum)$/;"	m	class:ClassFile
+addAnnotationField	src/jasmin/ClassFile.java	/^    void addAnnotationField(String name, String type, String add)$/;"	m	class:ClassFile
+addAnnotationValue	src/jasmin/ClassFile.java	/^    void addAnnotationValue(Object value) throws jasError$/;"	m	class:ClassFile
+addCPItem	src/jas/ClassEnv.java	/^  public void addCPItem(CP cp)$/;"	m	class:ClassEnv
+addCatch	src/jasmin/ClassFile.java	/^    void addCatch(String name, String start_lab, String end_lab,$/;"	m	class:ClassFile
+addCatch	src/jasmin/ClassFile.java	/^    void addCatch(String name, int start_off, int end_off,$/;"	m	class:ClassFile
+addEntry	src/jas/Catchtable.java	/^  addEntry(Label start, Label end, Label handler, CP cat)$/;"	m	class:Catchtable
+addEntry	src/jas/Catchtable.java	/^  addEntry(int start, int end, int handler, CP cat)$/;"	m	class:Catchtable
+addEntry	src/jas/Catchtable.java	/^  public void addEntry(CatchEntry entry) { entries.addElement(entry); }$/;"	m	class:Catchtable
+addEntry	src/jas/LineTableAttr.java	/^  public void addEntry(Label l, int line)$/;"	m	class:LineTableAttr
+addEntry	src/jas/LocalVarTableAttr.java	/^  public void addEntry(LocalVarEntry e)$/;"	m	class:LocalVarTableAttr
+addEntry	src/jas/LocalVarTypeTableAttr.java	/^  public void addEntry(LocalVarEntry e)$/;"	m	class:LocalVarTypeTableAttr
+addException	src/jas/ExceptAttr.java	/^  public void addException(CP cp)$/;"	m	class:ExceptAttr
+addField	src/jas/Annotation.java	/^  public void addField(String name, String type, String add)$/;"	m	class:Annotation
+addField	src/jas/ClassEnv.java	/^  public void addField(Var v)$/;"	m	class:ClassEnv
+addField	src/jasmin/ClassFile.java	/^    void addField(short access, String name, String desc,$/;"	m	class:ClassFile
+addFrame	src/jas/StackMap.java	/^  public void addFrame(VerifyFrame f)$/;"	m	class:StackMap
+addGenericAttr	src/jas/ClassEnv.java	/^  public void addGenericAttr(GenericAttr g)$/;"	m	class:ClassEnv
+addGenericAttr	src/jas/CodeAttr.java	/^  public void addGenericAttr(GenericAttr g)$/;"	m	class:CodeAttr
+addGenericAttr	src/jas/Method.java	/^  public void addGenericAttr(GenericAttr g)$/;"	m	class:Method
+addGenericAttr	src/jas/Var.java	/^  public void addGenericAttr(GenericAttr g)$/;"	m	class:Var
+addGenericAttr	src/jasmin/ClassFile.java	/^    void addGenericAttr(String name, String file)$/;"	m	class:ClassFile
+addInfo	src/jasmin/InsnInfo.java	/^    static private void addInfo(String name, int opcode, String args) {$/;"	m	class:InsnInfo	file:
+addInner	src/jasmin/ClassFile.java	/^    public void addInner(short iacc, String name, String inner, String outer)$/;"	m	class:ClassFile
+addInnerClass	src/jas/ClassEnv.java	/^  public void addInnerClass(short iacc, String name, String inner, String outer)$/;"	m	class:ClassEnv
+addInnerClass	src/jas/InnerClassesAttr.java	/^  public void addInnerClass(InnerClass item)$/;"	m	class:InnerClassesAttr
+addInsn	src/jas/CodeAttr.java	/^  public void addInsn(Insn insn)$/;"	m	class:CodeAttr
+addInterface	src/jas/ClassEnv.java	/^  public void addInterface(CP ifc)$/;"	m	class:ClassEnv
+addInterface	src/jas/ClassEnv.java	/^  public void addInterface(CP ilist[])$/;"	m	class:ClassEnv
+addInterface	src/jasmin/ClassFile.java	/^    void addInterface(String name) {$/;"	m	class:ClassFile
+addLine	src/jasmin/ClassFile.java	/^    void addLine(int line_num) throws jasError {$/;"	m	class:ClassFile
+addLineInfo	src/jasmin/ClassFile.java	/^    void addLineInfo(int line_num) throws jasError {$/;"	m	class:ClassFile
+addLocalsItem	src/jas/VerifyFrame.java	/^  public void addLocalsItem(String item, String val) throws jasError$/;"	m	class:VerifyFrame
+addLookupswitch	src/jasmin/ClassFile.java	/^    void addLookupswitch(int val, String label)$/;"	m	class:ClassFile
+addLookupswitch	src/jasmin/ClassFile.java	/^    void addLookupswitch(int val, int offset)$/;"	m	class:ClassFile
+addMethod	src/jas/ClassEnv.java	/^  public void addMethod(Method m)$/;"	m	class:ClassEnv
+addStackItem	src/jas/VerifyFrame.java	/^  public void addStackItem(String item, String val) throws jasError$/;"	m	class:VerifyFrame
+addTableswitch	src/jasmin/ClassFile.java	/^    void addTableswitch(String label) throws jasError {$/;"	m	class:ClassFile
+addTableswitch	src/jasmin/ClassFile.java	/^    void addTableswitch(int offset) throws jasError {$/;"	m	class:ClassFile
+addThrow	src/jasmin/ClassFile.java	/^    void addThrow(String name) throws jasError {$/;"	m	class:ClassFile
+addValue	src/jas/Annotation.java	/^  public void addValue(Object value) throws jasError$/;"	m	class:Annotation
+addValue	src/jas/AnnotationElement.java	/^  void addValue(Object value) throws jasError$/;"	m	class:AnnotationElement
+addVar	src/jasmin/ClassFile.java	/^    void addVar(String startLab, String endLab,$/;"	m	class:ClassFile
+addVar	src/jasmin/ClassFile.java	/^    void addVar(int startOffset, int endOffset, String name,$/;"	m	class:ClassFile
+add_lab	src/java_cup/parser.java	/^  protected production_part add_lab(production_part part, String lab)$/;"	m	class:CUP$actions
+add_production	src/java_cup/non_terminal.java	/^  public void add_production(production prod) throws internal_error$/;"	m	class:non_terminal
+add_propagate	src/java_cup/lalr_item.java	/^  public void add_propagate(lalr_item prop_to)$/;"	m	class:lalr_item
+add_rhs_part	src/java_cup/parser.java	/^  protected void add_rhs_part(production_part part) throws java.lang.Exception$/;"	m	class:CUP$actions
+add_transition	src/java_cup/lalr_state.java	/^  public void add_transition(symbol on_sym, lalr_state to_st) $/;"	m	class:lalr_state
+advance	lib/java_cup/simple_calc/scanner.java	/^  protected static void advance() throws java.io.IOException $/;"	m	class:scanner
+advance	src/jasmin/Scanner.java	/^    protected void advance() throws java.io.IOException$/;"	m	class:Scanner
+advance	src/java_cup/lexer.java	/^  protected static void advance() throws java.io.IOException$/;"	m	class:lexer
+advance_lookahead	src/java_cup/runtime/lr_parser.java	/^  protected boolean advance_lookahead()$/;"	m	class:lr_parser
+all	lib/jas/tests/all.java	/^public class all implements RuntimeConstants$/;"	c
+all	src/java_cup/lalr_item_set.java	/^  public Enumeration all() {return _all.elements();}$/;"	m	class:lalr_item_set
+all	src/java_cup/lalr_state.java	/^  public static Enumeration all() {return _all.elements();}$/;"	m	class:lalr_state
+all	src/java_cup/non_terminal.java	/^  public static Enumeration all() {return _all.elements();};$/;"	m	class:non_terminal
+all	src/java_cup/production.java	/^  public static Enumeration all() {return _all.elements();};$/;"	m	class:production
+all	src/java_cup/symbol_set.java	/^  public Enumeration all() {return _all.elements();};$/;"	m	class:symbol_set
+all	src/java_cup/terminal.java	/^  public static Enumeration all() {return _all.elements();};$/;"	m	class:terminal
+ann	src/jas/AnnotDefAttr.java	/^  Annotation ann;$/;"	f	class:AnnotDefAttr
+annDef	src/jas/Method.java	/^  AnnotDefAttr annDef;$/;"	f	class:Method
+annInvis	src/jas/ClassEnv.java	/^  AnnotationAttr annVis, annInvis;$/;"	f	class:ClassEnv
+annInvis	src/jas/Method.java	/^  AnnotationAttr annVis, annInvis;$/;"	f	class:Method
+annInvis	src/jas/Var.java	/^  AnnotationAttr annVis, annInvis;$/;"	f	class:Var
+annParamInvis	src/jas/Method.java	/^  AnnotParamAttr annParamVis, annParamInvis;$/;"	f	class:Method
+annParamVis	src/jas/Method.java	/^  AnnotParamAttr annParamVis, annParamInvis;$/;"	f	class:Method
+annVis	src/jas/ClassEnv.java	/^  AnnotationAttr annVis, annInvis;$/;"	f	class:ClassEnv
+annVis	src/jas/Method.java	/^  AnnotationAttr annVis, annInvis;$/;"	f	class:Method
+annVis	src/jas/Var.java	/^  AnnotationAttr annVis, annInvis;$/;"	f	class:Var
+annotation_internal	src/jasmin/ClassFile.java	/^    private static void annotation_internal() throws jasError$/;"	m	class:ClassFile	file:
+anns	src/jas/AnnotParamAttr.java	/^  Vector anns;  \/\/ Vector<Vector<Annotation>>$/;"	f	class:AnnotParamAttr
+anns	src/jas/AnnotationAttr.java	/^  Vector anns;$/;"	f	class:AnnotationAttr
+append	src/jas/SourceDebugExtensionAttr.java	/^  public void append(String debug)$/;"	m	class:SourceDebugExtensionAttr
+append_multipart	src/java_cup/parser.java	/^  protected void append_multipart(String name)$/;"	m	class:CUP$actions
+appendixa	lib/java_cup/manual.html	/^<h3><a name="appendixa">$/;"	a
+args	src/jasmin/InsnInfo.java	/^    public String args;     \/\/ the argument code$/;"	f	class:InsnInfo
+array	src/jas/AnnotationElement.java	/^  private boolean array;$/;"	f	class:AnnotationElement	file:
+assemble	src/jasmin/Main.java	/^    public final void assemble(String fname)$/;"	m	class:Main
+attr	src/jas/AnnotDefAttr.java	/^  static final CP attr = new AsciiCP("AnnotationDefault");$/;"	f	class:AnnotDefAttr
+attr	src/jas/AnnotParamAttr.java	/^  CP attr;$/;"	f	class:AnnotParamAttr
+attr	src/jas/AnnotationAttr.java	/^  CP attr;$/;"	f	class:AnnotationAttr
+attr	src/jas/CodeAttr.java	/^  static final CP attr = new AsciiCP("Code");$/;"	f	class:CodeAttr
+attr	src/jas/ConstAttr.java	/^  static final CP attr = new AsciiCP("ConstantValue");$/;"	f	class:ConstAttr
+attr	src/jas/DeprecatedAttr.java	/^  static final CP attr = new AsciiCP("Deprecated");$/;"	f	class:DeprecatedAttr
+attr	src/jas/EnclosingMethodAttr.java	/^  static final CP attr = new AsciiCP("EnclosingMethod");$/;"	f	class:EnclosingMethodAttr
+attr	src/jas/ExceptAttr.java	/^  static final CP attr = new AsciiCP("Exceptions");$/;"	f	class:ExceptAttr
+attr	src/jas/InnerClassesAttr.java	/^  static final CP attr = new AsciiCP("InnerClasses");$/;"	f	class:InnerClassesAttr
+attr	src/jas/LineTableAttr.java	/^  static final CP attr = new AsciiCP("LineNumberTable");$/;"	f	class:LineTableAttr
+attr	src/jas/LocalVarTableAttr.java	/^  static final CP attr = new AsciiCP("LocalVariableTable");$/;"	f	class:LocalVarTableAttr
+attr	src/jas/LocalVarTypeTableAttr.java	/^  static final CP attr = new AsciiCP("LocalVariableTypeTable");$/;"	f	class:LocalVarTypeTableAttr
+attr	src/jas/SignatureAttr.java	/^  static final CP attr = new AsciiCP("Signature");$/;"	f	class:SignatureAttr
+attr	src/jas/SourceAttr.java	/^  static final CP attr = new AsciiCP("SourceFile");$/;"	f	class:SourceAttr
+attr	src/jas/SourceDebugExtensionAttr.java	/^  static final CP attr = new AsciiCP("SourceDebugExtension");$/;"	f	class:SourceDebugExtensionAttr
+attr	src/jas/StackMap.java	/^  static CP attr = null;$/;"	f	class:StackMap
+attr_name	src/jas/GenericAttr.java	/^  CP attr_name;$/;"	f	class:GenericAttr
+author_str	src/java_cup/version.java	/^  public static final String author_str = "Scott E. Hudson";$/;"	f	class:version
+autoNumber	src/jasmin/ClassFile.java	/^    void autoNumber() throws jasError {$/;"	m	class:ClassFile
+auto_number	src/jasmin/ClassFile.java	/^    boolean auto_number, class_header;$/;"	f	class:ClassFile
+badsignature	src/jas/AnnotationElement.java	/^  private static void badsignature() throws jasError$/;"	m	class:AnnotationElement	file:
+base_production	src/java_cup/action_production.java	/^  public production base_production() {return _base_production;}$/;"	m	class:action_production
+beginField	src/jasmin/ClassFile.java	/^    void beginField(short access, String name, String desc, Object value)$/;"	m	class:ClassFile
+beginStack	src/jasmin/ClassFile.java	/^    void beginStack(boolean copy) throws jasError {$/;"	m	class:ClassFile
+beginStack	src/jasmin/ClassFile.java	/^    void beginStack(int n) throws jasError {$/;"	m	class:ClassFile
+bufferInsn	src/jasmin/ClassFile.java	/^    void bufferInsn(Insn i) throws jasError{$/;"	m	class:ClassFile
+buffered_insn	src/jasmin/ClassFile.java	/^    Insn buffered_insn;$/;"	f	class:ClassFile
+build_end	src/java_cup/Main.java	/^  protected static long build_end        = 0;$/;"	f	class:Main
+build_machine	src/java_cup/lalr_state.java	/^  public static lalr_state build_machine(production start_prod) $/;"	m	class:lalr_state
+build_parser	src/java_cup/Main.java	/^  protected static void build_parser() throws internal_error$/;"	m	class:Main
+build_table_entries	src/java_cup/lalr_state.java	/^  public void build_table_entries($/;"	m	class:lalr_state
+cache	lib/jas/examples/exprcomp.java	/^  Hashtable cache;$/;"	f	class:dynaloader
+calc_lookahead	src/java_cup/lalr_item.java	/^  public terminal_set calc_lookahead(terminal_set lookahead_after) $/;"	m	class:lalr_item
+catch_cpe	src/jas/CatchEntry.java	/^  CP catch_cpe;$/;"	f	class:CatchEntry
+catch_table	src/jasmin/ClassFile.java	/^    Catchtable catch_table;$/;"	f	class:ClassFile
+char_num	src/jasmin/Scanner.java	/^    public int line_num, token_line_num, char_num, int_char_num, int_line_num;$/;"	f	class:Scanner
+char_symbols	src/java_cup/lexer.java	/^  protected static Hashtable char_symbols = new Hashtable(11);$/;"	f	class:lexer
+char_token	src/java_cup/runtime/char_token.java	/^  public char_token(int term_num)$/;"	m	class:char_token
+char_token	src/java_cup/runtime/char_token.java	/^  public char_token(int term_num, char v)$/;"	m	class:char_token
+char_token	src/java_cup/runtime/char_token.java	/^public class char_token extends token {$/;"	c
+char_val	src/java_cup/runtime/char_token.java	/^  public char char_val;$/;"	f	class:char_token
+chars	src/jasmin/Scanner.java	/^    char chars[];$/;"	f	class:Scanner
+chars_expand	src/jasmin/Scanner.java	/^    private void chars_expand()$/;"	m	class:Scanner	file:
+chars_size	src/jasmin/Scanner.java	/^    static private int chars_size = 512;$/;"	f	class:Scanner	file:
+checkCDrive	build.bat	/^:checkCDrive$/;"	l
+checkCatch	src/jasmin/ClassFile.java	/^    private ClassCP checkCatch(String name) throws jasError {$/;"	m	class:ClassFile	file:
+checkJava	build.bat	/^:checkJava$/;"	l
+checkJikes	build.bat	/^:checkJikes$/;"	l
+checkLimit	src/jasmin/ClassFile.java	/^    short checkLimit(int v) throws jasError {$/;"	m	class:ClassFile
+checkLookupswitch	src/jasmin/ClassFile.java	/^    private Object[] checkLookupswitch() {$/;"	m	class:ClassFile	file:
+checkSystemDrive	build.bat	/^:checkSystemDrive$/;"	l
+checkTableswitch	src/jasmin/ClassFile.java	/^    private LabelOrOffset[] checkTableswitch() {$/;"	m	class:ClassFile	file:
+check_end	src/java_cup/Main.java	/^  protected static long check_end        = 0;$/;"	f	class:Main
+check_first_set	src/java_cup/production.java	/^  public terminal_set check_first_set() throws internal_error$/;"	m	class:production
+check_nullable	src/java_cup/production.java	/^  public boolean check_nullable() throws internal_error$/;"	m	class:production
+check_reductions	src/java_cup/parse_action_table.java	/^  public void check_reductions()$/;"	m	class:parse_action_table
+check_short	src/jas/Insn.java	/^  private void check_short(int val, int opc) throws jasError$/;"	m	class:Insn	file:
+check_unused	src/java_cup/Main.java	/^  protected static void check_unused()$/;"	m	class:Main
+classFile	src/jasmin/parser.java	/^	public ClassFile classFile;$/;"	f	class:CUP$actions
+classFile	src/jasmin/parser.java	/^	public ClassFile classFile;$/;"	f	class:parser
+class_access	src/jas/ClassEnv.java	/^  short class_access;$/;"	f	class:ClassEnv
+class_env	src/jasmin/ClassFile.java	/^    ClassEnv class_env;$/;"	f	class:ClassFile
+class_header	src/jasmin/ClassFile.java	/^    boolean auto_number, class_header;$/;"	f	class:ClassFile
+class_name	src/jasmin/ClassFile.java	/^    String class_name;$/;"	f	class:ClassFile
+clazz	src/jas/FieldCP.java	/^  ClassCP clazz;$/;"	f	class:FieldCP
+clazz	src/jas/InterfaceCP.java	/^  ClassCP clazz;$/;"	f	class:InterfaceCP
+clazz	src/jas/MethodCP.java	/^  ClassCP clazz;$/;"	f	class:MethodCP
+close_files	src/java_cup/Main.java	/^  protected static void close_files() throws java.io.IOException$/;"	m	class:Main
+cls	src/jas/EnclosingMethodAttr.java	/^  String cls, mtd, dsc;$/;"	f	class:EnclosingMethodAttr
+cls	src/jas/VerificationTypeInfo.java	/^  private ClassCP cls;$/;"	f	class:VerificationTypeInfo	file:
+clscp	src/jas/EnclosingMethodAttr.java	/^  CP clscp,$/;"	f	class:EnclosingMethodAttr
+code	src/jas/Method.java	/^  CodeAttr code;$/;"	f	class:Method
+code	src/jasmin/ClassFile.java	/^    CodeAttr  code;$/;"	f	class:ClassFile
+code_part	lib/java_cup/manual.html	/^<h5><a name="code_part">User Code Components<\/a><\/h5>$/;"	a
+code_size	src/jas/CodeAttr.java	/^  int code_size;$/;"	f	class:CodeAttr
+code_string	src/java_cup/action_part.java	/^  public String code_string() {return _code_string;}$/;"	m	class:action_part
+compute_closure	src/java_cup/lalr_item_set.java	/^  public void compute_closure()$/;"	m	class:lalr_item_set
+compute_default	src/java_cup/parse_action_row.java	/^  public void compute_default()$/;"	m	class:parse_action_row
+compute_first_sets	src/java_cup/non_terminal.java	/^  public static void compute_first_sets() throws internal_error$/;"	m	class:non_terminal
+compute_nullability	src/java_cup/non_terminal.java	/^  public static void compute_nullability() throws internal_error$/;"	m	class:non_terminal
+conclusion	lib/java_cup/manual.html	/^<a name="conclusion">$/;"	a
+const_attr	src/jas/Var.java	/^  ConstAttr const_attr;$/;"	f	class:Var
+constt	src/jas/InsnOperand.java	/^  int vindex, constt;$/;"	f	class:IincOperand
+contains	src/jasmin/InsnInfo.java	/^    public static boolean contains(String name) {$/;"	m	class:InsnInfo
+contains	src/jasmin/ReservedWords.java	/^    public static boolean contains(String name) {$/;"	m	class:ReservedWords
+contains	src/java_cup/lalr_item_set.java	/^  public boolean contains(lalr_item itm) {return _all.containsKey(itm);}$/;"	m	class:lalr_item_set
+contains	src/java_cup/symbol_set.java	/^  public boolean contains(symbol sym) {return _all.containsKey(sym.name());};$/;"	m	class:symbol_set
+contains	src/java_cup/terminal_set.java	/^  public boolean contains(int indx) $/;"	m	class:terminal_set
+contains	src/java_cup/terminal_set.java	/^  public boolean contains(terminal sym) $/;"	m	class:terminal_set
+convertChars	src/jasmin/ScannerUtils.java	/^    public static String convertChars(String orig_name,$/;"	m	class:ScannerUtils
+convertDots	src/jasmin/ScannerUtils.java	/^    public static String convertDots(String orig_name)$/;"	m	class:ScannerUtils
+convertInt	src/jasmin/ScannerUtils.java	/^    public static Number convertInt(String str, int radix)$/;"	m	class:ScannerUtils
+convertNumber	src/jasmin/ScannerUtils.java	/^    public static Number convertNumber(String str)$/;"	m	class:ScannerUtils
+core_equals	src/java_cup/lr_item_core.java	/^  public boolean core_equals(lr_item_core other)$/;"	m	class:lr_item_core
+core_hashCode	src/java_cup/lr_item_core.java	/^  public int core_hashCode()$/;"	m	class:lr_item_core
+cpe	src/jas/ClassEnv.java	/^  Hashtable cpe, cpe_index;$/;"	f	class:ClassEnv
+cpe	src/jas/InsnOperand.java	/^  CP cpe;$/;"	f	class:CPOperand
+cpe	src/jas/InsnOperand.java	/^  CP cpe;$/;"	f	class:InvokeinterfaceOperand
+cpe	src/jas/InsnOperand.java	/^  CP cpe;$/;"	f	class:LdcOperand
+cpe	src/jas/InsnOperand.java	/^  CP cpe;$/;"	f	class:MultiarrayOperand
+cpe_index	src/jas/ClassEnv.java	/^  Hashtable cpe, cpe_index;$/;"	f	class:ClassEnv
+cps	src/jas/ExceptAttr.java	/^  Vector cps;$/;"	f	class:ExceptAttr
+crash	src/java_cup/internal_error.java	/^    public void crash()$/;"	m	class:internal_error
+create_new	src/java_cup/non_terminal.java	/^  static non_terminal create_new() throws internal_error$/;"	m	class:non_terminal
+create_new	src/java_cup/non_terminal.java	/^  static non_terminal create_new(String prefix) throws internal_error$/;"	m	class:non_terminal
+ctb	src/jas/CodeAttr.java	/^  Catchtable ctb;$/;"	f	class:CodeAttr
+cur_annotation	src/jasmin/ClassFile.java	/^    Annotation cur_annotation;$/;"	f	class:ClassFile
+cur_err_token	src/java_cup/runtime/lr_parser.java	/^  protected token cur_err_token() { return lookahead[lookahead_pos]; }$/;"	m	class:lr_parser
+cur_field	src/jasmin/ClassFile.java	/^    Var    cur_field;$/;"	f	class:ClassFile
+cur_method	src/jasmin/ClassFile.java	/^    Method cur_method;$/;"	f	class:ClassFile
+cur_stack_height	lib/jas/examples/exprcomp.java	/^  short cur_stack_height;$/;"	f	class:exprcomp
+cur_token	src/java_cup/runtime/lr_parser.java	/^  protected token cur_token;$/;"	f	class:lr_parser
+current_line	src/java_cup/lexer.java	/^  protected static int current_line = 1;$/;"	f	class:lexer
+current_position	src/java_cup/lexer.java	/^  protected static int current_position = 1;$/;"	f	class:lexer
+data	src/jas/GenericAttr.java	/^  byte data[];$/;"	f	class:GenericAttr
+debug	src/jas/ClassEnv.java	/^  SourceDebugExtensionAttr debug;$/;"	f	class:ClassEnv
+debug	src/jas/SourceDebugExtensionAttr.java	/^  String debug;$/;"	f	class:SourceDebugExtensionAttr
+debug_grammar	src/java_cup/emit.java	/^  public static String debug_grammar = null;$/;"	f	class:emit
+debug_message	src/java_cup/runtime/lr_parser.java	/^  public void debug_message(String mess)$/;"	m	class:lr_parser
+debug_next_token	src/java_cup/lexer.java	/^  public static token debug_next_token() throws java.io.IOException$/;"	m	class:lexer
+debug_parse	src/java_cup/runtime/lr_parser.java	/^  public void debug_parse()$/;"	m	class:lr_parser
+debug_reduce	src/java_cup/runtime/lr_parser.java	/^  public void debug_reduce(int prod_num, int nt_num, int rhs_size)$/;"	m	class:lr_parser
+debug_shift	src/java_cup/runtime/lr_parser.java	/^  public void debug_shift(token shift_tkn)$/;"	m	class:lr_parser
+default_reduce	src/java_cup/parse_action_row.java	/^  public int default_reduce;$/;"	f	class:parse_action_row
+defineOffset	src/jas/VerifyFrame.java	/^  private void defineOffset() throws jasError$/;"	m	class:VerifyFrame	file:
+depr	src/jas/ClassEnv.java	/^  DeprecatedAttr depr;$/;"	f	class:ClassEnv
+depr	src/jas/Method.java	/^  DeprecatedAttr depr;$/;"	f	class:Method
+depr	src/jas/Var.java	/^  DeprecatedAttr depr;$/;"	f	class:Var
+desc	src/jas/Method.java	/^  CP name, desc;$/;"	f	class:Method
+desc	src/jas/Var.java	/^  CP name, desc;$/;"	f	class:Var
+dest_path	src/jasmin/Main.java	/^    private String dest_path = null;$/;"	f	class:Main	file:
+dflt	src/jas/InsnOperand.java	/^  LabelOrOffset dflt;$/;"	f	class:LookupswitchOperand
+dflt	src/jas/InsnOperand.java	/^  LabelOrOffset dflt;$/;"	f	class:TableswitchOperand
+dict	src/jasmin/Scanner.java	/^    public Hashtable dict = new Hashtable();$/;"	f	class:Scanner
+do_action	lib/java_cup/simple_calc/parser.java	/^  public java_cup.runtime.symbol do_action($/;"	m	class:parser
+do_action	src/jasmin/parser.java	/^  public java_cup.runtime.symbol do_action($/;"	m	class:parser
+do_action	src/java_cup/parser.java	/^  public java_cup.runtime.symbol do_action($/;"	m	class:parser
+do_action	src/java_cup/runtime/lr_parser.java	/^  public abstract symbol do_action($/;"	m	class:lr_parser
+do_action_table	src/java_cup/emit.java	/^  protected static void do_action_table($/;"	m	class:emit
+do_code_string	src/java_cup/lexer.java	/^  protected static token do_code_string() throws java.io.IOException$/;"	m	class:lexer
+do_id	src/java_cup/lexer.java	/^  protected static token do_id() throws java.io.IOException$/;"	m	class:lexer
+do_reduce_table	src/java_cup/emit.java	/^  protected static void do_reduce_table($/;"	m	class:emit
+done	src/jas/AnnotationElement.java	/^  public void done() throws jasError$/;"	m	class:AnnotationElement
+doneStart	build.bat	/^:doneStart$/;"	l
+done_parsing	src/java_cup/runtime/lr_parser.java	/^  public void done_parsing()$/;"	m	class:lr_parser
+dot_at_end	src/java_cup/lr_item_core.java	/^  public boolean dot_at_end() $/;"	m	class:lr_item_core
+dot_before_nt	src/java_cup/lr_item_core.java	/^  public non_terminal dot_before_nt()$/;"	m	class:lr_item_core
+dot_pos	src/java_cup/lr_item_core.java	/^  public int dot_pos() {return _dot_pos;}$/;"	m	class:lr_item_core
+double_token	src/java_cup/runtime/double_token.java	/^  public double_token(int term_num)$/;"	m	class:double_token
+double_token	src/java_cup/runtime/double_token.java	/^  public double_token(int term_num, double v)$/;"	m	class:double_token
+double_token	src/java_cup/runtime/double_token.java	/^public class double_token extends token {$/;"	c
+double_val	src/java_cup/runtime/double_token.java	/^  public double double_val;$/;"	f	class:double_token
+dsc	src/jas/EnclosingMethodAttr.java	/^  String cls, mtd, dsc;$/;"	f	class:EnclosingMethodAttr
+dump_end	src/java_cup/Main.java	/^  protected static long dump_end         = 0;$/;"	f	class:Main
+dump_grammar	src/java_cup/Main.java	/^  public static void dump_grammar() throws internal_error$/;"	m	class:Main
+dump_machine	src/java_cup/Main.java	/^  public static void dump_machine()$/;"	m	class:Main
+dump_stack	src/java_cup/runtime/lr_parser.java	/^  public void dump_stack()$/;"	m	class:lr_parser
+dump_state	src/java_cup/lalr_state.java	/^  protected static void dump_state(lalr_state st) throws internal_error$/;"	m	class:lalr_state
+dump_tables	src/java_cup/Main.java	/^  public static void dump_tables()$/;"	m	class:Main
+duplicate_option	src/jasmin/Main.java	/^    private static void duplicate_option(String opt)$/;"	m	class:Main	file:
+dynaloader	lib/jas/examples/exprcomp.java	/^  dynaloader(byte[] data)$/;"	m	class:dynaloader
+dynaloader	lib/jas/examples/exprcomp.java	/^class dynaloader extends ClassLoader$/;"	c
+emit	lib/jas/examples/exprcomp.java	/^  void emit(Insn insn)$/;"	m	class:exprcomp
+emit	src/java_cup/emit.java	/^  private emit() { }$/;"	m	class:emit	file:
+emit	src/java_cup/emit.java	/^public class emit {$/;"	c
+emit_action_code	src/java_cup/emit.java	/^  protected static void emit_action_code(PrintStream out, production start_prod)$/;"	m	class:emit
+emit_end	src/java_cup/Main.java	/^  protected static long emit_end         = 0;$/;"	f	class:Main
+emit_error	src/java_cup/lexer.java	/^  public static void emit_error(String message)$/;"	m	class:lexer
+emit_package	src/java_cup/emit.java	/^  protected static void emit_package(PrintStream out)$/;"	m	class:emit
+emit_parser	src/java_cup/Main.java	/^  protected static void emit_parser() throws internal_error$/;"	m	class:Main
+emit_production_table	src/java_cup/emit.java	/^  protected static void emit_production_table(PrintStream out)$/;"	m	class:emit
+emit_summary	src/java_cup/Main.java	/^  protected static void emit_summary(boolean output_produced)$/;"	m	class:Main
+emit_warn	src/java_cup/lexer.java	/^  public static void emit_warn(String message)$/;"	m	class:lexer
+empty	src/java_cup/runtime/virtual_parse_stack.java	/^  public boolean empty()$/;"	m	class:virtual_parse_stack
+empty	src/java_cup/terminal_set.java	/^  public boolean empty()$/;"	m	class:terminal_set
+enclosing	src/jas/ClassEnv.java	/^  EnclosingMethodAttr enclosing;$/;"	f	class:ClassEnv
+encoding	src/jasmin/Main.java	/^    private String encoding = null;$/;"	f	class:Main	file:
+end	build.bat	/^:end$/;"	l
+end	src/jas/LocalVarEntry.java	/^  Label start, end;$/;"	f	class:LocalVarEntry
+endAnnotation	src/jas/Annotation.java	/^  public Annotation endAnnotation() throws jasError$/;"	m	class:Annotation
+endAnnotation	src/jasmin/ClassFile.java	/^    void endAnnotation() throws jasError$/;"	m	class:ClassFile
+endField	src/jasmin/ClassFile.java	/^    void endField() throws jasError {$/;"	m	class:ClassFile
+endHeader	src/jas/ClassEnv.java	/^  public void endHeader()$/;"	m	class:ClassEnv
+endHeader	src/jasmin/ClassFile.java	/^    public void endHeader() throws jasError$/;"	m	class:ClassFile
+endLookupswitch	src/jasmin/ClassFile.java	/^    void endLookupswitch(String deflabel) throws jasError {$/;"	m	class:ClassFile
+endLookupswitch	src/jasmin/ClassFile.java	/^    void endLookupswitch(int defoffset) throws jasError {$/;"	m	class:ClassFile
+endMethod	src/jasmin/ClassFile.java	/^    void endMethod() throws jasError {$/;"	m	class:ClassFile
+endStack	src/jasmin/ClassFile.java	/^    void endStack() {$/;"	m	class:ClassFile
+endTableswitch	src/jasmin/ClassFile.java	/^    void endTableswitch(String deflabel) throws jasError {$/;"	m	class:ClassFile
+endTableswitch	src/jasmin/ClassFile.java	/^    void endTableswitch(int defoffset) throws jasError {$/;"	m	class:ClassFile
+end_off	src/jas/CatchEntry.java	/^  int start_off, end_off, handler_off;$/;"	f	class:CatchEntry
+end_pc	src/jas/CatchEntry.java	/^  Label start_pc, end_pc, handler_pc;$/;"	f	class:CatchEntry
+endo	src/jas/LocalVarEntry.java	/^  int slot, starto, endo;$/;"	f	class:LocalVarEntry
+entries	src/jas/Catchtable.java	/^  Vector entries;$/;"	f	class:Catchtable
+equals	src/java_cup/action_part.java	/^  public boolean equals(Object other)$/;"	m	class:action_part
+equals	src/java_cup/action_part.java	/^  public boolean equals(action_part other)$/;"	m	class:action_part
+equals	src/java_cup/lalr_item.java	/^  public boolean equals(Object other)$/;"	m	class:lalr_item
+equals	src/java_cup/lalr_item.java	/^  public boolean equals(lalr_item other)$/;"	m	class:lalr_item
+equals	src/java_cup/lalr_item_set.java	/^  public boolean equals(Object other)$/;"	m	class:lalr_item_set
+equals	src/java_cup/lalr_item_set.java	/^  public boolean equals(lalr_item_set other)$/;"	m	class:lalr_item_set
+equals	src/java_cup/lalr_state.java	/^  public boolean equals(Object other)$/;"	m	class:lalr_state
+equals	src/java_cup/lalr_state.java	/^  public boolean equals(lalr_state other)$/;"	m	class:lalr_state
+equals	src/java_cup/lr_item_core.java	/^  public boolean equals(Object other)$/;"	m	class:lr_item_core
+equals	src/java_cup/lr_item_core.java	/^  public boolean equals(lr_item_core other) {return core_equals(other);}$/;"	m	class:lr_item_core
+equals	src/java_cup/parse_action.java	/^  public boolean equals(Object other)$/;"	m	class:parse_action
+equals	src/java_cup/parse_action.java	/^  public boolean equals(parse_action other)$/;"	m	class:parse_action
+equals	src/java_cup/production.java	/^  public boolean equals(Object other)$/;"	m	class:production
+equals	src/java_cup/production.java	/^  public boolean equals(production other)$/;"	m	class:production
+equals	src/java_cup/production_part.java	/^  public boolean equals(Object other)$/;"	m	class:production_part
+equals	src/java_cup/production_part.java	/^  public boolean equals(production_part other)$/;"	m	class:production_part
+equals	src/java_cup/reduce_action.java	/^  public boolean equals(Object other)$/;"	m	class:reduce_action
+equals	src/java_cup/reduce_action.java	/^  public boolean equals(reduce_action other)$/;"	m	class:reduce_action
+equals	src/java_cup/shift_action.java	/^  public boolean equals(Object other)$/;"	m	class:shift_action
+equals	src/java_cup/shift_action.java	/^  public boolean equals(shift_action other)$/;"	m	class:shift_action
+equals	src/java_cup/symbol_part.java	/^  public boolean equals(Object other)$/;"	m	class:symbol_part
+equals	src/java_cup/symbol_part.java	/^  public boolean equals(symbol_part other)$/;"	m	class:symbol_part
+equals	src/java_cup/symbol_set.java	/^  public boolean equals(Object other)$/;"	m	class:symbol_set
+equals	src/java_cup/symbol_set.java	/^  public boolean equals(symbol_set other) $/;"	m	class:symbol_set
+equals	src/java_cup/terminal_set.java	/^  public boolean equals(Object other)$/;"	m	class:terminal_set
+equals	src/java_cup/terminal_set.java	/^  public boolean equals(terminal_set other)$/;"	m	class:terminal_set
+error	lib/java_cup/simple_calc/sym.java	/^  static final int error = 1;$/;"	f	class:sym
+error	src/jasmin/sym.java	/^  static final int error = 1;$/;"	f	class:sym
+error	src/java_cup/sym.java	/^  static final int error = 1;$/;"	f	class:sym
+error	src/java_cup/terminal.java	/^  public static final terminal error = new terminal("error");$/;"	f	class:terminal
+errorCount	src/jasmin/ClassFile.java	/^    public int errorCount() {$/;"	m	class:ClassFile
+error_count	src/java_cup/lexer.java	/^  public static int error_count = 0;$/;"	f	class:lexer
+error_recovery	src/java_cup/runtime/lr_parser.java	/^  protected boolean error_recovery(boolean debug)$/;"	m	class:lr_parser
+error_sym	lib/java_cup/simple_calc/parser.java	/^  public int error_sym() {return 1;}$/;"	m	class:parser
+error_sym	src/jasmin/parser.java	/^  public int error_sym() {return 1;}$/;"	m	class:parser
+error_sym	src/java_cup/parser.java	/^  public int error_sym() {return 1;}$/;"	m	class:parser
+error_sym	src/java_cup/runtime/lr_parser.java	/^  public abstract int error_sym();$/;"	m	class:lr_parser
+error_sync_size	src/java_cup/runtime/lr_parser.java	/^  protected int error_sync_size() {return _error_sync_size; }$/;"	m	class:lr_parser
+errors	lib/java_cup/manual.html	/^<a name="errors">$/;"	a
+errors	src/jasmin/ClassFile.java	/^    int errors;$/;"	f	class:ClassFile
+ex	lib/jas/examples/exprcomp.java	/^  Class ex;$/;"	f	class:dynaloader
+except_attr	src/jasmin/ClassFile.java	/^    ExceptAttr except_attr;$/;"	f	class:ClassFile
+excepts	src/jas/Method.java	/^  ExceptAttr excepts;$/;"	f	class:Method
+exec	lib/jas/examples/exprcomp.java	/^  void exec() throws Exception { ex.newInstance(); }$/;"	m	class:dynaloader
+expect_conflicts	src/java_cup/Main.java	/^  protected static int expect_conflicts = 0;$/;"	f	class:Main
+expr	lib/jas/examples/exprcomp.java	/^  void expr()$/;"	m	class:exprcomp
+exprcomp	lib/jas/examples/exprcomp.java	/^  public exprcomp(StreamTokenizer inp)$/;"	m	class:exprcomp
+exprcomp	lib/jas/examples/exprcomp.java	/^public class exprcomp implements RuntimeConstants$/;"	c
+exttype	src/jas/AnnotationElement.java	/^  private CP name, exttype;$/;"	f	class:AnnotationElement	file:
+factor	lib/jas/examples/exprcomp.java	/^  void factor()$/;"	m	class:exprcomp
+field	src/jas/Annotation.java	/^  private AnnotationElement field;$/;"	f	class:Annotation	file:
+fields	src/jas/Annotation.java	/^  private Vector fields;$/;"	f	class:Annotation	file:
+filename	src/jasmin/ClassFile.java	/^    String filename;$/;"	f	class:ClassFile
+final_time	src/java_cup/Main.java	/^  protected static long final_time       = 0;$/;"	f	class:Main
+find	src/java_cup/lalr_item_set.java	/^  public lalr_item find(lalr_item itm) {return (lalr_item)_all.get(itm);}$/;"	m	class:lalr_item_set
+find	src/java_cup/non_terminal.java	/^  public static non_terminal find(String with_name)$/;"	m	class:non_terminal
+find	src/java_cup/terminal.java	/^  public static terminal find(String with_name)$/;"	m	class:terminal
+find	src/java_cup/terminal.java	/^  public static terminal find(int indx)$/;"	m	class:terminal
+find_recovery_config	src/java_cup/runtime/lr_parser.java	/^  protected boolean find_recovery_config(boolean debug)$/;"	m	class:lr_parser
+find_single_char	src/java_cup/lexer.java	/^  protected static int find_single_char(int ch)$/;"	m	class:lexer
+find_state	src/java_cup/lalr_state.java	/^  public static lalr_state find_state(lalr_item_set itms)$/;"	m	class:lalr_state
+first_end	src/java_cup/Main.java	/^  protected static long first_end        = 0;$/;"	f	class:Main
+first_set	src/java_cup/non_terminal.java	/^  public terminal_set first_set() {return _first_set;}$/;"	m	class:non_terminal
+first_set	src/java_cup/production.java	/^  public terminal_set first_set() {return _first_set;}$/;"	m	class:production
+float_token	src/java_cup/runtime/float_token.java	/^  public float_token(int term_num)$/;"	m	class:float_token
+float_token	src/java_cup/runtime/float_token.java	/^  public float_token(int term_num, float v)$/;"	m	class:float_token
+float_token	src/java_cup/runtime/float_token.java	/^public class float_token extends token {$/;"	c
+float_val	src/java_cup/runtime/float_token.java	/^  public float float_val;$/;"	f	class:float_token
+flushInsnBuffer	src/jasmin/ClassFile.java	/^    void flushInsnBuffer() throws jasError {$/;"	m	class:ClassFile
+frames	src/jas/StackMap.java	/^  protected Vector frames;$/;"	f	class:StackMap
+generate_linenum	src/jasmin/Main.java	/^    private boolean generate_linenum = false;$/;"	f	class:Main	file:
+generic	src/jas/ClassEnv.java	/^  Vector generic;$/;"	f	class:ClassEnv
+generic	src/jas/CodeAttr.java	/^  Vector generic;$/;"	f	class:CodeAttr
+generic	src/jas/Method.java	/^  Vector generic;$/;"	f	class:Method
+generic	src/jas/Var.java	/^  Vector generic;$/;"	f	class:Var
+get	src/jas/AnnotDefAttr.java	/^  public Annotation get()$/;"	m	class:AnnotDefAttr
+get	src/jasmin/InsnInfo.java	/^    public static InsnInfo get(String name) {$/;"	m	class:InsnInfo
+get	src/jasmin/ReservedWords.java	/^    public static token get(String name) {$/;"	m	class:ReservedWords
+getCPIndex	src/jas/ClassEnv.java	/^  short getCPIndex(CP cp)$/;"	m	class:ClassEnv
+getClassName	src/jasmin/ClassFile.java	/^    public String getClassName() {$/;"	m	class:ClassFile
+getFrame	src/jas/VerifyFrame.java	/^  public Vector getFrame(int count) throws jasError$/;"	m	class:VerifyFrame
+getLabel	src/jas/LabelOrOffset.java	/^    Label getLabel() {$/;"	m	class:LabelOrOffset
+getLabel	src/jasmin/ClassFile.java	/^    Label getLabel(String name) throws jasError {$/;"	m	class:ClassFile
+getLastFrame	src/jas/StackMap.java	/^  public Vector getLastFrame(int count) throws jasError$/;"	m	class:StackMap
+getOffset	src/jas/Label.java	/^  int getOffset(CodeAttr ce) throws jasError$/;"	m	class:Label
+getOffset	src/jas/LabelOrOffset.java	/^    int getOffset() {$/;"	m	class:LabelOrOffset
+getOffset	src/jas/VerificationTypeInfo.java	/^  private int getOffset(CodeAttr ce) throws jasError$/;"	m	class:VerificationTypeInfo	file:
+getOffset	src/jas/VerifyFrame.java	/^  public int getOffset(CodeAttr ce) throws jasError$/;"	m	class:VerifyFrame
+getPc	src/jas/CodeAttr.java	/^  int getPc(Insn i) throws jasError$/;"	m	class:CodeAttr
+getUniq	src/jas/CP.java	/^  String getUniq() { return uniq; }$/;"	m	class:CP
+get_action	src/java_cup/runtime/lr_parser.java	/^  protected final short get_action(int state, int sym)$/;"	m	class:lr_parser
+get_from_real	src/java_cup/runtime/virtual_parse_stack.java	/^  protected void get_from_real()$/;"	m	class:virtual_parse_stack
+get_one	src/java_cup/lalr_item_set.java	/^  public lalr_item get_one() throws internal_error$/;"	m	class:lalr_item_set
+get_reduce	src/java_cup/runtime/lr_parser.java	/^  protected final short get_reduce(int state, int sym)$/;"	m	class:lr_parser
+goto_table_time	src/java_cup/emit.java	/^  public static long goto_table_time       = 0;$/;"	f	class:emit
+handler_off	src/jas/CatchEntry.java	/^  int start_off, end_off, handler_off;$/;"	f	class:CatchEntry
+handler_pc	src/jas/CatchEntry.java	/^  Label start_pc, end_pc, handler_pc;$/;"	f	class:CatchEntry
+hashCode	src/java_cup/action_part.java	/^  public int hashCode()$/;"	m	class:action_part
+hashCode	src/java_cup/lalr_item.java	/^  public int hashCode()$/;"	m	class:lalr_item
+hashCode	src/java_cup/lalr_item_set.java	/^  public int hashCode()$/;"	m	class:lalr_item_set
+hashCode	src/java_cup/lalr_state.java	/^  public int hashCode()$/;"	m	class:lalr_state
+hashCode	src/java_cup/lr_item_core.java	/^  public int hashCode() $/;"	m	class:lr_item_core
+hashCode	src/java_cup/parse_action.java	/^  public int hashCode()$/;"	m	class:parse_action
+hashCode	src/java_cup/production.java	/^  public int hashCode()$/;"	m	class:production
+hashCode	src/java_cup/production_part.java	/^  public int hashCode()$/;"	m	class:production_part
+hashCode	src/java_cup/reduce_action.java	/^  public int hashCode()$/;"	m	class:reduce_action
+hashCode	src/java_cup/shift_action.java	/^  public int hashCode()$/;"	m	class:shift_action
+hashCode	src/java_cup/symbol_part.java	/^  public int hashCode()$/;"	m	class:symbol_part
+hashCode	src/java_cup/symbol_set.java	/^  public int hashCode()$/;"	m	class:symbol_set
+hashcode_cache	src/java_cup/lalr_item_set.java	/^  protected Integer hashcode_cache = null;$/;"	f	class:lalr_item_set
+haveOffset	src/jas/VerifyFrame.java	/^  public boolean haveOffset()$/;"	m	class:VerifyFrame
+help1	src/jasmin/Main.java	/^    private static final String help1 =$/;"	f	class:Main	file:
+help2	src/jasmin/Main.java	/^    private static final String help2 =$/;"	f	class:Main	file:
+help3	src/jasmin/Main.java	/^    private static final String help3 =$/;"	f	class:Main	file:
+high_value	src/jasmin/ClassFile.java	/^    int high_value;$/;"	f	class:ClassFile
+hworld	lib/jas/examples/hworld.java	/^class hworld implements RuntimeConstants$/;"	c
+id	src/jas/Label.java	/^  String id;$/;"	f	class:Label
+id_char	src/java_cup/lexer.java	/^  protected static boolean id_char(int ch)$/;"	m	class:lexer
+id_start_char	src/java_cup/lexer.java	/^  protected static boolean id_start_char(int ch)$/;"	m	class:lexer
+import_list	src/java_cup/emit.java	/^  public static Stack import_list = new Stack();$/;"	f	class:emit
+include_non_terms	src/java_cup/Main.java	/^  protected static boolean include_non_terms = false;$/;"	f	class:Main
+index	src/jas/VerificationTypeInfo.java	/^  private int index;$/;"	f	class:VerificationTypeInfo	file:
+index	src/java_cup/lalr_state.java	/^  public int index() {return _index;}$/;"	m	class:lalr_state
+index	src/java_cup/production.java	/^  public int index() {return _index;}$/;"	m	class:production
+index	src/java_cup/symbol.java	/^   public int index() {return _index;}$/;"	m	class:symbol
+infoTable	src/jasmin/InsnInfo.java	/^    private static Hashtable infoTable;$/;"	f	class:InsnInfo	file:
+init	lib/java_cup/simple_calc/scanner.java	/^  public static void init() throws java.io.IOException { advance(); }$/;"	m	class:scanner
+init	src/java_cup/lexer.java	/^  public static void init() throws java.io.IOException$/;"	m	class:lexer
+init_actions	lib/java_cup/simple_calc/parser.java	/^  protected void init_actions()$/;"	m	class:parser
+init_actions	src/jasmin/parser.java	/^  protected void init_actions()$/;"	m	class:parser
+init_actions	src/java_cup/parser.java	/^  protected void init_actions()$/;"	m	class:parser
+init_actions	src/java_cup/runtime/lr_parser.java	/^  protected abstract void init_actions() throws java.lang.Exception;$/;"	m	class:lr_parser
+init_code	src/java_cup/emit.java	/^  public static String init_code = null;$/;"	f	class:emit
+inner	src/jas/InnerClass.java	/^  ClassCP inner, outer;$/;"	f	class:InnerClass
+innerclasses	src/jas/ClassEnv.java	/^  InnerClassesAttr innerclasses;$/;"	f	class:ClassEnv
+inp	lib/jas/examples/exprcomp.java	/^  StreamTokenizer inp;$/;"	f	class:exprcomp
+inp	src/jasmin/Scanner.java	/^  Reader inp;$/;"	f	class:Scanner
+input_file	src/java_cup/Main.java	/^  protected static BufferedInputStream input_file;$/;"	f	class:Main
+input_file_name	src/java_cup/emit.java	/^  public static String input_file_name;$/;"	f	class:emit
+insn_pc	src/jas/CodeAttr.java	/^  Hashtable insn_pc;$/;"	f	class:CodeAttr
+insns	src/jas/CodeAttr.java	/^  Vector insns;$/;"	f	class:CodeAttr
+int_char_num	src/jasmin/Scanner.java	/^    public int line_num, token_line_num, char_num, int_char_num, int_line_num;$/;"	f	class:Scanner
+int_line	src/jasmin/Scanner.java	/^    public String int_line;$/;"	f	class:Scanner
+int_line_num	src/jasmin/Scanner.java	/^    public int line_num, token_line_num, char_num, int_char_num, int_line_num;$/;"	f	class:Scanner
+int_token	src/java_cup/runtime/int_token.java	/^  public int_token(int term_num)$/;"	m	class:int_token
+int_token	src/java_cup/runtime/int_token.java	/^  public int_token(int term_num, int iv)$/;"	m	class:int_token
+int_token	src/java_cup/runtime/int_token.java	/^public class int_token extends token {$/;"	c
+int_val	src/java_cup/runtime/int_token.java	/^  public int int_val;$/;"	f	class:int_token
+interfaces	src/jas/ClassEnv.java	/^  Vector interfaces;$/;"	f	class:ClassEnv
+internal_error	src/java_cup/internal_error.java	/^    public internal_error(String msg)$/;"	m	class:internal_error
+internal_error	src/java_cup/internal_error.java	/^public class internal_error extends Exception$/;"	c
+intersects	src/java_cup/terminal_set.java	/^   public boolean intersects(terminal_set other)$/;"	m	class:terminal_set
+intro	lib/java_cup/manual.html	/^<a name=intro>$/;"	a
+isEqual	src/jas/VerificationTypeInfo.java	/^  boolean isEqual(ClassEnv e, CodeAttr ce, VerificationTypeInfo cmp)$/;"	m	class:VerificationTypeInfo
+is_action	src/java_cup/action_part.java	/^  public boolean is_action() { return true; }$/;"	m	class:action_part
+is_action	src/java_cup/production_part.java	/^  public abstract boolean is_action();$/;"	m	class:production_part
+is_action	src/java_cup/symbol_part.java	/^  public boolean is_action() { return false; }$/;"	m	class:symbol_part
+is_default	src/jas/Annotation.java	/^  private boolean is_default;$/;"	f	class:Annotation	file:
+is_id_char	src/java_cup/production.java	/^  protected static boolean is_id_char(char c)$/;"	m	class:production
+is_id_start	src/java_cup/production.java	/^  protected static boolean is_id_start(char c)$/;"	m	class:production
+is_non_term	src/java_cup/non_terminal.java	/^  public boolean is_non_term() $/;"	m	class:non_terminal
+is_non_term	src/java_cup/symbol.java	/^  public abstract boolean is_non_term();$/;"	m	class:symbol
+is_non_term	src/java_cup/terminal.java	/^  public boolean is_non_term() $/;"	m	class:terminal
+is_subset_of	src/java_cup/lalr_item_set.java	/^  public boolean is_subset_of(lalr_item_set other) throws internal_error$/;"	m	class:lalr_item_set
+is_subset_of	src/java_cup/symbol_set.java	/^  public boolean is_subset_of(symbol_set other) throws internal_error$/;"	m	class:symbol_set
+is_subset_of	src/java_cup/terminal_set.java	/^  public boolean is_subset_of(terminal_set other)$/;"	m	class:terminal_set
+is_superset_of	src/java_cup/lalr_item_set.java	/^  public boolean is_superset_of(lalr_item_set other) throws internal_error$/;"	m	class:lalr_item_set
+is_superset_of	src/java_cup/symbol_set.java	/^  public boolean is_superset_of(symbol_set other) throws internal_error$/;"	m	class:symbol_set
+is_superset_of	src/java_cup/terminal_set.java	/^  public boolean is_superset_of(terminal_set other)$/;"	m	class:terminal_set
+items	src/java_cup/lalr_state.java	/^  public lalr_item_set items() {return _items;}$/;"	m	class:lalr_state
+jas	src/jas/AnnotDefAttr.java	/^package jas;$/;"	p
+jas	src/jas/AnnotParamAttr.java	/^package jas;$/;"	p
+jas	src/jas/Annotation.java	/^package jas;$/;"	p
+jas	src/jas/AnnotationAttr.java	/^package jas;$/;"	p
+jas	src/jas/AnnotationElement.java	/^package jas;$/;"	p
+jas	src/jas/AsciiCP.java	/^package jas;$/;"	p
+jas	src/jas/CP.java	/^package jas;$/;"	p
+jas	src/jas/CatchEntry.java	/^package jas;$/;"	p
+jas	src/jas/Catchtable.java	/^package jas;$/;"	p
+jas	src/jas/ClassCP.java	/^package jas;$/;"	p
+jas	src/jas/ClassEnv.java	/^package jas;$/;"	p
+jas	src/jas/CodeAttr.java	/^package jas;$/;"	p
+jas	src/jas/ConstAttr.java	/^package jas;$/;"	p
+jas	src/jas/DeprecatedAttr.java	/^package jas;$/;"	p
+jas	src/jas/DoubleCP.java	/^package jas;$/;"	p
+jas	src/jas/EnclosingMethodAttr.java	/^package jas;$/;"	p
+jas	src/jas/ExceptAttr.java	/^package jas;$/;"	p
+jas	src/jas/FieldCP.java	/^package jas;$/;"	p
+jas	src/jas/FloatCP.java	/^package jas;$/;"	p
+jas	src/jas/GenericAttr.java	/^package jas;$/;"	p
+jas	src/jas/IincInsn.java	/^package jas;$/;"	p
+jas	src/jas/InnerClass.java	/^package jas;$/;"	p
+jas	src/jas/InnerClassesAttr.java	/^package jas;$/;"	p
+jas	src/jas/Insn.java	/^package jas;$/;"	p
+jas	src/jas/InsnOperand.java	/^package jas;$/;"	p
+jas	src/jas/IntegerCP.java	/^package jas;$/;"	p
+jas	src/jas/InterfaceCP.java	/^package jas;$/;"	p
+jas	src/jas/InvokeinterfaceInsn.java	/^package jas;$/;"	p
+jas	src/jas/Label.java	/^package jas;$/;"	p
+jas	src/jas/LabelOrOffset.java	/^package jas;$/;"	p
+jas	src/jas/LineTableAttr.java	/^package jas;$/;"	p
+jas	src/jas/LocalVarEntry.java	/^package jas;$/;"	p
+jas	src/jas/LocalVarTableAttr.java	/^package jas;$/;"	p
+jas	src/jas/LocalVarTypeTableAttr.java	/^package jas;$/;"	p
+jas	src/jas/LongCP.java	/^package jas;$/;"	p
+jas	src/jas/LookupswitchInsn.java	/^package jas;$/;"	p
+jas	src/jas/Method.java	/^package jas;$/;"	p
+jas	src/jas/MethodCP.java	/^package jas;$/;"	p
+jas	src/jas/MultiarrayInsn.java	/^package jas;$/;"	p
+jas	src/jas/NameTypeCP.java	/^package jas;$/;"	p
+jas	src/jas/RuntimeConstants.java	/^package jas;$/;"	p
+jas	src/jas/SignatureAttr.java	/^package jas;$/;"	p
+jas	src/jas/SourceAttr.java	/^package jas;$/;"	p
+jas	src/jas/SourceDebugExtensionAttr.java	/^package jas;$/;"	p
+jas	src/jas/StackMap.java	/^package jas;$/;"	p
+jas	src/jas/StringCP.java	/^package jas;$/;"	p
+jas	src/jas/TableswitchInsn.java	/^package jas;$/;"	p
+jas	src/jas/Var.java	/^package jas;$/;"	p
+jas	src/jas/VerificationTypeInfo.java	/^package jas;$/;"	p
+jas	src/jas/VerifyFrame.java	/^package jas;$/;"	p
+jas	src/jas/jasError.java	/^package jas;$/;"	p
+jasError	src/jas/jasError.java	/^  public jasError() { super(); numTag = false; }$/;"	m	class:jasError
+jasError	src/jas/jasError.java	/^  public jasError(String s) { super(s);  numTag = false; }$/;"	m	class:jasError
+jasError	src/jas/jasError.java	/^  public jasError(String s, boolean isNum) { super(s); numTag = true; }$/;"	m	class:jasError
+jasError	src/jas/jasError.java	/^public class jasError extends Exception$/;"	c
+jasmin	src/jasmin/ClassFile.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/InsnInfo.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/Main.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/ReservedWords.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/Scanner.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/ScannerUtils.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/num_token.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/parser.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/relative_num_token.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/sym.java	/^package jasmin;$/;"	p
+jasmin	src/jasmin/var_token.java	/^package jasmin;$/;"	p
+java6	src/jas/StackMap.java	/^  static boolean java6 = false;$/;"	f	class:StackMap
+java_cup	src/java_cup/Main.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/action_part.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/action_production.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/emit.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/internal_error.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/lalr_item.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/lalr_item_set.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/lalr_state.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/lalr_transition.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/lexer.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/lr_item_core.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/non_terminal.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/parse_action.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/parse_action_row.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/parse_action_table.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/parse_reduce_row.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/parse_reduce_table.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/parser.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/production.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/production_part.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/reduce_action.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/shift_action.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/sym.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/symbol.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/symbol_part.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/symbol_set.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/terminal.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/terminal_set.java	/^package java_cup;$/;"	p
+java_cup	src/java_cup/version.java	/^package java_cup;$/;"	p
+java_cup.runtime	src/java_cup/runtime/char_token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/double_token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/float_token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/int_token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/long_token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/lr_parser.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/str_token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/symbol.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/token.java	/^package java_cup.runtime;$/;"	p
+java_cup.runtime	src/java_cup/runtime/virtual_parse_stack.java	/^package java_cup.runtime;$/;"	p
+jmp	src/jas/InsnOperand.java	/^  LabelOrOffset jmp[];$/;"	f	class:LookupswitchOperand
+jmp	src/jas/InsnOperand.java	/^  LabelOrOffset jmp[];$/;"	f	class:TableswitchOperand
+keywords	src/java_cup/lexer.java	/^  protected static Hashtable keywords = new Hashtable(23);$/;"	f	class:lexer
+kind	src/java_cup/parse_action.java	/^  public int kind() {return ERROR;}$/;"	m	class:parse_action
+kind	src/java_cup/reduce_action.java	/^  public int kind() {return REDUCE;}$/;"	m	class:reduce_action
+kind	src/java_cup/shift_action.java	/^  public int kind() {return SHIFT;}$/;"	m	class:shift_action
+label	src/jas/LabelOrOffset.java	/^    private Label label;$/;"	f	class:LabelOrOffset	file:
+label	src/java_cup/production_part.java	/^  public String label() {return _label;}$/;"	m	class:production_part
+label_translate	src/java_cup/production.java	/^  protected String label_translate($/;"	m	class:production
+labels	src/jasmin/ClassFile.java	/^    Hashtable labels;$/;"	f	class:ClassFile
+lalr_item	src/java_cup/lalr_item.java	/^  public lalr_item(production prod) throws internal_error$/;"	m	class:lalr_item
+lalr_item	src/java_cup/lalr_item.java	/^  public lalr_item(production prod, int pos, terminal_set look) $/;"	m	class:lalr_item
+lalr_item	src/java_cup/lalr_item.java	/^  public lalr_item(production prod, terminal_set look) throws internal_error$/;"	m	class:lalr_item
+lalr_item	src/java_cup/lalr_item.java	/^public class lalr_item extends lr_item_core {$/;"	c
+lalr_item_set	src/java_cup/lalr_item_set.java	/^  public lalr_item_set() { }$/;"	m	class:lalr_item_set
+lalr_item_set	src/java_cup/lalr_item_set.java	/^  public lalr_item_set(lalr_item_set other) $/;"	m	class:lalr_item_set
+lalr_item_set	src/java_cup/lalr_item_set.java	/^public class lalr_item_set {$/;"	c
+lalr_state	src/java_cup/lalr_state.java	/^  public lalr_state(lalr_item_set itms) throws internal_error$/;"	m	class:lalr_state
+lalr_state	src/java_cup/lalr_state.java	/^public class lalr_state {$/;"	c
+lalr_transition	src/java_cup/lalr_transition.java	/^  public lalr_transition(symbol on_sym, lalr_state to_st) throws internal_error$/;"	m	class:lalr_transition
+lalr_transition	src/java_cup/lalr_transition.java	/^  public lalr_transition(symbol on_sym, lalr_state to_st, lalr_transition nxt)$/;"	m	class:lalr_transition
+lalr_transition	src/java_cup/lalr_transition.java	/^public class lalr_transition {$/;"	c
+lexer	src/java_cup/lexer.java	/^  private lexer() { }$/;"	m	class:lexer	file:
+lexer	src/java_cup/lexer.java	/^public class lexer {$/;"	c
+lhs	src/java_cup/production.java	/^  public symbol_part lhs() {return _lhs;}$/;"	m	class:production
+lhs_nt	src/java_cup/parser.java	/^  protected non_terminal lhs_nt;$/;"	f	class:CUP$actions
+line	src/jas/LineTableAttr.java	/^  Vector line, pc;$/;"	f	class:LineTableAttr
+line	src/jasmin/Scanner.java	/^    public StringBuffer line;$/;"	f	class:Scanner
+line_label_count	src/jasmin/ClassFile.java	/^    int line_label_count, line_num, stack_map_label_count;$/;"	f	class:ClassFile
+line_num	src/jasmin/ClassFile.java	/^    int line_label_count, line_num, stack_map_label_count;$/;"	f	class:ClassFile
+line_num	src/jasmin/Scanner.java	/^    public int line_num, token_line_num, char_num, int_char_num, int_line_num;$/;"	f	class:Scanner
+line_table	src/jasmin/ClassFile.java	/^    LineTableAttr line_table;$/;"	f	class:ClassFile
+list	src/jas/InnerClassesAttr.java	/^  private Vector list;$/;"	f	class:InnerClassesAttr	file:
+loadClass	lib/jas/examples/exprcomp.java	/^  public synchronized Class loadClass(String name, boolean resolve)$/;"	m	class:dynaloader
+locals	src/jas/VerifyFrame.java	/^  private Vector stack, locals;$/;"	f	class:VerifyFrame	file:
+long_token	src/java_cup/runtime/long_token.java	/^  public long_token(int term_num)$/;"	m	class:long_token
+long_token	src/java_cup/runtime/long_token.java	/^  public long_token(int term_num, long lv)$/;"	m	class:long_token
+long_token	src/java_cup/runtime/long_token.java	/^public class long_token extends token {$/;"	c
+long_val	src/java_cup/runtime/long_token.java	/^  public long long_val;$/;"	f	class:long_token
+lookahead	src/java_cup/lalr_item.java	/^  public terminal_set lookahead() {return _lookahead;};$/;"	m	class:lalr_item
+lookahead	src/java_cup/runtime/lr_parser.java	/^  protected token lookahead[];$/;"	f	class:lr_parser
+lookahead_pos	src/java_cup/runtime/lr_parser.java	/^  protected int lookahead_pos;$/;"	f	class:lr_parser
+lookahead_visible	src/java_cup/lalr_item.java	/^  public boolean lookahead_visible() throws internal_error$/;"	m	class:lalr_item
+looks_nullable	src/java_cup/non_terminal.java	/^  protected boolean looks_nullable() throws internal_error$/;"	m	class:non_terminal
+low_value	src/jasmin/ClassFile.java	/^    int low_value;$/;"	f	class:ClassFile
+lr_item_core	src/java_cup/lr_item_core.java	/^  public lr_item_core(production prod) throws internal_error$/;"	m	class:lr_item_core
+lr_item_core	src/java_cup/lr_item_core.java	/^  public lr_item_core(production prod, int pos) throws internal_error$/;"	m	class:lr_item_core
+lr_item_core	src/java_cup/lr_item_core.java	/^public class lr_item_core {$/;"	c
+lr_parser	src/java_cup/runtime/lr_parser.java	/^  public lr_parser()$/;"	m	class:lr_parser
+lr_parser	src/java_cup/runtime/lr_parser.java	/^public abstract class lr_parser {$/;"	c
+ltab	src/jas/CodeAttr.java	/^  LineTableAttr ltab;$/;"	f	class:CodeAttr
+lvar	src/jas/CodeAttr.java	/^  LocalVarTableAttr lvar;$/;"	f	class:CodeAttr
+lvtyp	src/jas/CodeAttr.java	/^  LocalVarTypeTableAttr lvtyp;$/;"	f	class:CodeAttr
+machine_end	src/java_cup/Main.java	/^  protected static long machine_end      = 0;$/;"	f	class:Main
+magic	src/jas/ClassEnv.java	/^  int magic;$/;"	f	class:ClassEnv
+main	TEST/JavaCaller/Caller.java	/^  public static void main(String args[]) {$/;"	m	class:Caller
+main	lib/jas/examples/exprcomp.java	/^  public static void main(String argv[])$/;"	m	class:exprcomp
+main	lib/jas/examples/hworld.java	/^  public static void main(String argv[])$/;"	m	class:hworld
+main	lib/jas/examples/simple.java	/^  public static void main(String argv[])$/;"	m	class:simple
+main	lib/jas/tests/all.java	/^  public static void main(String argv[])$/;"	m	class:all
+main	lib/java_cup/simple_calc/Main.java	/^  public static void main(String argv[])$/;"	m	class:Main
+main	src/Jasmin.java	/^    public static void main(String args[])$/;"	m	class:Jasmin
+main	src/jasmin/Main.java	/^    public static void main(String args[])$/;"	m	class:Main
+main	src/java_cup/Main.java	/^  public static void main(String argv[])$/;"	m	class:Main
+mainEnd	build.bat	/^:mainEnd$/;"	l
+major	src/java_cup/version.java	/^  public static final int major = 0;$/;"	f	class:version
+match	lib/jas/examples/exprcomp.java	/^  void match(int val)$/;"	m	class:exprcomp
+match	src/jas/InsnOperand.java	/^  int match[];$/;"	f	class:LookupswitchOperand
+max	src/jas/InsnOperand.java	/^  int min, max;$/;"	f	class:TableswitchOperand
+max_stack_height	lib/jas/examples/exprcomp.java	/^  short max_stack_height;$/;"	f	class:exprcomp
+max_vars	lib/jas/examples/exprcomp.java	/^  short max_vars;$/;"	f	class:exprcomp
+merge_adjacent_actions	src/java_cup/production.java	/^  protected int merge_adjacent_actions(production_part rhs_parts[], int len)$/;"	m	class:production
+methods	src/jas/ClassEnv.java	/^  Vector methods;$/;"	f	class:ClassEnv
+min	src/jas/InsnOperand.java	/^  int min, max;$/;"	f	class:TableswitchOperand
+minor	src/java_cup/version.java	/^  public static final int minor = 9;$/;"	f	class:version
+mtd	src/jas/EnclosingMethodAttr.java	/^  String cls, mtd, dsc;$/;"	f	class:EnclosingMethodAttr
+multipart_name	src/java_cup/parser.java	/^  protected String multipart_name = new String();$/;"	f	class:CUP$actions
+myCode	lib/jas/examples/exprcomp.java	/^  CodeAttr myCode;$/;"	f	class:exprcomp
+name	src/jas/AnnotationElement.java	/^  private CP name, exttype;$/;"	f	class:AnnotationElement	file:
+name	src/jas/ClassCP.java	/^  AsciiCP name;$/;"	f	class:ClassCP
+name	src/jas/InnerClass.java	/^  CP name;$/;"	f	class:InnerClass
+name	src/jas/LocalVarEntry.java	/^  CP name, sig;$/;"	f	class:LocalVarEntry
+name	src/jas/Method.java	/^  CP name, desc;$/;"	f	class:Method
+name	src/jas/NameTypeCP.java	/^  AsciiCP name, sig;$/;"	f	class:NameTypeCP
+name	src/jas/SourceAttr.java	/^  CP name;$/;"	f	class:SourceAttr
+name	src/jas/Var.java	/^  CP name, desc;$/;"	f	class:Var
+name	src/jasmin/InsnInfo.java	/^    public String name;     \/\/ instruction name$/;"	f	class:InsnInfo
+name	src/java_cup/symbol.java	/^   public String name() {return _name;}$/;"	m	class:symbol
+nameEscape	src/jasmin/Scanner.java	/^    private char nameEscape()$/;"	m	class:Scanner	file:
+nargs	src/jas/InsnOperand.java	/^  int nargs;$/;"	f	class:InvokeinterfaceOperand
+needs_propagation	src/java_cup/lalr_item.java	/^  protected boolean needs_propagation;$/;"	f	class:lalr_item
+nestAnnotation	src/jas/Annotation.java	/^  public Annotation nestAnnotation() throws jasError$/;"	m	class:Annotation
+nestAnnotation	src/jasmin/ClassFile.java	/^    void nestAnnotation() throws jasError$/;"	m	class:ClassFile
+nestType	src/jas/AnnotationElement.java	/^  public AsciiCP nestType() throws jasError$/;"	m	class:AnnotationElement
+newLookupswitch	src/jasmin/ClassFile.java	/^    void newLookupswitch() throws jasError {$/;"	m	class:ClassFile
+newMethod	src/jasmin/ClassFile.java	/^    void newMethod(String name, String descriptor, int access) {$/;"	m	class:ClassFile
+newTableswitch	src/jasmin/ClassFile.java	/^    void newTableswitch(int lowval) throws jasError {$/;"	m	class:ClassFile
+newTableswitch	src/jasmin/ClassFile.java	/^    void newTableswitch(int lowval, int hival) throws jasError {$/;"	m	class:ClassFile
+new_rhs	src/java_cup/parser.java	/^  protected void new_rhs() {rhs_pos = 0; }$/;"	m	class:CUP$actions
+next	src/java_cup/lalr_transition.java	/^  public lalr_transition next() {return _next;}$/;"	m	class:lalr_transition
+next_char	lib/java_cup/simple_calc/scanner.java	/^  protected static int next_char;$/;"	f	class:scanner
+next_char	src/jasmin/Scanner.java	/^    int next_char;$/;"	f	class:Scanner
+next_char	src/java_cup/lexer.java	/^  protected static int next_char; $/;"	f	class:lexer
+next_char2	src/java_cup/lexer.java	/^  protected static int next_char2;$/;"	f	class:lexer
+next_index	src/java_cup/lalr_state.java	/^  protected static int next_index = 0;$/;"	f	class:lalr_state
+next_index	src/java_cup/non_terminal.java	/^  protected static int next_index = 0;$/;"	f	class:non_terminal
+next_index	src/java_cup/production.java	/^  protected static int next_index;$/;"	f	class:production
+next_index	src/java_cup/terminal.java	/^  protected static int next_index = 0;$/;"	f	class:terminal
+next_nt	src/java_cup/non_terminal.java	/^  static protected int next_nt = 0;$/;"	f	class:non_terminal
+next_token	lib/java_cup/simple_calc/scanner.java	/^  public static token next_token() throws java.io.IOException$/;"	m	class:scanner
+next_token	src/jasmin/Scanner.java	/^    public token next_token()$/;"	m	class:Scanner
+next_token	src/java_cup/lexer.java	/^  public static token next_token() throws java.io.IOException$/;"	m	class:lexer
+noAntHome	build.bat	/^:noAntHome$/;"	l
+noJavaHome	build.bat	/^:noJavaHome$/;"	l
+no_summary	src/java_cup/Main.java	/^  protected static boolean no_summary = false;$/;"	f	class:Main
+non_terminal	src/java_cup/non_terminal.java	/^  public non_terminal(String nm) $/;"	m	class:non_terminal
+non_terminal	src/java_cup/non_terminal.java	/^  public non_terminal(String nm, String tp) $/;"	m	class:non_terminal
+non_terminal	src/java_cup/non_terminal.java	/^public class non_terminal extends symbol {$/;"	c
+non_terms	src/java_cup/parser.java	/^  protected Hashtable non_terms = new Hashtable();$/;"	f	class:CUP$actions
+not_null	src/java_cup/lalr_item_set.java	/^  protected void not_null(Object obj) throws internal_error$/;"	m	class:lalr_item_set
+not_null	src/java_cup/symbol_set.java	/^  protected void not_null(Object obj) throws internal_error$/;"	m	class:symbol_set
+not_null	src/java_cup/terminal_set.java	/^  protected void not_null(Object obj) throws internal_error$/;"	m	class:terminal_set
+not_reduced	src/java_cup/emit.java	/^  public static int not_reduced = 0;$/;"	f	class:emit
+note_reduction_use	src/java_cup/production.java	/^  public void note_reduction_use() {_num_reductions++;}$/;"	m	class:production
+note_use	src/java_cup/symbol.java	/^   public void note_use() {_use_count++;}$/;"	m	class:symbol
+nowarn	src/java_cup/emit.java	/^  public static boolean nowarn = false;$/;"	f	class:emit
+nt	src/jas/FieldCP.java	/^  NameTypeCP nt;$/;"	f	class:FieldCP
+nt	src/jas/InterfaceCP.java	/^  NameTypeCP nt;$/;"	f	class:InterfaceCP
+nt	src/jas/MethodCP.java	/^  NameTypeCP nt;$/;"	f	class:MethodCP
+ntcp	src/jas/EnclosingMethodAttr.java	/^     ntcp;$/;"	f	class:EnclosingMethodAttr
+nullability_end	src/java_cup/Main.java	/^  protected static long nullability_end  = 0;$/;"	f	class:Main
+nullable	src/java_cup/non_terminal.java	/^  public boolean nullable() {return _nullable;}$/;"	m	class:non_terminal
+nullable	src/java_cup/production.java	/^  public boolean nullable() {return _nullable;}$/;"	m	class:production
+nullable_known	src/java_cup/production.java	/^  public boolean nullable_known() {return _nullable_known;}$/;"	m	class:production
+numTag	src/jas/jasError.java	/^  public boolean numTag;$/;"	f	class:jasError
+num_conflicts	src/java_cup/emit.java	/^  public static int num_conflicts = 0;$/;"	f	class:emit
+num_locals	src/jas/CodeAttr.java	/^  short stack_size, num_locals;$/;"	f	class:CodeAttr
+num_productions	src/java_cup/non_terminal.java	/^  public int num_productions() {return _productions.size();};$/;"	m	class:non_terminal
+num_reductions	src/java_cup/production.java	/^  public int num_reductions() {return _num_reductions;}$/;"	m	class:production
+num_states	src/java_cup/parse_action_table.java	/^  public int num_states() {return _num_states;}$/;"	m	class:parse_action_table
+num_states	src/java_cup/parse_reduce_table.java	/^  public int num_states() {return _num_states;}$/;"	m	class:parse_reduce_table
+num_token	src/jasmin/num_token.java	/^  public num_token(int term_num)$/;"	m	class:num_token
+num_token	src/jasmin/num_token.java	/^  public num_token(int term_num, Number v)$/;"	m	class:num_token
+num_token	src/jasmin/num_token.java	/^class num_token extends java_cup.runtime.token {$/;"	c
+num_val	src/jasmin/num_token.java	/^  public Number num_val;$/;"	f	class:num_token
+number	src/java_cup/lalr_state.java	/^  public static int number() {return _all.size();}$/;"	m	class:lalr_state
+number	src/java_cup/non_terminal.java	/^  public static int number() {return _all.size();};$/;"	m	class:non_terminal
+number	src/java_cup/production.java	/^  public static int number() {return _all.size();};$/;"	m	class:production
+number	src/java_cup/terminal.java	/^  public static int number() {return _all.size();};$/;"	m	class:terminal
+off_label	src/jas/VerifyFrame.java	/^  private Label off_label;$/;"	f	class:VerifyFrame	file:
+offset	src/jas/InsnOperand.java	/^  int offset;$/;"	f	class:ShortOperand
+offset	src/jas/LabelOrOffset.java	/^    private int offset;$/;"	f	class:LabelOrOffset	file:
+offset	src/jas/VerifyFrame.java	/^  private int offset;$/;"	f	class:VerifyFrame	file:
+offset_defined	src/jas/VerifyFrame.java	/^  private boolean offset_defined;$/;"	f	class:VerifyFrame	file:
+on_symbol	src/java_cup/lalr_transition.java	/^  public symbol on_symbol() {return _on_symbol;}$/;"	m	class:lalr_transition
+opc	src/jas/Insn.java	/^  int opc;$/;"	f	class:Insn
+opcLengths	src/jas/RuntimeConstants.java	/^    static final int opcLengths[] = {$/;"	f	interface:RuntimeConstants
+opcNames	src/jas/RuntimeConstants.java	/^    public static final String opcNames[] = {$/;"	f	interface:RuntimeConstants
+opc_aaload	src/jas/RuntimeConstants.java	/^    public static final int opc_aaload = 50;$/;"	f	interface:RuntimeConstants
+opc_aastore	src/jas/RuntimeConstants.java	/^    public static final int opc_aastore = 83;$/;"	f	interface:RuntimeConstants
+opc_aconst_null	src/jas/RuntimeConstants.java	/^    public static final int opc_aconst_null = 1;$/;"	f	interface:RuntimeConstants
+opc_aload	src/jas/RuntimeConstants.java	/^    public static final int opc_aload = 25;$/;"	f	interface:RuntimeConstants
+opc_aload_0	src/jas/RuntimeConstants.java	/^    public static final int opc_aload_0 = 42;$/;"	f	interface:RuntimeConstants
+opc_aload_1	src/jas/RuntimeConstants.java	/^    public static final int opc_aload_1 = 43;$/;"	f	interface:RuntimeConstants
+opc_aload_2	src/jas/RuntimeConstants.java	/^    public static final int opc_aload_2 = 44;$/;"	f	interface:RuntimeConstants
+opc_aload_3	src/jas/RuntimeConstants.java	/^    public static final int opc_aload_3 = 45;$/;"	f	interface:RuntimeConstants
+opc_anewarray	src/jas/RuntimeConstants.java	/^    public static final int opc_anewarray = 189;$/;"	f	interface:RuntimeConstants
+opc_areturn	src/jas/RuntimeConstants.java	/^    public static final int opc_areturn = 176;$/;"	f	interface:RuntimeConstants
+opc_arraylength	src/jas/RuntimeConstants.java	/^    public static final int opc_arraylength = 190;$/;"	f	interface:RuntimeConstants
+opc_astore	src/jas/RuntimeConstants.java	/^    public static final int opc_astore = 58;$/;"	f	interface:RuntimeConstants
+opc_astore_0	src/jas/RuntimeConstants.java	/^    public static final int opc_astore_0 = 75;$/;"	f	interface:RuntimeConstants
+opc_astore_1	src/jas/RuntimeConstants.java	/^    public static final int opc_astore_1 = 76;$/;"	f	interface:RuntimeConstants
+opc_astore_2	src/jas/RuntimeConstants.java	/^    public static final int opc_astore_2 = 77;$/;"	f	interface:RuntimeConstants
+opc_astore_3	src/jas/RuntimeConstants.java	/^    public static final int opc_astore_3 = 78;$/;"	f	interface:RuntimeConstants
+opc_athrow	src/jas/RuntimeConstants.java	/^    public static final int opc_athrow = 191;$/;"	f	interface:RuntimeConstants
+opc_baload	src/jas/RuntimeConstants.java	/^    public static final int opc_baload = 51;$/;"	f	interface:RuntimeConstants
+opc_bastore	src/jas/RuntimeConstants.java	/^    public static final int opc_bastore = 84;$/;"	f	interface:RuntimeConstants
+opc_bipush	src/jas/RuntimeConstants.java	/^    public static final int opc_bipush = 16;$/;"	f	interface:RuntimeConstants
+opc_breakpoint	src/jas/RuntimeConstants.java	/^    public static final int opc_breakpoint = 202;$/;"	f	interface:RuntimeConstants
+opc_caload	src/jas/RuntimeConstants.java	/^    public static final int opc_caload = 52;$/;"	f	interface:RuntimeConstants
+opc_castore	src/jas/RuntimeConstants.java	/^    public static final int opc_castore = 85;$/;"	f	interface:RuntimeConstants
+opc_checkcast	src/jas/RuntimeConstants.java	/^    public static final int opc_checkcast = 192;$/;"	f	interface:RuntimeConstants
+opc_d2f	src/jas/RuntimeConstants.java	/^    public static final int opc_d2f = 144;$/;"	f	interface:RuntimeConstants
+opc_d2i	src/jas/RuntimeConstants.java	/^    public static final int opc_d2i = 142;$/;"	f	interface:RuntimeConstants
+opc_d2l	src/jas/RuntimeConstants.java	/^    public static final int opc_d2l = 143;$/;"	f	interface:RuntimeConstants
+opc_dadd	src/jas/RuntimeConstants.java	/^    public static final int opc_dadd = 99;$/;"	f	interface:RuntimeConstants
+opc_daload	src/jas/RuntimeConstants.java	/^    public static final int opc_daload = 49;$/;"	f	interface:RuntimeConstants
+opc_dastore	src/jas/RuntimeConstants.java	/^    public static final int opc_dastore = 82;$/;"	f	interface:RuntimeConstants
+opc_dcmpg	src/jas/RuntimeConstants.java	/^    public static final int opc_dcmpg = 152;$/;"	f	interface:RuntimeConstants
+opc_dcmpl	src/jas/RuntimeConstants.java	/^    public static final int opc_dcmpl = 151;$/;"	f	interface:RuntimeConstants
+opc_dconst_0	src/jas/RuntimeConstants.java	/^    public static final int opc_dconst_0 = 14;$/;"	f	interface:RuntimeConstants
+opc_dconst_1	src/jas/RuntimeConstants.java	/^    public static final int opc_dconst_1 = 15;$/;"	f	interface:RuntimeConstants
+opc_ddiv	src/jas/RuntimeConstants.java	/^    public static final int opc_ddiv = 111;$/;"	f	interface:RuntimeConstants
+opc_dead	src/jas/RuntimeConstants.java	/^    public static final int opc_dead = -2;$/;"	f	interface:RuntimeConstants
+opc_dload	src/jas/RuntimeConstants.java	/^    public static final int opc_dload = 24;$/;"	f	interface:RuntimeConstants
+opc_dload_0	src/jas/RuntimeConstants.java	/^    public static final int opc_dload_0 = 38;$/;"	f	interface:RuntimeConstants
+opc_dload_1	src/jas/RuntimeConstants.java	/^    public static final int opc_dload_1 = 39;$/;"	f	interface:RuntimeConstants
+opc_dload_2	src/jas/RuntimeConstants.java	/^    public static final int opc_dload_2 = 40;$/;"	f	interface:RuntimeConstants
+opc_dload_3	src/jas/RuntimeConstants.java	/^    public static final int opc_dload_3 = 41;$/;"	f	interface:RuntimeConstants
+opc_dmul	src/jas/RuntimeConstants.java	/^    public static final int opc_dmul = 107;$/;"	f	interface:RuntimeConstants
+opc_dneg	src/jas/RuntimeConstants.java	/^    public static final int opc_dneg = 119;$/;"	f	interface:RuntimeConstants
+opc_drem	src/jas/RuntimeConstants.java	/^    public static final int opc_drem = 115;$/;"	f	interface:RuntimeConstants
+opc_dreturn	src/jas/RuntimeConstants.java	/^    public static final int opc_dreturn = 175;$/;"	f	interface:RuntimeConstants
+opc_dstore	src/jas/RuntimeConstants.java	/^    public static final int opc_dstore = 57;$/;"	f	interface:RuntimeConstants
+opc_dstore_0	src/jas/RuntimeConstants.java	/^    public static final int opc_dstore_0 = 71;$/;"	f	interface:RuntimeConstants
+opc_dstore_1	src/jas/RuntimeConstants.java	/^    public static final int opc_dstore_1 = 72;$/;"	f	interface:RuntimeConstants
+opc_dstore_2	src/jas/RuntimeConstants.java	/^    public static final int opc_dstore_2 = 73;$/;"	f	interface:RuntimeConstants
+opc_dstore_3	src/jas/RuntimeConstants.java	/^    public static final int opc_dstore_3 = 74;$/;"	f	interface:RuntimeConstants
+opc_dsub	src/jas/RuntimeConstants.java	/^    public static final int opc_dsub = 103;$/;"	f	interface:RuntimeConstants
+opc_dup	src/jas/RuntimeConstants.java	/^    public static final int opc_dup = 89;$/;"	f	interface:RuntimeConstants
+opc_dup2	src/jas/RuntimeConstants.java	/^    public static final int opc_dup2 = 92;$/;"	f	interface:RuntimeConstants
+opc_dup2_x1	src/jas/RuntimeConstants.java	/^    public static final int opc_dup2_x1 = 93;$/;"	f	interface:RuntimeConstants
+opc_dup2_x2	src/jas/RuntimeConstants.java	/^    public static final int opc_dup2_x2 = 94;$/;"	f	interface:RuntimeConstants
+opc_dup_x1	src/jas/RuntimeConstants.java	/^    public static final int opc_dup_x1 = 90;$/;"	f	interface:RuntimeConstants
+opc_dup_x2	src/jas/RuntimeConstants.java	/^    public static final int opc_dup_x2 = 91;$/;"	f	interface:RuntimeConstants
+opc_f2d	src/jas/RuntimeConstants.java	/^    public static final int opc_f2d = 141;$/;"	f	interface:RuntimeConstants
+opc_f2i	src/jas/RuntimeConstants.java	/^    public static final int opc_f2i = 139;$/;"	f	interface:RuntimeConstants
+opc_f2l	src/jas/RuntimeConstants.java	/^    public static final int opc_f2l = 140;$/;"	f	interface:RuntimeConstants
+opc_fadd	src/jas/RuntimeConstants.java	/^    public static final int opc_fadd = 98;$/;"	f	interface:RuntimeConstants
+opc_faload	src/jas/RuntimeConstants.java	/^    public static final int opc_faload = 48;$/;"	f	interface:RuntimeConstants
+opc_fastore	src/jas/RuntimeConstants.java	/^    public static final int opc_fastore = 81;$/;"	f	interface:RuntimeConstants
+opc_fcmpg	src/jas/RuntimeConstants.java	/^    public static final int opc_fcmpg = 150;$/;"	f	interface:RuntimeConstants
+opc_fcmpl	src/jas/RuntimeConstants.java	/^    public static final int opc_fcmpl = 149;$/;"	f	interface:RuntimeConstants
+opc_fconst_0	src/jas/RuntimeConstants.java	/^    public static final int opc_fconst_0 = 11;$/;"	f	interface:RuntimeConstants
+opc_fconst_1	src/jas/RuntimeConstants.java	/^    public static final int opc_fconst_1 = 12;$/;"	f	interface:RuntimeConstants
+opc_fconst_2	src/jas/RuntimeConstants.java	/^    public static final int opc_fconst_2 = 13;$/;"	f	interface:RuntimeConstants
+opc_fdiv	src/jas/RuntimeConstants.java	/^    public static final int opc_fdiv = 110;$/;"	f	interface:RuntimeConstants
+opc_fload	src/jas/RuntimeConstants.java	/^    public static final int opc_fload = 23;$/;"	f	interface:RuntimeConstants
+opc_fload_0	src/jas/RuntimeConstants.java	/^    public static final int opc_fload_0 = 34;$/;"	f	interface:RuntimeConstants
+opc_fload_1	src/jas/RuntimeConstants.java	/^    public static final int opc_fload_1 = 35;$/;"	f	interface:RuntimeConstants
+opc_fload_2	src/jas/RuntimeConstants.java	/^    public static final int opc_fload_2 = 36;$/;"	f	interface:RuntimeConstants
+opc_fload_3	src/jas/RuntimeConstants.java	/^    public static final int opc_fload_3 = 37;$/;"	f	interface:RuntimeConstants
+opc_fmul	src/jas/RuntimeConstants.java	/^    public static final int opc_fmul = 106;$/;"	f	interface:RuntimeConstants
+opc_fneg	src/jas/RuntimeConstants.java	/^    public static final int opc_fneg = 118;$/;"	f	interface:RuntimeConstants
+opc_frem	src/jas/RuntimeConstants.java	/^    public static final int opc_frem = 114;$/;"	f	interface:RuntimeConstants
+opc_freturn	src/jas/RuntimeConstants.java	/^    public static final int opc_freturn = 174;$/;"	f	interface:RuntimeConstants
+opc_fstore	src/jas/RuntimeConstants.java	/^    public static final int opc_fstore = 56;$/;"	f	interface:RuntimeConstants
+opc_fstore_0	src/jas/RuntimeConstants.java	/^    public static final int opc_fstore_0 = 67;$/;"	f	interface:RuntimeConstants
+opc_fstore_1	src/jas/RuntimeConstants.java	/^    public static final int opc_fstore_1 = 68;$/;"	f	interface:RuntimeConstants
+opc_fstore_2	src/jas/RuntimeConstants.java	/^    public static final int opc_fstore_2 = 69;$/;"	f	interface:RuntimeConstants
+opc_fstore_3	src/jas/RuntimeConstants.java	/^    public static final int opc_fstore_3 = 70;$/;"	f	interface:RuntimeConstants
+opc_fsub	src/jas/RuntimeConstants.java	/^    public static final int opc_fsub = 102;$/;"	f	interface:RuntimeConstants
+opc_getfield	src/jas/RuntimeConstants.java	/^    public static final int opc_getfield = 180;$/;"	f	interface:RuntimeConstants
+opc_getstatic	src/jas/RuntimeConstants.java	/^    public static final int opc_getstatic = 178;$/;"	f	interface:RuntimeConstants
+opc_goto	src/jas/RuntimeConstants.java	/^    public static final int opc_goto = 167;$/;"	f	interface:RuntimeConstants
+opc_goto_w	src/jas/RuntimeConstants.java	/^    public static final int opc_goto_w = 200;$/;"	f	interface:RuntimeConstants
+opc_i2b	src/jas/RuntimeConstants.java	/^    public static final int opc_i2b = 145;$/;"	f	interface:RuntimeConstants
+opc_i2c	src/jas/RuntimeConstants.java	/^    public static final int opc_i2c = 146;$/;"	f	interface:RuntimeConstants
+opc_i2d	src/jas/RuntimeConstants.java	/^    public static final int opc_i2d = 135;$/;"	f	interface:RuntimeConstants
+opc_i2f	src/jas/RuntimeConstants.java	/^    public static final int opc_i2f = 134;$/;"	f	interface:RuntimeConstants
+opc_i2l	src/jas/RuntimeConstants.java	/^    public static final int opc_i2l = 133;$/;"	f	interface:RuntimeConstants
+opc_i2s	src/jas/RuntimeConstants.java	/^    public static final int opc_i2s = 147;$/;"	f	interface:RuntimeConstants
+opc_iadd	src/jas/RuntimeConstants.java	/^    public static final int opc_iadd = 96;$/;"	f	interface:RuntimeConstants
+opc_iaload	src/jas/RuntimeConstants.java	/^    public static final int opc_iaload = 46;$/;"	f	interface:RuntimeConstants
+opc_iand	src/jas/RuntimeConstants.java	/^    public static final int opc_iand = 126;$/;"	f	interface:RuntimeConstants
+opc_iastore	src/jas/RuntimeConstants.java	/^    public static final int opc_iastore = 79;$/;"	f	interface:RuntimeConstants
+opc_iconst_0	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_0 = 3;$/;"	f	interface:RuntimeConstants
+opc_iconst_1	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_1 = 4;$/;"	f	interface:RuntimeConstants
+opc_iconst_2	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_2 = 5;$/;"	f	interface:RuntimeConstants
+opc_iconst_3	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_3 = 6;$/;"	f	interface:RuntimeConstants
+opc_iconst_4	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_4 = 7;$/;"	f	interface:RuntimeConstants
+opc_iconst_5	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_5 = 8;$/;"	f	interface:RuntimeConstants
+opc_iconst_m1	src/jas/RuntimeConstants.java	/^    public static final int opc_iconst_m1 = 2;$/;"	f	interface:RuntimeConstants
+opc_idiv	src/jas/RuntimeConstants.java	/^    public static final int opc_idiv = 108;$/;"	f	interface:RuntimeConstants
+opc_if_acmpeq	src/jas/RuntimeConstants.java	/^    public static final int opc_if_acmpeq = 165;$/;"	f	interface:RuntimeConstants
+opc_if_acmpne	src/jas/RuntimeConstants.java	/^    public static final int opc_if_acmpne = 166;$/;"	f	interface:RuntimeConstants
+opc_if_icmpeq	src/jas/RuntimeConstants.java	/^    public static final int opc_if_icmpeq = 159;$/;"	f	interface:RuntimeConstants
+opc_if_icmpge	src/jas/RuntimeConstants.java	/^    public static final int opc_if_icmpge = 162;$/;"	f	interface:RuntimeConstants
+opc_if_icmpgt	src/jas/RuntimeConstants.java	/^    public static final int opc_if_icmpgt = 163;$/;"	f	interface:RuntimeConstants
+opc_if_icmple	src/jas/RuntimeConstants.java	/^    public static final int opc_if_icmple = 164;$/;"	f	interface:RuntimeConstants
+opc_if_icmplt	src/jas/RuntimeConstants.java	/^    public static final int opc_if_icmplt = 161;$/;"	f	interface:RuntimeConstants
+opc_if_icmpne	src/jas/RuntimeConstants.java	/^    public static final int opc_if_icmpne = 160;$/;"	f	interface:RuntimeConstants
+opc_ifeq	src/jas/RuntimeConstants.java	/^    public static final int opc_ifeq = 153;$/;"	f	interface:RuntimeConstants
+opc_ifge	src/jas/RuntimeConstants.java	/^    public static final int opc_ifge = 156;$/;"	f	interface:RuntimeConstants
+opc_ifgt	src/jas/RuntimeConstants.java	/^    public static final int opc_ifgt = 157;$/;"	f	interface:RuntimeConstants
+opc_ifle	src/jas/RuntimeConstants.java	/^    public static final int opc_ifle = 158;$/;"	f	interface:RuntimeConstants
+opc_iflt	src/jas/RuntimeConstants.java	/^    public static final int opc_iflt = 155;$/;"	f	interface:RuntimeConstants
+opc_ifne	src/jas/RuntimeConstants.java	/^    public static final int opc_ifne = 154;$/;"	f	interface:RuntimeConstants
+opc_ifnonnull	src/jas/RuntimeConstants.java	/^    public static final int opc_ifnonnull = 199;$/;"	f	interface:RuntimeConstants
+opc_ifnull	src/jas/RuntimeConstants.java	/^    public static final int opc_ifnull = 198;$/;"	f	interface:RuntimeConstants
+opc_iinc	src/jas/RuntimeConstants.java	/^    public static final int opc_iinc = 132;$/;"	f	interface:RuntimeConstants
+opc_iload	src/jas/RuntimeConstants.java	/^    public static final int opc_iload = 21;$/;"	f	interface:RuntimeConstants
+opc_iload_0	src/jas/RuntimeConstants.java	/^    public static final int opc_iload_0 = 26;$/;"	f	interface:RuntimeConstants
+opc_iload_1	src/jas/RuntimeConstants.java	/^    public static final int opc_iload_1 = 27;$/;"	f	interface:RuntimeConstants
+opc_iload_2	src/jas/RuntimeConstants.java	/^    public static final int opc_iload_2 = 28;$/;"	f	interface:RuntimeConstants
+opc_iload_3	src/jas/RuntimeConstants.java	/^    public static final int opc_iload_3 = 29;$/;"	f	interface:RuntimeConstants
+opc_imul	src/jas/RuntimeConstants.java	/^    public static final int opc_imul = 104;$/;"	f	interface:RuntimeConstants
+opc_ineg	src/jas/RuntimeConstants.java	/^    public static final int opc_ineg = 116;$/;"	f	interface:RuntimeConstants
+opc_instanceof	src/jas/RuntimeConstants.java	/^    public static final int opc_instanceof = 193;$/;"	f	interface:RuntimeConstants
+opc_int2byte	src/jas/RuntimeConstants.java	/^    public static final int opc_int2byte = opc_i2b;$/;"	f	interface:RuntimeConstants
+opc_int2char	src/jas/RuntimeConstants.java	/^    public static final int opc_int2char = opc_i2c;$/;"	f	interface:RuntimeConstants
+opc_int2short	src/jas/RuntimeConstants.java	/^    public static final int opc_int2short = opc_i2s;$/;"	f	interface:RuntimeConstants
+opc_invokedynamic	src/jas/RuntimeConstants.java	/^    public static final int opc_invokedynamic = 186;$/;"	f	interface:RuntimeConstants
+opc_invokeinterface	src/jas/RuntimeConstants.java	/^    public static final int opc_invokeinterface = 185;$/;"	f	interface:RuntimeConstants
+opc_invokenonvirtual	src/jas/RuntimeConstants.java	/^    public static final int opc_invokenonvirtual = opc_invokespecial;$/;"	f	interface:RuntimeConstants
+opc_invokespecial	src/jas/RuntimeConstants.java	/^    public static final int opc_invokespecial = 183;$/;"	f	interface:RuntimeConstants
+opc_invokestatic	src/jas/RuntimeConstants.java	/^    public static final int opc_invokestatic = 184;$/;"	f	interface:RuntimeConstants
+opc_invokevirtual	src/jas/RuntimeConstants.java	/^    public static final int opc_invokevirtual = 182;$/;"	f	interface:RuntimeConstants
+opc_ior	src/jas/RuntimeConstants.java	/^    public static final int opc_ior = 128;$/;"	f	interface:RuntimeConstants
+opc_irem	src/jas/RuntimeConstants.java	/^    public static final int opc_irem = 112;$/;"	f	interface:RuntimeConstants
+opc_ireturn	src/jas/RuntimeConstants.java	/^    public static final int opc_ireturn = 172;$/;"	f	interface:RuntimeConstants
+opc_ishl	src/jas/RuntimeConstants.java	/^    public static final int opc_ishl = 120;$/;"	f	interface:RuntimeConstants
+opc_ishr	src/jas/RuntimeConstants.java	/^    public static final int opc_ishr = 122;$/;"	f	interface:RuntimeConstants
+opc_istore	src/jas/RuntimeConstants.java	/^    public static final int opc_istore = 54;$/;"	f	interface:RuntimeConstants
+opc_istore_0	src/jas/RuntimeConstants.java	/^    public static final int opc_istore_0 = 59;$/;"	f	interface:RuntimeConstants
+opc_istore_1	src/jas/RuntimeConstants.java	/^    public static final int opc_istore_1 = 60;$/;"	f	interface:RuntimeConstants
+opc_istore_2	src/jas/RuntimeConstants.java	/^    public static final int opc_istore_2 = 61;$/;"	f	interface:RuntimeConstants
+opc_istore_3	src/jas/RuntimeConstants.java	/^    public static final int opc_istore_3 = 62;$/;"	f	interface:RuntimeConstants
+opc_isub	src/jas/RuntimeConstants.java	/^    public static final int opc_isub = 100;$/;"	f	interface:RuntimeConstants
+opc_iushr	src/jas/RuntimeConstants.java	/^    public static final int opc_iushr = 124;$/;"	f	interface:RuntimeConstants
+opc_ixor	src/jas/RuntimeConstants.java	/^    public static final int opc_ixor = 130;$/;"	f	interface:RuntimeConstants
+opc_jsr	src/jas/RuntimeConstants.java	/^    public static final int opc_jsr = 168;$/;"	f	interface:RuntimeConstants
+opc_jsr_w	src/jas/RuntimeConstants.java	/^    public static final int opc_jsr_w = 201;$/;"	f	interface:RuntimeConstants
+opc_l2d	src/jas/RuntimeConstants.java	/^    public static final int opc_l2d = 138;$/;"	f	interface:RuntimeConstants
+opc_l2f	src/jas/RuntimeConstants.java	/^    public static final int opc_l2f = 137;$/;"	f	interface:RuntimeConstants
+opc_l2i	src/jas/RuntimeConstants.java	/^    public static final int opc_l2i = 136;$/;"	f	interface:RuntimeConstants
+opc_label	src/jas/RuntimeConstants.java	/^    public static final int opc_label = -1;$/;"	f	interface:RuntimeConstants
+opc_ladd	src/jas/RuntimeConstants.java	/^    public static final int opc_ladd = 97;$/;"	f	interface:RuntimeConstants
+opc_laload	src/jas/RuntimeConstants.java	/^    public static final int opc_laload = 47;$/;"	f	interface:RuntimeConstants
+opc_land	src/jas/RuntimeConstants.java	/^    public static final int opc_land = 127;$/;"	f	interface:RuntimeConstants
+opc_lastore	src/jas/RuntimeConstants.java	/^    public static final int opc_lastore = 80;$/;"	f	interface:RuntimeConstants
+opc_lcmp	src/jas/RuntimeConstants.java	/^    public static final int opc_lcmp = 148;$/;"	f	interface:RuntimeConstants
+opc_lconst_0	src/jas/RuntimeConstants.java	/^    public static final int opc_lconst_0 = 9;$/;"	f	interface:RuntimeConstants
+opc_lconst_1	src/jas/RuntimeConstants.java	/^    public static final int opc_lconst_1 = 10;$/;"	f	interface:RuntimeConstants
+opc_ldc	src/jas/RuntimeConstants.java	/^    public static final int opc_ldc = 18;$/;"	f	interface:RuntimeConstants
+opc_ldc2_w	src/jas/RuntimeConstants.java	/^    public static final int opc_ldc2_w = 20;$/;"	f	interface:RuntimeConstants
+opc_ldc_w	src/jas/RuntimeConstants.java	/^    public static final int opc_ldc_w = 19;$/;"	f	interface:RuntimeConstants
+opc_ldiv	src/jas/RuntimeConstants.java	/^    public static final int opc_ldiv = 109;$/;"	f	interface:RuntimeConstants
+opc_lload	src/jas/RuntimeConstants.java	/^    public static final int opc_lload = 22;$/;"	f	interface:RuntimeConstants
+opc_lload_0	src/jas/RuntimeConstants.java	/^    public static final int opc_lload_0 = 30;$/;"	f	interface:RuntimeConstants
+opc_lload_1	src/jas/RuntimeConstants.java	/^    public static final int opc_lload_1 = 31;$/;"	f	interface:RuntimeConstants
+opc_lload_2	src/jas/RuntimeConstants.java	/^    public static final int opc_lload_2 = 32;$/;"	f	interface:RuntimeConstants
+opc_lload_3	src/jas/RuntimeConstants.java	/^    public static final int opc_lload_3 = 33;$/;"	f	interface:RuntimeConstants
+opc_lmul	src/jas/RuntimeConstants.java	/^    public static final int opc_lmul = 105;$/;"	f	interface:RuntimeConstants
+opc_lneg	src/jas/RuntimeConstants.java	/^    public static final int opc_lneg = 117;$/;"	f	interface:RuntimeConstants
+opc_lookupswitch	src/jas/RuntimeConstants.java	/^    public static final int opc_lookupswitch = 171;$/;"	f	interface:RuntimeConstants
+opc_lor	src/jas/RuntimeConstants.java	/^    public static final int opc_lor = 129;$/;"	f	interface:RuntimeConstants
+opc_lrem	src/jas/RuntimeConstants.java	/^    public static final int opc_lrem = 113;$/;"	f	interface:RuntimeConstants
+opc_lreturn	src/jas/RuntimeConstants.java	/^    public static final int opc_lreturn = 173;$/;"	f	interface:RuntimeConstants
+opc_lshl	src/jas/RuntimeConstants.java	/^    public static final int opc_lshl = 121;$/;"	f	interface:RuntimeConstants
+opc_lshr	src/jas/RuntimeConstants.java	/^    public static final int opc_lshr = 123;$/;"	f	interface:RuntimeConstants
+opc_lstore	src/jas/RuntimeConstants.java	/^    public static final int opc_lstore = 55;$/;"	f	interface:RuntimeConstants
+opc_lstore_0	src/jas/RuntimeConstants.java	/^    public static final int opc_lstore_0 = 63;$/;"	f	interface:RuntimeConstants
+opc_lstore_1	src/jas/RuntimeConstants.java	/^    public static final int opc_lstore_1 = 64;$/;"	f	interface:RuntimeConstants
+opc_lstore_2	src/jas/RuntimeConstants.java	/^    public static final int opc_lstore_2 = 65;$/;"	f	interface:RuntimeConstants
+opc_lstore_3	src/jas/RuntimeConstants.java	/^    public static final int opc_lstore_3 = 66;$/;"	f	interface:RuntimeConstants
+opc_lsub	src/jas/RuntimeConstants.java	/^    public static final int opc_lsub = 101;$/;"	f	interface:RuntimeConstants
+opc_lushr	src/jas/RuntimeConstants.java	/^    public static final int opc_lushr = 125;$/;"	f	interface:RuntimeConstants
+opc_lxor	src/jas/RuntimeConstants.java	/^    public static final int opc_lxor = 131;$/;"	f	interface:RuntimeConstants
+opc_monitorenter	src/jas/RuntimeConstants.java	/^    public static final int opc_monitorenter = 194;$/;"	f	interface:RuntimeConstants
+opc_monitorexit	src/jas/RuntimeConstants.java	/^    public static final int opc_monitorexit = 195;$/;"	f	interface:RuntimeConstants
+opc_multianewarray	src/jas/RuntimeConstants.java	/^    public static final int opc_multianewarray = 197;$/;"	f	interface:RuntimeConstants
+opc_new	src/jas/RuntimeConstants.java	/^    public static final int opc_new = 187;$/;"	f	interface:RuntimeConstants
+opc_newarray	src/jas/RuntimeConstants.java	/^    public static final int opc_newarray = 188;$/;"	f	interface:RuntimeConstants
+opc_nop	src/jas/RuntimeConstants.java	/^    public static final int opc_nop = 0;$/;"	f	interface:RuntimeConstants
+opc_pop	src/jas/RuntimeConstants.java	/^    public static final int opc_pop = 87;$/;"	f	interface:RuntimeConstants
+opc_pop2	src/jas/RuntimeConstants.java	/^    public static final int opc_pop2 = 88;$/;"	f	interface:RuntimeConstants
+opc_putfield	src/jas/RuntimeConstants.java	/^    public static final int opc_putfield = 181;$/;"	f	interface:RuntimeConstants
+opc_putstatic	src/jas/RuntimeConstants.java	/^    public static final int opc_putstatic = 179;$/;"	f	interface:RuntimeConstants
+opc_ret	src/jas/RuntimeConstants.java	/^    public static final int opc_ret = 169;$/;"	f	interface:RuntimeConstants
+opc_return	src/jas/RuntimeConstants.java	/^    public static final int opc_return = 177;$/;"	f	interface:RuntimeConstants
+opc_saload	src/jas/RuntimeConstants.java	/^    public static final int opc_saload = 53;$/;"	f	interface:RuntimeConstants
+opc_sastore	src/jas/RuntimeConstants.java	/^    public static final int opc_sastore = 86;$/;"	f	interface:RuntimeConstants
+opc_sipush	src/jas/RuntimeConstants.java	/^    public static final int opc_sipush = 17;$/;"	f	interface:RuntimeConstants
+opc_swap	src/jas/RuntimeConstants.java	/^    public static final int opc_swap = 95;$/;"	f	interface:RuntimeConstants
+opc_tableswitch	src/jas/RuntimeConstants.java	/^    public static final int opc_tableswitch = 170;$/;"	f	interface:RuntimeConstants
+opc_try	src/jas/RuntimeConstants.java	/^    public static final int opc_try = -3;$/;"	f	interface:RuntimeConstants
+opc_wide	src/jas/RuntimeConstants.java	/^    public static final int opc_wide = 196;$/;"	f	interface:RuntimeConstants
+opcode	src/jasmin/InsnInfo.java	/^    public int opcode;      \/\/ its opcode$/;"	f	class:InsnInfo
+open_files	src/java_cup/Main.java	/^  protected static void open_files()$/;"	m	class:Main
+opened_annotation	src/jasmin/ClassFile.java	/^    private static void opened_annotation(String fld) throws jasError$/;"	m	class:ClassFile	file:
+operand	src/jas/Insn.java	/^  InsnOperand operand;$/;"	f	class:Insn
+opt_compact_red	src/java_cup/Main.java	/^  protected static boolean opt_compact_red  = false;$/;"	f	class:Main
+opt_do_debug	src/java_cup/Main.java	/^  protected static boolean opt_do_debug     = false;$/;"	f	class:Main
+opt_dump_grammar	src/java_cup/Main.java	/^  protected static boolean opt_dump_grammar = false;$/;"	f	class:Main
+opt_dump_states	src/java_cup/Main.java	/^  protected static boolean opt_dump_states  = false;$/;"	f	class:Main
+opt_dump_tables	src/java_cup/Main.java	/^  protected static boolean opt_dump_tables  = false;$/;"	f	class:Main
+opt_show_timing	src/java_cup/Main.java	/^  protected static boolean opt_show_timing  = false;$/;"	f	class:Main
+out_path	src/java_cup/Main.java	/^  private static String out_path = null;$/;"	f	class:Main	file:
+outer	src/jas/InnerClass.java	/^  ClassCP inner, outer;$/;"	f	class:InnerClass
+outside	src/jasmin/ClassFile.java	/^    private static void outside(String dir) throws jasError$/;"	m	class:ClassFile	file:
+package_name	src/java_cup/emit.java	/^  public static String package_name = null;$/;"	f	class:emit
+package_spec	lib/java_cup/manual.html	/^<h5><a name="package_spec">Package and Import Specifications<\/a><\/h5>$/;"	a
+parent	src/jas/Annotation.java	/^  private Annotation parent;$/;"	f	class:Annotation	file:
+parent	src/jas/InsnOperand.java	/^  Insn parent;$/;"	f	class:OffsetOperand
+parent	src/jas/InsnOperand.java	/^  Insn parent;$/;"	f	class:RelativeOffsetOperand
+parse	lib/jas/examples/exprcomp.java	/^  public void parse()$/;"	m	class:exprcomp
+parse	src/java_cup/runtime/lr_parser.java	/^  public void parse() throws java.lang.Exception$/;"	m	class:lr_parser
+parseError	lib/jas/examples/exprcomp.java	/^class parseError extends Exception$/;"	c
+parseError	lib/jas/examples/exprcomp.java	/^{ parseError(String s) { super(s); } }$/;"	m	class:parseError
+parse_action	src/java_cup/parse_action.java	/^  public parse_action()$/;"	m	class:parse_action
+parse_action	src/java_cup/parse_action.java	/^public class parse_action {$/;"	c
+parse_action_row	src/java_cup/parse_action_row.java	/^  public parse_action_row()$/;"	m	class:parse_action_row
+parse_action_row	src/java_cup/parse_action_row.java	/^public class parse_action_row {$/;"	c
+parse_action_table	src/java_cup/parse_action_table.java	/^  public parse_action_table()$/;"	m	class:parse_action_table
+parse_action_table	src/java_cup/parse_action_table.java	/^public class parse_action_table {$/;"	c
+parse_args	src/java_cup/Main.java	/^  protected static void parse_args(String argv[])$/;"	m	class:Main
+parse_end	src/java_cup/Main.java	/^  protected static long parse_end        = 0;$/;"	f	class:Main
+parse_grammar_spec	src/java_cup/Main.java	/^  protected static void parse_grammar_spec() throws java.lang.Exception$/;"	m	class:Main
+parse_lookahead	src/java_cup/runtime/lr_parser.java	/^  protected void parse_lookahead(boolean debug)$/;"	m	class:lr_parser
+parse_reduce_row	src/java_cup/parse_reduce_row.java	/^  public parse_reduce_row()$/;"	m	class:parse_reduce_row
+parse_reduce_row	src/java_cup/parse_reduce_row.java	/^public class parse_reduce_row {$/;"	c
+parse_reduce_table	src/java_cup/parse_reduce_table.java	/^  public parse_reduce_table()$/;"	m	class:parse_reduce_table
+parse_reduce_table	src/java_cup/parse_reduce_table.java	/^public class parse_reduce_table {$/;"	c
+parse_state	src/java_cup/runtime/symbol.java	/^  public int parse_state;$/;"	f	class:symbol
+parser	lib/java_cup/manual.html	/^<a name="parser">$/;"	a
+parser	lib/java_cup/simple_calc/parser.java	/^  public parser() {super();}$/;"	m	class:parser
+parser	lib/java_cup/simple_calc/parser.java	/^public class parser extends java_cup.runtime.lr_parser {$/;"	c
+parser	src/jasmin/parser.java	/^	parser(ClassFile classFile, Scanner scanner) {$/;"	m	class:parser
+parser	src/jasmin/parser.java	/^  public parser() {super();}$/;"	m	class:parser
+parser	src/jasmin/parser.java	/^public class parser extends java_cup.runtime.lr_parser {$/;"	c
+parser	src/java_cup/emit.java	/^  public static void parser($/;"	m	class:emit
+parser	src/java_cup/parser.java	/^  public parser() {super();}$/;"	m	class:parser
+parser	src/java_cup/parser.java	/^public class parser extends java_cup.runtime.lr_parser {$/;"	c
+parser_class_file	src/java_cup/Main.java	/^  protected static PrintStream parser_class_file;$/;"	f	class:Main
+parser_class_name	src/java_cup/emit.java	/^  public static String parser_class_name = "parser";$/;"	f	class:emit
+parser_code	src/java_cup/emit.java	/^  public static String parser_code = null;$/;"	f	class:emit
+parser_time	src/java_cup/emit.java	/^  public static long parser_time           = 0;$/;"	f	class:emit
+pc	src/jas/LineTableAttr.java	/^  Vector line, pc;$/;"	f	class:LineTableAttr
+plant	src/jasmin/ClassFile.java	/^    void plant(String name) throws jasError {$/;"	m	class:ClassFile
+plant	src/jasmin/ClassFile.java	/^    void plant(String name, Number val) throws jasError {$/;"	m	class:ClassFile
+plant	src/jasmin/ClassFile.java	/^    void plant(String name, String v1, String v2)$/;"	m	class:ClassFile
+plant	src/jasmin/ClassFile.java	/^    void plant(String name, String val) throws jasError {$/;"	m	class:ClassFile
+plant	src/jasmin/ClassFile.java	/^    void plant(String name, String val, int nargs)$/;"	m	class:ClassFile
+plant	src/jasmin/ClassFile.java	/^    void plant(String name, int v1, int v2)$/;"	m	class:ClassFile
+plant	src/jasmin/ClassFile.java	/^    void plant(String name, int val) throws jasError {$/;"	m	class:ClassFile
+plantLabel	src/jasmin/ClassFile.java	/^    void plantLabel(String name) throws jasError {$/;"	m	class:ClassFile
+plantRelativeGoto	src/jasmin/ClassFile.java	/^    void plantRelativeGoto(String name, int val) throws jasError {$/;"	m	class:ClassFile
+plantStackLocals	src/jasmin/ClassFile.java	/^    void plantStackLocals(String item, String val) {$/;"	m	class:ClassFile
+plantStackOffset	src/jasmin/ClassFile.java	/^    void plantStackOffset(String label) throws jasError {$/;"	m	class:ClassFile
+plantStackOffset	src/jasmin/ClassFile.java	/^    void plantStackOffset(int n) {$/;"	m	class:ClassFile
+plantStackStack	src/jasmin/ClassFile.java	/^    void plantStackStack(String item, String val) {$/;"	m	class:ClassFile
+plantString	src/jasmin/ClassFile.java	/^    void plantString(String name, String val) throws jasError {$/;"	m	class:ClassFile
+plural	src/java_cup/Main.java	/^  protected static String plural(int val)$/;"	m	class:Main
+pop	src/java_cup/runtime/virtual_parse_stack.java	/^  public void pop() throws java.lang.Exception$/;"	m	class:virtual_parse_stack
+pre	src/java_cup/emit.java	/^  protected static String pre(String str) {return prefix + str;}$/;"	m	class:emit
+prefix	src/java_cup/emit.java	/^  public static String prefix = "CUP$";$/;"	f	class:emit
+prelim_end	src/java_cup/Main.java	/^  protected static long prelim_end       = 0;$/;"	f	class:Main
+prevStack	src/jasmin/ClassFile.java	/^    private Vector prevStack(int count) throws jasError {$/;"	m	class:ClassFile	file:
+print_progress	src/java_cup/Main.java	/^  protected static boolean print_progress   = false;$/;"	f	class:Main
+production	src/java_cup/production.java	/^  public production($/;"	m	class:production
+production	src/java_cup/production.java	/^public class production {$/;"	c
+production_list	lib/java_cup/manual.html	/^<h5><a name="production_list">The Grammar<\/a><\/h5>$/;"	a
+production_part	src/java_cup/production_part.java	/^  public production_part(String lab)$/;"	m	class:production_part
+production_part	src/java_cup/production_part.java	/^public abstract class production_part {$/;"	c
+production_tab	src/java_cup/runtime/lr_parser.java	/^  protected short[][] production_tab;$/;"	f	class:lr_parser
+production_table	lib/java_cup/simple_calc/parser.java	/^  public short[][] production_table() {return _production_table;}$/;"	m	class:parser
+production_table	src/jasmin/parser.java	/^  public short[][] production_table() {return _production_table;}$/;"	m	class:parser
+production_table	src/java_cup/parser.java	/^  public short[][] production_table() {return _production_table;}$/;"	m	class:parser
+production_table	src/java_cup/runtime/lr_parser.java	/^  public abstract short[][] production_table();$/;"	m	class:lr_parser
+production_table_time	src/java_cup/emit.java	/^  public static long production_table_time = 0;$/;"	f	class:emit
+productions	src/java_cup/non_terminal.java	/^  public Enumeration productions() {return _productions.elements();};$/;"	m	class:non_terminal
+program_name	src/java_cup/version.java	/^  public static final String program_name = "java_cup";$/;"	f	class:version
+propagate_all_lookaheads	src/java_cup/lalr_state.java	/^  protected static void propagate_all_lookaheads() throws internal_error$/;"	m	class:lalr_state
+propagate_items	src/java_cup/lalr_item.java	/^  public Stack propagate_items() {return _propagate_items;}$/;"	m	class:lalr_item
+propagate_lookaheads	src/java_cup/lalr_item.java	/^  public void propagate_lookaheads(terminal_set incoming) throws internal_error$/;"	m	class:lalr_item
+propagate_lookaheads	src/java_cup/lalr_state.java	/^  protected void propagate_lookaheads() throws internal_error$/;"	m	class:lalr_state
+push	src/java_cup/runtime/virtual_parse_stack.java	/^  public void push(int state_num)$/;"	m	class:virtual_parse_stack
+readJasmin	src/jasmin/ClassFile.java	/^    public void readJasmin(Reader input, String name,$/;"	m	class:ClassFile
+read_lookahead	src/java_cup/runtime/lr_parser.java	/^  protected void read_lookahead() throws java.lang.Exception$/;"	m	class:lr_parser
+real_next	src/java_cup/runtime/virtual_parse_stack.java	/^  protected int real_next;$/;"	f	class:virtual_parse_stack
+real_next_token	src/java_cup/lexer.java	/^  protected static token real_next_token() throws java.io.IOException$/;"	m	class:lexer
+real_stack	src/java_cup/runtime/virtual_parse_stack.java	/^  protected Stack real_stack;$/;"	f	class:virtual_parse_stack
+reduce_action	src/java_cup/reduce_action.java	/^  public reduce_action(production prod ) throws internal_error$/;"	m	class:reduce_action
+reduce_action	src/java_cup/reduce_action.java	/^public class reduce_action extends parse_action {$/;"	c
+reduce_check_end	src/java_cup/Main.java	/^  protected static long reduce_check_end = 0;$/;"	f	class:Main
+reduce_tab	src/java_cup/runtime/lr_parser.java	/^  protected short[][] reduce_tab;$/;"	f	class:lr_parser
+reduce_table	lib/java_cup/simple_calc/parser.java	/^  public short[][] reduce_table() {return _reduce_table;}$/;"	m	class:parser
+reduce_table	src/jasmin/parser.java	/^  public short[][] reduce_table() {return _reduce_table;}$/;"	m	class:parser
+reduce_table	src/java_cup/Main.java	/^  protected static parse_reduce_table reduce_table;$/;"	f	class:Main
+reduce_table	src/java_cup/parser.java	/^  public short[][] reduce_table() {return _reduce_table;}$/;"	m	class:parser
+reduce_table	src/java_cup/runtime/lr_parser.java	/^  public abstract short[][] reduce_table();$/;"	m	class:lr_parser
+reduce_with	src/java_cup/reduce_action.java	/^  public production reduce_with() {return _reduce_with;}$/;"	m	class:reduce_action
+reduction_count	src/java_cup/parse_action_row.java	/^  protected static int reduction_count[] = null;$/;"	f	class:parse_action_row
+ref	src/jas/InsnOperand.java	/^  int ref;$/;"	f	class:LabelOperand
+refs	lib/java_cup/manual.html	/^<a name="refs">$/;"	a
+reinit	src/jas/StackMap.java	/^  public static void reinit()$/;"	m	class:StackMap
+relative_num_token	src/jasmin/relative_num_token.java	/^    public relative_num_token(int term_num, int v) {$/;"	m	class:relative_num_token
+relative_num_token	src/jasmin/relative_num_token.java	/^class relative_num_token extends java_cup.runtime.int_token {$/;"	c
+remove	src/java_cup/lalr_item_set.java	/^  public void remove(lalr_item itm) throws internal_error$/;"	m	class:lalr_item_set
+remove	src/java_cup/lalr_item_set.java	/^  public void remove(lalr_item_set other) throws internal_error$/;"	m	class:lalr_item_set
+remove	src/java_cup/symbol_set.java	/^  public void remove(symbol sym) throws internal_error$/;"	m	class:symbol_set
+remove	src/java_cup/symbol_set.java	/^  public void remove(symbol_set other) throws internal_error$/;"	m	class:symbol_set
+remove	src/java_cup/terminal_set.java	/^  public void remove(terminal sym) $/;"	m	class:terminal_set
+remove_embedded_actions	src/java_cup/production.java	/^  protected void remove_embedded_actions() throws internal_error$/;"	m	class:production
+report_conflicts	src/java_cup/lalr_state.java	/^  protected void report_conflicts()$/;"	m	class:lalr_state
+report_error	src/jasmin/ClassFile.java	/^    void report_error(String msg) { report_error(msg, false); }$/;"	m	class:ClassFile
+report_error	src/jasmin/ClassFile.java	/^    void report_error(String msg, boolean BadIntVal) {$/;"	m	class:ClassFile
+report_error	src/jasmin/parser.java	/^	public void report_error(String message, Object info) {$/;"	m	class:parser
+report_error	src/java_cup/parser.java	/^    public void report_error(String message, Object info)$/;"	m	class:parser
+report_error	src/java_cup/runtime/lr_parser.java	/^  public void report_error(String message, Object info)$/;"	m	class:lr_parser
+report_fatal_error	src/jasmin/parser.java	/^	public void report_fatal_error(String message, Object info)  {$/;"	m	class:parser
+report_fatal_error	src/java_cup/parser.java	/^  public void report_fatal_error($/;"	m	class:parser
+report_fatal_error	src/java_cup/runtime/lr_parser.java	/^  public void report_fatal_error($/;"	m	class:lr_parser
+report_reduce_reduce	src/java_cup/lalr_state.java	/^  protected void report_reduce_reduce(lalr_item itm1, lalr_item itm2)$/;"	m	class:lalr_state
+report_shift_reduce	src/java_cup/lalr_state.java	/^  protected void report_shift_reduce($/;"	m	class:lalr_state
+reserved_words	src/jasmin/ReservedWords.java	/^    private static Hashtable reserved_words;$/;"	f	class:ReservedWords	file:
+resolve	src/jas/AnnotDefAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:AnnotDefAttr
+resolve	src/jas/AnnotParamAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:AnnotParamAttr
+resolve	src/jas/Annotation.java	/^  void resolve(ClassEnv e)$/;"	m	class:Annotation
+resolve	src/jas/AnnotationAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:AnnotationAttr
+resolve	src/jas/AnnotationElement.java	/^  void resolve(ClassEnv e)$/;"	m	class:AnnotationElement
+resolve	src/jas/AsciiCP.java	/^  void resolve(ClassEnv e)$/;"	m	class:AsciiCP
+resolve	src/jas/CP.java	/^  abstract void resolve(ClassEnv e);$/;"	m	class:CP
+resolve	src/jas/CatchEntry.java	/^  void resolve(ClassEnv e)$/;"	m	class:CatchEntry
+resolve	src/jas/Catchtable.java	/^  void resolve(ClassEnv e)$/;"	m	class:Catchtable
+resolve	src/jas/ClassCP.java	/^  void resolve(ClassEnv e)$/;"	m	class:ClassCP
+resolve	src/jas/CodeAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:CodeAttr
+resolve	src/jas/ConstAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:ConstAttr
+resolve	src/jas/DeprecatedAttr.java	/^  void resolve(ClassEnv e) $/;"	m	class:DeprecatedAttr
+resolve	src/jas/DoubleCP.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:DoubleCP
+resolve	src/jas/EnclosingMethodAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:EnclosingMethodAttr
+resolve	src/jas/ExceptAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:ExceptAttr
+resolve	src/jas/FieldCP.java	/^  void resolve(ClassEnv e)$/;"	m	class:FieldCP
+resolve	src/jas/FloatCP.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:FloatCP
+resolve	src/jas/GenericAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:GenericAttr
+resolve	src/jas/InnerClass.java	/^  void resolve(ClassEnv e)$/;"	m	class:InnerClass
+resolve	src/jas/InnerClassesAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:InnerClassesAttr
+resolve	src/jas/Insn.java	/^  void resolve(ClassEnv e)$/;"	m	class:Insn
+resolve	src/jas/InsnOperand.java	/^  abstract void resolve(ClassEnv e);$/;"	m	class:InsnOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve (ClassEnv e) { return; }$/;"	m	class:LookupswitchOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { e.addCPItem(cpe); }$/;"	m	class:MultiarrayOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:ByteOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:IincOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:IntegerOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:LabelOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:OffsetOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:RelativeOffsetOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:ShortOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:TableswitchOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:UnsignedByteOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:UnsignedByteWideOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e)$/;"	m	class:CPOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e)$/;"	m	class:InvokeinterfaceOperand
+resolve	src/jas/InsnOperand.java	/^  void resolve(ClassEnv e)$/;"	m	class:LdcOperand
+resolve	src/jas/IntegerCP.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:IntegerCP
+resolve	src/jas/InterfaceCP.java	/^  void resolve(ClassEnv e)$/;"	m	class:InterfaceCP
+resolve	src/jas/LineTableAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:LineTableAttr
+resolve	src/jas/LocalVarEntry.java	/^  void resolve(ClassEnv e)$/;"	m	class:LocalVarEntry
+resolve	src/jas/LocalVarTableAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:LocalVarTableAttr
+resolve	src/jas/LocalVarTypeTableAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:LocalVarTypeTableAttr
+resolve	src/jas/LongCP.java	/^  void resolve(ClassEnv e) { return; }$/;"	m	class:LongCP
+resolve	src/jas/Method.java	/^  void resolve(ClassEnv e)$/;"	m	class:Method
+resolve	src/jas/MethodCP.java	/^  void resolve(ClassEnv e)$/;"	m	class:MethodCP
+resolve	src/jas/NameTypeCP.java	/^  void resolve(ClassEnv e)$/;"	m	class:NameTypeCP
+resolve	src/jas/SignatureAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:SignatureAttr
+resolve	src/jas/SourceAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:SourceAttr
+resolve	src/jas/SourceDebugExtensionAttr.java	/^  void resolve(ClassEnv e)$/;"	m	class:SourceDebugExtensionAttr
+resolve	src/jas/StackMap.java	/^  void resolve(ClassEnv e)$/;"	m	class:StackMap
+resolve	src/jas/StringCP.java	/^  void resolve(ClassEnv e)  { e.addCPItem(val); }$/;"	m	class:StringCP
+resolve	src/jas/Var.java	/^  void resolve(ClassEnv e)$/;"	m	class:Var
+resolve	src/jas/VerificationTypeInfo.java	/^  void resolve(ClassEnv e)$/;"	m	class:VerificationTypeInfo
+resolve	src/jas/VerifyFrame.java	/^  void resolve(ClassEnv e)$/;"	m	class:VerifyFrame
+restart_lookahead	src/java_cup/runtime/lr_parser.java	/^  protected void restart_lookahead() throws java.lang.Exception$/;"	m	class:lr_parser
+rhs	src/java_cup/production.java	/^  public production_part rhs(int indx) throws internal_error$/;"	m	class:production
+rhs_length	src/java_cup/production.java	/^  public int rhs_length() {return _rhs_length;}$/;"	m	class:production
+rhs_parts	src/java_cup/parser.java	/^  protected production_part[] rhs_parts = new production_part[MAX_RHS];$/;"	f	class:CUP$actions
+rhs_pos	src/java_cup/parser.java	/^  protected int rhs_pos = 0;$/;"	f	class:CUP$actions
+run	src/jasmin/Main.java	/^    public final void run(String args[])$/;"	m	class:Main
+runAnt	build.bat	/^:runAnt$/;"	l
+runAntWithClasspath	build.bat	/^:runAntWithClasspath$/;"	l
+runAntWithJikes	build.bat	/^:runAntWithJikes$/;"	l
+runAntWithJikesAndClasspath	build.bat	/^:runAntWithJikesAndClasspath$/;"	l
+running	lib/java_cup/manual.html	/^<a name="running">$/;"	a
+scan	lib/java_cup/simple_calc/parser.java	/^  public java_cup.runtime.token scan()$/;"	m	class:parser
+scan	src/jasmin/parser.java	/^  public java_cup.runtime.token scan()$/;"	m	class:parser
+scan	src/java_cup/parser.java	/^  public java_cup.runtime.token scan()$/;"	m	class:parser
+scan	src/java_cup/runtime/lr_parser.java	/^  public abstract token scan() throws java.lang.Exception;$/;"	m	class:lr_parser
+scan_code	src/java_cup/emit.java	/^  public static String scan_code = null;$/;"	f	class:emit
+scanner	lib/java_cup/simple_calc/scanner.java	/^public class scanner {$/;"	c
+scanner	src/jasmin/ClassFile.java	/^    Scanner scanner;$/;"	f	class:ClassFile
+scanner	src/jasmin/parser.java	/^	public Scanner scanner;$/;"	f	class:parser
+scanner	src/jasmin/parser.java	/^    public Scanner scanner;$/;"	f	class:CUP$actions
+separator	src/jasmin/Scanner.java	/^    protected static boolean separator(int c) {$/;"	m	class:Scanner
+setCatchtable	src/jas/CodeAttr.java	/^  public void setCatchtable(Catchtable ctb)$/;"	m	class:CodeAttr
+setClass	src/jas/ClassEnv.java	/^  public void setClass(CP name)$/;"	m	class:ClassEnv
+setClass	src/jasmin/ClassFile.java	/^    void setClass(String name, short acc) {$/;"	m	class:ClassFile
+setClassAccess	src/jas/ClassEnv.java	/^  public void setClassAccess(short access)$/;"	m	class:ClassEnv
+setCode	src/jas/Method.java	/^  public void setCode(CodeAttr cd, ExceptAttr ex)$/;"	m	class:Method
+setDeprecated	src/jas/ClassEnv.java	/^  public void setDeprecated(DeprecatedAttr depr)$/;"	m	class:ClassEnv
+setDeprecated	src/jas/Method.java	/^  public void setDeprecated(DeprecatedAttr depr)$/;"	m	class:Method
+setDeprecated	src/jas/Var.java	/^  public void setDeprecated(DeprecatedAttr depr)$/;"	m	class:Var
+setDeprecated	src/jasmin/ClassFile.java	/^    void setDeprecated() throws jasError$/;"	m	class:ClassFile
+setEnclosingMethod	src/jas/ClassEnv.java	/^  public void setEnclosingMethod(String cls, String mtd, String dsc)$/;"	m	class:ClassEnv
+setEnclosingMethod	src/jasmin/ClassFile.java	/^    void setEnclosingMethod(String str) {$/;"	m	class:ClassFile
+setLine	src/jasmin/ClassFile.java	/^    void setLine(int l) { line_num = l; }$/;"	m	class:ClassFile
+setLineTable	src/jas/CodeAttr.java	/^  public void setLineTable(LineTableAttr ltab)$/;"	m	class:CodeAttr
+setLocalVarTable	src/jas/CodeAttr.java	/^  public void setLocalVarTable(LocalVarTableAttr lvar)$/;"	m	class:CodeAttr
+setLocalVarTypeTable	src/jas/CodeAttr.java	/^  public void setLocalVarTypeTable(LocalVarTypeTableAttr lvtyp)$/;"	m	class:CodeAttr
+setOffset	src/jas/VerifyFrame.java	/^  public void setOffset(Label label) throws jasError$/;"	m	class:VerifyFrame
+setOffset	src/jas/VerifyFrame.java	/^  public void setOffset(int offset) throws jasError$/;"	m	class:VerifyFrame
+setSignature	src/jas/ClassEnv.java	/^  public void setSignature(String sig)$/;"	m	class:ClassEnv
+setSignature	src/jas/Method.java	/^  public void setSignature(SignatureAttr sig)$/;"	m	class:Method
+setSignature	src/jas/Var.java	/^  public void setSignature(SignatureAttr sig)$/;"	m	class:Var
+setSignature	src/jasmin/ClassFile.java	/^    void setSignature(String str) throws jasError$/;"	m	class:ClassFile
+setSource	src/jas/ClassEnv.java	/^  public void setSource(SourceAttr source)$/;"	m	class:ClassEnv
+setSource	src/jas/ClassEnv.java	/^  public void setSource(String source)$/;"	m	class:ClassEnv
+setSource	src/jasmin/ClassFile.java	/^    void setSource(String name) {$/;"	m	class:ClassFile
+setSourceDebugExtension	src/jas/ClassEnv.java	/^  public void setSourceDebugExtension(String debug)$/;"	m	class:ClassEnv
+setSourceDebugExtension	src/jasmin/ClassFile.java	/^    void setSourceDebugExtension(String str) {$/;"	m	class:ClassFile
+setStackMap	src/jas/CodeAttr.java	/^  public void setStackMap(StackMap s)$/;"	m	class:CodeAttr
+setStackSize	src/jas/CodeAttr.java	/^  public void setStackSize(short stack_size)$/;"	m	class:CodeAttr
+setStackSize	src/jasmin/ClassFile.java	/^    void setStackSize(int v) throws jasError {$/;"	m	class:ClassFile
+setSuperClass	src/jas/ClassEnv.java	/^  public void setSuperClass(CP name)$/;"	m	class:ClassEnv
+setSuperClass	src/jasmin/ClassFile.java	/^    void setSuperClass(String name) {$/;"	m	class:ClassFile
+setVarSize	src/jas/CodeAttr.java	/^  public void setVarSize(short num_vars)$/;"	m	class:CodeAttr
+setVarSize	src/jasmin/ClassFile.java	/^    void setVarSize(int v) throws jasError {$/;"	m	class:ClassFile
+setVersion	src/jas/ClassEnv.java	/^  public void setVersion(short version_high, short version_low)$/;"	m	class:ClassEnv
+setVersion	src/jasmin/ClassFile.java	/^    void setVersion(Number version) {$/;"	m	class:ClassFile
+set_code_string	src/java_cup/action_part.java	/^  public void set_code_string(String new_str) {_code_string = new_str;}$/;"	m	class:action_part
+set_nullable	src/java_cup/production.java	/^  boolean set_nullable(boolean v)$/;"	m	class:production
+setupArgs	build.bat	/^:setupArgs$/;"	l
+shellSort	src/jas/StackMap.java	/^  private void shellSort(CodeAttr ce) throws jasError$/;"	m	class:StackMap	file:
+shift	src/java_cup/lalr_item.java	/^  public lalr_item shift() throws internal_error$/;"	m	class:lalr_item
+shift_action	src/java_cup/shift_action.java	/^  public shift_action(lalr_state shft_to) throws internal_error$/;"	m	class:shift_action
+shift_action	src/java_cup/shift_action.java	/^public class shift_action extends parse_action {$/;"	c
+shift_core	src/java_cup/lr_item_core.java	/^  public lr_item_core shift_core() throws internal_error$/;"	m	class:lr_item_core
+shift_to	src/java_cup/shift_action.java	/^  public lalr_state shift_to() {return _shift_to;}$/;"	m	class:shift_action
+shift_under_error	src/java_cup/runtime/lr_parser.java	/^  protected boolean shift_under_error()$/;"	m	class:lr_parser
+show_times	src/java_cup/Main.java	/^  protected static void show_times()$/;"	m	class:Main
+sig	src/jas/LocalVarEntry.java	/^  CP name, sig;$/;"	f	class:LocalVarEntry
+sig	src/jas/Method.java	/^  SignatureAttr sig;$/;"	f	class:Method
+sig	src/jas/NameTypeCP.java	/^  AsciiCP name, sig;$/;"	f	class:NameTypeCP
+sig	src/jas/Var.java	/^  SignatureAttr sig;$/;"	f	class:Var
+sign	src/jas/AnnotationElement.java	/^  private char sign;$/;"	f	class:AnnotationElement	file:
+signature	src/jas/ClassEnv.java	/^  SignatureAttr signature;$/;"	f	class:ClassEnv
+signature	src/jas/SignatureAttr.java	/^  CP signature;$/;"	f	class:SignatureAttr
+simple	lib/jas/examples/simple.java	/^class simple implements RuntimeConstants$/;"	c
+size	src/jas/Annotation.java	/^  int size() throws jasError$/;"	m	class:Annotation
+size	src/jas/AnnotationElement.java	/^  int size() throws jasError$/;"	m	class:AnnotationElement
+size	src/jas/Catchtable.java	/^  int size()$/;"	m	class:Catchtable
+size	src/jas/GenericAttr.java	/^  int size()$/;"	m	class:GenericAttr
+size	src/jas/InnerClass.java	/^  public static int size()$/;"	m	class:InnerClass
+size	src/jas/Insn.java	/^  int size(ClassEnv e, CodeAttr ce)$/;"	m	class:Insn
+size	src/jas/InsnOperand.java	/^  abstract int size(ClassEnv e, CodeAttr code) throws jasError;$/;"	m	class:InsnOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code)  { return 1; }$/;"	m	class:UnsignedByteOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) throws jasError$/;"	m	class:LdcOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) throws jasError$/;"	m	class:LookupswitchOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { if (wide) return 2; else return 1; }$/;"	m	class:CPOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { if (wide) return 4; else return 2; }$/;"	m	class:LabelOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { return 1; }$/;"	m	class:ByteOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { return 2; }$/;"	m	class:ShortOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { return 3; }$/;"	m	class:MultiarrayOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { return 4; }$/;"	m	class:IntegerOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code) { return 4; }$/;"	m	class:InvokeinterfaceOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code)$/;"	m	class:IincOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code)$/;"	m	class:TableswitchOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv ce, CodeAttr code)$/;"	m	class:UnsignedByteWideOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv e, CodeAttr ce) {$/;"	m	class:OffsetOperand
+size	src/jas/InsnOperand.java	/^  int size(ClassEnv e, CodeAttr ce) {$/;"	m	class:RelativeOffsetOperand
+size	src/jas/Label.java	/^  int size(ClassEnv e, CodeAttr ce)$/;"	m	class:Label
+size	src/jas/LineTableAttr.java	/^  int size()$/;"	m	class:LineTableAttr
+size	src/jas/LocalVarTableAttr.java	/^  int size()$/;"	m	class:LocalVarTableAttr
+size	src/jas/LocalVarTypeTableAttr.java	/^  int size()$/;"	m	class:LocalVarTypeTableAttr
+size	src/jas/StackMap.java	/^  public int size(ClassEnv e, CodeAttr ce)$/;"	m	class:StackMap
+size	src/java_cup/lalr_item_set.java	/^  public int size() {return _all.size();}$/;"	m	class:lalr_item_set
+size	src/java_cup/parse_action_row.java	/^  public static int size() {return _size;}$/;"	m	class:parse_action_row
+size	src/java_cup/parse_reduce_row.java	/^  public static int size() {return _size;}$/;"	m	class:parse_reduce_row
+size	src/java_cup/symbol_set.java	/^  public int size() {return _all.size();};$/;"	m	class:symbol_set
+skip_empty_lines	src/jasmin/Scanner.java	/^    private void skip_empty_lines() throws java.io.IOException$/;"	m	class:Scanner	file:
+slot	src/jas/LocalVarEntry.java	/^  int slot, starto, endo;$/;"	f	class:LocalVarEntry
+source	src/jas/ClassEnv.java	/^  SourceAttr source;$/;"	f	class:ClassEnv
+source	src/jas/InsnOperand.java	/^  Insn source;$/;"	f	class:LabelOperand
+source	src/jas/InsnOperand.java	/^  Insn source;$/;"	f	class:LdcOperand
+source	src/jas/InsnOperand.java	/^  Insn source;$/;"	f	class:LookupswitchOperand
+source	src/jas/InsnOperand.java	/^  Insn source;$/;"	f	class:TableswitchOperand
+source_name	src/jasmin/ClassFile.java	/^    String source_name;$/;"	f	class:ClassFile
+spec	lib/java_cup/manual.html	/^<a name="spec">$/;"	a
+splitClassField	src/jasmin/ScannerUtils.java	/^    public static String[] splitClassField(String name)$/;"	m	class:ScannerUtils
+splitClassMethodSignature	src/jasmin/ScannerUtils.java	/^    public static String[] splitClassMethodSignature(String name) {$/;"	m	class:ScannerUtils
+splitMethodSignature	src/jasmin/ScannerUtils.java	/^    public static String[] splitMethodSignature(String name)$/;"	m	class:ScannerUtils
+stack	src/jas/VerifyFrame.java	/^  private Vector stack, locals;$/;"	f	class:VerifyFrame	file:
+stack	src/java_cup/runtime/lr_parser.java	/^  protected Stack stack = new Stack();$/;"	f	class:lr_parser
+stack_map_label_count	src/jasmin/ClassFile.java	/^    int line_label_count, line_num, stack_map_label_count;$/;"	f	class:ClassFile
+stack_size	src/jas/CodeAttr.java	/^  short stack_size, num_locals;$/;"	f	class:CodeAttr
+stack_type	src/java_cup/symbol.java	/^   public String stack_type() {return _stack_type;}$/;"	m	class:symbol
+stackmap	src/jas/CodeAttr.java	/^  StackMap stackmap;$/;"	f	class:CodeAttr
+stackmap	src/jasmin/ClassFile.java	/^    StackMap stackmap;$/;"	f	class:ClassFile
+start	src/jas/LocalVarEntry.java	/^  Label start, end;$/;"	f	class:LocalVarEntry
+start_nt	src/java_cup/parser.java	/^  protected non_terminal start_nt = null;$/;"	f	class:CUP$actions
+start_off	src/jas/CatchEntry.java	/^  int start_off, end_off, handler_off;$/;"	f	class:CatchEntry
+start_pc	src/jas/CatchEntry.java	/^  Label start_pc, end_pc, handler_pc;$/;"	f	class:CatchEntry
+start_production	lib/java_cup/simple_calc/parser.java	/^  public int start_production() {return 1;}$/;"	m	class:parser
+start_production	src/jasmin/parser.java	/^  public int start_production() {return 1;}$/;"	m	class:parser
+start_production	src/java_cup/emit.java	/^  public static production start_production = null;$/;"	f	class:emit
+start_production	src/java_cup/parser.java	/^  public int start_production() {return 0;}$/;"	m	class:parser
+start_production	src/java_cup/runtime/lr_parser.java	/^  public abstract int start_production();$/;"	m	class:lr_parser
+start_state	lib/java_cup/simple_calc/parser.java	/^  public int start_state() {return 0;}$/;"	m	class:parser
+start_state	src/jasmin/parser.java	/^  public int start_state() {return 0;}$/;"	m	class:parser
+start_state	src/java_cup/Main.java	/^  protected static lalr_state start_state;$/;"	f	class:Main
+start_state	src/java_cup/parser.java	/^  public int start_state() {return 0;}$/;"	m	class:parser
+start_state	src/java_cup/runtime/lr_parser.java	/^  public abstract int start_state();$/;"	m	class:lr_parser
+start_time	src/java_cup/Main.java	/^  protected static long start_time       = 0;$/;"	f	class:Main
+starto	src/jas/LocalVarEntry.java	/^  int slot, starto, endo;$/;"	f	class:LocalVarEntry
+str_token	src/java_cup/runtime/str_token.java	/^  public str_token(int term_num)$/;"	m	class:str_token
+str_token	src/java_cup/runtime/str_token.java	/^  public str_token(int term_num, String v)$/;"	m	class:str_token
+str_token	src/java_cup/runtime/str_token.java	/^public class str_token extends token {$/;"	c
+str_val	src/java_cup/runtime/str_token.java	/^  public String str_val;$/;"	f	class:str_token
+strip_trailing_action	src/java_cup/production.java	/^  protected action_part strip_trailing_action($/;"	m	class:production
+super_class	src/jas/ClassEnv.java	/^  CP this_class, super_class;$/;"	f	class:ClassEnv
+swallow_comment	src/java_cup/lexer.java	/^  protected static void swallow_comment() throws java.io.IOException$/;"	m	class:lexer
+switch_vec	src/jasmin/ClassFile.java	/^    Vector switch_vec;$/;"	f	class:ClassFile
+sym	lib/java_cup/simple_calc/sym.java	/^public class sym {$/;"	c
+sym	src/jasmin/sym.java	/^public class sym {$/;"	c
+sym	src/java_cup/runtime/symbol.java	/^  public int sym;$/;"	f	class:symbol
+sym	src/java_cup/sym.java	/^public class sym {$/;"	c
+symbol	src/java_cup/runtime/symbol.java	/^  public symbol(int sym_num)$/;"	m	class:symbol
+symbol	src/java_cup/runtime/symbol.java	/^  public symbol(int sym_num, int state)$/;"	m	class:symbol
+symbol	src/java_cup/runtime/symbol.java	/^public class symbol {$/;"	c
+symbol	src/java_cup/symbol.java	/^   public symbol(String nm)$/;"	m	class:symbol
+symbol	src/java_cup/symbol.java	/^   public symbol(String nm, String tp)$/;"	m	class:symbol
+symbol	src/java_cup/symbol.java	/^public abstract class symbol {$/;"	c
+symbol_after_dot	src/java_cup/lr_item_core.java	/^  public symbol symbol_after_dot()$/;"	m	class:lr_item_core
+symbol_class_file	src/java_cup/Main.java	/^  protected static PrintStream symbol_class_file;$/;"	f	class:Main
+symbol_const_class_name	src/java_cup/emit.java	/^  public static String symbol_const_class_name = "sym";$/;"	f	class:emit
+symbol_list	lib/java_cup/manual.html	/^<h5><a name="symbol_list">Symbol Lists<\/a><\/h5>$/;"	a
+symbol_part	src/java_cup/symbol_part.java	/^  public symbol_part(symbol sym) throws internal_error$/;"	m	class:symbol_part
+symbol_part	src/java_cup/symbol_part.java	/^  public symbol_part(symbol sym, String lab) throws internal_error$/;"	m	class:symbol_part
+symbol_part	src/java_cup/symbol_part.java	/^public class symbol_part extends production_part {$/;"	c
+symbol_set	src/java_cup/symbol_set.java	/^  public symbol_set() { };$/;"	m	class:symbol_set
+symbol_set	src/java_cup/symbol_set.java	/^  public symbol_set(symbol_set other) throws internal_error$/;"	m	class:symbol_set
+symbol_set	src/java_cup/symbol_set.java	/^public class symbol_set {$/;"	c
+symbols	src/java_cup/emit.java	/^  public static void symbols(PrintStream out, boolean emit_non_terms)$/;"	m	class:emit
+symbols	src/java_cup/parser.java	/^  protected Hashtable symbols = new Hashtable();$/;"	f	class:CUP$actions
+symbols_time	src/java_cup/emit.java	/^  public static long symbols_time          = 0;$/;"	f	class:emit
+syntax_error	src/java_cup/runtime/lr_parser.java	/^  public void syntax_error(token cur_token)$/;"	m	class:lr_parser
+sz	src/jas/InsnOperand.java	/^  int sz;$/;"	f	class:MultiarrayOperand
+table_end	src/java_cup/Main.java	/^  protected static long table_end        = 0;$/;"	f	class:Main
+tag	src/jas/VerificationTypeInfo.java	/^  private int tag;$/;"	f	class:VerificationTypeInfo	file:
+target	src/jas/InsnOperand.java	/^  Label target;$/;"	f	class:LabelOperand
+term	lib/jas/examples/exprcomp.java	/^  void term()$/;"	m	class:exprcomp
+terminal	src/java_cup/terminal.java	/^  public terminal(String nm) $/;"	m	class:terminal
+terminal	src/java_cup/terminal.java	/^  public terminal(String nm, String tp) $/;"	m	class:terminal
+terminal	src/java_cup/terminal.java	/^public class terminal extends symbol {$/;"	c
+terminal_set	src/java_cup/terminal_set.java	/^  public terminal_set() $/;"	m	class:terminal_set
+terminal_set	src/java_cup/terminal_set.java	/^  public terminal_set(terminal_set other) $/;"	m	class:terminal_set
+terminal_set	src/java_cup/terminal_set.java	/^public class terminal_set {$/;"	c
+the_production	src/java_cup/lr_item_core.java	/^  public production the_production() {return _the_production;}$/;"	m	class:lr_item_core
+the_symbol	src/java_cup/symbol_part.java	/^  public symbol the_symbol() {return _the_symbol;}$/;"	m	class:symbol_part
+this_class	src/jas/ClassEnv.java	/^  CP this_class, super_class;$/;"	f	class:ClassEnv
+timestr	src/java_cup/Main.java	/^  protected static String timestr(long time_val, long total_time)$/;"	m	class:Main
+title_str	src/java_cup/version.java	/^  public static final String title_str = "Java(tm) CUP " + version_str;$/;"	f	class:version
+toString	src/jas/AsciiCP.java	/^  public String toString() { return "AsciiCP: " + uniq; }$/;"	m	class:AsciiCP
+toString	src/jas/CodeAttr.java	/^  public String toString()$/;"	m	class:CodeAttr
+toString	src/jas/Insn.java	/^  public String toString() {$/;"	m	class:Insn
+toString	src/jas/Label.java	/^  public String toString()$/;"	m	class:Label
+toString	src/java_cup/action_part.java	/^  public String toString()$/;"	m	class:action_part
+toString	src/java_cup/lalr_item.java	/^  public String toString()$/;"	m	class:lalr_item
+toString	src/java_cup/lalr_item_set.java	/^  public String toString()$/;"	m	class:lalr_item_set
+toString	src/java_cup/lalr_state.java	/^  public String toString()$/;"	m	class:lalr_state
+toString	src/java_cup/lalr_transition.java	/^  public String toString()$/;"	m	class:lalr_transition
+toString	src/java_cup/lr_item_core.java	/^  public String toString() $/;"	m	class:lr_item_core
+toString	src/java_cup/non_terminal.java	/^  public String toString()$/;"	m	class:non_terminal
+toString	src/java_cup/parse_action.java	/^  public String toString() {return "ERROR";}$/;"	m	class:parse_action
+toString	src/java_cup/parse_action_table.java	/^  public String toString()$/;"	m	class:parse_action_table
+toString	src/java_cup/parse_reduce_table.java	/^  public String toString()$/;"	m	class:parse_reduce_table
+toString	src/java_cup/production.java	/^  public String toString() $/;"	m	class:production
+toString	src/java_cup/production_part.java	/^  public String toString()$/;"	m	class:production_part
+toString	src/java_cup/reduce_action.java	/^  public String toString() $/;"	m	class:reduce_action
+toString	src/java_cup/shift_action.java	/^  public String toString() {return "SHIFT(" + shift_to().index() + ")";}$/;"	m	class:shift_action
+toString	src/java_cup/symbol.java	/^  public String toString()$/;"	m	class:symbol
+toString	src/java_cup/symbol_part.java	/^  public String toString()$/;"	m	class:symbol_part
+toString	src/java_cup/symbol_set.java	/^  public String toString()$/;"	m	class:symbol_set
+toString	src/java_cup/terminal.java	/^  public String toString()$/;"	m	class:terminal
+toString	src/java_cup/terminal_set.java	/^  public String toString()$/;"	m	class:terminal_set
+to_simple_string	src/java_cup/lr_item_core.java	/^  public String to_simple_string() throws internal_error$/;"	m	class:lr_item_core
+to_simple_string	src/java_cup/production.java	/^  public String to_simple_string() throws internal_error$/;"	m	class:production
+to_state	src/java_cup/lalr_transition.java	/^  public lalr_state to_state() {return _to_state;}$/;"	m	class:lalr_transition
+token	src/java_cup/runtime/token.java	/^  public token(int term_num)$/;"	m	class:token
+token	src/java_cup/runtime/token.java	/^public class token extends symbol {$/;"	c
+token_line_num	src/jasmin/Scanner.java	/^    public int line_num, token_line_num, char_num, int_char_num, int_line_num;$/;"	f	class:Scanner
+top	src/java_cup/runtime/virtual_parse_stack.java	/^  public int top() throws java.lang.Exception$/;"	m	class:virtual_parse_stack
+tos	src/java_cup/runtime/lr_parser.java	/^  protected int tos;$/;"	f	class:lr_parser
+trademark	lib/java_cup/manual.html	/^<a name="trademark">$/;"	a
+transitions	src/java_cup/lalr_state.java	/^  public lalr_transition transitions() {return _transitions;}$/;"	m	class:lalr_state
+translate_labels	src/java_cup/production.java	/^  protected String translate_labels($/;"	m	class:production
+try_parse_ahead	src/java_cup/runtime/lr_parser.java	/^  protected boolean try_parse_ahead(boolean debug)$/;"	m	class:lr_parser
+type	src/jas/Annotation.java	/^  private AsciiCP type;$/;"	f	class:Annotation	file:
+type_annot	src/jas/AnnotationElement.java	/^  private static final char type_annot  = '@';    \/\/ nested annotation$/;"	f	class:AnnotationElement	file:
+type_array	src/jas/AnnotationElement.java	/^  private static final char type_array  = '[';$/;"	f	class:AnnotationElement	file:
+type_bool	src/jas/AnnotationElement.java	/^  private static final char type_bool   = 'Z';    \/\/ boolean true or false$/;"	f	class:AnnotationElement	file:
+type_byte	src/jas/AnnotationElement.java	/^  private static final char type_byte   = 'B';    \/\/ signed byte$/;"	f	class:AnnotationElement	file:
+type_char	src/jas/AnnotationElement.java	/^  private static final char type_char   = 'C';    \/\/ unicode character$/;"	f	class:AnnotationElement	file:
+type_class	src/jas/AnnotationElement.java	/^  private static final char type_class  = 'c';    \/\/ return type descriptor$/;"	f	class:AnnotationElement	file:
+type_double	src/jas/AnnotationElement.java	/^  private static final char type_double = 'D';    \/\/ double precision IEEE float$/;"	f	class:AnnotationElement	file:
+type_enum	src/jas/AnnotationElement.java	/^  private static final char type_enum   = 'e';    \/\/ enum constant (type + name)$/;"	f	class:AnnotationElement	file:
+type_float	src/jas/AnnotationElement.java	/^  private static final char type_float  = 'F';    \/\/ single precision IEEE foat$/;"	f	class:AnnotationElement	file:
+type_int	src/jas/AnnotationElement.java	/^  private static final char type_int    = 'I';    \/\/ integer$/;"	f	class:AnnotationElement	file:
+type_long	src/jas/AnnotationElement.java	/^  private static final char type_long   = 'J';    \/\/ long integer$/;"	f	class:AnnotationElement	file:
+type_short	src/jas/AnnotationElement.java	/^  private static final char type_short  = 'S';    \/\/ signed short$/;"	f	class:AnnotationElement	file:
+type_string	src/jas/AnnotationElement.java	/^  private static final char type_string = 's';    \/\/ constant string$/;"	f	class:AnnotationElement	file:
+un_label	src/jas/VerificationTypeInfo.java	/^  private Label un_label;$/;"	f	class:VerificationTypeInfo	file:
+unarg_option	src/jasmin/Main.java	/^    private static void unarg_option(String opt)$/;"	m	class:Main	file:
+under_non_term	src/java_cup/parse_reduce_row.java	/^  public lalr_state under_non_term[];$/;"	f	class:parse_reduce_row
+under_state	src/java_cup/parse_action_table.java	/^  public  parse_action_row[] under_state;$/;"	f	class:parse_action_table
+under_state	src/java_cup/parse_reduce_table.java	/^  public  parse_reduce_row[] under_state;$/;"	f	class:parse_reduce_table
+under_term	src/java_cup/parse_action_row.java	/^  public parse_action under_term[];$/;"	f	class:parse_action_row
+uniEscape	src/jasmin/Scanner.java	/^    private char uniEscape()$/;"	m	class:Scanner	file:
+uniq	src/jas/CP.java	/^  String uniq;$/;"	f	class:CP
+unrecovered_syntax_error	src/java_cup/runtime/lr_parser.java	/^  public void unrecovered_syntax_error(token cur_token)$/;"	m	class:lr_parser
+unused_non_term	src/java_cup/emit.java	/^  public static int unused_non_term = 0;$/;"	f	class:emit
+unused_term	src/java_cup/emit.java	/^  public static int unused_term = 0;$/;"	f	class:emit
+update	src/java_cup/version.java	/^  public static final char update = 'd';$/;"	f	class:version
+usage	src/java_cup/Main.java	/^  protected static void usage(String message)$/;"	m	class:Main
+use_count	src/java_cup/symbol.java	/^   public int use_count() {return _use_count;}$/;"	m	class:symbol
+user_init	lib/java_cup/simple_calc/parser.java	/^  public void user_init() throws java.lang.Exception$/;"	m	class:parser
+user_init	src/jasmin/parser.java	/^  public void user_init() throws java.lang.Exception$/;"	m	class:parser
+user_init	src/java_cup/parser.java	/^  public void user_init() throws java.lang.Exception$/;"	m	class:parser
+user_init	src/java_cup/runtime/lr_parser.java	/^  public void user_init() throws java.lang.Exception { }$/;"	m	class:lr_parser
+val	src/jas/ConstAttr.java	/^  CP val;$/;"	f	class:ConstAttr
+val	src/jas/DoubleCP.java	/^  double val;$/;"	f	class:DoubleCP
+val	src/jas/FloatCP.java	/^  float val;$/;"	f	class:FloatCP
+val	src/jas/InsnOperand.java	/^  int val;$/;"	f	class:ByteOperand
+val	src/jas/InsnOperand.java	/^  int val;$/;"	f	class:IntegerOperand
+val	src/jas/InsnOperand.java	/^  int val;$/;"	f	class:OffsetOperand
+val	src/jas/InsnOperand.java	/^  int val;$/;"	f	class:RelativeOffsetOperand
+val	src/jas/InsnOperand.java	/^  int val;$/;"	f	class:UnsignedByteOperand
+val	src/jas/InsnOperand.java	/^  int val;$/;"	f	class:UnsignedByteWideOperand
+val	src/jas/IntegerCP.java	/^  int val;$/;"	f	class:IntegerCP
+val	src/jas/LongCP.java	/^  long val;$/;"	f	class:LongCP
+val	src/jas/StringCP.java	/^  AsciiCP val;$/;"	f	class:StringCP
+values	src/jas/AnnotationElement.java	/^  private Vector values;$/;"	f	class:AnnotationElement	file:
+var_acc	src/jas/Var.java	/^  short var_acc;$/;"	f	class:Var
+var_table	src/jasmin/ClassFile.java	/^    LocalVarTableAttr var_table;$/;"	f	class:ClassFile
+var_token	src/jasmin/var_token.java	/^  public var_token(int term_num)$/;"	m	class:var_token
+var_token	src/jasmin/var_token.java	/^  public var_token(int term_num, Number v)$/;"	m	class:var_token
+var_token	src/jasmin/var_token.java	/^  public var_token(int term_num, String v)$/;"	m	class:var_token
+var_token	src/jasmin/var_token.java	/^class var_token extends java_cup.runtime.token {$/;"	c
+var_val	src/jasmin/var_token.java	/^  public Object var_val;$/;"	f	class:var_token
+vars	lib/jas/examples/exprcomp.java	/^  Hashtable vars;$/;"	f	class:exprcomp
+vars	src/jas/ClassEnv.java	/^  Vector vars;$/;"	f	class:ClassEnv
+vars	src/jas/LocalVarTableAttr.java	/^  Vector vars;$/;"	f	class:LocalVarTableAttr
+vars	src/jas/LocalVarTypeTableAttr.java	/^  Vector vars;$/;"	f	class:LocalVarTypeTableAttr
+verifyframe	src/jasmin/ClassFile.java	/^    VerifyFrame verifyframe;$/;"	f	class:ClassFile
+version	src/jasmin/Main.java	/^    public static final String version = "v2.4";$/;"	f	class:Main
+version	src/java_cup/version.java	/^public class version {$/;"	c
+version_hi	src/jas/ClassEnv.java	/^  short version_lo, version_hi;$/;"	f	class:ClassEnv
+version_lo	src/jas/ClassEnv.java	/^  short version_lo, version_hi;$/;"	f	class:ClassEnv
+version_str	src/java_cup/version.java	/^  public static final String version_str = "v0.9d";$/;"	f	class:version
+vindex	src/jas/InsnOperand.java	/^  int vindex, constt;$/;"	f	class:IincOperand
+virtual_parse_stack	src/java_cup/runtime/virtual_parse_stack.java	/^  public virtual_parse_stack(Stack shadowing_stack) throws java.lang.Exception$/;"	m	class:virtual_parse_stack
+virtual_parse_stack	src/java_cup/runtime/virtual_parse_stack.java	/^public class virtual_parse_stack {$/;"	c
+vstack	src/java_cup/runtime/virtual_parse_stack.java	/^  protected Stack vstack;$/;"	f	class:virtual_parse_stack
+vtype_table	src/jasmin/ClassFile.java	/^    LocalVarTypeTableAttr vtype_table;$/;"	f	class:ClassFile
+warning_count	src/java_cup/lexer.java	/^  public static int warning_count = 0;$/;"	f	class:lexer
+whitespace	src/jasmin/Scanner.java	/^    protected static boolean whitespace(int c) {$/;"	m	class:Scanner
+wide	src/jas/InsnOperand.java	/^  boolean wide;$/;"	f	class:CPOperand
+wide	src/jas/InsnOperand.java	/^  boolean wide;$/;"	f	class:LabelOperand
+wide	src/jas/InsnOperand.java	/^  boolean wide;$/;"	f	class:LdcOperand
+wide	src/jas/InsnOperand.java	/^  boolean wide;$/;"	f	class:OffsetOperand
+wide	src/jas/InsnOperand.java	/^  boolean wide;$/;"	f	class:RelativeOffsetOperand
+write	lib/jas/examples/exprcomp.java	/^  public void write(DataOutputStream out)$/;"	m	class:exprcomp
+write	src/jas/AnnotDefAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:AnnotDefAttr
+write	src/jas/AnnotParamAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:AnnotParamAttr
+write	src/jas/Annotation.java	/^  void write(ClassEnv e, DataOutputStream out) throws IOException, jasError$/;"	m	class:Annotation
+write	src/jas/AnnotationAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:AnnotationAttr
+write	src/jas/AnnotationElement.java	/^  void write(ClassEnv e,  DataOutputStream out) throws IOException, jasError$/;"	m	class:AnnotationElement
+write	src/jas/AsciiCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:AsciiCP
+write	src/jas/CP.java	/^  abstract void write(ClassEnv e, DataOutputStream out)$/;"	m	class:CP
+write	src/jas/CatchEntry.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:CatchEntry
+write	src/jas/Catchtable.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:Catchtable
+write	src/jas/ClassCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:ClassCP
+write	src/jas/ClassEnv.java	/^  public void write(DataOutputStream out)$/;"	m	class:ClassEnv
+write	src/jas/CodeAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:CodeAttr
+write	src/jas/ConstAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:ConstAttr
+write	src/jas/DeprecatedAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:DeprecatedAttr
+write	src/jas/DoubleCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:DoubleCP
+write	src/jas/EnclosingMethodAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:EnclosingMethodAttr
+write	src/jas/ExceptAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:ExceptAttr
+write	src/jas/FieldCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:FieldCP
+write	src/jas/FloatCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:FloatCP
+write	src/jas/GenericAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:GenericAttr
+write	src/jas/InnerClass.java	/^  void write(ClassEnv e, DataOutputStream out) throws IOException, jasError$/;"	m	class:InnerClass
+write	src/jas/InnerClassesAttr.java	/^  void write(ClassEnv e, DataOutputStream out) throws IOException, jasError$/;"	m	class:InnerClassesAttr
+write	src/jas/Insn.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:Insn
+write	src/jas/InsnOperand.java	/^  abstract void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:InsnOperand
+write	src/jas/InsnOperand.java	/^  void write (ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:InvokeinterfaceOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:ByteOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:CPOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:IincOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:IntegerOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LabelOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LdcOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LookupswitchOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:MultiarrayOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:OffsetOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:RelativeOffsetOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:ShortOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:TableswitchOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:UnsignedByteOperand
+write	src/jas/InsnOperand.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:UnsignedByteWideOperand
+write	src/jas/IntegerCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:IntegerCP
+write	src/jas/InterfaceCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:InterfaceCP
+write	src/jas/Label.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:Label
+write	src/jas/LineTableAttr.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LineTableAttr
+write	src/jas/LocalVarEntry.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LocalVarEntry
+write	src/jas/LocalVarTableAttr.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LocalVarTableAttr
+write	src/jas/LocalVarTypeTableAttr.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:LocalVarTypeTableAttr
+write	src/jas/LongCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:LongCP
+write	src/jas/Method.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:Method
+write	src/jas/MethodCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:MethodCP
+write	src/jas/NameTypeCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:NameTypeCP
+write	src/jas/SignatureAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:SignatureAttr
+write	src/jas/SourceAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:SourceAttr
+write	src/jas/SourceDebugExtensionAttr.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:SourceDebugExtensionAttr
+write	src/jas/StackMap.java	/^  int write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:StackMap
+write	src/jas/StringCP.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:StringCP
+write	src/jas/Var.java	/^  void write(ClassEnv e, DataOutputStream out)$/;"	m	class:Var
+write	src/jas/VerificationTypeInfo.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:VerificationTypeInfo
+write	src/jas/VerifyFrame.java	/^  void write(ClassEnv e, CodeAttr ce, DataOutputStream out,$/;"	m	class:VerifyFrame
+write	src/jasmin/ClassFile.java	/^    public void write(OutputStream outp) throws IOException, jasError {$/;"	m	class:ClassFile
+writeOffset	src/jas/Label.java	/^  void writeOffset(CodeAttr ce, Insn source, DataOutputStream out)$/;"	m	class:Label
+writePrefix	src/jas/InsnOperand.java	/^  void writePrefix(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:IincOperand
+writePrefix	src/jas/InsnOperand.java	/^  void writePrefix(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:InsnOperand
+writePrefix	src/jas/InsnOperand.java	/^  void writePrefix(ClassEnv e, CodeAttr ce, DataOutputStream out)$/;"	m	class:UnsignedByteWideOperand
+writeWideOffset	src/jas/Label.java	/^  void writeWideOffset(CodeAttr ce, Insn source, DataOutputStream out)$/;"	m	class:Label
+writeWideOffset	src/jas/LabelOrOffset.java	/^    void writeWideOffset(CodeAttr ce, Insn source, DataOutputStream out)$/;"	m	class:LabelOrOffset

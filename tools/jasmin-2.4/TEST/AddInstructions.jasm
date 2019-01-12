@@ -1,0 +1,77 @@
+Classfile /home/jatin/jasmin/jasmin-2.4/TEST/AddInstructions.class
+  Last modified 9 Jan, 2018; size 424 bytes
+  MD5 checksum eb6f856ad722366290a2135c6ac1944c
+  Compiled from "noSource"
+public class AddInstructions
+  minor version: 3
+  major version: 45
+  flags: ACC_PUBLIC, ACC_SUPER, 0x8
+Constant pool:
+   #1 = NameAndType        #24:#30        // out:Ljava/io/PrintStream;
+   #2 = Utf8               ([Ljava/lang/String;)V
+   #3 = Utf8               java/lang/Object
+   #4 = String             #19            // Exiting run..
+   #5 = Class              #3             // java/lang/Object
+   #6 = Class              #17            // java/io/PrintStream
+   #7 = Methodref          #6.#26         // java/io/PrintStream.println:(I)V
+   #8 = Methodref          #21.#20        // AddInstructions.callee:(II)I
+   #9 = Class              #22            // java/lang/System
+  #10 = Utf8               Code
+  #11 = Utf8               main
+  #12 = Utf8               (II)I
+  #13 = Fieldref           #9.#1          // java/lang/System.out:Ljava/io/PrintStream;
+  #14 = Utf8               SourceFile
+  #15 = Utf8               (I)V
+  #16 = NameAndType        #18:#27        // println:(Ljava/lang/String;)V
+  #17 = Utf8               java/io/PrintStream
+  #18 = Utf8               println
+  #19 = Utf8               Exiting run..
+  #20 = NameAndType        #31:#12        // callee:(II)I
+  #21 = Class              #29            // AddInstructions
+  #22 = Utf8               java/lang/System
+  #23 = Methodref          #6.#16         // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #24 = Utf8               out
+  #25 = Utf8               noSource
+  #26 = NameAndType        #18:#15        // println:(I)V
+  #27 = Utf8               (Ljava/lang/String;)V
+  #28 = Integer            30
+  #29 = Utf8               AddInstructions
+  #30 = Utf8               Ljava/io/PrintStream;
+  #31 = Utf8               callee
+{
+  public static int callee(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: iadd
+         3: ireturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iconst_1
+         1: iconst_2
+         2: iadd
+         3: istore_0
+         4: ldc           #28                 // int 30
+         6: iconst_0
+         7: iadd
+         8: istore_1
+         9: iload_0
+        10: iload_1
+        11: invokestatic  #8                  // Method callee:(II)I
+        14: istore_2
+        15: getstatic     #13                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        18: iload_2
+        19: invokevirtual #7                  // Method java/io/PrintStream.println:(I)V
+        22: getstatic     #13                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: ldc           #4                  // String Exiting run..
+        27: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: return
+}
+SourceFile: "noSource"

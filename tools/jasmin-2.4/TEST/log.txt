@@ -1,0 +1,104 @@
+Classfile /home/jatin/jasmin/jasmin-2.4/TEST/SWITCH.class
+  Last modified 26 Feb, 2018; size 521 bytes
+  MD5 checksum cc3b984af299c785b107cc60c37226c5
+  Compiled from "noSource"
+public class SWITCH
+  minor version: 3
+  major version: 45
+  flags: ACC_PUBLIC, ACC_SUPER, 0x8
+Constant pool:
+   #1 = Methodref          #8.#25         // SWITCH.lut:(I)I
+   #2 = Utf8               main
+   #3 = Utf8               lut
+   #4 = NameAndType        #24:#22        // println:(I)V
+   #5 = Integer            10
+   #6 = Integer            40
+   #7 = Utf8               java/lang/Object
+   #8 = Class              #20            // SWITCH
+   #9 = Integer            3
+  #10 = Class              #7             // java/lang/Object
+  #11 = Methodref          #19.#31        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #12 = Integer            2
+  #13 = Integer            1
+  #14 = Integer            0
+  #15 = Utf8               java/lang/System
+  #16 = Class              #15            // java/lang/System
+  #17 = Integer            30
+  #18 = Utf8               ([Ljava/lang/String;)V
+  #19 = Class              #37            // java/io/PrintStream
+  #20 = Utf8               SWITCH
+  #21 = Utf8               Exiting run..
+  #22 = Utf8               (I)V
+  #23 = Utf8               SourceFile
+  #24 = Utf8               println
+  #25 = NameAndType        #3:#33         // lut:(I)I
+  #26 = Methodref          #19.#4         // java/io/PrintStream.println:(I)V
+  #27 = NameAndType        #28:#38        // out:Ljava/io/PrintStream;
+  #28 = Utf8               out
+  #29 = String             #21            // Exiting run..
+  #30 = Integer            20
+  #31 = NameAndType        #24:#35        // println:(Ljava/lang/String;)V
+  #32 = Utf8               noSource
+  #33 = Utf8               (I)I
+  #34 = Fieldref           #16.#27        // java/lang/System.out:Ljava/io/PrintStream;
+  #35 = Utf8               (Ljava/lang/String;)V
+  #36 = Utf8               Code
+  #37 = Utf8               java/io/PrintStream
+  #38 = Utf8               Ljava/io/PrintStream;
+{
+  public static int lut(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=5, args_size=1
+         0: iload_0
+         1: lookupswitch  { // 2
+                       0: 28
+                       2: 38
+                 default: 43
+            }
+        28: ldc           #5                  // int 10
+        30: goto          48
+        33: ldc           #30                 // int 20
+        35: goto          48
+        38: ldc           #17                 // int 30
+        40: goto          48
+        43: ldc           #6                  // int 40
+        45: goto          48
+        48: ireturn
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: ldc           #14                 // int 0
+         2: invokestatic  #1                  // Method lut:(I)I
+         5: istore_2
+         6: getstatic     #34                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         9: iload_2
+        10: invokevirtual #26                 // Method java/io/PrintStream.println:(I)V
+        13: ldc           #13                 // int 1
+        15: invokestatic  #1                  // Method lut:(I)I
+        18: istore_2
+        19: getstatic     #34                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        22: iload_2
+        23: invokevirtual #26                 // Method java/io/PrintStream.println:(I)V
+        26: ldc           #12                 // int 2
+        28: invokestatic  #1                  // Method lut:(I)I
+        31: istore_2
+        32: getstatic     #34                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        35: iload_2
+        36: invokevirtual #26                 // Method java/io/PrintStream.println:(I)V
+        39: ldc           #9                  // int 3
+        41: invokestatic  #1                  // Method lut:(I)I
+        44: istore_2
+        45: getstatic     #34                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        48: iload_2
+        49: invokevirtual #26                 // Method java/io/PrintStream.println:(I)V
+        52: getstatic     #34                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        55: ldc           #29                 // String Exiting run..
+        57: invokevirtual #11                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        60: return
+}
+SourceFile: "noSource"

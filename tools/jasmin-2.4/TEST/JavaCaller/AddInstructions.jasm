@@ -1,0 +1,60 @@
+Classfile /home/jatin/jasmin/jasmin-2.4/TEST/JavaCaller/AddInstructions.class
+  Last modified 23 Jan, 2018; size 331 bytes
+  MD5 checksum 2caf18767188d6c7fa6a32356375aed0
+  Compiled from "noSource"
+public class AddInstructions
+  minor version: 3
+  major version: 45
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = NameAndType        #21:#25        // out:Ljava/io/PrintStream;
+   #2 = Utf8               \"<init>\"
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Class              #15            // java/io/PrintStream
+   #6 = Methodref          #5.#23         // java/io/PrintStream.println:(I)V
+   #7 = Utf8               ()V
+   #8 = Class              #20            // java/lang/System
+   #9 = Utf8               Code
+  #10 = Utf8               (II)I
+  #11 = Fieldref           #8.#1          // java/lang/System.out:Ljava/io/PrintStream;
+  #12 = Methodref          #4.#18         // java/lang/Object."\"<init>\"":()V
+  #13 = Utf8               SourceFile
+  #14 = Utf8               (I)V
+  #15 = Utf8               java/io/PrintStream
+  #16 = Utf8               println
+  #17 = Utf8               add
+  #18 = NameAndType        #2:#7          // "\"<init>\"":()V
+  #19 = Class              #24            // AddInstructions
+  #20 = Utf8               java/lang/System
+  #21 = Utf8               out
+  #22 = Utf8               noSource
+  #23 = NameAndType        #16:#14        // println:(I)V
+  #24 = Utf8               AddInstructions
+  #25 = Utf8               Ljava/io/PrintStream;
+{
+  public void AddInstructions();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #12                 // Method java/lang/Object."\"<init>\"":()V
+         4: return
+
+  public static int add(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: iload_0
+         1: iload_1
+         2: iadd
+         3: istore_2
+         4: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: iload_2
+         8: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+        11: iload_2
+        12: ireturn
+}
+SourceFile: "noSource"

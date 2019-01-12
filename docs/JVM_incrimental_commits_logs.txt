@@ -1,0 +1,390 @@
+commit 7b2a04de4ceca03f755a44243701b8271ec04f8f
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Oct 30 09:36:18 2018 +0530
+
+    [JVM] Fixes for following
+      1/ Decoupling operand replacement by moving it out of a user iteration loop.
+      2/ Strong check for skipping offset for virtual register
+         whose definition is marked for elimination by load/store eliminator.
+
+commit 56001e89ed4278dbdfe794841953dedfbfba8d2b
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Oct 22 11:05:47 2018 +0530
+
+    [JVM] Initial implimentation of JVM redundant load/store elimination pass.
+      - Currently activiated using -jvm-ls-opt flag.
+
+commit ab8325adafd1dbc9f2388b9ef7f49dad3674b431
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Oct 14 02:50:32 2018 +0530
+
+    [JVM] Changes in wrapper generation to return the result of
+          translation candidate in the argument buffer.
+
+commit 4d7e4a90f9a898059af7ff5e6d5fa13b68dbf9af
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Oct 14 01:01:03 2018 +0530
+
+    [JVM] Adding JVMIRFixups during decoration, currently it transforms
+          ICmp which is not being fed to branch instructions.
+
+commit 70cce0b53ba90d0b4ef5bdfbca6f74c35d704a3d
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Oct 2 16:15:08 2018 +0530
+
+    [JVM] Asm Printer changes for dumping field initializations for constant dependencies.
+
+commit 95820b6470c5ebf6161219362f62b2da36526059
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu Sep 27 12:37:59 2018 +0530
+
+    [JVM] This changelist contains following changes
+      1/ Performing constant folding during IR decoration to simplify consant
+         objects accessed using constant offsets.
+      2/ Support for load + extension operators.
+      3/ GEPOperator handling in memory intrinsics lowering.
+      4/ All the lit tests are clean and verified.
+
+commit c8e85edccd84e6034c9a95770ade89b09a1ea627
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Sep 18 16:14:56 2018 +0530
+
+    [JVM] This changelist covers following changes :-
+        1/ Support for memset in memory intrinsics lowering.
+        2/ Fixes in Mask creation for partial memory accesses.
+
+commit d28c01a0d0e31e1eca6fe21663c7b1c3c45303fc
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Sep 17 07:03:58 2018 +0530
+
+    [JVM] This changelist contains following changes :-
+      1/ Partial implementation for constant global dependencies handling.
+      2/ TD pattern for void return instruction.
+      3/ Fixes for uninitialized memory reads.
+      4/ Code reorganization for common IR utils.
+      5/ Wrapper generation : Added generic wrappers
+      6/ Lowering Memory intrinsics rewrite (memset TBD).
+
+commit 91d101821c03660d8d822791e6c89f4b430ba3e4
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Aug 28 07:14:47 2018 +0530
+
+    [JVM] 1/ Adding checker for uninitialized variables in candidate selection.
+          2/ Fix in composite index type normalization.
+
+commit 49c21ce150269ef532c6e1f87f0f3f87183d03dc
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed Aug 22 16:13:48 2018 +0530
+
+    [JVM] 1/ Adding a stage in JVM IR decoration for GEP chain merging.
+          2/ Changing message severity of Candidate checker from error to note.
+
+commit 13e54db6cb42202e5e52beffdb16b63e80d0777d
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sat Aug 18 09:58:52 2018 +0530
+
+    [JVM]  1/ Fix for long comparisions.
+           2/ Fix in Compute offsets for composites in casting handler.
+
+commit 9e569e5e40600e0594c0b27e3708b5bef2b2cabe
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed Aug 15 13:05:17 2018 +0530
+
+    [JVM] 1/ Optimized memory intrensics expansion.
+          2/ Error handling based on LLVMContext.
+          3/ Fixup of arrays indexes and GEP fixups by moving it close to their users.
+
+commit a5c726f5fe148291ab7dac46fe73cdf40b13e088
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Aug 3 17:27:31 2018 +0530
+
+    [JVM]  1/ Added new table gen patterns for Extend instructions with constant operands.
+           2/ Minor fixes in STORENR patterns.
+           3/ Handling to pull in constant dependencies of a function into newly created translation candidate module.
+           4/ Tightening candidate checker for out of bound access through GEP instruction over casted scalars.
+
+commit 4b8671026dfdde5fa97f133363969e26328a92f6
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Jul 29 12:05:14 2018 +0530
+
+    [JVM] 1/ JVM pass pipeline reorganization.
+          2/ Making memory intrinsics handler a seperate pass.
+          3/ Alignment fixes for unpacked structure in cast handler.
+          4/ Handling for i8 and i16 types in binary operations.
+
+commit 51841a9ec60d47073a73fa0501f8efbe1e38f0fc
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Jul 24 20:22:44 2018 +0530
+
+    [JVM] 1/ Fix in cast handler, now takes alignment into consideration.
+          2/ Partial fix for type coersion in offset computation.
+
+commit 2b679427a67aed9272ca25be1fd1fc853cdca3b1
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Jul 20 22:15:32 2018 +0530
+
+    [JVM] 1/ Support for long comparison.
+          2/ Support for select instruction.
+          3/ Operands type check in Candidate Checker.
+
+commit cef13959862f0bb5c45ca52df4efabc7c54216de
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Jul 16 11:06:38 2018 +0530
+
+    [JVM] 1/ Fixes in JVMTranslationPass.
+
+commit c3e62c3758706f6da1d14eae274729ff8dadbcdb
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Jul 15 00:07:08 2018 +0530
+
+    [JVM] 1/ Adding JVMTranslationPass which checks if a function is translation
+             candidate and invokes a thread to virtualize it through JVM backend.
+          2/ Code reorganization.
+          3/ Fixes for issues reported by QA.
+
+commit 500170c91a68ad74d98e9674354b9abb9327949e
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Jul 8 23:20:28 2018 +0530
+
+    [JVM] 1/ Adding new patterns for 64bit indexs in array index access instructions.
+          2/ Fix a bug in GEP cloning.
+
+commit 74cb0b1117b607df8c8ca2819aa34a87c06d3f96
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu Jul 5 18:24:39 2018 +0530
+
+    [JVM] 1/ Handling for casting of unpacked structures.
+          2/ Adding unit tests for both packed and unpacked cases.
+
+commit 7959563b5e94f40e08c7d034257bf2efc72b0db8
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed Jul 4 17:22:42 2018 +0530
+
+    [JVM] 1/ Adding TD patterns for 8bit and 16bit getfields.
+          2/ Minor bugfixing related to bitcasting of structures.
+
+commit 60be6ef702494772f51ab94ed3bb3772d58a86ce
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Jul 3 07:33:31 2018 +0530
+
+    [JVM] 1/ Fix in processStructure to check an array is structure field then variable offsets
+             are not allowed to access the same as this shall prevent GetNextGEP to move to
+             next field deterministically.
+
+commit 70e726a353d0d506d302c82037db0328ac55fd10
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Jul 2 07:22:35 2018 +0530
+
+    [JVM] 1/ Fix to accomodate 64bit index value used in GEP for 64 bit targets.
+          2/ Handling for usage of variable indices in bitcasted access patterns.
+
+commit e9e631b45f1abd341711e3264b1e23b24e65caaa
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Jun 29 23:51:15 2018 +0530
+
+    [JVM] 1/ Introduction of 8bit and 16bit register class and modification of TD patterns for same.
+          2/ Adding new RCC instruction which replaces COPY instruction whose arguments have different RegClasses.
+          3/ Splitting OffsetAllocation Fixups into PreAllocation and PostAllocation fixups.
+
+commit 80f19320cbfaf11c7bf2d27bb5a72b8206f8849d
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu Jun 28 07:31:39 2018 +0530
+
+    [JVM] 1/ New register classes for 8bit and 16bit registers.
+          2/ Table description patterns for logical/casting operations.
+          3/ Lowering of casting operations (trunc/zext/sext).
+          4/ Opcode based DAG combiner skipping.
+
+commit e8737b407e8a22b6485f71c65daf6e0675b6dfdb
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sat Jun 23 04:11:44 2018 +0530
+
+    [JVM] 1/ Uniquify GEP chains after IR decoration handlers.
+          2/ Skip DAG combining for JVM target.
+          3/ Fix GetTypeString utility function.
+          4/ Code refactoring.
+
+commit e5a71cb707d97eabca3a9822df0e2f0f6a521366
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Jun 22 00:04:53 2018 +0530
+
+    [JVM] 1/ Changes to handle load/stores across primitive boundry.
+          2/ Code refactoring.
+
+commit 6c182c90308ef1c4d7fadfc39ed122a0c06ac2c8
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed Jun 20 08:23:18 2018 +0530
+
+    [JVM] 1/ Code Refactoring - Moving common utility functions to seperate file.
+          2/ Fixing issue related to variable indices.
+
+commit ed3c012c871660150bf8c700e03e5da68dab4936
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Jun 18 17:08:57 2018 +0530
+
+    [JVM] CastHandler : IR level translation to transform all the references of bit-cast destination type
+     to source type. Source type could be Primitive, Structure or an Array type.
+
+commit 562f33c26f3afff2e9bc4936daac31559c848e8c
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu Jun 7 11:41:43 2018 +0530
+
+    [JVM] Adding new patterns for istore without result.
+
+commit 918d9fbeb4edfba460537307f592ad0049993273
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Jun 3 22:57:24 2018 +0530
+
+    [JVM] 1/ Handling for emitting field initialization code for newly emitted classes.
+          2/ Fix for getting correct use of StructRef/ArrayRef nodes.
+
+commit a229597a91ad326530142f839125ae2936e4ed42
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu May 31 08:09:29 2018 +0530
+
+    [JVM] 1/ Store nodes now can be with or without results.
+             Nodes with result are primarily used for storing into local variable.
+          2/ Removing scratch allocation from copy elision to simplify allocation.
+          3/ Store allocated memory of a class to a local variable.
+
+commit e6732129d4644beb1d5900ca06160f7c01cb182d
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed May 30 22:55:46 2018 +0530
+
+    [JVM] 1/ Added new patterns for INVOKENONVIRTUAL/DUPWCH.
+          2/ Allocation insturction support fixes.
+          3/ Putfield now have loaded object as its operand this keeps
+             aload of object alive.
+          4/ Introduced jvmiloadwhch to constant patterns.
+
+commit f934b5e17f159e2ba38c3f640d799274c7e75067
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed May 30 15:00:10 2018 +0530
+
+    [JVM] Changes for first composite testcase.
+       - Dumping of class files for structures.
+       - Composite and allocations nodes have a value type of i32 with
+         proper flags (isComposite/isArrayAcc/isStructAcc) which are
+         used during isel.
+
+commit 1284734f7d2009ece42a234e898860db44c28379
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed May 30 10:02:47 2018 +0530
+
+    [JVM] Changes to run first testcase of composites.
+       - Creating new operand type for descriptor and its associated printer.
+       - Offset allocation needs fix.
+       - Class dumping for strutures needs fix.
+
+commit a0fbe1ec2028e6931176a47ca2ac6186c6df29d8
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sat May 26 17:08:56 2018 +0530
+
+    [JVM] Partial changes for selection and scheduling of composite references.
+
+commit 90f365fb74d0c17828ddb33159b57fc33799c6cb
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu May 24 06:40:10 2018 +0530
+
+    [JVM] Changes for instruction selection of composites in backend.
+
+commit 3473345dae6f64e3b80e7febbac5ab1af3262695
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri May 18 22:51:52 2018 +0530
+
+    [JVM] Following changes have been done
+      1/ IR Utilities : CompositeHandler, CandidateChecker, X2Java, JVMIRDecorator.
+      2/ Composite handling in backend.
+
+commit 9c25542d787a5a96450214b24e5d4976bbc036f9
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Apr 20 16:50:07 2018 +0530
+
+    [JVM] Adding IR utils
+      - Candidate checking.
+      - Composite handler.
+      - X2Java
+
+commit 36a45bb339a9b58963db931b65fbe0f3950b6859
+Merge: e9a046d c5f9aed
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Mar 23 14:38:32 2018 +0530
+
+    Merge branch 'master' of https://github.com/llvm-mirror/llvm
+
+commit e9a046db1caa5f50596415cc83ed8d9c13747aed
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Mar 23 14:37:06 2018 +0530
+
+    [JVM] Minor change
+
+commit 109cf85c091b43c40fae44b24e604108a5d5968e
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Thu Mar 22 07:10:31 2018 +0530
+
+    [JVM] Checkin covers following changes:
+     1/ Addition of new command line option -dump-class-file.
+     2/ Target specific command line validation.
+     3/ Fix in argument offset allocation.
+     4/ Test cases.
+
+commit 4a6c530b91c8624ccee35dfdb96ca3a42d00e8c2
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Tue Mar 20 14:06:44 2018 +0530
+
+    [JVM] Integrating jasmin jvm assembler with JVM backend.
+
+commit 98596b0bcd46d1e986a8903224576f08b2d92d8b
+Merge: 9fb8352 9bb5a07
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed Mar 14 17:31:28 2018 +0530
+
+    Merge branch 'master' of https://github.com/llvm-mirror/llvm
+
+commit 9fb835205b1e6359f67b0020115a696a27374717
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Wed Mar 14 16:26:18 2018 +0530
+
+    [JVM] Initial set of changes for Jasmin integration.
+
+commit b1b3489fd9a6529d32ce948dad07a1dcf64b08ff
+Merge: 8d5b0d7 2e97c7a
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Fri Mar 9 17:25:58 2018 +0530
+
+    Merge branch 'master' of https://github.com/llvm-mirror/llvm
+
+commit 8d5b0d74e3760d9212b174a21d3622a3e088c888
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Mar 4 20:48:46 2018 +0530
+
+    [JVM] Adding following changes
+      1/ Support for constant condition in branch instruction. BR <CONSTANT 0/1> BBLOCK
+      2/ Defined table-gen patterns for IFEQ,IFNE,IFLT,IFGT,IFLE,IFGE.
+
+commit 27c1920c4101a2ce9599b4c6436c714ec254a436
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sun Feb 25 15:43:24 2018 +0530
+
+    [JVM] 1/ Support for LRETURN/FRETURN/DRETURN.
+          2/ Support for FCONST_0-1, DCONST_0-1, LCONST_0-1.
+          3/ Fix offset allocation to assign offset based on register class of VReg.
+
+commit 664ee94db2f119149971b1a9ad58105aa38f16c5
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Sat Feb 17 18:49:20 2018 +0530
+
+    [JVM] Changes to update_llc_test_checks for jvm32/jvm64, addiing few more test cases.
+
+commit 9d274a9667edb683725694129058eb15826f6965
+Merge: 82a902a 9c8b55d
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Feb 12 17:46:21 2018 +0530
+
+    Merge branch 'master' of https://github.com/llvm-mirror/llvm
+
+commit 82a902a6b49ef07de2e6a3345e38b23b40faa0fe
+Author: Jatin Bhateja <jatin.bhateja@gmail.com>
+Date:   Mon Feb 12 17:45:45 2018 +0530
+
+    [JVM] First set of changes for JVM backend.

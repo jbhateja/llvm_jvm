@@ -1,0 +1,39 @@
+Classfile /home/jatin/jasmin/jasmin-2.4/TEST/BasicInstructions.class
+  Last modified 8 Jan, 2018; size 203 bytes
+  MD5 checksum 0d79f16526e0c1c286848200344b37ff
+  Compiled from "noSource"
+public class BasicInstructions
+  minor version: 3
+  major version: 45
+  flags: ACC_PUBLIC, ACC_SUPER, 0x8
+Constant pool:
+   #1 = Utf8               java/lang/Object
+   #2 = Utf8               SourceFile
+   #3 = Class              #5             // BasicInstructions
+   #4 = Utf8               Hello World
+   #5 = Utf8               BasicInstructions
+   #6 = Utf8               main
+   #7 = Utf8               Code
+   #8 = String             #4             // Hello World
+   #9 = Utf8               ([Ljava/lang/String;)V
+  #10 = Utf8               noSource
+  #11 = Class              #1             // java/lang/Object
+{
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=3, args_size=1
+         0: sipush        5
+         3: istore        0
+         5: ldc           #8                  // String Hello World
+         7: astore        1
+         9: iload         0
+        11: dup
+        12: sipush        2
+        15: isub
+        16: iadd
+        17: istore        0
+        19: return
+}
+SourceFile: "noSource"
