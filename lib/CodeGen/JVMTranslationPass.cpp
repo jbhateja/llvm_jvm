@@ -141,7 +141,7 @@ public:
     GCMap.clear();
     Checker.setFunction(F);
     if (!Checker.IsCandidateForTranslation(*MSSA)) {
-      DEBUG(dbgs() << "[JVMTranslationPass] Function: \"" << F.getName()
+      LLVM_DEBUG(dbgs() << "[JVMTranslationPass] Function: \"" << F.getName()
                    << "\" not a candidate for JVM translation.\n");
       if (IsJVMTarget)
         exit(-1);
@@ -152,7 +152,7 @@ public:
     if (IsJVMTarget)
       return false;
 
-    DEBUG(dbgs() << "[JVMTranslationPass] Function: " << F.getName() << "\n");
+    LLVM_DEBUG(dbgs() << "[JVMTranslationPass] Function: " << F.getName() << "\n");
     return ProcessForTranslation(F);
   }
 
@@ -223,7 +223,7 @@ Function *JVMTranslationPass::PruneFunctionBody(Function *F,
         IRB.CreateAlloca(Arg.getType(), nullptr, Arg.getName() + ".addr");
     IRB.CreateStore(&Arg, ArgAlloca);
     Value *BitCastedArg = IRB.CreateBitCast(ArgAlloca, Int8PtrTy);
-    IRB.CreateMemCpy(ArgByteArrAtOffset, BitCastedArg, ArgSz, 4);
+    IRB.CreateMemCpy(ArgByteArrAtOffset, 4, BitCastedArg, 4, ArgSz);
     Offset += ArgSz;
   }
 
@@ -267,8 +267,8 @@ Function *JVMTranslationPass::PruneFunctionBody(Function *F,
 
   Value *RetArg = IRB.CreateAlloca(F->getReturnType());
   Value *CastedRetArg = IRB.CreateBitCast(RetArg, IRB.getInt8PtrTy());
-  IRB.CreateMemCpy(CastedRetArg, ArgByteArr,
-                   DL.getTypeSizeInBits(F->getReturnType()) / 8, 4);
+  IRB.CreateMemCpy(CastedRetArg, 4, ArgByteArr, 4,
+                   DL.getTypeSizeInBits(F->getReturnType()) / 8);
   Value *RetVal = IRB.CreateLoad(RetArg);
   IRB.CreateRet(RetVal);
   return F;
@@ -357,17 +357,17 @@ std::string JVMTranslationPass::EmitVMCode(Module *OldMod, const Function *F) {
   assert(FuncAdded && "Cannot add function to module");
   TD.ModRef = std::move(NewModRef);
 
-  DEBUG(
+  LLVM_DEBUG(
       dbgs() << "\n*** IR Dump After Translation Candidate Modification ***\n");
   Mod->dump();
 
-  DEBUG(dbgs() << "[JVMTranslationPass] Launching VM translation for function: "
+  LLVM_DEBUG(dbgs() << "[JVMTranslationPass] Launching VM translation for function: "
                << F->getName() << "\n");
 
   llvm::llvm_execute_on_thread(InvokeJVMBackend, static_cast<void *>(&TD), 0);
 
   StringRef ByteCode = unwrap(TD.OutMemBuf)->getBuffer();
-  DEBUG(dbgs() << "[JVMTranslationPass] Byte code buffer for function: "
+  LLVM_DEBUG(dbgs() << "[JVMTranslationPass] Byte code buffer for function: "
                << "\n"
                << ByteCode << "\n");
 
@@ -402,8 +402,8 @@ void JVMTranslationPass::CopyReturnValueToArgBuffer(Function *F,
     Value *RetValMem = IRB.CreateAlloca(RetVal->getType());
     IRB.CreateStore(RetVal, RetValMem);
     Value *CastedRetMem = IRB.CreateBitCast(RetValMem, Int8PtrTy);
-    IRB.CreateMemCpy(NewArgBuf, CastedRetMem,
-                     DL.getTypeSizeInBits(RetVal->getType()) / 8, 4);
+    IRB.CreateMemCpy(NewArgBuf, 4, CastedRetMem, 4,
+                     DL.getTypeSizeInBits(RetVal->getType()) / 8);
     IRB.CreateRetVoid();
     R->dropAllReferences();
     R->eraseFromParent();
@@ -445,7 +445,7 @@ Function *JVMTranslationPass::GenerateArgumentInitCode(Function *F) {
     IRB.CreateMemSet(CastedLocal, InitVal, LocalSz, 4);
 
     // Copy memory from argument buffer to newly created local variable.
-    IRB.CreateMemCpy(CastedLocal, ArgBufAtOffset, LocalSz, 4);
+    IRB.CreateMemCpy(CastedLocal, 4, ArgBufAtOffset, 4, LocalSz);
     Offset += LocalSz;
 
     Value *LoadLocal = IRB.CreateLoad(LocalTy, Local);

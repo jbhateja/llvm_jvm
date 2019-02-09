@@ -1,3 +1,13 @@
+This code base is a merge over following change list from
+LLVM trunk.
+
+commit d5cc99d571fa89054537e1a88d9feac7e4250f54 (HEAD -> master, origin/master, origin/HEAD)
+Author: Alexey Bataev <a.bataev@hotmail.com>
+Date:   Fri Jan 11 20:42:48 2019 +0000
+
+------------------------------------------------------
+ INCRIMENTAL LOGS
+------------------------------------------------------
 commit 7b2a04de4ceca03f755a44243701b8271ec04f8f
 Author: Jatin Bhateja <jatin.bhateja@gmail.com>
 Date:   Tue Oct 30 09:36:18 2018 +0530

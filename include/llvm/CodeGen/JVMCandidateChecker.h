@@ -47,7 +47,7 @@ public:
   void visitStore(StoreInst &I);
   void visitGetElementPtrInst(GetElementPtrInst &I);
   void visitCall(CallInst &I);
-  void visitTerminatorInst(TerminatorInst &I);
+  void visitTerminatorInst(Instruction &I);
   void visitAlloca(AllocaInst &I);
 
   void visitInstruction(Instruction &I);

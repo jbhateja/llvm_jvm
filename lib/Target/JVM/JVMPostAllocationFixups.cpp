@@ -110,11 +110,11 @@ INITIALIZE_PASS_END(JVMPostAllocationFixups, DEBUG_TYPE,
                     "JVM Post Allocation Fixups", false, false)
 
 void JVMPostAllocationFixups::EnterScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
 }
 
 void JVMPostAllocationFixups::ExitScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
 }
 
 /// ExitScopeIfDone - Destroy scope for the MBB that corresponds to the given
@@ -161,7 +161,7 @@ bool JVMPostAllocationFixups::ProcessBlockInsertion(MachineBasicBlock *MBB) {
     if (!isStoreCandidate(*MI))
       continue;
 
-    DEBUG(dbgs() << "Examining: " << *MI);
+    LLVM_DEBUG(dbgs() << "Examining: " << *MI);
     unsigned NumDefs = MI->getDesc().getNumDefs();
 
     auto IdenticalOperands = [&](MachineInstr *MI,
@@ -185,7 +185,7 @@ bool JVMPostAllocationFixups::ProcessBlockInsertion(MachineBasicBlock *MBB) {
       assert(Desc.getNumDefs() == 1);
       assert(MRI.hasOneUse(DelMI->getOperand(0).getReg()));
 
-      DEBUG(dbgs() << "Same binary operands, inserting a DUP instruction.\n");
+      LLVM_DEBUG(dbgs() << "Same binary operands, inserting a DUP instruction.\n");
       unsigned DelMIDefReg = DelMI->getOperand(0).getReg();
       NewMI = BuildMI(*MBB, MI, MI->getDebugLoc(), TII->get(JVM::DUP))
               .addDef(DelMIDefReg);
@@ -203,7 +203,7 @@ bool JVMPostAllocationFixups::ProcessBlockInsertion(MachineBasicBlock *MBB) {
 
       unsigned StoreOpcode =
           JVMMCOpcodeUtils::GetStoreOpcode(MRI.getRegClass(MO.getReg()));
-      DEBUG(dbgs() << "Inserting Store instruction.\n");
+      LLVM_DEBUG(dbgs() << "Inserting Store instruction.\n");
       NewMI = BuildMI(*MBB, I, MI->getDebugLoc(), TII->get(StoreOpcode))
                   .addImm(FuncInfo->getRegisterOffset(MO.getReg()));
       NumFixups++;
@@ -264,7 +264,7 @@ bool JVMPostAllocationFixups::ProcessReturnFixup(MachineBasicBlock *MBB) {
     if (!isReturnFixupCandidate(MRI, *MI))
       continue;
 
-    DEBUG(dbgs() << "Examining: " << *MI);
+    LLVM_DEBUG(dbgs() << "Examining: " << *MI);
     MachineOperand &RetVal = MI->getOperand(0);
     assert(RetVal.isReg() && "Register operand expected");
 
@@ -332,9 +332,9 @@ bool JVMPostAllocationFixups::runOnMachineFunction(MachineFunction &MFN) {
   MRI = &MF->getRegInfo();
   DT = &getAnalysis<MachineDominatorTree>();
 
-  DEBUG(dbgs() << "\n******** JVM Store/Dup insertion ********\n");
+  LLVM_DEBUG(dbgs() << "\n******** JVM Store/Dup insertion ********\n");
   PerformStoreInsertion(DT->getRootNode());
-  DEBUG(dbgs() << "\n******** JVM Return Fixup ********\n");
+  LLVM_DEBUG(dbgs() << "\n******** JVM Return Fixup ********\n");
   PerformReturnFixup(DT->getRootNode());
   return true;
 }

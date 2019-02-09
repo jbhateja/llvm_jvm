@@ -32,19 +32,20 @@ class JVMAsmBackend final : public MCAsmBackend {
   bool Is64Bit;
 
 public:
-  explicit JVMAsmBackend(bool Is64Bit) : MCAsmBackend(), Is64Bit(Is64Bit) {}
+  explicit JVMAsmBackend(bool Is64Bit) : MCAsmBackend(support::big), Is64Bit(Is64Bit) {}
   ~JVMAsmBackend() override {}
 
-  std::unique_ptr<MCObjectWriter>
-  createObjectWriter(raw_pwrite_stream &OS) const override;
+  std::unique_ptr<MCObjectTargetWriter>
+  createObjectTargetWriter() const override;
 
   unsigned getNumFixupKinds() const override;
 
   void applyFixup(const MCAssembler &Asm, const MCFixup &Fixup,
                   const MCValue &Target, MutableArrayRef<char> Data,
-                  uint64_t Value, bool IsResolved) const override;
+                  uint64_t Value, bool IsResolved,
+                  const MCSubtargetInfo *STI) const override;
 
-  bool mayNeedRelaxation(const MCInst &Inst) const override;
+  bool mayNeedRelaxation(const MCInst &Inst, const MCSubtargetInfo &STI) const override;
 
   bool fixupNeedsRelaxation(const MCFixup &Fixup, uint64_t Value,
                             const MCRelaxableFragment *DF,
@@ -53,11 +54,11 @@ public:
   void relaxInstruction(const MCInst &Inst, const MCSubtargetInfo &STI,
                         MCInst &Res) const override;
 
-  bool writeNopData(uint64_t Count, MCObjectWriter *OW) const override;
+  bool writeNopData(raw_ostream &OS, uint64_t Count) const override;
 };
 
-std::unique_ptr<MCObjectWriter>
-JVMAsmBackend::createObjectWriter(raw_pwrite_stream &OS) const {
+std::unique_ptr<MCObjectTargetWriter>
+JVMAsmBackend::createObjectTargetWriter() const {
   return nullptr;
 }
 
@@ -66,11 +67,11 @@ unsigned JVMAsmBackend::getNumFixupKinds() const { return 0; }
 void JVMAsmBackend::applyFixup(const MCAssembler &Asm, const MCFixup &Fixup,
                                const MCValue &Target,
                                MutableArrayRef<char> Data, uint64_t Value,
-                               bool IsResolved) const {
+                               bool IsResolved, const MCSubtargetInfo *STI) const {
   return;
 }
 
-bool JVMAsmBackend::mayNeedRelaxation(const MCInst &Inst) const {
+bool JVMAsmBackend::mayNeedRelaxation(const MCInst &Inst, const MCSubtargetInfo &STI) const {
   return false;
 }
 
@@ -86,11 +87,13 @@ void JVMAsmBackend::relaxInstruction(const MCInst &Inst,
   return;
 }
 
-bool JVMAsmBackend::writeNopData(uint64_t Count, MCObjectWriter *OW) const {
+bool JVMAsmBackend::writeNopData(raw_ostream &OS, uint64_t Count) const {
   return false;
 }
 } // end namespace
 
-MCAsmBackend *llvm::createJVMAsmBackend(const Triple &TT) {
+namespace llvm {
+MCAsmBackend * createJVMAsmBackend(const Triple &TT) {
   return new JVMAsmBackend(TT.isArch64Bit());
 }
+} // namespace llvm

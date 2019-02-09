@@ -17,7 +17,7 @@
 #define LLVM_LIB_TARGET_JVM_MCTARGETDESC_JVMTARGETSTREAMER_H
 
 #include "llvm/ADT/Twine.h"
-#include "llvm/CodeGen/MachineValueType.h"
+#include "llvm/Support/MachineValueType.h"
 #include "llvm/MC/MCStreamer.h"
 #include "llvm/Support/FormattedStream.h"
 

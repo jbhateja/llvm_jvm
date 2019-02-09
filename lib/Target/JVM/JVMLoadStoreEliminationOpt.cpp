@@ -105,11 +105,11 @@ INITIALIZE_PASS_END(JVMLoadStoreEliminationOpt, DEBUG_TYPE,
                     "JVM Load/Store Elimination Optimization", false, false)
 
 void JVMLoadStoreEliminationOpt::EnterScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
 }
 
 void JVMLoadStoreEliminationOpt::ExitScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
 }
 
 bool JVMLoadStoreEliminationOpt::ProcessBlock(MachineBasicBlock *MBB) {
@@ -212,7 +212,7 @@ bool JVMLoadStoreEliminationOpt::runOnMachineFunction(MachineFunction &MFN) {
   MRI = &MF->getRegInfo();
   DT = &getAnalysis<MachineDominatorTree>();
 
-  DEBUG(dbgs()
+  LLVM_DEBUG(dbgs()
         << "\n******** JVM Load/Store Elimination Optimization ********\n");
   PerformOptimization(DT->getRootNode());
   return true;

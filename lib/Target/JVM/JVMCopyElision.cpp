@@ -107,11 +107,11 @@ INITIALIZE_PASS_END(JVMCopyElision, DEBUG_TYPE, "JVM Copy Elision",
                     false, false)
 
 void JVMCopyElision::EnterScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
 }
 
 void JVMCopyElision::ExitScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
 }
 
 void JVMCopyElision::Cleanup() {
@@ -139,7 +139,7 @@ bool JVMCopyElision::IsCopyElisionCandidate(MachineBasicBlock *MBB, MachineInstr
   
   // Create a RC converter instruction in place of COPY.
   if (LHSRC != RHSRC) {
-    DEBUG(dbgs() << "Found COPY with different RegClasses, replacing with RegClassConv.\n"
+    LLVM_DEBUG(dbgs() << "Found COPY with different RegClasses, replacing with RegClassConv.\n"
                  << MBB->getName() << '\n');
     BuildMI(*MBB, MI, MI->getDebugLoc(),
         TII->get(JVMMCOpcodeUtils::GetRCConvOpcode(LHSRC, RHSRC)))
@@ -161,7 +161,7 @@ void JVMCopyElision::ProcessCopyElisionBlock(MachineBasicBlock *MBB) {
       continue;
 
     NumCopyInstrs++;
-    DEBUG(dbgs() << "Found COPY, lowering to LOAD and STORE.\n"
+    LLVM_DEBUG(dbgs() << "Found COPY, lowering to LOAD and STORE.\n"
                  << MBB->getName() << '\n');
 
     // Insert a LOAD for RHS of a COPY instruction.
@@ -253,7 +253,7 @@ bool JVMCopyElision::runOnMachineFunction(MachineFunction &MFN) {
   MRI = &MF->getRegInfo();
   DT = &getAnalysis<MachineDominatorTree>();
 
-  DEBUG(dbgs() << "\n******** JVM COPY elision ********\n");
+  LLVM_DEBUG(dbgs() << "\n******** JVM COPY elision ********\n");
   PerformCopyElision(DT->getRootNode());
   return true;
 }

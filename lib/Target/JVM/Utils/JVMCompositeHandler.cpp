@@ -213,7 +213,7 @@ static void CopyCompositeObj(Value *DstBase, Value *SrcBase, Type *Ty,
 
 void CompositeHandler::dump() {
   for (auto Ty : typeDefs) {
-    DEBUG({ 
+    LLVM_DEBUG({ 
      dbgs() << "Type : ";
      Ty.first->dump();
      dbgs() << "Values:";
@@ -674,8 +674,8 @@ void CompositeHandler::doReplacements() {
     }
   }
 
-  DEBUG(dbgs() << "Number of Arguments Replaced : " << ArgFixupCount << "\n");
-  DEBUG(dbgs() << "Number of Alloca Replaced : " << AllocaFixupCount << "\n");
+  LLVM_DEBUG(dbgs() << "Number of Arguments Replaced : " << ArgFixupCount << "\n");
+  LLVM_DEBUG(dbgs() << "Number of Alloca Replaced : " << AllocaFixupCount << "\n");
 
   // TODO: replace removeFromParent with eraseFromParent and verify.
   for (auto *User : LazyRemovalSet)

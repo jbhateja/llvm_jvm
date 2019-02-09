@@ -1214,7 +1214,7 @@ void SelectionDAGLegalize::LegalizeOp(SDNode *Node) {
 
         SDNodeFlags Flags = Res.getNode()->getFlags();
         if (Flags.hasIsUseAbsorb()) {
-          DEBUG(dbgs() << "Successfully custom legalized node\n");
+          LLVM_DEBUG(dbgs() << "Successfully custom legalized node\n");
           Flags.setIsUseAbsorb(false);       
           Res.getNode()->setFlags(Flags);
           return;
@@ -4580,7 +4580,7 @@ void SelectionDAG::Legalize() {
 
       SDNodeFlags Flags = N->getFlags();
       if (Flags.hasIsAbsorptionCandidate()) { 
-        DEBUG(dbgs() << " Skipping legalization of an absorption candidate:"; N->dump(this));
+        LLVM_DEBUG(dbgs() << " Skipping legalization of an absorption candidate:"; N->dump(this));
         continue; 
       }
 

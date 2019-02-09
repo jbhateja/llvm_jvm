@@ -134,7 +134,7 @@ void BlockRevPostOrderTraversal::visitBlocks(BasicBlock *Blk) {
 
   OrderedMap[Blk] = GRAY;
 
-  TerminatorInst *TI = Blk->getTerminator();
+  Instruction *TI = Blk->getTerminator();
   if (isa<BranchInst>(TI) && cast<BranchInst>(TI)->isConditional()) {
     BasicBlock *FalseBlock = cast<BasicBlock>(TI->getSuccessor(1));
     visitBlocks(FalseBlock);
@@ -308,9 +308,9 @@ void BlockPredication::VerifyPredication() {
 
 void BlockPredication::DumpPredication(BasicBlock *Blk) {
   int i = 0;
-  DEBUG(dbgs() << "Block Name : " << Blk->getName());
+  LLVM_DEBUG(dbgs() << "Block Name : " << Blk->getName());
   for (auto PV : PredCondMap[Blk]) {
-    DEBUG(dbgs() << "  [" << i++ << "] :" << PV.getPointer()->getName()
+    LLVM_DEBUG(dbgs() << "  [" << i++ << "] :" << PV.getPointer()->getName()
                  << (PV.getInt() ? " : ON" : " : OFF"));
   }
 }
@@ -387,28 +387,28 @@ void XToJavaPass::EmitArgumentInitializationWrappers() {
   /// 3/ It will generate a stub in "C" which will have dongle initialization
   ///    calls along with call to invoke VM to evaluate clone.
   /// 4/ It will replace the original callsite with call to stub.
-  DEBUG(dbgs() << "Emitting wrappers");
+  LLVM_DEBUG(dbgs() << "Emitting wrappers");
 }
 
 void XToJavaPass::EmitPrologue(raw_ostream &OS) {
   BlockRevPostOrderTraversal RPOT(Func);
   // ReversePostOrderTraversal<Function*> RPOT(Func);
   for (BasicBlock *BB : RPOT)
-    DEBUG(dbgs() << "Block Name : " << BB->getName() << "\n");
+    LLVM_DEBUG(dbgs() << "Block Name : " << BB->getName() << "\n");
 }
 
 void XToJavaPass::EmitEpilogue(raw_ostream &OS) {
-  DEBUG(dbgs() << "End of translation");
+  LLVM_DEBUG(dbgs() << "End of translation");
 }
 
 void XToJavaPass::EmitBlock(BasicBlock *Blk, raw_ostream &OS) {
-  DEBUG(dbgs() << "Generating code for ");
+  LLVM_DEBUG(dbgs() << "Generating code for ");
   Blk->dump();
 }
 
 void XToJavaPass::EmitBody(raw_ostream &OS) {
   int PhiRemoved = PhiEliminator.ProcessFunction();
-  DEBUG(dbgs() << "Eliminated " << PhiRemoved << " phi nodes");
+  LLVM_DEBUG(dbgs() << "Eliminated " << PhiRemoved << " phi nodes");
 
   // Order them as per dependency.
   Predicator.ProcessFunction();

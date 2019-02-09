@@ -53,8 +53,8 @@ void CandidateChecker::visitInstruction(Instruction &I) {
   }
 }
 
-void CandidateChecker::visitTerminatorInst(TerminatorInst &I) {
-  if (I.isExceptional()) {
+void CandidateChecker::visitTerminatorInst(Instruction &I) {
+  if (I.isExceptionalTerminator()) {
     report_note("Exception terminator instructions currently not supported",
                 false);
     visitStatus = false;

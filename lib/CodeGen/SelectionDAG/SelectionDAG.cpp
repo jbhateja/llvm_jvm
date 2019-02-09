@@ -8437,10 +8437,10 @@ unsigned SelectionDAG::AssignTopologicalOrder() {
   unsigned DAGSize = 0;
 
   std::vector<SDNode*> TopoOrder;
-  DEBUG(dbgs() << "Dumping RPOT order of DAG nodes.";);
+  LLVM_DEBUG(dbgs() << "Dumping RPOT order of DAG nodes.";);
   CreateTopologicalOrder(TopoOrder);
   for (auto *Node : TopoOrder)
-     DEBUG(Node->dump(this););
+     LLVM_DEBUG(Node->dump(this););
 
   // SortedPos tracks the progress of the algorithm. Nodes before it are
   // sorted, nodes after it are unsorted. When the algorithm completes

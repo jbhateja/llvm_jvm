@@ -103,7 +103,7 @@ public:
                                         // no unsigned wrap.
     NoSWrap      = 1 << 12,             // Instruction supports binary operator
                                         // no signed wrap.
-    IsExact      = 1 << 13              // Instruction supports division is
+    IsExact      = 1 << 13,             // Instruction supports division is
                                         // known to be exact.
     NoAllocation = 1 << 14              // JVM: Do not perform offset allocation for
                                         // def of this MI.

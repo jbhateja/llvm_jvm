@@ -130,7 +130,7 @@ char *JVMAssemblerImpl::assemble(std::string &asmFile) {
   if (NULL == cls)
     return nullptr;
 
-  DEBUG(llvm::dbgs() << "\nInvoking jasmin-assemble.\n");
+  LLVM_DEBUG(llvm::dbgs() << "\nInvoking jasmin-assemble.\n");
   jmethodID cnstr = env->GetMethodID(cls, "<init>", "()V");
   if (NULL == cnstr)
     return nullptr;
@@ -148,7 +148,7 @@ char *JVMAssemblerImpl::assemble(std::string &asmFile) {
   if (NULL == jstr)
     return nullptr;
 
-  DEBUG(llvm::dbgs() << "\nJASM size = %d.\n"
+  LLVM_DEBUG(llvm::dbgs() << "\nJASM size = %d.\n"
                      << strlen(asmFile.c_str()) << "\n");
   env->CallVoidMethod(jobj, mid, jstr);
 
@@ -159,7 +159,7 @@ char *JVMAssemblerImpl::assemble(std::string &asmFile) {
 
 JVMAssembler::JVMAssembler() {
   Impl = JVMAssemblerImpl::getInst();
-  DEBUG(llvm::dbgs() << "JavaVM created.\n");
+  LLVM_DEBUG(llvm::dbgs() << "JavaVM created.\n");
 }
 
 JVMAssembler::~JVMAssembler() { delete Impl; }

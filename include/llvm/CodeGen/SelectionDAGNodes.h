@@ -387,7 +387,7 @@ public:
         Exact(false), NoNaNs(false), NoInfs(false),
         NoSignedZeros(false), AllowReciprocal(false), VectorReduction(false),
         AllowContract(false), ApproximateFuncs(false),
-        AllowReassociation(false) GlueOperands(false), isComposite(false) , 
+        AllowReassociation(false), GlueOperands(false), isComposite(false) , 
         isStructAcc(false), isArrayAcc(false) , isUseAbsorb(false) ,
         isAbsorptionCandidate(false) {}
 

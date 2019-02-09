@@ -3773,7 +3773,7 @@ void SelectionDAGBuilder::visitLoad(const LoadInst &I) {
 
     SDNodeFlags LFlags = L.getNode()->getFlags();
     LFlags.setIsAbsorptionCandidate(IsAbsorptionCandidate);
-    DEBUG(dbgs() << "Setting is absorption candidate flag over node :"; L.dump(&DAG););
+    LLVM_DEBUG(dbgs() << "Setting is absorption candidate flag over node :"; L.dump(&DAG););
     L.getNode()->setFlags(LFlags);
 
     Values[i] = L;
@@ -3929,7 +3929,7 @@ void SelectionDAGBuilder::visitStore(const StoreInst &I) {
 
     SDNodeFlags Flags = St.getNode()->getFlags();
     Flags.setIsAbsorptionCandidate(IsAbsorptionCandidate);
-    DEBUG(dbgs() << "Setting is absorption candidate flag over node :"; St.dump(&DAG););
+    LLVM_DEBUG(dbgs() << "Setting is absorption candidate flag over node :"; St.dump(&DAG););
     St->setFlags(Flags);
 
     Chains[ChainI] = St;

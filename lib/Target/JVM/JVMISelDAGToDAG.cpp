@@ -80,13 +80,13 @@ private:
 
 void JVMDAGToDAGISel::Select(SDNode *Node) {
   // Dump information about the Node being selected.
-  DEBUG(errs() << "Selecting: ");
-  DEBUG(Node->dump(CurDAG));
-  DEBUG(errs() << "\n");
+  LLVM_DEBUG(errs() << "Selecting: ");
+  LLVM_DEBUG(Node->dump(CurDAG));
+  LLVM_DEBUG(errs() << "\n");
 
   // If we have a custom node, we already have selected!
   if (Node->isMachineOpcode()) {
-    DEBUG(errs() << "== "; Node->dump(CurDAG); errs() << "\n");
+    LLVM_DEBUG(errs() << "== "; Node->dump(CurDAG); errs() << "\n");
     Node->setNodeId(-1);
     return;
   }

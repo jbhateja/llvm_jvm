@@ -122,7 +122,7 @@ void JVMIRDecorator::EmitArgumentInitializationWrappers() {
   // 3/ It will generate a stub which will have call to VM (dongle)
   // initialization
   //    along with call to invoke VM to evaluate clone.
-  DEBUG(dbgs() << "Emitting wrappers");
+  LLVM_DEBUG(dbgs() << "Emitting wrappers");
 }
 
 void JVMIRDecorator::HandleCompositeTypes(Function *F) {
@@ -318,7 +318,7 @@ void JVMIRDecorator::LowerSELECTOp(Value *Op) {
   Value *FalseVal = Select->getFalseValue();
   BasicBlock::iterator SplitIt = Select->getIterator();
   BasicBlock *EndBlk = SplitBlock(Select->getParent(), &*++SplitIt, DT);
-  Instruction *OldTI = cast<TerminatorInst>(*EndBlk->user_begin());
+  Instruction *OldTI = cast<Instruction>(*EndBlk->user_begin());
   BasicBlock *NewBlk = OldTI->getParent();
 
   BasicBlock *TrueBlk =
@@ -523,39 +523,39 @@ void JVMIRDecorator::PerformIRFixups(Function *F) {
 }
 
 bool JVMIRDecorator::ProcessFunction() {
-  DEBUG(dbgs() << "*** Begin JVM IR Decoration Pass ***\n");
+  LLVM_DEBUG(dbgs() << "*** Begin JVM IR Decoration Pass ***\n");
   // HandleCompositeTypes(Func);
 
   ConstantFoldInstructions(Func);
-  DEBUG(dbgs() << "*** IR Dump After Constant folding instructions ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After Constant folding instructions ***\n");
   Func->dump();
 
   HandleGlobalConstants(Func);
-  DEBUG(dbgs() << "*** IR Dump After JVM Global Constants Handler  ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After JVM Global Constants Handler  ***\n");
   Func->dump();
 
   HandleBitCastOperation(Func);
-  DEBUG(dbgs() << "*** IR Dump After JVM Casting Handlers  ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After JVM Casting Handlers  ***\n");
   Func->dump();
 
   FixupCompositeIndexes(Func);
-  DEBUG(dbgs() << "*** IR Dump After JVM Fixup Composite Indexes ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After JVM Fixup Composite Indexes ***\n");
   Func->dump();
 
   LinearizeGEPChains(Func);
-  DEBUG(dbgs() << "*** IR Dump After JVM Linearize GEP Chains ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After JVM Linearize GEP Chains ***\n");
   Func->dump();
 
   UniquifyGEPOperands(Func);
-  DEBUG(dbgs() << "*** IR Dump After JVM GEP Uniquification  ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After JVM GEP Uniquification  ***\n");
   Func->dump();
 
   PerformIRFixups(Func);
-  DEBUG(dbgs() << "*** IR Dump JVM IR Fixups  ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump JVM IR Fixups  ***\n");
   Func->dump();
 
   LowerSELECT(Func);
-  DEBUG(dbgs() << "*** IR Dump After JVM Select Lowering  ***\n");
+  LLVM_DEBUG(dbgs() << "*** IR Dump After JVM Select Lowering  ***\n");
   Func->dump();
 
   FuncDecoratedCounter++;

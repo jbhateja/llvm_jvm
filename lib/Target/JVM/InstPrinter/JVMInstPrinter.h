@@ -16,7 +16,7 @@
 #define LLVM_LIB_TARGET_JVM_INSTPRINTER_JVMINSTPRINTER_H
 
 #include "llvm/ADT/SmallVector.h"
-#include "llvm/CodeGen/MachineValueType.h"
+#include "llvm/Support/MachineValueType.h"
 #include "llvm/MC/MCInstPrinter.h"
 
 namespace llvm {

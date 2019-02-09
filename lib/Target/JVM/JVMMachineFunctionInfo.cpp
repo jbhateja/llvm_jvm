@@ -132,7 +132,7 @@ Type *JVMFunctionInfo::getFromNodeTypeMap(SDNode *N) {
 
 void JVMFunctionInfo::addToScratchAllocationSet(unsigned Reg) {
   if (scratchAllocations.find(Reg) == scratchAllocations.end()) {
-    DEBUG(dbgs() << "Adding Reg = " << Reg << " to StratchAllocationSet\n");
+    LLVM_DEBUG(dbgs() << "Adding Reg = " << Reg << " to StratchAllocationSet\n");
     scratchAllocations.insert(Reg);
   }
 }

@@ -104,11 +104,11 @@ INITIALIZE_PASS_END(JVMOffsetAllocator, DEBUG_TYPE,
                     false)
 
 void JVMOffsetAllocator::EnterScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
 }
 
 void JVMOffsetAllocator::ExitScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
 }
 
 static bool isEntryBlock(MachineBasicBlock *MBB) {
@@ -132,12 +132,12 @@ static bool isArgument(MachineInstr *MI) {
   switch (Opcode) {
   default:
     return false;
-  case JVM::ARGUMENT_I8:
-  case JVM::ARGUMENT_I16:
-  case JVM::ARGUMENT_I32:
-  case JVM::ARGUMENT_I64:
-  case JVM::ARGUMENT_F32:
-  case JVM::ARGUMENT_F64:
+  case JVM::I8ARGUMENT:
+  case JVM::I16ARGUMENT:
+  case JVM::I32ARGUMENT:
+  case JVM::I64ARGUMENT:
+  case JVM::F32ARGUMENT:
+  case JVM::F64ARGUMENT:
     return true;
   }
 }
@@ -178,8 +178,8 @@ void JVMOffsetAllocator::PerformArgumentAllocation(MachineBasicBlock *MBB) {
     MachineOperand &MO = Arg->getOperand(0);
     FuncInfo->setRegisterOffset(MO.getReg());
 
-    DEBUG(dbgs() << "Examining: " << *Arg);
-    DEBUG(dbgs() << "Allocating offset to Argument : Reg = " << MO.getReg()
+    LLVM_DEBUG(dbgs() << "Examining: " << *Arg);
+    LLVM_DEBUG(dbgs() << "Allocating offset to Argument : Reg = " << MO.getReg()
                  << " Offset = " << FuncInfo->getRegisterOffset(MO.getReg())
                  << "\n");
     NumLocals++;
@@ -236,8 +236,8 @@ bool JVMOffsetAllocator::ProcessBlockAllocation(MachineBasicBlock *MBB) {
       } else
         FuncInfo->setRegisterOffset(MO.getReg());
 
-      DEBUG(dbgs() << "Examining: " << *MI);
-      DEBUG(dbgs() << "Allocating : Reg = " << MO.getReg() << " Offset = "
+      LLVM_DEBUG(dbgs() << "Examining: " << *MI);
+      LLVM_DEBUG(dbgs() << "Allocating : Reg = " << MO.getReg() << " Offset = "
                    << FuncInfo->getRegisterOffset(MO.getReg()) << "\n");
       NumLocals++;
     }
@@ -275,7 +275,7 @@ void JVMOffsetAllocator::PerformAllocationForScratchSet() {
       FuncInfo->getScratchAllocationSet().begin();
   while (Itr != FuncInfo->getScratchAllocationSet().end()) {
     FuncInfo->setRegisterOffset(*Itr);
-    DEBUG(dbgs() << "Allocating from StratchAllocationSet : Reg = " << *Itr
+    LLVM_DEBUG(dbgs() << "Allocating from StratchAllocationSet : Reg = " << *Itr
                  << " Offset = " << FuncInfo->getRegisterOffset(*Itr) << "\n");
     Itr++;
     NumLocals++;
@@ -320,7 +320,7 @@ bool JVMOffsetAllocator::runOnMachineFunction(MachineFunction &MFN) {
   MRI = &MF->getRegInfo();
   DT = &getAnalysis<MachineDominatorTree>();
 
-  DEBUG(dbgs() << "\n******** JVM Offset allocation ********\n");
+  LLVM_DEBUG(dbgs() << "\n******** JVM Offset allocation ********\n");
   PerformAllocation(DT->getRootNode());
   return true;
 }

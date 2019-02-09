@@ -106,11 +106,11 @@ INITIALIZE_PASS_END(JVMPreAllocationFixups, DEBUG_TYPE, "JVM Pre-allocation Fixu
                     false, false)
 
 void JVMPreAllocationFixups::EnterScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Entering: " << MBB->getName() << '\n');
 }
 
 void JVMPreAllocationFixups::ExitScope(MachineBasicBlock *MBB) {
-  DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
+  LLVM_DEBUG(dbgs() << "Exiting: " << MBB->getName() << '\n');
 }
 
 
@@ -153,7 +153,7 @@ void JVMPreAllocationFixups::ProcessExtendFixupsBlock(MachineBasicBlock *MBB) {
       continue;
 
     NumFixupsInstrs++;
-    DEBUG(dbgs() << "Found Extend, adding a STORE for its operand.\n"
+    LLVM_DEBUG(dbgs() << "Found Extend, adding a STORE for its operand.\n"
                  << MBB->getName() << '\n');
 
     // Insert a STORE for RHS of a EXTEND instruction.
@@ -235,7 +235,7 @@ bool JVMPreAllocationFixups::runOnMachineFunction(MachineFunction &MFN) {
   // STORE for its operand, this is being done here because during DAG
   // lowering we do not get chain node for binary/unary operations,
   // LOADs and STOREs are chained to avoid their reordering by scheduler.
-  DEBUG(dbgs() << "\n******** JVM Extend Fixups ********\n");
+  LLVM_DEBUG(dbgs() << "\n******** JVM Extend Fixups ********\n");
   PerformExtendFixups(DT->getRootNode());
   return true;
 }

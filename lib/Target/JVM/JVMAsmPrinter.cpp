@@ -14,11 +14,13 @@
 ///
 //===----------------------------------------------------------------------===//
 
+#include "JVMInstrInfo.h"
+#include "JVMMachineFunctionInfo.h"
+#include "JVMMCOpcodeUtils.h"
 #include "JVMAsmPrinter.h"
 #include "InstPrinter/JVMInstPrinter.h"
 #include "JVM.h"
 #include "JVMMCInstLower.h"
-#include "JVMMachineFunctionInfo.h"
 #include "JVMRegisterInfo.h"
 #include "MCTargetDesc/JVMAssembler.h"
 #include "MCTargetDesc/JVMMCTargetDesc.h"
@@ -360,7 +362,7 @@ void JVMAsmPrinter::EmitClassDefinitions() {
   for (auto TyNmPair : *STyName) {
     std::string ClassName = *TyNmPair.second;
     std::string ClassDef = EmitClassDefinition(TyNmPair.first, ClassName);
-    DEBUG(dbgs() << "Class File : \n" << ClassDef;);
+    LLVM_DEBUG(dbgs() << "Class File : \n" << ClassDef;);
 
     std::error_code EC;
     sys::fs::OpenFlags OpenFlags = sys::fs::F_None;
@@ -386,7 +388,7 @@ void JVMAsmPrinter::EmitStartOfAsmFile(Module &M) {
 void JVMAsmPrinter::EmitEndOfAsmFile(Module &M) {
   JVMTargetStreamer *TS = getTargetStreamer();
   TS->emitString("; End of AsmFile.");
-  DEBUG(llvm::dbgs() << "Finished JASM dumping."
+  LLVM_DEBUG(llvm::dbgs() << "Finished JASM dumping."
                      << "\n");
   if (TM.getMCAsmInfo()->getEnableAsmInMemoryEmitting()) {
     TS->flush();
@@ -522,12 +524,12 @@ static bool IsSkipInstruction(const MachineInstr &MI) {
   switch (Opcode) {
   default:
     return false;
-  case JVM::ARGUMENT_I32:
-  case JVM::ARGUMENT_I64:
-  case JVM::ARGUMENT_I16:
-  case JVM::ARGUMENT_I8:
-  case JVM::ARGUMENT_F32:
-  case JVM::ARGUMENT_F64:
+  case JVM::I32ARGUMENT:
+  case JVM::I64ARGUMENT:
+  case JVM::I16ARGUMENT:
+  case JVM::I8ARGUMENT:
+  case JVM::F32ARGUMENT:
+  case JVM::F64ARGUMENT:
   case JVM::PRIMALLOC_CSZ:
   case JVM::PRIMALLOC_VSZ:
     return true;
@@ -538,7 +540,7 @@ void JVMAsmPrinter::EmitInstruction(const MachineInstr *MI) {
   if (IsSkipInstruction(*MI))
     return;
 
-  DEBUG(dbgs() << "EmitInstruction: " << *MI << '\n');
+  LLVM_DEBUG(dbgs() << "EmitInstruction: " << *MI << '\n');
 
   JVMMCInstLower InstLower(OutContext, *this);
   MCInst TmpInst;
