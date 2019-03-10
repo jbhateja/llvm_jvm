@@ -156,6 +156,7 @@ void JVMIRDecorator::LinearizeGEP(IRBuilder<> &IRB, Value *Ptr, Value *GEP,
                                   bool SoC, SmallVectorImpl<Value *> &Indices) {
   unsigned i = 0;
   unsigned init = 0;
+  Value *LastIndex = nullptr;
   const DataLayout &DL = Func->getParent()->getDataLayout();
   Value *GEPPtr = cast<GetElementPtrInst>(GEP)->getPointerOperand();
   Type *GEPPtrRootTy = GetRootType(GEPPtr->getType());
@@ -163,9 +164,8 @@ void JVMIRDecorator::LinearizeGEP(IRBuilder<> &IRB, Value *Ptr, Value *GEP,
   if (!isa<CompositeType>(GEPPtrRootTy)) {
     // NewIndex = Pop_Last_index() + GEP_Index;
     assert(cast<GetElementPtrInst>(GEP)->getNumIndices() == 1);
-    Value *LastIndex = Indices.back();
+    LastIndex = Indices.back();
     Indices.pop_back();
-
     Value *Index = cast<GetElementPtrInst>(GEP)->getOperand(1);
     Index = GetTypeNormalizedValue(DL, IRB, Index, LastIndex->getType());
     Value *NextIndex = IRB.CreateAdd(LastIndex, Index);
@@ -192,6 +192,9 @@ void JVMIRDecorator::LinearizeGEP(IRBuilder<> &IRB, Value *Ptr, Value *GEP,
 
   for (i = init; i < cast<GetElementPtrInst>(GEP)->getNumIndices(); i++)
     Indices.pop_back();
+
+  if (LastIndex)
+    Indices.push_back(LastIndex);
 }
 
 void JVMIRDecorator::LinearizeGEPChains(Function *F) {

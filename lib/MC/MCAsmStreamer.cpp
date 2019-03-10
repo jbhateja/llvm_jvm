@@ -62,20 +62,21 @@ class MCAsmStreamer final : public MCStreamer {
 
 public:
   MCAsmStreamer(MCContext &Context, std::unique_ptr<formatted_raw_ostream> os,
-                bool isVerboseAsm, bool useDwarfDirectory,
-                MCInstPrinter *printer, std::unique_ptr<MCCodeEmitter> emitter,
+                bool isVerboseAsm, bool useDwarfDirectory, MCInstPrinter *printer,
+                std::unique_ptr<MCCodeEmitter> emitter,
                 std::unique_ptr<MCAsmBackend> asmbackend, bool showInst)
       : MCStreamer(Context), OSOwner(std::move(os)), OS(*OSOwner),
         MAI(Context.getAsmInfo()), InstPrinter(printer),
         Assembler(llvm::make_unique<MCAssembler>(
             Context, std::move(asmbackend), std::move(emitter),
-            (asmbackend) ? asmbackend->createObjectWriter(NullStream)
-                         : nullptr)),
+            (asmbackend && asmbackend->createObjectTargetWriter())
+                ? asmbackend->createObjectWriter(NullStream)
+                : nullptr)),
         CommentStream(CommentToEmit), IsVerboseAsm(isVerboseAsm),
         ShowInst(showInst), UseDwarfDirectory(useDwarfDirectory) {
     assert(InstPrinter);
     if (IsVerboseAsm)
-        InstPrinter->setCommentStream(CommentStream);
+      InstPrinter->setCommentStream(CommentStream);
   }
 
   MCAssembler &getAssembler() { return *Assembler; }
